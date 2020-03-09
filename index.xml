@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magnus Ross</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Magnus Ross</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3 Nice Garage Records</title>
+      <link>http://example.org/posts/garage_records/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/garage_records/</guid>
+      <description>No particular order, just three Garage records I think are great. Enjoy!
+ 1. Pied Piper &amp;amp; Unknown MC - Listen   2. Digga - Da Lick   3. Butter - Do Me Right   </description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Education  2016-2020 (Current) MSci, Physics (Credit Weighted Mean: 77% ); University of Bristol  Interested in Mathematical and Theoretical Physics,Particle Physics, and Machine Learning. MSci project entitiled &amp;lsquo;Deep Learning for Event Classification at the LUX=-ZEPLIN Experiment&amp;rsquo;   2009-2016 A-Level, GCSE; Lancaster Royal Grammar School  A* in A-level Maths, Further Maths and Physics, A in AS-level Chemistry. 10 GCSEs with 6 A* grades, 2 A grades, and 2 B grades.</description>
+    </item>
+    
+  </channel>
+</rss>
