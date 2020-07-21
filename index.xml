@@ -1,42 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Magnus Ross</title>
-    <link>https://magnusross.github.io/</link>
-    <description>Recent content on Magnus Ross</description>
+    <title>Magnus&#39;s Website</title>
+    <link>/</link>
+    <description>Recent content on Magnus&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-uk</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
     
-	<atom:link href="https://magnusross.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>3 Nice Garage Records</title>
-      <link>https://magnusross.github.io/posts/garage_records/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://magnusross.github.io/posts/garage_records/</guid>
-      <description>No particular order, just three Garage records I think are great. Enjoy!
- 1. Pied Piper &amp;amp; Unknown MC - Listen   2. Digga - Da Lick   3. Butter - Do Me Right   </description>
-    </item>
     
     <item>
-      <title></title>
-      <link>https://magnusross.github.io/about/</link>
+      <title>About Me</title>
+      <link>/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://magnusross.github.io/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CV</title>
-      <link>https://magnusross.github.io/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://magnusross.github.io/cv/</guid>
-      <description>Education  2016-2020 MSci, Physics (Credit Weighted Mean: 77% ); University of Bristol  Interested in Mathematical and Theoretical Physics, Particle Physics, and Machine Learning. MSci project entitiled &amp;lsquo;Deep Learning for Event Classification at the LUX-ZEPLIN Experiment&amp;rsquo;   2009-2016 A-Level, GCSE; Lancaster Royal Grammar School  A* in A-level Maths, Further Maths and Physics, A in AS-level Chemistry. 10 GCSEs with 6 A* grades, 2 A grades, and 2 B grades.</description>
+      <guid>/</guid>
+      <description>Hi! I&#39;m Magnus, this is my website, where I will hopefully write about things I find interesting. I have just finished doing a Master&#39;s degree in physics at the University of Bristol, and this autumn I will be joining the machine learning group at the University of Sheffield to do a PhD. I am interested in many different areas of machine learning, but in particular I enjoy those that have some connection to physics (fortunately there are many!</description>
     </item>
     
   </channel>

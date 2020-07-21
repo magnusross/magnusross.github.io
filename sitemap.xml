@@ -3,41 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://magnusross.github.io/posts/garage_records/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://magnusross.github.io/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://magnusross.github.io/tags/music/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://magnusross.github.io/posts/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magnusross.github.io/tags/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magnusross.github.io/about/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://magnusross.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://magnusross.github.io/cv/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
