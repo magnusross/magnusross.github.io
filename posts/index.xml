@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>Posts on </title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,15 +29,6 @@
       <guid>/posts/lagrangian_nns_2003.04630/</guid>
       <description>Lagrangian Neural Networks BibTeX @article{cranmer2020lagrangian, title={Lagrangian neural networks}, author={Cranmer, Miles and Greydanus, Sam and Hoyer, Stephan and Battaglia, Peter and Spergel, David and Ho, Shirley}, journal={arXiv preprint arXiv:2003.04630}, year={2020} } Summary Use constraint of EL equations to force NN to conserve energy, leading to NN that can better predict dynamics for physical systems such as double pendulum.
 Description  Lagrangian is paramterised by NN in this case MLP Use vector EL equstions, then apply time derive to get acceleration.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hi! I&#39;m Magnus, this is my website, where I will hopefully write about things I find interesting. I have just finished doing a Master&#39;s degree in physics at the University of Bristol, and this autumn I will be joining the machine learning group at the University of Sheffield to do a PhD. I am interested in many different areas of machine learning, but in particular I enjoy those that have some connection to physics (fortunately there are many!</description>
     </item>
     
   </channel>

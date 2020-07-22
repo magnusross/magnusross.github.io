@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on </title>
+    <link>/tags/music/</link>
+    <description>Recent content in music on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3 Nice Garage Records</title>
+      <link>/posts/garage_records/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/garage_records/</guid>
+      <description>No particular order, just three Garage records I think are great. Enjoy!
+ 1. Pied Piper &amp;amp; Unknown MC - Listen   2. Digga - Da Lick   3. Butter - Do Me Right   </description>
+    </item>
+    
+  </channel>
+</rss>
