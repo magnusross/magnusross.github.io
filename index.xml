@@ -6,10 +6,20 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lagrangians with PyTorch Part #1</title>
+      <link>/posts/l1/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/l1/</guid>
+      <description>Note: This series of posts is closely related to and inspired by this paper from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant blog post about the work which I would encourage you to read.
+I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree.</description>
+    </item>
     
     <item>
       <title>3 Nice Garage Records</title>
@@ -18,17 +28,7 @@
       
       <guid>/posts/garage_records/</guid>
       <description>No particular order, just three Garage records I think are great. Enjoy!
- 1. Pied Piper &amp;amp; Unknown MC - Listen   2. Digga - Da Lick   3. Butter - Do Me Right   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/posts/lagrangian_nns_2003.04630/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/lagrangian_nns_2003.04630/</guid>
-      <description>Lagrangian Neural Networks BibTeX @article{cranmer2020lagrangian, title={Lagrangian neural networks}, author={Cranmer, Miles and Greydanus, Sam and Hoyer, Stephan and Battaglia, Peter and Spergel, David and Ho, Shirley}, journal={arXiv preprint arXiv:2003.04630}, year={2020} } Summary Use constraint of EL equations to force NN to conserve energy, leading to NN that can better predict dynamics for physical systems such as double pendulum.
-Description  Lagrangian is paramterised by NN in this case MLP Use vector EL equstions, then apply time derive to get acceleration.</description>
+1. Pied Piper &amp;amp; Unknown MC - Listen   2. Digga - Da Lick   3. Butter - Do Me Right   </description>
     </item>
     
     <item>

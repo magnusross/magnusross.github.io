@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lagrangians with PyTorch Part #1  </title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Note: This series of posts is closely related to and inspired by this paper from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant blog post about the work which I would encourage you to read.
+I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/l1/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lagrangians with PyTorch Part #1 :: ">
+<meta property="og:description" content="Note: This series of posts is closely related to and inspired by this paper from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant blog post about the work which I would encourage you to read.
+I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree." />
+<meta property="og:url" content="/posts/l1/" />
+<meta property="og:site_name" content="Lagrangians with PyTorch Part #1" />
+
+  
+    <meta property="og:image" content="/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-07-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/about">
+  <div class="logo">
+    Magnus Ross
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/l1/">Lagrangians with PyTorch Part #1</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-07-22 
+      </span>
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <p><em>Note: This series of posts is closely related to and inspired by <a href="https://arxiv.org/abs/2003.04630">this paper</a> from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant <a href="https://greydanus.github.io/2020/03/10/lagrangian-nns/">blog post</a> about the work which I would encourage you to read.</em></p>
+<p>I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree. We will get into the reasons for this shortly, but needless to say, when I heard that Lagrangians were being used with neural networks to learn physics I could not have clicked the <a href="https://arxiv.org/abs/2003.04630">arXiv link</a> faster. In this series of posts I will give a brief introduction to what Lagrangian mechanics is all about, why the concepts are so important in physics, and how we can use them to solve a cool problem involving both a pendulum <strong>and</strong> a spring at once (!). We'll then see how we can use PyTorch to save ourselves the effort of calculating a load of derivatives by hand. Finally we'll tie it all together to learn a Lagrangian from some data using a neural network, and see how we get superior performance by making the model aware of the physics of the situation. Lots to do, so let's get started!</p>
+<h2 id="what-is-a-lagrangian">What is a Lagrangian?<a href="#what-is-a-lagrangian" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>To solve a problem in classical mechanics you generally need to find the equations of motion of the system in question. These equations, when solved, completely determine the trajectories of the constituent parts of the system. One extremely simple example is a particle in free fall which has the equation of motion $\ddot x = \frac{d^2 x}{dt^2} = -g$. The Lagrangian (almost always written as $\mathcal{L}$) is a special function that contains all the dynamics of the system, which can be used to find the equations of motion in a relatively simple way. $\mathcal{L}$ is a function of the generalised coordinates describing our system, denoted ${q_i}$ and their corresponding time derivatives ${\dot q_i}$ <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. One really useful aspect of Lagrangian mechanics is that as long as the $q_i$'s totally specify our system, they can be pretty much anything we want (e.g. positions, angles, lengths) this is very powerful and is not true in Newtonian mechanics.</p>
+<blockquote>
+<p><strong>Problems with Newtonian Mechanics</strong></p>
+<p>You may be wondering why we need to do all this complicated stuff with Lagrangians when Newtons laws, which most people learn in school, can in theory solve every problem possible in classical mechanics. There are a number of interesting reasons for this which are discussed extensively elsewhere, the most relevant here is the fact that it is often very difficult to actually write down Newtons laws for a given system. In Newtonian mechanics we consider the action of force vectors on particles. Because all the forces in a problem must be written explicitly, systems that have complex constraints, e.g. double pendulum, can be very hard to deal with. For rotational systems, it can be difficult to exploit symmetry of because sets of angles aren't really vectors.</p>
+</blockquote>
+<p>Finding the equations of motion from $\mathcal{L}$ involves using Hamilton's principle of least action, which is stated in loose terms below:</p>
+<p><em>&ldquo;The trajectory followed by a system is the one with the smallest action&rdquo;</em></p>
+<p>The action, $\mathcal{S}$, of a trajectory is the time averaged value of the Lagrangian along it. More formally it is the functional,</p>
+<p>$$\mathcal{S} = \int \mathcal{L}(\{q_i\}, \{\dot q_i\}) dt$$</p>
+<p>Using two classic physicists tricks, reverse integration by parts and a first order Taylor expansion, you can figure out that systems obeying Hamilton's principle must have,</p>
+<p>$$\frac{\partial \mathcal{L}}{\partial q_i} - \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot q_i}=0,  $$</p>
+<p>for each $q_i$. These are known as the Euler-Lagrange equations. Without a concrete example, this all seems very abstract and confusing, but the upshot is if we know $\mathcal{L}$ then we can work out the equations of motion. Just one final piece of the puzzle before we can actually work stuff out, how do we find $\mathcal{L}$? It turns out that in classical, non relativistic mechanics it is given by the simple expression,</p>
+<p>$$ \mathcal{L} = T - V,$$</p>
+<p>where $T$ is the kinetic energy of the system, and $V$ is the potential energy.  It is almost always easier to think of the different energies in a system than it is to resolve forces, which is why Lagrangian mechanics is so powerful.</p>
+<blockquote>
+<p><strong>The Real Power of Lagrangians</strong></p>
+<p>Although Lagrangians are an important tool in classical mechanics, they actually play a much more pivotal role in the fundamental physics of the Universe. The Standard Model, which describes all fundamental particles (e.g photons, electrons, quarks) is specified as a Lagrangian. Lagrangians can be constructed in such a way that their value does not change when changing reference frames, which means they can be made consistent with Einstein's theory of special relativity. Also Noether's theorem means that conservation laws (e.g. for momentum, charge), can be incorporated into the Lagrangain formalism in a very natural way.</p>
+</blockquote>
+<h2 id="a-fun-example">A Fun Example!<a href="#a-fun-example" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Ok so now we have the theory bit out the way let's have a go at actually using a Lagrangian in practice. The problem we are going to consider is a spring pendulum, this is really what it says on the tin, a spring with a mass attached that can freely swing about some fixed point. The setup is shown in the handy diagram below.</p>
+
+  <figure class="center" >
+    <img src="/../../image.png"  alt="Spring pendulum"   style="border-radius: 1px;"  />
+    
+      <figcaption class="center" >A handy diagram.</figcaption>
+    
+  </figure>
+
+
+<p>It is clear that there are 4 generalised coordinates which fully describe the system: $\theta$, the angle the spring makes with the vertical, $r$, the length of the pendulum, and their corresponding time derivatives, $\dot \theta$ and $\dot r$. Having identified these it's pretty easy to think of all the kinetic and potential in the energies in the system, try to think of them and then have a look at the list below to see if you got it correct:</p>
+<ol>
+<li>
+<p>Linear kinetic energy, $T_l$, from by the movement of the mass in the direction of the spring.</p>
+</li>
+<li>
+<p>Rotational kinetic energy, $T_r$, from the rotation of the mass about the fixed point the spring is attached to.</p>
+</li>
+<li>
+<p>Mechanical potential energy, $V_m$, from the compression and extension of the spring.</p>
+</li>
+<li>
+<p>Gravitational potential energy, $V_g$, from the changing height of the mass.</p>
+</li>
+</ol>
+<p>1-3 are given by standard formulas, for example Hooke's law for 3, and can be written down straight away. 4 just involves using a bit of trigonometry to work out the vertical height of the spring in terms of $r$, then applying the standard formula for a uniform gravitational field. Each formula is shown in the table below, where m is the mass, $r_0$ is the length of the unextend spring and $g$ is the gravitational constant:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Energy</th>
+<th align="center">Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">$T_l$</td>
+<td align="center">$\frac{1}{2}m\dot{r}^2 $</td>
+</tr>
+<tr>
+<td align="center">$T_r$</td>
+<td align="center">$ \frac{1}{2}m r^2\dot{\theta}^2$</td>
+</tr>
+<tr>
+<td align="center">$V_m$</td>
+<td align="center">$k(r -r_0)^2 $</td>
+</tr>
+<tr>
+<td align="center">$V_g$</td>
+<td align="center">$gh= g(r-r\cos\theta)$</td>
+</tr>
+</tbody>
+</table>
+<p>Taking $m=r_0=1$ , we can now finally write down the full lagrangian as,</p>
+<p>\begin{align} \mathcal{L} &amp;= (T_l + T_r) - (V_m + V_g) \\\
+&amp;= \frac{1}{2}\dot{r}^2 + \frac{1}{2} r^2\dot{\theta}^2 - gr(1-\cos\theta) - k(r -1)^2.\end{align}</p>
+<p>So to find the equations of motion from here we need to apply the Euler-Lagrange equations, which involves calculating the partial derivatives with respect to each independent variable, this is a bit tedious but not too bad,</p>
+<p>\begin{align} \frac{\partial \mathcal{L}}{\partial \theta} &amp;= -gr\sin\theta \\\
+\frac{\partial \mathcal{L}}{\partial r} &amp;= r \dot \theta^2-g(1-\cos\theta) -2k(r-1)  \\\<br>
+\frac{\partial \mathcal{L}}{\partial \dot \theta} &amp;= r^2 \dot \theta \\\<br>
+\frac{\partial \mathcal{L}}{\partial \dot r} &amp;= \dot r \end{align}</p>
+<p>The final step is to plug these into the Euler-Lagrange equations, and apply the total time derivative, then rearrange to get the following 2 equations of motion:</p>
+<p>\begin{align} \ddot r &amp;= r\dot{\theta}^2 + g(1-\cos\theta) - 2k(r-r_0) \\\
+\ddot \theta &amp;= -\frac{1}{r}(g\sin\theta + 2\dot{r}\dot{\theta}).  \end{align}</p>
+<p>Mission complete! Unfortunately because these are coupled non-linear differential equations, they can't be solved analytically (by me at least), so we need to use a numerical solver. Solving differential equations numerically is obviously a huge subject, so I won't go into any detail here, but it is currently quite a hot topic in ML research, see for example <a href="https://arxiv.org/abs/1806.07366">this paper</a>. To solve our equations of motion we can use the handy <code>odeint</code> function from scipy.</p>
+
+  <figure class="center" >
+    <img src="/../../swing.gif"  alt="Swinging"   style="border-radius: 1px;"  />
+    
+      <figcaption class="center" >Spring pendulums in motion.</figcaption>
+    
+  </figure>
+
+
+<p>Above is a gif of 3 pendulums with different initial conditions <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. The motion is pretty much what we would expect, so everything seems to be working! Everything we have done so far is taught in a standard undergraduate physics course, so now we have the basics down let's see how we can involve the ML.</p>
+<h2 id="bringing-in-pytorch">Bringing in PyTorch<a href="#bringing-in-pytorch" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><em>Disclaimer: Before this project I had never used PyTorch, in fact part of the reason for doing the project was to get familiar with using it. For this reason it is likely that some of my code is bad practice/wrong. If you spot any mistakes, please let me know, thanks!</em></p>
+<p>In this section we're going to see how we can use the <code>autograd</code> functionality in PyTorch to automatically determine the equations of motion from our Lagrangian. To do this we need to think a bit about what the equations of motion actually are. First let's put all our independent genralised coordinates into a vector, $\mathbf{x} = (r, \theta, \dot r, \dot \theta)^T$. The value of $\mathbf{x}$ completely specifies the state of our system. The equations of motion tell us the dynamics of our system, i.e. how the state evolves forward in time. They can be written concisely as,</p>
+<p>$$
+\frac{d \mathbf{x}}{dt} = \begin{pmatrix} \dot r \\\ \dot \theta \\\ \ddot r \\\ \ddot \theta  \end{pmatrix}= f(\mathbf{x})
+$$</p>
+<p>if we know $f$ we know the dynamics of the system. We already have the top 2 components of $f$, since they are both genralised coordinates, so all we need to do is find the bottom 2. For clarity lets write the $\mathbf{y} =( r, \theta)^T$ and the bottom 2 as $\mathbf{\dot y} =(\dot r, \dot \theta)^T$. The challenge then is to find $\mathbf{\ddot  y}$. Using this notation we can write the Euler-Lagrange equations as <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>,</p>
+<p>$$ \nabla_\mathbf{y}\mathcal{L} - \frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} = 0. $$</p>
+<p>We can then explicitly apply the the total time derivative to get,</p>
+<p>$$(\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L}) \mathbf{\ddot y} + (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y} = \nabla_\mathbf{y} \mathcal{L}.$$</p>
+<p>This derivative confused me a bit when I first read the original paper, so may it be worth showing a few more steps. Feel free to skip this mini section if you're already happy with it!</p>
+<blockquote>
+<p><strong>Derivatve Derivation</strong></p>
+<p>When computing the total derivative, $\frac{d}{dt}$ we need to remember to take all the time dependence into account, this means using the chain rule on everything the Lagrangian depends on. We are trying to compute,
+$$\frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} =\frac{d}{dt} \begin{pmatrix} \frac{\partial \mathcal{L}}{\partial \dot r} \\\ \frac{\partial \mathcal{L}}{\partial \dot \theta} \end{pmatrix}.$$
+For simplicity let's just work out the top component of this, applying the chain rule to incorporate all the time dependence,
+$$\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot r} = \frac{d r}{dt} \frac{\partial }{\partial r} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \theta}{dt}  \frac{\partial }{\partial \theta} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot r}{dt} \frac{\partial }{\partial \dot r}  \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot \theta}{dt} \frac{\partial }{\partial \dot \theta}  \frac{\partial \mathcal{L}}{\partial \dot r}.$$
+Hopefully it is clear that if we replace, $\frac{d r}{dt} = \dot r$ and so on, this would be the top component of the vector derivative, having multiplied everything out correctly.</p>
+</blockquote>
+<p>The final step then is to do a bit of matrix algebra to get $\mathbf{\ddot  y}$ alone, we end up with,</p>
+<p>$$\mathbf{\ddot y}  = (\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L})^{-1} [\nabla_\mathbf{y} \mathcal{L} - (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y}].$$</p>
+<p>Now we have $\mathbf{\ddot  y}$ alone we have a clear recipe for solving the system given an arbitrary differentiable Lagrangian. We just have to plug it into the equation above, work it through, then we have $f$ which we can use in a numerical differential equation solver to make some nice gifs. This expression is also helpful because it works for any number of generalised coordinates. This expression is really important when it come to actually incorporating the neural network effectively also, but we will get to that later.</p>
+<p>Let's write some code so that given a Lagrangian, we can automatically determine the equations of motion without having to go through all the derivatives by hand. Since PyTorch now has functions to calculate the Hessain and Jacobian, this is actually reasonably easy. The following function, returns $\mathbf{\dot x}$ for a given $\mathcal{L}$ and state $\mathbf{x}$:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> torch 
+<span style="color:#f92672">from</span> torch.autograd.functional <span style="color:#f92672">import</span> jacobian, hessian
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_xt</span>(L, x):
+    
+    n <span style="color:#f92672">=</span> x<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#75715e"># Get number of genralised coords </span>
+    xv <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>autograd<span style="color:#f92672">.</span>Variable(x, requires_grad<span style="color:#f92672">=</span>True)
+    y, yt <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>split(xv, <span style="color:#ae81ff">2</span>, dim<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+
+    <span style="color:#75715e"># The hessian/jacobian are calculated w.r.t all varibles in xv </span>
+    <span style="color:#75715e"># so select only relevent parts using slices</span>
+    A <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>inverse(hessian(L, xv, create_graph<span style="color:#f92672">=</span>True)[n:, n:])
+    B <span style="color:#f92672">=</span> jacobian(L, xv, create_graph<span style="color:#f92672">=</span>True)[:n]
+    C <span style="color:#f92672">=</span> hessian(L, xv, create_graph<span style="color:#f92672">=</span>True)[n:, :n]
+
+    ytt <span style="color:#f92672">=</span> A <span style="color:#960050;background-color:#1e0010">@</span> (B <span style="color:#f92672">-</span> C <span style="color:#960050;background-color:#1e0010">@</span> yt)
+
+    xt <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>cat([yt, torch<span style="color:#f92672">.</span>squeeze(ytt)])
+
+    <span style="color:#66d9ef">return</span> xt
+</code></pre></div><p>To check it's working correctly let's test it on the spring pendulum, and use the same initial conditions in the equations we calculated by hand, then we can compare the trajectories and see if they are the same.</p>
+
+  <figure class="center" >
+    <img src="/../../mse.png"  alt="Swinging"   style="border-radius: 1px;"  />
+    
+      <figcaption class="center" >Mean square difference between $\mathbf{x}$ components of each method, with increasing time.</figcaption>
+    
+  </figure>
+
+
+<p>At first glance this looks pretty bad, but the axis is y axis is at a scale $10^{-13}$, so the PyTorch method is giving almost exactly the same trajectory. Cool!</p>
+<h2 id="so-wheres-the-ml">So where's the ML?<a href="#so-wheres-the-ml" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>We've done lots of physics so far, but where does the ML come in? Well the good news is that we now have all the ground work out of the way, and we are ready to dive into Lagrangian Neural Networks. In post #2 we will get straight into implementing LNNs in PyTorch, given the knowledge we now have, this should be a relatively simple task.</p>
+<p>Let's just recap a bit and think why we are doing all this in the first place. Here I have used an example of a mechanical system with a known Lagrangian, what if we want to determine the dynamics of a system which is known to obey the laws of classical mechanics, but the Lagrangian is not known? One option is to learn from data. As we discussed earlier all we need to determine the dynamics is the function $f$. So why did we even need to bother with all this Lagrangian stuff? Why not just replace $f$ with a neural network, and learn it straight from the data? We could do this, and it is possible that with a large enough model we might get good results, but we can do much better by making the model aware of the physics of the situation. If instead we parameterise $\mathcal{L}$ with a neural network, and then use our equation for $ \mathbf{\ddot y}$ to determine $f$, then the Euler-Lagrange equations are included as constraints in the model. This means we have a neural network that is aware of Hamilton's least action principle! Because the model is physics aware, we should get significantly better results from a model with fewer parameters. LNNs are a cool example of using physics knowledge to introduce inductive bias into an ML model. Another nice example of this from a totally different area of ML, Bayesian non-parametrics, are <a href="http://proceedings.mlr.press/v5/alvarez09a/alvarez09a.pdf">Latent Force Models</a>, which may be the subject of a future post.</p>
+<p>If you got this far thanks for reading, and hopefully you can join me for part #2 shortly!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>We treat $q_i$ and $\dot q_i$ as independent variables, this can be really confusing at first. You can get an intuitive feel for why this might true if you think about the fact you need to know both the position and velocity of a particle to fully determine it's future trajectory.<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>$\mathcal{L}$ can also depend explicitly on time, which results in energy not being conserved, but we will not consider that case here.<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>To create the gif I made plots with matplotlib, and then used this <a href="https://github.com/maxhumber/gif">brilliant package</a> to animate.<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>As I mentioned before this derivation closely follows that in the <a href="https://arxiv.org/abs/2003.04630">Lagrangian Neural Networks</a> paper, so all credit to the authors for it.<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+</ol>
+</section>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/garage_records/">
+                <span class="button__text">3 Nice Garage Records</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
