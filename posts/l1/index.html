@@ -159,7 +159,7 @@ I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that s
 <p>where $T$ is the kinetic energy of the system, and $V$ is the potential energy.  It is almost always easier to think of the different energies in a system than it is to resolve forces, which is why Lagrangian mechanics is so powerful.</p>
 <blockquote>
 <p><strong>The Real Power of Lagrangians</strong></p>
-<p>Although Lagrangians are an important tool in classical mechanics, they actually play a much more pivotal role in the fundamental physics of the Universe. The Standard Model, which describes all fundamental particles (e.g photons, electrons, quarks) is specified as a Lagrangian. Lagrangians can be constructed in such a way that their value does not change when changing reference frames, which means they can be made consistent with Einstein's theory of special relativity. Also Noether's theorem means that conservation laws (e.g. for momentum, charge), can be incorporated into the Lagrangain formalism in a very natural way.</p>
+<p>Although Lagrangians are an important tool in classical mechanics, they actually play a much more pivotal role in the fundamental physics of the Universe. The Standard Model, which describes all fundamental particles (e.g photons, electrons, quarks) is specified as a Lagrangian. Lagrangians can be constructed in such a way that their value does not change when changing reference frames, which means they can be made consistent with Einstein's theory of special relativity. Also Noether's theorem means that conservation laws (e.g. for momentum, charge), can be incorporated into the Lagrangian formalism in a very natural way.</p>
 </blockquote>
 <h2 id="a-fun-example">A Fun Example!<a href="#a-fun-example" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Ok so now we have the theory bit out the way let's have a go at actually using a Lagrangian in practice. The problem we are going to consider is a spring pendulum, this is really what it says on the tin, a spring with a mass attached that can freely swing about some fixed point. The setup is shown in the handy diagram below.</p>
@@ -214,7 +214,7 @@ I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that s
 </tr>
 </tbody>
 </table>
-<p>Taking $m=r_0=1$ , we can now finally write down the full lagrangian as,</p>
+<p>Taking $m=r_0=1$ , we can now finally write down the full Lagrangian as,</p>
 <p>\begin{align} \mathcal{L} &amp;= (T_l + T_r) - (V_m + V_g) \\\
 &amp;= \frac{1}{2}\dot{r}^2 + \frac{1}{2} r^2\dot{\theta}^2 - gr(1-\cos\theta) - k(r -1)^2.\end{align}</p>
 <p>So to find the equations of motion from here we need to apply the Euler-Lagrange equations, which involves calculating the partial derivatives with respect to each independent variable, this is a bit tedious but not too bad,</p>
@@ -238,11 +238,11 @@ I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that s
 <p>Above is a gif of 3 pendulums with different initial conditions <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. The motion is pretty much what we would expect, so everything seems to be working! Everything we have done so far is taught in a standard undergraduate physics course, so now we have the basics down let's see how we can involve the ML.</p>
 <h2 id="bringing-in-pytorch">Bringing in PyTorch<a href="#bringing-in-pytorch" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p><em>Disclaimer: Before this project I had never used PyTorch, in fact part of the reason for doing the project was to get familiar with using it. For this reason it is likely that some of my code is bad practice/wrong. If you spot any mistakes, please let me know, thanks!</em></p>
-<p>In this section we're going to see how we can use the <code>autograd</code> functionality in PyTorch to automatically determine the equations of motion from our Lagrangian. To do this we need to think a bit about what the equations of motion actually are. First let's put all our independent genralised coordinates into a vector, $\mathbf{x} = (r, \theta, \dot r, \dot \theta)^T$. The value of $\mathbf{x}$ completely specifies the state of our system. The equations of motion tell us the dynamics of our system, i.e. how the state evolves forward in time. They can be written concisely as,</p>
+<p>In this section we're going to see how we can use the <code>autograd</code> functionality in PyTorch to automatically determine the equations of motion from our Lagrangian. To do this we need to think a bit about what the equations of motion actually are. First let's put all our independent generalised coordinates into a vector, $\mathbf{x} = (r, \theta, \dot r, \dot \theta)^T$. The value of $\mathbf{x}$ completely specifies the state of our system. The equations of motion tell us the dynamics of our system, i.e. how the state evolves forward in time. They can be written concisely as,</p>
 <p>$$
 \frac{d \mathbf{x}}{dt} = \begin{pmatrix} \dot r \\\ \dot \theta \\\ \ddot r \\\ \ddot \theta  \end{pmatrix}= f(\mathbf{x})
 $$</p>
-<p>if we know $f$ we know the dynamics of the system. We already have the top 2 components of $f$, since they are both genralised coordinates, so all we need to do is find the bottom 2. For clarity lets write the $\mathbf{y} =( r, \theta)^T$ and the bottom 2 as $\mathbf{\dot y} =(\dot r, \dot \theta)^T$. The challenge then is to find $\mathbf{\ddot  y}$. Using this notation we can write the Euler-Lagrange equations as <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>,</p>
+<p>if we know $f$ we know the dynamics of the system. We already have the top 2 components of $f$, since they are both generalised coordinates, so all we need to do is find the bottom 2. For clarity lets write the $\mathbf{y} =( r, \theta)^T$ and the bottom 2 as $\mathbf{\dot y} =(\dot r, \dot \theta)^T$. The challenge then is to find $\mathbf{\ddot  y}$. Using this notation we can write the Euler-Lagrange equations as <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>,</p>
 <p>$$ \nabla_\mathbf{y}\mathcal{L} - \frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} = 0. $$</p>
 <p>We can then explicitly apply the the total time derivative to get,</p>
 <p>$$(\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L}) \mathbf{\ddot y} + (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y} = \nabla_\mathbf{y} \mathcal{L}.$$</p>
@@ -257,19 +257,19 @@ Hopefully it is clear that if we replace, $\frac{d r}{dt} = \dot r$ and so on, t
 </blockquote>
 <p>The final step then is to do a bit of matrix algebra to get $\mathbf{\ddot  y}$ alone, we end up with,</p>
 <p>$$\mathbf{\ddot y}  = (\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L})^{-1} [\nabla_\mathbf{y} \mathcal{L} - (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y}].$$</p>
-<p>Now we have $\mathbf{\ddot  y}$ alone we have a clear recipe for solving the system given an arbitrary differentiable Lagrangian. We just have to plug it into the equation above, work it through, then we have $f$ which we can use in a numerical differential equation solver to make some nice gifs. This expression is also helpful because it works for any number of generalised coordinates. This expression is really important when it come to actually incorporating the neural network effectively also, but we will get to that later.</p>
-<p>Let's write some code so that given a Lagrangian, we can automatically determine the equations of motion without having to go through all the derivatives by hand. Since PyTorch now has functions to calculate the Hessain and Jacobian, this is actually reasonably easy. The following function, returns $\mathbf{\dot x}$ for a given $\mathcal{L}$ and state $\mathbf{x}$:</p>
+<p>Now we have $\mathbf{\ddot  y}$ alone we have a clear recipe for solving the system given an arbitrary differentiable Lagrangian. We just have to plug it into the equation above, work it through, then we have $f$ which we can use in a numerical differential equation solver to make some nice gifs. This expression is also helpful because it works for any number of generalised coordinates. This expression is really important when it comes to actually incorporating the neural network effectively, but we will get to that later.</p>
+<p>Let's write some code so that given a Lagrangian, we can automatically determine the equations of motion without having to go through all the derivatives by hand. Since PyTorch now has functions to calculate the Hessian and Jacobian, this is actually reasonably easy. The following function, returns $\mathbf{\dot x}$ for a given $\mathcal{L}$ and state $\mathbf{x}$:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> torch 
 <span style="color:#f92672">from</span> torch.autograd.functional <span style="color:#f92672">import</span> jacobian, hessian
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_xt</span>(L, x):
     
-    n <span style="color:#f92672">=</span> x<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#75715e"># Get number of genralised coords </span>
+    n <span style="color:#f92672">=</span> x<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#75715e"># Get number of generalised coords </span>
     xv <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>autograd<span style="color:#f92672">.</span>Variable(x, requires_grad<span style="color:#f92672">=</span>True)
     y, yt <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>split(xv, <span style="color:#ae81ff">2</span>, dim<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
 
-    <span style="color:#75715e"># The hessian/jacobian are calculated w.r.t all varibles in xv </span>
-    <span style="color:#75715e"># so select only relevent parts using slices</span>
+    <span style="color:#75715e"># The hessian/jacobian are calculated w.r.t all variables in xv </span>
+    <span style="color:#75715e"># so select only relevant parts using slices</span>
     A <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>inverse(hessian(L, xv, create_graph<span style="color:#f92672">=</span>True)[n:, n:])
     B <span style="color:#f92672">=</span> jacobian(L, xv, create_graph<span style="color:#f92672">=</span>True)[:n]
     C <span style="color:#f92672">=</span> hessian(L, xv, create_graph<span style="color:#f92672">=</span>True)[n:, :n]
