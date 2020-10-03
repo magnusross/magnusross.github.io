@@ -6,10 +6,19 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Podcasts about ML</title>
+      <link>/posts/podcasts/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/podcasts/</guid>
+      <description>There are a lot of podcasts out there, and this include loads that are related to machine learning in some way. Over the summer I&#39;ve worked my way through a fair few of them, so I thought I&#39;d compile a list of my favorites. The are a couple of lists like this out there already, but most of them are out of date, either they include podcasts that are now inactive, or leave out ones that have started recently.</description>
+    </item>
     
     <item>
       <title>Lagrangians with PyTorch Part #1</title>
