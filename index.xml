@@ -6,10 +6,20 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Talk at 3rd Sheffield Workshop on Structural Dynamics</title>
+      <link>/posts/talk1/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/talk1/</guid>
+      <description>Near the end of last year I had the privilege of being invited to talk about my recent work at the 3rd Sheffield Workshop on Structural Dynamics. I spoke for 15 minutes about some work I have been doing on the application of Gaussian processes to the non-parametric learning of Volterra kernel functions. The event as a whole was super interesting, and I would fully recommend the other talks.
+You can find my talk here.</description>
+    </item>
     
     <item>
       <title>Podcasts about ML</title>
