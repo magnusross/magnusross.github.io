@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simulation is easy, probability is hard...</title>
-      <link>/posts/montecarlo/</link>
+      <link>/posts/mc/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/montecarlo/</guid>
-      <description>There are many interesting things that can be learned about probabilistic modeling from the world of trading and finance, where, perhaps due to the amount of money the line, attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are The Education of a Speculator by Victor Niederhoffer and Fooled by Randomness by Nassim Nicholas Taleb.</description>
+      <guid>/posts/mc/</guid>
+      <description>There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money, attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are The Education of a Speculator by Victor Niederhoffer and Fooled by Randomness by Nassim Nicholas Taleb.</description>
     </item>
     
     <item>
