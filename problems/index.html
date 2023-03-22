@@ -7,10 +7,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
-1. Winners curse in Bayesian optimisation.  Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 32.2
-Date: 2023-03-14
- Problem
-Take an objective function $f(x)$ with GP prior and i." />
+2. Relationship between the Frobenius norm and singular values in SVD.  Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/problems/" />
@@ -41,10 +38,7 @@ Take an objective function $f(x)$ with GP prior and i." />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Maths problems">
 <meta property="og:description" content="This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
-1. Winners curse in Bayesian optimisation.  Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 32.2
-Date: 2023-03-14
- Problem
-Take an objective function $f(x)$ with GP prior and i." />
+2. Relationship between the Frobenius norm and singular values in SVD.  Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong" />
 <meta property="og:url" content="/problems/" />
 <meta property="og:site_name" content="" />
 
@@ -150,6 +144,41 @@ Take an objective function $f(x)$ with GP prior and i." />
 
   <div class="post-content"><div>
         <p>This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.</p>
+<h1 id="2--relationship-between-the-frobenius-norm-and-singular-values-in-svd">2.  Relationship between the Frobenius norm and singular values in SVD.<a href="#2--relationship-between-the-frobenius-norm-and-singular-values-in-svd" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<p>Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong</p>
+<p>Date: 2023-03-22</p>
+<hr>
+<p><strong>Problem</strong></p>
+<p>Note: I was brushing up on my SVD using the brilliant &ldquo;Mathematics for Machine Learning&rdquo; book, but the exercises listed in the book for SVD were a bit basic, so I decided to try use ChatGPT to generate a question. The problem below is what came out, quite impressive, although there were quite a few errors in the question that I had to fix (e.g the dimensionalities of the matrices).</p>
+<p>Let $A$ be an $m \times n$ with $m\geq n$ matrix with rank $r$, and let its singular value decomposition (SVD) be given by $A = U \Sigma V^T$, where $U$ is an $m \times m$ orthonormal matrix, $\Sigma$ is an $m \times n$ diagonal matrix with non-negative entries $\sigma_1 \geq \sigma_2 \geq \dots \geq \sigma_n &gt; 0$, and $V$ is an $n \times n$ orthonormal matrix. Show that the Frobenius norm of $A$ is equal to the square root of the sum of the squares of the singular values.</p>
+<p><strong>Solution</strong></p>
+<p>The Frobenius norm is given by,</p>
+<p>$$
+||A||^2_F = \sum_{i,j}A^2_{i,j}
+$$
+which we can equivalently write (it is not so hard to show this) as
+$$
+||A||^2_F = \operatorname{tr}(A^\top A).
+$$
+Subbing in the SVD representation of $A$, we get
+\begin{align}
+\operatorname{tr}(A^\top A) &amp;= \operatorname{tr}\left( (U\Sigma V^\top)^\top(U\Sigma V^\top)\right)\\\<br>
+&amp;= \operatorname{tr}\left(V\Sigma^\top U^\top U\Sigma V^\top\right) \\\<br>
+&amp;= \operatorname{tr}\left(V\Sigma^\top \Sigma V^\top\right).
+\end{align}
+We can see by inspection that $\Sigma^\top\Sigma = \operatorname{diag}(\sigma^2_1,  \dots, \sigma^2_n)=\Lambda$. This implies that
+$$
+[V\Lambda V^\top]_{ii} = \sigma_i^2\mathbf{v}^\top_i\mathbf{v}_i = \sigma_i^2,
+$$
+where $\mathbf{v}_i$ is column $i$ of $V$ and the second equality follows from the othonormality of $V$. Putting it all together we get that
+$$
+||A||^2_F = \operatorname{tr}(A^\top A) = \sum_i \sigma_i^2,
+$$
+as required.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
 <h1 id="1--winners-curse-in-bayesian-optimisation">1.  Winners curse in Bayesian optimisation.<a href="#1--winners-curse-in-bayesian-optimisation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <hr>
 <p>Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 32.2</p>
