@@ -7,7 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
-2. Relationship between the Frobenius norm and singular values in SVD.  Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong" />
+3. Converting state misalignment in probabilistic numeric ODE solver to SDE.  Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1
+Date: 2023-04-03" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/problems/" />
@@ -38,7 +39,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Maths problems">
 <meta property="og:description" content="This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
-2. Relationship between the Frobenius norm and singular values in SVD.  Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong" />
+3. Converting state misalignment in probabilistic numeric ODE solver to SDE.  Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1
+Date: 2023-04-03" />
 <meta property="og:url" content="/problems/" />
 <meta property="og:site_name" content="" />
 
@@ -144,6 +146,59 @@
 
   <div class="post-content"><div>
         <p>This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.</p>
+<h1 id="3--converting-state-misalignment-in-probabilistic-numeric-ode-solver-to-sde">3.  Converting state misalignment in probabilistic numeric ODE solver to SDE.<a href="#3--converting-state-misalignment-in-probabilistic-numeric-ode-solver-to-sde" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<p>Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1</p>
+<p>Date: 2023-04-03</p>
+<hr>
+<p>It is only the third week and I have already failed to manage my goal of posting one solution per week, not a good sign for the future&hellip; In my defense, I was busy last week attending the <a href="https://www.probnumschool.org/pages/home.html">Probabilistic Numerics Spring School</a>, at which I learned lots about probabilistic ODE solvers, on which this weeks late question is based.</p>
+<p>Probabilistic ODE solvers work by placing a Markovian GP prior (usually the $q$-times integrated Wiener process) over the solution, given this prior, we then condition on the fact samples of this GP must solve the ODE at a given set of time steps, that is to say the derivatives of the GP prior must match the derivative function of the ODE. We can infer the solution to the ODE by using filtering and smoothing techniques from signal processing. In this question, the task is to form an SDE for the state misalignment, i.e the difference between the derivatives of the prior and the ODE derivative function. It is interesting to note that we can also condition on other properties of the system, for example, conditioning on energy conservation in a Hamiltonian system leads to a symplectic solver, see <a href="https://proceedings.mlr.press/v151/bosch22a.html">here</a> for details. The whole idea is fascinating and deserves a look if you have never come across it.</p>
+<p><strong>Problem</strong></p>
+<p>We take our prior to be the SDE
+$$
+dX(t)=FX(t)dt + Ld\omega,
+$$
+with $X \in\mathbb{R}^{D}$, $F,L\in\mathbb{R}^{D \times D}$ and $d\omega \in\mathbb{R}^{D}$ being an increment of the Wiener process with diffusion $Q\in\mathbb{R}^{D \times D}$. We also have two projection matrices which allow us to obtain the parts of the SDE prior that represent ODE state, and ODE state derivative,
+$$
+\mathbf x(t) = H_0X(t), \qquad \mathbf x'(t) = HX(t).
+$$
+with $H,H_0\in\mathbb{R}^{d \times D}$ where $d$ is our ODE dimension. The state misalignment is given by
+$$
+Z(t) = \phi(X(t))=HX(t) - f(H_0X(t)).
+$$
+where $f: \mathbb{R}^D \mapsto \mathbb{R}^D$ is our ODE derivative function and $Z(t)\in\mathbb{R}^d$ is called the observation process, and is given by another SDE. Our task is to find an expression for this SDE and state under which conditions it is Gaussian process.</p>
+<p><strong>Solution</strong></p>
+<p>The Itô formula for transformations of SDEs by scalar funtion $g(X(t))$ is given by
+$$
+dg = (\nabla g) dX + \frac{1}{2}\operatorname{tr}[(\nabla^\top \nabla g) dXdX^\top].
+$$</p>
+<p>(Note: here I have used the gradient as row vector) We need to use this to compute the the transformation represented by the state misalignment, which is a vector function. Fortunately, the Itô formula applies to each componnt, so
+$$
+d\phi_i = (\nabla \phi_i) dX + \frac{1}{2}\operatorname{tr}[(\nabla^\top \nabla \phi_i) dXdX^\top].
+$$
+with
+$$
+\phi_i = \sum_j H_{i,j} X_j + f_i(H_0 X).
+$$
+We now need to compute the Jacobian and the Hessian given in the formula. This took me a long time as my vector calculus is a little rusty, and I am not 100% sure I have the correct answer but I got them to be,
+$$
+\nabla \phi_i = H_{i,-} + \nabla f_i(H_0 X)H_0^\top
+$$
+where $\nabla f_i$ is the Jacobian of $f$ for output $i$ and $H_{i,-}\in \mathbb{R}^D$ is the $i$-th column of $H$, and for the Hessain,</p>
+<p>$$
+\nabla^\top\nabla \phi_i = H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top
+$$
+where $\nabla^\top\nabla f_i$ is the Hessian of $f$ for output $i$. We also need that
+\begin{align}
+dXdX^\top &amp;= (FX(t)dt + Ld\omega)(FX(t)dt + Ld\omega)^\top \\\<br>
+&amp;=LQL^\top dt
+\end{align}
+where we use the combination rules for mixed differentials given in the <a href="https://en.wikipedia.org/wiki/It%C3%B4%27s_lemma">Itô formula</a>. Subbing all this into the formula and collecting terms, we obtain the SDEs,
+\begin{align}
+d\phi_i = &amp;\left(H_{i,-}FX(t) + \nabla f_i(H_0 X)H_0^\top X(t) + \frac{1}{2}\operatorname{tr}(H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top LQL^\top)\right)dt \\\<br>
+&amp;+ (H_{i,-}+ \nabla f_i(H_0 X)H_0^\top)Ld\omega
+\end{align}
+which can then be simulated to give the observation process. This SDE will be a GP when $f$ is linear, since GP representations of SDEs do not have multiplicative noise (see <a href="https://users.aalto.fi/~asolin/sde-book/sde-book.pdf">Särkkä and Solin book</a>, 6.1), so we require that the gradient of $f$ be independent of $X$ which is only true when we have a linear derivative function.</p>
 <h1 id="2--relationship-between-the-frobenius-norm-and-singular-values-in-svd">2.  Relationship between the Frobenius norm and singular values in SVD.<a href="#2--relationship-between-the-frobenius-norm-and-singular-values-in-svd" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <hr>
 <p>Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong</p>
