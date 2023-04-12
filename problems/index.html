@@ -7,8 +7,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
-3. Converting state misalignment in probabilistic numeric ODE solver to SDE.  Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1
-Date: 2023-04-03" />
+4. Mercer theorem measure and RKHS norm.  Source: Gaussian Processes for Machine Learning by Rasmussen and Williams, Ex. 6.7.1
+Date: 2023-04-12
+ This problem from the GPML book relates to the effect of the choice of measure when using Mercer&amp;rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/problems/" />
@@ -39,8 +40,9 @@ Date: 2023-04-03" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Maths problems">
 <meta property="og:description" content="This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
-3. Converting state misalignment in probabilistic numeric ODE solver to SDE.  Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1
-Date: 2023-04-03" />
+4. Mercer theorem measure and RKHS norm.  Source: Gaussian Processes for Machine Learning by Rasmussen and Williams, Ex. 6.7.1
+Date: 2023-04-12
+ This problem from the GPML book relates to the effect of the choice of measure when using Mercer&amp;rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel." />
 <meta property="og:url" content="/problems/" />
 <meta property="og:site_name" content="" />
 
@@ -146,6 +148,27 @@ Date: 2023-04-03" />
 
   <div class="post-content"><div>
         <p>This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.</p>
+<h1 id="4-mercer-theorem-measure-and-rkhs-norm">4. Mercer theorem measure and RKHS norm.<a href="#4-mercer-theorem-measure-and-rkhs-norm" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<p>Source: Gaussian Processes for Machine Learning by Rasmussen and Williams, Ex. 6.7.1</p>
+<p>Date: 2023-04-12</p>
+<hr>
+<p>This problem from the GPML book relates to the effect of the choice of measure when using Mercer&rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel. In the problem we show that in the finite dimensional case (this also applies in the $\infty$ dimensions case but it is then harder to show), the RKHS norm is independent of the measure chosen. This is interesting to me because when first learning about Mercer&rsquo;s theorem, I was confused by how the measure the eigenfunctions are computed w.r.t is chosen when using the theorem in practice. This question shows that in for some important applications, the measure doesn&rsquo;t matter.</p>
+<p><strong>Problem</strong></p>
+<p>We motivate the fact that the RKHS norm does not depend on the density $p(x)$ using a finite-dimensional analogue. Consider the n-dimensional vector $\mathbf f$, and let the $n \times n$ matrix $\Phi$ be comprised of non-colinear columns $\phi_1,\dots, \phi_n$. Then $\mathbf f$ can be expressed as a linear combination of these basis vectors $\mathbf f = \sum^n_{i=1} c_i\phi_i = \Phi \mathbf c$ for some coefficients $\{c_i\}$. Let the $\phi$s be eigenvectors of the covariance matrix $K$ w.r.t. a diagonal matrix $P$ with non-negative entries, so that $KP \Phi = \Phi\Lambda$, where $\Lambda$ is a diagonal matrix containing the eigenvalues. Note that $\Phi^\top P\Phi = I$. Show that $\sum^n_{i=1}c^2_i/\lambda_i=\mathbf c^\top\Lambda^{-1}\mathbf c=\mathbf f^\top K^{-1} \mathbf f$, and thus observe that $\mathbf f^\top K^{-1} \mathbf f$ can be expressed as  $ \mathbf c^\top\Lambda\mathbf c$ for any valid $P$ and corresponding $\Phi$. (Note the matrix $P$ here represents the measure.)</p>
+<p><strong>Solution</strong></p>
+<p>This solution is a bit strange as I got stuck and this is the only way I could think to do it, I am sure there is a better way. First using that $\Phi^\top P\Phi = I$ we can see that,
+$$
+KP\Phi=\Phi\Lambda \implies \Phi^\top PKP\Phi=\Lambda.
+$$
+We can then write
+\begin{align}
+\mathbf c^\top \Lambda^{-1} \mathbf c &amp;= \mathbf c^\top (\Phi^\top PKP\Phi)^{-1} \mathbf c \\\<br>
+&amp;= \mathbf c^\top \Phi^{-1}P^{-1}K^{-1}P^{-1}\Phi^{-\top} \mathbf c \\\<br>
+&amp;= \mathbf c^\top \Phi^\top P P^{-1}K^{-1}P^{-1} P \Phi \mathbf c \\\<br>
+&amp;=\mathbf f^{\top} K^{-1} \mathbf f
+\end{align}
+as required, where on the second to last line we have twice used the fact that $\Phi^{-1}=\Phi^\top P$.</p>
 <h1 id="3--converting-state-misalignment-in-probabilistic-numeric-ode-solver-to-sde">3.  Converting state misalignment in probabilistic numeric ODE solver to SDE.<a href="#3--converting-state-misalignment-in-probabilistic-numeric-ode-solver-to-sde" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <hr>
 <p>Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1</p>
