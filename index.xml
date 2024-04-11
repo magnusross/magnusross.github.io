@@ -82,9 +82,10 @@ Outside of work I like to go running, play music, and look after my plants.</des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/problems/</guid>
-      <description>This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve. I am trying to post 1 per week starting from 2023-03 in an attempt to motivate myself to keep my maths skills sharp.
+      <description>This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve.
 6. Expectation maximization for mixture of linear experts.  Source: Probabilistic machine learning: an introduction by Kevin P. Murphy, Ex. 11.6
-Date: 2023-06-19</description>
+Date: 2023-06-19
+ The EM algorithm for me is one of those things that I feel I should know back to front, since it&amp;rsquo;s a pretty foundational algorithm in probabilistic ML.</description>
     </item>
     
   </channel>
