@@ -1,92 +1,103 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>Home on Magnus Ross</title>
     <link>/</link>
-    <description>Recent content on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Home on Magnus Ross</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expectation maximization for mixture of linear experts</title>
+      <link>/posts/em_problem/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>/posts/em_problem/</guid>
+      <description>&lt;p&gt;The EM algorithm for me is one of those things that I feel I should know back to front, since it&amp;rsquo;s a pretty foundational algorithm in probabilistic ML. Unfortunately though I&amp;rsquo;ve never actually used it explicitly in a model I have built, despite reading about it in various textbooks, so I never properly got to grips with it. If you feel the same way, then hopefully this question will help. It&amp;rsquo;s from the new Murphy book, which is a fantastic reference. So much for sticking to a problem a week, hopefully it won&amp;rsquo;t be such a long gap to the next one!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributions of quotients of uniform RVs</title>
+      <link>/posts/rvquotients_problem/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>/posts/rvquotients_problem/</guid>
+      <description>&lt;p&gt;This is a nice problem from the book &amp;ldquo;Cut the knot&amp;rdquo;, which is a compilation of probability riddles and brain teasers. I like the book because many of the problems are about intuitive reasoning, and don&amp;rsquo;t really involve that much technical knowledge of probability theory, so they can be fun to do with people who don&amp;rsquo;t have a formal maths background. Each problem can also generally be solved many different ways, so it&amp;rsquo;s fun to compare solutions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mercer theorem measure and RKHS norm</title>
+      <link>/posts/mercerrkhs_problem/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>/posts/mercerrkhs_problem/</guid>
+      <description>&lt;p&gt;This problem from the GPML book relates to the effect of the choice of measure when using Mercer&amp;rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel. In the problem we show that in the finite dimensional case (this also applies in the \( \infty \) dimensions case but it is then harder to show), the RKHS norm is independent of the measure chosen. This is interesting to me because when first learning about Mercer&amp;rsquo;s theorem, I was confused by how the measure the eigenfunctions are computed w.r.t is chosen when using the theorem in practice. This question shows that in for some important applications, the measure doesn&amp;rsquo;t matter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Converting state misalignment in probabilistic numeric ODE solver to SDE.</title>
+      <link>/posts/pn_solver_problem/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>/posts/pn_solver_problem/</guid>
+      <description>&lt;p&gt;It is only the third week and I have already failed to manage my goal of posting one solution per week, not a good sign for the future&amp;hellip; In my defense, I was busy last week attending the &lt;a href=&#34;https://www.probnumschool.org/pages/home.html&#34;&gt;Probabilistic Numerics Spring School&lt;/a&gt;, at which I learned lots about probabilistic ODE solvers, on which this weeks late question is based.&lt;/p&gt;&#xA;&lt;p&gt;Probabilistic ODE solvers work by placing a Markovian GP prior (usually the \( q \)-times integrated Wiener process) over the solution, given this prior, we then condition on the fact samples of this GP must solve the ODE at a given set of time steps, that is to say the derivatives of the GP prior must match the derivative function of the ODE. We can infer the solution to the ODE by using filtering and smoothing techniques from signal processing. In this question, the task is to form an SDE for the state misalignment, i.e the difference between the derivatives of the prior and the ODE derivative function. It is interesting to note that we can also condition on other properties of the system, for example, conditioning on energy conservation in a Hamiltonian system leads to a symplectic solver, see &lt;a href=&#34;https://proceedings.mlr.press/v151/bosch22a.html&#34;&gt;here&lt;/a&gt; for details. The whole idea is fascinating and deserves a look if you have never come across it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Relationship between the Frobenius norm and singular values in SVD</title>
+      <link>/posts/frobeniusnorm_problem/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/posts/frobeniusnorm_problem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Note: I was brushing up on my SVD using the brilliant &amp;ldquo;Mathematics for Machine Learning&amp;rdquo; book, but the exercises listed in the book for SVD were a bit basic, so I decided to try use ChatGPT to generate a question. The problem below is what came out, quite impressive, although there were quite a few errors in the question that I had to fix (e.g the dimensionalities of the matrices).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>New paper: Learning Energy Conserving Dynamics Efficiently with Hamiltonian Gaussian Processess</title>
       <link>/posts/paper2/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>/posts/paper2/</guid>
-      <description>I spent the summer of 2022 visiting Markus Heinonen at Aalto University in Finland. Together we worked on energy conserving GP models, and I am happy to say our paper on the work was recently accepted to TMLR. Check out the paper, the code, or some visualizations.
-We place a GP prior over the Hamiltonian and, using a set of inducing points, map function samples through Hamilton&#39;s equations to obtain system derivative samples, to which we apply ODE solver to obtain sample trajectories.</description>
+      <description>&lt;p&gt;I spent the summer of 2022 visiting &lt;a href=&#34;https://users.aalto.fi/~heinom10/&#34;&gt;Markus Heinonen&lt;/a&gt; at Aalto University in Finland. Together we worked on energy conserving GP models, and I am happy to say our paper on the work was recently accepted to TMLR. Check out &lt;a href=&#34;https://openreview.net/pdf?id=DHEZuKStzH&#34;&gt;the paper&lt;/a&gt;, &lt;a href=&#34;https://github.com/magnusross/hgp&#34;&gt;the code&lt;/a&gt;, or some &lt;a href=&#34;https://magnusross.github.io/HamiltonianGPs/&#34;&gt;visualizations&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;/../../fig1.png&#34;&#xA;    alt=&#34;Figure 1 from the paper.&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;We place a GP prior over the Hamiltonian and, using a set of inducing points, map function samples through Hamilton&amp;rsquo;s equations to obtain system derivative samples, to which we apply ODE solver to obtain sample trajectories. Shading represents model uncertainty.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Winners curse in Bayesian optimisation</title>
+      <link>/posts/winnerscurse_problem/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/posts/winnerscurse_problem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take an objective function \( f(x) \) with GP prior and i.i.d. Gaussian noise with variance \( \sigma^2 \), so \( y_i = f(x_i) + \epsilon_i \) with \( \epsilon_i \sim \mathcal{N}(0, \sigma^2) \). Assume two locations \( x_1, x_2 \) are sufficiently separated that their function values \( f(x_1) \) and \( f(x_2) \) are independent. Compute the posterior \( p(\epsilon_1-\epsilon_2|y_1, y_2) \) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>New paper: Learning Nonparametric Volterra Kernels with Gaussian Processes</title>
       <link>/posts/paper1/</link>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>/posts/paper1/</guid>
-      <description>Update: This paper was published at NeurIPS 2021 check out the final version or my presentation.
-This work, with Mauricio Alvarez and Mike Smith, has been the main focus of the first year of my PhD, check it out on arXiv.
-The sampling process for the model described in the paper, which is a non-parametric, and can represent data generated by non-linear operators.  There will be a blog post explaining the key ideas coming soon!</description>
+      <description>&lt;p&gt;&lt;strong&gt;Update: This paper was published at NeurIPS 2021 check &lt;a href=&#34;https://proceedings.neurips.cc/paper/2021/file/ca5fbbbddd0c0ff6c01f782c60c9d1b5-Paper.pdf&#34;&gt;out the final version&lt;/a&gt; or my &lt;a href=&#34;https://neurips.cc/virtual/2021/poster/26977&#34;&gt;presentation&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This work, with Mauricio Alvarez and Mike Smith, has been the main focus of the first year of my PhD, check it out &lt;a href=&#34;https://arxiv.org/abs/2106.05582&#34;&gt;on arXiv&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;/../../daig_new.svg&#34;&#xA;    alt=&#34;Cool diagram!&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;The sampling process for the model described in the paper, which is a non-parametric, and can represent data generated by non-linear operators.&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;There will be a blog post explaining the key ideas coming soon!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simulation is easy, probability is hard...</title>
-      <link>/posts/mc/</link>
+      <link>/posts/another-note/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/mc/</guid>
-      <description>There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money, attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are The Education of a Speculator by Victor Niederhoffer and Fooled by Randomness by Nassim Nicholas Taleb.</description>
+      <guid>/posts/another-note/</guid>
+      <description>&lt;p&gt;There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money,  attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are &lt;em&gt;The Education of a Speculator&lt;/em&gt; by Victor Niederhoffer and &lt;em&gt;Fooled by Randomness&lt;/em&gt; by Nassim Nicholas Taleb. The books are similar in many ways, both contain plenty of interesting insights into thinking probabilistically, as well as a number of cautionary tales of modelling gone wrong.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; In &lt;em&gt;Fooled by Randomness&lt;/em&gt;, Taleb talks a lot about the power of simulation for probabilistic models, and how modern computers, using what he calls his &amp;ldquo;Monte Carlo Engine&amp;rdquo;, allow us to get answers from complex models that previously would have been impossible, or at least very time consuming, to solve analytically. This was fresh in my mind when I read the following passage from chapter 8 of &lt;em&gt;The Education of a Speculator&lt;/em&gt; about the well known gambler&amp;rsquo;s ruin problem:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Talk at 3rd Sheffield Workshop on Structural Dynamics</title>
       <link>/posts/talk1/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
-      
       <guid>/posts/talk1/</guid>
-      <description>Near the end of last year I had the privilege of being invited at the 3rd Sheffield Workshop on Structural Dynamics. I spoke for 15 minutes about some work I have been doing on the application of Gaussian processes to the non-parametric learning of Volterra kernel functions. The event as a whole was super interesting, and I would fully recommend the other talks.
-You can find my talk here.</description>
+      <description>&lt;p&gt;Near the end of last year I had the privilege of being invited at the &lt;a href=&#34;https://acoustics.ac.uk/events/3rd-sheffield-workshop-on-structural-dynamics/&#34;&gt;3rd Sheffield Workshop on Structural Dynamics&lt;/a&gt;. I spoke for 15 minutes about some work I have been doing on the application of Gaussian processes to the non-parametric learning of Volterra kernel functions. The event as a whole was super interesting, and I would fully recommend &lt;a href=&#34;https://lvv.ac.uk/lvv-events/Recordings-3rd-sheffield-workshop-on-structural-dynamics&#34;&gt;the other talks&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can find my talk &lt;a href=&#34;https://drive.google.com/file/d/13qkJsKXFxvXuFLYLNP8qRzVQMuun-kuL/view&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Podcasts about ML</title>
       <link>/posts/podcasts/</link>
       <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>/posts/podcasts/</guid>
-      <description>There are a lot of podcasts out there, and this includes loads that are related to machine learning in some way. Over the summer I&amp;rsquo;ve worked my way through a fair few of them, so I thought I&amp;rsquo;d compile a list of my favorites. There are a couple of lists like this out there already, but most of them are out of date, either they include podcasts that are now inactive, or leave out ones that have started recently.</description>
+      <description>&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of podcasts out there, and this includes loads that are related to machine learning in some way. Over the summer I&amp;rsquo;ve worked my way through a fair few of them, so I thought I&amp;rsquo;d compile a list of my favorites. There are a couple of lists like this out there already, but most of them are out of date, either they include podcasts that are now inactive, or leave out ones that have started recently. I&amp;rsquo;m going to roughly work from the ones that I have listened to more, to the ones that I started recently. They&amp;rsquo;re not all strictly about ML but are in the general ML/AI/data science/statistics area. Happy listening!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lagrangians with PyTorch Part #1</title>
       <link>/posts/l1/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>/posts/l1/</guid>
-      <description>(Note: This series of posts is closely related to and inspired by this paper from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant blog post about the work which I would encourage you to read)
-I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree.</description>
+      <description>&lt;p&gt;&lt;em&gt;(Note: This series of posts is closely related to and inspired by &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;this paper&lt;/a&gt; from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant &lt;a href=&#34;https://greydanus.github.io/2020/03/10/lagrangian-nns/&#34;&gt;blog post&lt;/a&gt; about the work which I would encourage you to read)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree. We will get into the reasons for this shortly, but needless to say, when I heard that Lagrangians were being used with neural networks to learn physics I could not have clicked the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;arXiv link&lt;/a&gt; faster. In this series of posts I will give a brief introduction to what Lagrangian mechanics is all about, why the concepts are so important in physics, and how we can use them to solve a cool problem involving both a pendulum &lt;strong&gt;and&lt;/strong&gt; a spring at once (!). We&amp;rsquo;ll then see how we can use PyTorch to save ourselves the effort of calculating a load of derivatives by hand. Finally we&amp;rsquo;ll tie it all together to learn a Lagrangian from some data using a neural network, and see how we get superior performance by making the model aware of the physics of the situation. Lots to do, so let&amp;rsquo;s get started!&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>About Me</title>
+      <title>Magnus Ross</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/about/</guid>
-      <description>Hi! I&amp;rsquo;m Magnus, this is my website, where I will hopefully write about things I find interesting. I am third year PhD student at the University of Manchester, working with Mauricio Alvarez on integrating physical information into Gaussian process models. I am interested in many different areas of machine learning, but in particular I enjoy those that have some connection to physics (fortunately there are many!).
-Outside of work I like to go running, play music, and look after my plants.</description>
+      <description>&lt;p&gt;Hi! I&amp;rsquo;m Magnus, this is my website, hopefully you will find something interesting here. I am currently a postdoctoral research fellow based in the AI Center at UCL. I&amp;rsquo;m interested in forecasting, uncertainty quantification, and probabilitic ML in general. I am also working on using ML to help combat antimicrobial resistance, as part of the &lt;a href=&#34;https://www.digitalamr.org&#34;&gt;Digital Health Hub for AMR&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Previously, I did my PhD at the University of Manchester working with &lt;a href=&#34;https://maalvarezl.github.io&#34;&gt;Mauricio Alvarez&lt;/a&gt; on integrating physical information into Gaussian process models. You can find my thesis &lt;a href=&#34;https://research.manchester.ac.uk/en/studentTheses/advances-in-physics-informed-gaussian-process-regression&#34;&gt;here&lt;/a&gt;. For a time I worked for the dark side (a trading firm), building forecasting models for trading power and other energy commodities.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>Maths problems</title>
-      <link>/problems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/problems/</guid>
-      <description>This is a list of maths problems (from textbooks, lecture notes etc.) that I have been looking at and have found interesting to solve.
-6. Expectation maximization for mixture of linear experts.  Source: Probabilistic machine learning: an introduction by Kevin P. Murphy, Ex. 11.6
-Date: 2023-06-19
- The EM algorithm for me is one of those things that I feel I should know back to front, since it&amp;rsquo;s a pretty foundational algorithm in probabilistic ML.</description>
-    </item>
-    
   </channel>
 </rss>

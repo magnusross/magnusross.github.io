@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media on Magnus Ross</title>
+    <link>/tags/media/</link>
+    <description>Recent content in Media on Magnus Ross</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podcasts about ML</title>
+      <link>/posts/podcasts/</link>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/posts/podcasts/</guid>
+      <description>&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of podcasts out there, and this includes loads that are related to machine learning in some way. Over the summer I&amp;rsquo;ve worked my way through a fair few of them, so I thought I&amp;rsquo;d compile a list of my favorites. There are a couple of lists like this out there already, but most of them are out of date, either they include podcasts that are now inactive, or leave out ones that have started recently. I&amp;rsquo;m going to roughly work from the ones that I have listened to more, to the ones that I started recently. They&amp;rsquo;re not all strictly about ML but are in the general ML/AI/data science/statistics area. Happy listening!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
