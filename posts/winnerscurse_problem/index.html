@@ -33,39 +33,34 @@
 
 <main>
 <p><strong>Problem</strong></p>
-<p>Take an objective function \( f(x) \) with GP prior and i.i.d. Gaussian noise with variance \( \sigma^2 \), so \( y_i = f(x_i) + \epsilon_i \) with \( \epsilon_i \sim \mathcal{N}(0, \sigma^2) \). Assume two locations \( x_1, x_2 \) are sufficiently separated that their function values \( f(x_1) \) and \( f(x_2) \) are independent. Compute the posterior \( p(\epsilon_1-\epsilon_2|y_1, y_2) \) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.</p>
+<p>Take an objective function ( f(x) ) with GP prior and i.i.d. Gaussian noise with variance ( \sigma^2 ), so ( y_i = f(x_i) + \epsilon_i ) with ( \epsilon_i \sim \mathcal{N}(0, \sigma^2) ). Assume two locations ( x_1, x_2 ) are sufficiently separated that their function values ( f(x_1) ) and ( f(x_2) ) are independent. Compute the posterior ( p(\epsilon_1-\epsilon_2|y_1, y_2) ) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.</p>
 <p>Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 32.2</p>
 <p><strong>Solution</strong></p>
-<p>First we need to compute \( p(\epsilon_i| y_i) \), which we can do using Bayes rule,
-</p>
+<p>First we need to compute ( p(\epsilon_i| y_i) ), which we can do using Bayes rule,
 $$
 p(\epsilon_i| y_i) = \frac{p(y_i| \epsilon_i)p(\epsilon_i)}{p(y_i)}
-$$<p>
-we have that \( p(\epsilon_i) = \mathcal{N}(\epsilon_i; 0, \sigma^2) \), and that \( p(y_i| \epsilon_i) =  \mathcal{N}(y_i; \epsilon_i, \sigma_f^2) \) where we have assumed that the prior over \( f \) has 0 mean, and variance \( \sigma_f^2 \). So we have,
-</p>
+$$
+we have that ( p(\epsilon_i) = \mathcal{N}(\epsilon_i; 0, \sigma^2) ), and that ( p(y_i| \epsilon_i) =  \mathcal{N}(y_i; \epsilon_i, \sigma_f^2) ) where we have assumed that the prior over ( f ) has 0 mean, and variance ( \sigma_f^2 ). So we have,
 $$
 p(\epsilon_i| y_i) \propto \mathcal{N}(y_i; \epsilon_i, \sigma_f^2)\mathcal{N}(\epsilon_i; 0, \sigma^2)
-$$<p>
+$$
 which we can identify as a product of Gaussian PDFs. This results in another Gaussian PDF, see e.g <a href="http://www.lucamartino.altervista.org/2003-003.pdf">these notes</a>,
-</p>
 $$
 p(\epsilon_i| y_i) = \mathcal{N}(\epsilon_i; \mu_{\epsilon_i}, \sigma^2_{\epsilon_i}),
-$$<p>
+$$
 where
 \begin{align}
-\mu_{\epsilon_i} &amp;= \frac{y_i\sigma^2}{\sigma^2 + \sigma_f^2}, \\\
+\mu_{\epsilon_i} &amp;= \frac{y_i\sigma^2}{\sigma^2 + \sigma_f^2}, \\\<br>
 \sigma^2_{\epsilon_i} &amp;= \frac{\sigma_f^2\sigma^2}{\sigma^2 + \sigma_f^2}.
 \end{align}
 We can see here that the variance is independent of data. Now we have computed the posterior of the noise given the data, we can compute the posterior of the difference between the noises given the data. Since the function values at the input points are independent then the posterior over the difference is just the difference of independent Gaussian random variables, in which case we simply subtract the means and sum the variances, to give
-</p>
 $$
 p(\epsilon_1 - \epsilon_2=\Delta| y_1, y_2) = \mathcal{N}\left(\Delta; \frac{\sigma^2}{\sigma^2 + \sigma_f^2}(y_1-y_2), 2\sigma^2_{\epsilon}\right).
-$$<p>
-The key point here is that the mean of this distribution depends on the difference between the data values. So
-</p>
 $$
-y_1>y_2 \implies \mathbb{E}[\epsilon_1 - \epsilon_2]> 0 \implies \mathbb{E}[\epsilon_1] > \mathbb{E}[\epsilon_2].
-$$<p>
+The key point here is that the mean of this distribution depends on the difference between the data values. So
+$$
+y_1&gt;y_2 \implies \mathbb{E}[\epsilon_1 - \epsilon_2]&gt; 0 \implies \mathbb{E}[\epsilon_1] &gt; \mathbb{E}[\epsilon_2].
+$$
 If we assume that the values are lower that the prior mean (i.e. 0), which is to be expected, then we expect the noise for the lower point to be a larger (absolute) value. This is the winners curse described in the book.</p>
 
 </main>

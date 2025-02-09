@@ -4,58 +4,89 @@
     <title>Tags on Magnus Ross</title>
     <link>/tags/</link>
     <description>Recent content in Tags on Magnus Ross</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Time Series</title>
+      <title>Book review</title>
+      <link>/tags/book-review/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/book-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trading</title>
+      <link>/tags/trading/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/trading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time series</title>
       <link>/tags/time-series/</link>
       <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
+      
       <guid>/tags/time-series/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Exercise</title>
       <link>/tags/exercise/</link>
       <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      
       <guid>/tags/exercise/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Probabilty</title>
       <link>/tags/probabilty/</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      
       <guid>/tags/probabilty/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Personal</title>
       <link>/tags/personal/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
       <guid>/tags/personal/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Media</title>
       <link>/tags/media/</link>
       <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      
       <guid>/tags/media/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Deep Learning</title>
+      <title>Deep learning</title>
       <link>/tags/deep-learning/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
       <guid>/tags/deep-learning/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Physics</title>
       <link>/tags/physics/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
       <guid>/tags/physics/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

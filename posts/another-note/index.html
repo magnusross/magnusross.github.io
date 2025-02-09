@@ -34,13 +34,13 @@
 <main>
 <p>There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money,  attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are <em>The Education of a Speculator</em> by Victor Niederhoffer and <em>Fooled by Randomness</em> by Nassim Nicholas Taleb. The books are similar in many ways, both contain plenty of interesting insights into thinking probabilistically, as well as a number of cautionary tales of modelling gone wrong.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> In <em>Fooled by Randomness</em>, Taleb talks a lot about the power of simulation for probabilistic models, and how modern computers, using what he calls his &ldquo;Monte Carlo Engine&rdquo;, allow us to get answers from complex models that previously would have been impossible, or at least very time consuming, to solve analytically. This was fresh in my mind when I read the following passage from chapter 8 of <em>The Education of a Speculator</em> about the well known gambler&rsquo;s ruin problem:</p>
 <blockquote>
-<p>A speculator with initial capital \( C \) plays a game with a casino: he wins \( £1 \) each play with probability \( P \) or loses \(  £1 \) with probability \( Q=1-P \), the speculator stays in the game until his capital reaches \( A \) or depreciates to \( 0 \). It can be shown that in such a game, the speculators probability of ruin is, </p>
-$$ \frac{(Q/P)^A-(Q/P)^C}{(Q/P)^A-1}$$</blockquote>
+<p>A speculator with initial capital ( C ) plays a game with a casino: he wins ( £1 ) each play with probability ( P ) or loses (  £1 ) with probability ( Q=1-P ), the speculator stays in the game until his capital reaches ( A ) or depreciates to ( 0 ). It can be shown that in such a game, the speculators probability of ruin is, $$ \frac{(Q/P)^A-(Q/P)^C}{(Q/P)^A-1}$$</p>
+</blockquote>
 <p>This is a very good example a problem which can be solved easily with the &ldquo;Monte Carlo Engine&rdquo;, or simulation in plainer language, but is actually quite difficult to solve analytically. In this post we&rsquo;re going to derive the formula for the probability of ruin above analytically, and calculate the probability using simulation and hopefully along the way we&rsquo;ll get a feel for the advantages and disadvantages of both methods.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <h2 id="simulation">Simulation</h2>
-<p>The idea behind simulation is really simple, to work out the probability that our gambler will be ruined, all we need to do is run a bunch of games in our imaginary casino, and work out the proportion of games in which the gambler loses, this then becomes our answer for the probability of ruin. We can think of each of these games as a sort of parallel universe, each is possible and distinct from the next, and taken as a whole they represent every possible situation our gambler could go through. Now you might be thinking, hang on, are there not an extremely large number (an infinite number even) of possible games? Could the gambler not keep on playing indefinitely if the correct combination of wins and losses arise such that the balance never goes higher than \( A \), or lower than \( 0 \)? How are we going to simulate all of the games? The answer is that we aren&rsquo;t, because this would take an infinitely long time, and so unfortunately we will never get the answer for the probability exactly correct, but we will be able to get pretty close in quite a short time. When we simulate things randomly, games that are more probable, and so contribute more to our final answer, are likely to occur even in a small number of simulations. Improbable games, such as very long games, are unlikely to occur in our simulation, this isn&rsquo;t a problem though  because they naturally don&rsquo;t contribute much to the final answer, so the error associated with not including them in our proportion will be small.</p>
-<p>So how do we actually do the simulating? We just need to have some code that can produce randomly 1 (representing the gambler winning a play) with probability \( P \) or 0 (representing the gambler losing a play) with
-probability \( Q \). Then we add or subtract \( £1 \) from the gamblers balance accordingly, we keep doing this until the balance reaches \( A \), in which case we note down a win for the gambler, or \( 0 \), where we note down a loss. All we have to do then to calculate the probability is tally up all the games the gambler lost, and then divide by the total number of games we simulated to get our estimate. The following Python code will do this for us:</p>
+<p>The idea behind simulation is really simple, to work out the probability that our gambler will be ruined, all we need to do is run a bunch of games in our imaginary casino, and work out the proportion of games in which the gambler loses, this then becomes our answer for the probability of ruin. We can think of each of these games as a sort of parallel universe, each is possible and distinct from the next, and taken as a whole they represent every possible situation our gambler could go through. Now you might be thinking, hang on, are there not an extremely large number (an infinite number even) of possible games? Could the gambler not keep on playing indefinitely if the correct combination of wins and losses arise such that the balance never goes higher than ( A ), or lower than ( 0 )? How are we going to simulate all of the games? The answer is that we aren&rsquo;t, because this would take an infinitely long time, and so unfortunately we will never get the answer for the probability exactly correct, but we will be able to get pretty close in quite a short time. When we simulate things randomly, games that are more probable, and so contribute more to our final answer, are likely to occur even in a small number of simulations. Improbable games, such as very long games, are unlikely to occur in our simulation, this isn&rsquo;t a problem though  because they naturally don&rsquo;t contribute much to the final answer, so the error associated with not including them in our proportion will be small.</p>
+<p>So how do we actually do the simulating? We just need to have some code that can produce randomly 1 (representing the gambler winning a play) with probability ( P ) or 0 (representing the gambler losing a play) with
+probability ( Q ). Then we add or subtract ( £1 ) from the gamblers balance accordingly, we keep doing this until the balance reaches ( A ), in which case we note down a win for the gambler, or ( 0 ), where we note down a loss. All we have to do then to calculate the probability is tally up all the games the gambler lost, and then divide by the total number of games we simulated to get our estimate. The following Python code will do this for us:</p>
 <pre><code class="language-python">from scipy.stats import bernoulli
 
 def simulate_game(P, C, A):    
@@ -71,63 +71,71 @@ def simulated_probability(P, C, A, N=500):
 
 print(f&quot;Probabilty of ruin: {simulated_probability(0.6, 5, 10)}&quot;)
 </code></pre>
-<p>Note the Bernoulli function here just produces a 1 with probability \( P \), and a zero with probability \( Q=1-P \) like we needed. It really is that simple! Before we look at the properties of the answers our code gives, let&rsquo;s solve the problem analytically as well.</p>
+<p>Note the Bernoulli function here just produces a 1 with probability ( P ), and a zero with probability ( Q=1-P ) like we needed. It really is that simple! Before we look at the properties of the answers our code gives, let&rsquo;s solve the problem analytically as well.</p>
 <h2 id="analytical-solution">Analytical Solution</h2>
 <p><em>(This section is going to be a bit more maths heavy, so if that&rsquo;s not your thing then feel free to skim/skip.)</em></p>
-<p>Like a lot of problems in probability, at first glance it doesn&rsquo;t look too bad. Unfortunately it&rsquo;s kind of hard to know where to start because of the limitless number of different games that are possible. To get going we need to use a bit of a trick.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> Let&rsquo;s say the probability of winning the game when we start with capital \( i \) is \( P_i \) (taking \( i \) to be an integer). The two possibilities for the first play of the game are:</p>
+<p>Like a lot of problems in probability, at first glance it doesn&rsquo;t look too bad. Unfortunately it&rsquo;s kind of hard to know where to start because of the limitless number of different games that are possible. To get going we need to use a bit of a trick.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> Let&rsquo;s say the probability of winning the game when we start with capital ( i ) is ( P_i ) (taking ( i ) to be an integer). The two possibilities for the first play of the game are:</p>
 <ol>
-<li>The gambler wins the first play with probability \( p \) and ends up with capital \( i+1 \), the probability of going on to win the game from this position is then \( P_{i+1} \).</li>
-<li>The gambler loses the first play with probability \( q=1-p \), and ends up with capital \( i-1 \), the probability of going on to win the game from this position is then \( P_{i-1} \).</li>
+<li>The gambler wins the first play with probability ( p ) and ends up with capital ( i+1 ), the probability of going on to win the game from this position is then ( P_{i+1} ).</li>
+<li>The gambler loses the first play with probability ( q=1-p ), and ends up with capital ( i-1 ), the probability of going on to win the game from this position is then ( P_{i-1} ).</li>
 </ol>
-<p>We can then write \( P_i \) in terms of these possible outcomes for the first play, as</p>
-$$ P_i = p \times P_{i+1} + q \times P_{i-1}. \tag{1}$$<p>We also know that \( P_0=0 \), if we have no money we have certainly lost, and \( P_A=1 \), if we reach capital \( A \) we have certainly won. Equation 1 is called a difference equation, and it is like a discrete version of a differential equation. To solve it, we use use \( p + q = 1 \) to rewrite as follows,
-</p>
-$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$<p>Next write equation 2 as,<br>
-</p>
-$$ P_{j+1}-P_j = \frac{q}{p}(P_{j}-P_{j-1}) = \Big(\frac{q}{p}\Big)^2(P_{j-1}-P_{j-2}) = \dots= \Big(\frac{q}{p}\Big)^{j-1}(P_{1}-P_{0})=\Big(\frac{q}{p}\Big)^{j-1}P_{1}$$<p>for \( j=1, \dots, A \), using \( P_0=0 \) for the final step. Next we want to use this to find a general formula for \( P_i \), we are allowed to write
-</p>
-$$ P_i = P_i - P_0 = (P_i - P_{i-1}) + (P_{i-1} - P_{i-2}) + \dots + (P_{1} - P_{0}) $$<p>because for example the \( +P_{i-1} \) cancels with the \( -P_{i-1} \) and so contributes nothing overall. Subbing in equation 2 to each of the terms in brackets we get,
-</p>
-$$ P_i = P_1 \sum^{i-1}_{j=0}\Big(\frac{q}{p}\Big)^{j-1}$$<p>using the standard result for a finite sum of a geometric series, we get</p>
-$$P_i = P_1 \frac{(q/p)^i -1}{(q/p) -1}$$<p>as long as \( p\neq q \). If \( p=q=1/2 \) then we simply get  \( P_i=P_1\sum^{i-1}_{j=0}(1)=iP_1 \). Now we need to get rid of the \( P_1 \) which we can do by using \( P_A=1 \). In the case \( p\neq q \) we have,</p>
-$$ P_A = 1 = P_1 \frac{(q/p)^A -1}{(q/p) -1}$$<p>so,
-</p>
-$$ P_1 =  \frac{(q/p) -1}{(q/p)^A -1}$$<p>which means
-</p>
-$$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i -1}{(q/p)^A -1}.$$<p>In the case \( p=q=1/2 \) we have \( P_A=1=A P_1 \implies P_1 = 1/A \) so \( P_i = i/A \). We now have an expression for the probability of a win so to covert our answer into the probability of ruin we just subtract it from 1 to get,</p>
-$$ P_i = 1 - \frac{(q/p)^i -1}{(q/p)^A -1} = \frac{(q/p)^A - (q/p)^i}{(q/p)^A -1} \text{ and } P_i = 1 - \frac{i}{A} = \frac{A-i}{A} \tag{4}$$<p>in cases \( p\neq q \) and \( p=q=1/2 \) respectively. We&rsquo;ve finally made it, equation 4 is the same as the answer from <em>Education of a Speculator</em>!</p>
+<p>We can then write ( P_i ) in terms of these possible outcomes for the first play, as</p>
+<p>$$ P_i = p \times P_{i+1} + q \times P_{i-1}. \tag{1}$$</p>
+<p>We also know that ( P_0=0 ), if we have no money we have certainly lost, and ( P_A=1 ), if we reach capital ( A ) we have certainly won. Equation 1 is called a difference equation, and it is like a discrete version of a differential equation. To solve it, we use use ( p + q = 1 ) to rewrite as follows,
+$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$
+$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$
+$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$</p>
+<p>Next write equation 2 as,<br>
+$$ P_{j+1}-P_j = \frac{q}{p}(P_{j}-P_{j-1}) = \Big(\frac{q}{p}\Big)^2(P_{j-1}-P_{j-2}) = \dots= \Big(\frac{q}{p}\Big)^{j-1}(P_{1}-P_{0})=\Big(\frac{q}{p}\Big)^{j-1}P_{1}$$</p>
+<p>for ( j=1, \dots, A ), using ( P_0=0 ) for the final step. Next we want to use this to find a general formula for ( P_i ), we are allowed to write
+$$ P_i = P_i - P_0 = (P_i - P_{i-1}) + (P_{i-1} - P_{i-2}) + \dots + (P_{1} - P_{0}) $$</p>
+<p>because for example the ( +P_{i-1} ) cancels with the ( -P_{i-1} ) and so contributes nothing overall. Subbing in equation 2 to each of the terms in brackets we get,
+$$ P_i = P_1 \sum^{i-1}_{j=0}\Big(\frac{q}{p}\Big)^{j-1}$$</p>
+<p>using the standard result for a finite sum of a geometric series, we get</p>
+<p>$$P_i = P_1 \frac{(q/p)^i -1}{(q/p) -1}$$</p>
+<p>as long as ( p\neq q ). If ( p=q=1/2 ) then we simply get  ( P_i=P_1\sum^{i-1}_{j=0}(1)=iP_1 ). Now we need to get rid of the ( P_1 ) which we can do by using ( P_A=1 ). In the case ( p\neq q ) we have,</p>
+<p>$$ P_A = 1 = P_1 \frac{(q/p)^A -1}{(q/p) -1}$$</p>
+<p>so,
+$$ P_1 =  \frac{(q/p) -1}{(q/p)^A -1}$$</p>
+<p>which means
+$$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i -1}{(q/p)^A -1}.$$</p>
+<p>In the case ( p=q=1/2 ) we have ( P_A=1=A P_1 \implies P_1 = 1/A ) so ( P_i = i/A ). We now have an expression for the probability of a win so to covert our answer into the probability of ruin we just subtract it from 1 to get,</p>
+<p>$$ P_i = 1 - \frac{(q/p)^i -1}{(q/p)^A -1} = \frac{(q/p)^A - (q/p)^i}{(q/p)^A -1} \text{ and } P_i = 1 - \frac{i}{A} = \frac{A-i}{A} \tag{4}$$</p>
+<p>in cases ( p\neq q ) and ( p=q=1/2 ) respectively. We&rsquo;ve finally made it, equation 4 is the same as the answer from <em>Education of a Speculator</em>!</p>
 <h2 id="comparison">Comparison</h2>
-<p>OK so now we have methods to calculate the probability of ruin both using simulation and analytically, let&rsquo;s see how they compare. Below are plots of the probability of winning the game against the probability of winning a play \( P \), for starting capital \( C=£8 \) and \( C=£1 \), using 500 simulated games. We can see that there is very good agreement between the two methods.</p>
-<figure><img src="/../../ruin_main.png"
-    alt="How likely is ruin?"><figcaption>
-      <p>Plot of probability of ruin against probability of winning single play, for different \( C \)&rsquo;s</p>
-    </figcaption>
+<p>OK so now we have methods to calculate the probability of ruin both using simulation and analytically, let&rsquo;s see how they compare. Below are plots of the probability of winning the game against the probability of winning a play ( P ), for starting capital ( C=£8 ) and ( C=£1 ), using 500 simulated games. We can see that there is very good agreement between the two methods.</p>
+<figure>
+    <img src="/../../ruin_main.png"
+         alt="How likely is ruin?"/> <figcaption>
+            <p>Plot of probability of ruin against probability of winning single play, for different ( C )&rsquo;s</p>
+        </figcaption>
 </figure>
 
-<p>We can get a better idea about the error introduced by using the simulated method from the following plot of error against number of simulated games, with error bars computed from 5 repeats. The gradient of the graph is about 0.5 and since the axis are log scale this corresponds to the relationship \( E\propto\frac{1}{\sqrt N} \), where \( E \) is error and \( N \) is number of games. This is consistent with the standard result for the error of a Monte Carlo estimator.</p>
-<figure><img src="/../../ruin_errs.png"
-    alt="Error from simulation."><figcaption>
-      <p>Plot of error introduced by simulation methods against  number of simulated games.</p>
-    </figcaption>
+<p>We can get a better idea about the error introduced by using the simulated method from the following plot of error against number of simulated games, with error bars computed from 5 repeats. The gradient of the graph is about 0.5 and since the axis are log scale this corresponds to the relationship ( E\propto\frac{1}{\sqrt N} ), where ( E ) is error and ( N ) is number of games. This is consistent with the standard result for the error of a Monte Carlo estimator.</p>
+<figure>
+    <img src="/../../ruin_errs.png"
+         alt="Error from simulation."/> <figcaption>
+            <p>Plot of error introduced by simulation methods against  number of simulated games.</p>
+        </figcaption>
 </figure>
 
 <h2 id="conclusions">Conclusions</h2>
 <p>I think the most important thing to consider when comparing the two solutions before we even think about errors, computation time etc, is simplicity. The code for the simulations took me less than 5 minutes to write. I spent about an hour trying to come up with an analytical solution with no luck, I then looked up the solution, and it took me quite a while longer to get my head round it. Even simple problems in probability can end up being analytically intractable, meaning no closed form solution can ever be found, let alone by me. For this reason Taleb is right to emphasize the power of the Monte Carlo engine, I hope this post has gone some way to illustrates it practical application.</p>
 <p>Thanks for reading!</p>
-<div class="footnotes" role="doc-endnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1">
-<p>Both also contain a variety of strongly held opinions about how life should be lived, which I probably could have done without, maybe this is common in trading books?&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1" role="doc-endnote">
+<p>Both also contain a variety of strongly held opinions about how life should be lived, which I probably could have done without, maybe this is common in trading books? <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2">
-<p>This trade-off arises all the time in ML when we are deciding how we want to do inference for a particular model, should we use stochastic sampling methods like MCMC, or something like variational inference, which requires more analytical calculations.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:2" role="doc-endnote">
+<p>This trade-off arises all the time in ML when we are deciding how we want to do inference for a particular model, should we use stochastic sampling methods like MCMC, or something like variational inference, which requires more analytical calculations. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3">
-<p>We can approach the problem in a more rigorous way using Markov chains, see for example <a href="http://people.math.gatech.edu/~ecroot/3225/markov2_notes.pdf">these handy lecture notes</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:3" role="doc-endnote">
+<p>We can approach the problem in a more rigorous way using Markov chains, see for example <a href="http://people.math.gatech.edu/~ecroot/3225/markov2_notes.pdf">these handy lecture notes</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</div>
+</section>
 
 </main>
 

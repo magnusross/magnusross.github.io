@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Spartan&#39;s guide to trading | Magnus Ross</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/posts">Posts</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">A Spartan&rsquo;s guide to trading</span></h1>
+
+<h2 class="date">2025/02/09</h2>
+</div>
+
+<main>
+<figure>
+    <img src="/../../not-many-spartans.png"
+         alt="A screenshot of an Elon Musk tweet that says &#39;Not many Spartans are needed to win battles.&#39;."/> 
+</figure>
+
+<p>Unless you&rsquo;ve been under a rock the past few weeks, you&rsquo;ve probably heard about Elon Musk&rsquo;s gaggle of DOGE lads who have been <a href="https://www.wired.com/story/elon-musk-government-young-engineers/">let loose inside the US Treasury payments system</a>. Since they have apparently been given read/write access to some highly sensitive databases and are likely pushing hastily conceived &ldquo;efficiency improvements&rdquo; to main as we speak, it’s in the public interest to understand how good these guys are as engineers.</p>
+<p>Ethan Shaotran is a 22-year-old who got involved with Elon through the expedient of achieving second place in an xAI hackathon.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> He runs a startup called Energize AI, which looks like it makes a nice wrapper for the ChatGPT API. He is also a <a href="https://www.businessinsider.com/harvard-senior-balances-college-ai-startup-productivity-enterprise-openai-coding-2024-8">student at Harvard</a>. This information is all now somewhat difficult to discover, as he has deleted or set to private his Twitter, GitHub, and Harvard profiles, as well as the startup website. So much for government transparency under the new regime! One of Ethan&rsquo;s claimed achievements in his now-deleted Harvard bio is being &ldquo;the author of several AI books.&rdquo; As far as I can tell, however, he has only written a single book<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> called <em>Stock Prediction with Deep Learning</em>.</p>
+<p>In order to better understand the young minds now seemingly in charge of disbursing payments for the world&rsquo;s largest economy, I have purchased Ethan&rsquo;s magnum opus for the <a href="https://www.amazon.co.uk/Stock-Prediction-Learning-Ethan-Shaotran/dp/1092671102">not-insignificant price of £15.79</a><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and read all 109 pages.</p>
+<h2 id="ethans-tender-age">Ethan&rsquo;s tender age</h2>
+<p>It must be noted, in the interest of fairness, that Ethan was 16 when he wrote this book. While for some, this might be a mitigating factor, I believe the book should be assessed as the work of a fully-fledged adult because:</p>
+<ol>
+<li>Prior to recent scrubbing, the book featured prominently on his Harvard bio page, implying that it&rsquo;s work he&rsquo;s proud of.</li>
+<li>It&rsquo;s still for sale on Amazon, where the blurb claims that the book &ldquo;tackles the common misconception that the stock market cannot be predicted, and builds a stock prediction algorithm to beat the stock market.&rdquo; What if an unsuspecting layperson picks it up and trades away their life savings?</li>
+<li>Given the unrestricted access he has been granted at DOGE and the responsibility that comes with that, we might surmise that he is academically mature for his age and thus was capable of producing a passable textbook in his mid-teens. Gauss was producing <a href="https://crypto.stanford.edu/pbc/notes/numbertheory/17gon.html">major breakthroughs in number theory</a> at age 16, so why not our Ethan?</li>
+</ol>
+<p>With all that being said, what&rsquo;s this book actually like? Maybe it&rsquo;s good? Maybe the Treasury is in safe hands?</p>
+<h2 id="the-book">The Book</h2>
+<p>The book is not good. In fact, I would say it is some of the worst technical writing I have ever read. The book really has very little to do with stock prediction or deep learning and is basically Ethan&rsquo;s first-ever Python script, with some added nonsensical explanations about neural networks and financial markets. The proposed system trades based on a naive &ldquo;sentiment analysis&rdquo; of a few news articles and is never going to give useful outputs, which is likely why it isn&rsquo;t evaluated at any point.</p>
+<h3 id="foreword-by-dr-j-mark-munoz">Foreword by Dr. J. Mark Munoz</h3>
+<p>We kick things off with a foreword from <a href="https://millikin.edu/about/administration/faculty-staff-directory/mark-munoz">Dr. J. Mark Munoz</a>, a professor of Management and International Business at Millikin University, which is seemingly unconnected from the remainder of the text. The strange thing about this section is that it has a real AI slop vibe, despite the fact that the book was published five years before the release of ChatGPT. It includes a list of 12 ways that AI is going to &ldquo;revolutionize companies,&rdquo; including gems such as &ldquo;Reframing of competitive parameters&rdquo; and &ldquo;Unprecedented levels of accountability and ethical pressures.&rdquo; Great stuff! According to Prof. Munoz:</p>
+<blockquote>
+<p>Utilizing the lessons from this book would be like stepping into the AI/DL fast train that is headed towards an amazing and forthcoming technological revolution.</p>
+</blockquote>
+<p>Well, what are we waiting for? Let&rsquo;s utilize some lessons!</p>
+<h3 id="the-system">The System</h3>
+<p>So what exactly is the revolutionary system that Ethan claims &ldquo;beat the market&rdquo; in 2017? The text isn&rsquo;t exactly clear on the details, but as far as I can tell, it goes something like this:</p>
+<ol>
+<li>Choose some stocks, e.g., Tesla, Apple.</li>
+<li>Find some news articles that mention their ticker.</li>
+<li>Take all the words in the article and keep track of the number of positive and negative words (according to a big list he&rsquo;s got from somewhere); the difference between these counts is the <em>sentiment score</em>.</li>
+<li>Find the slope of the OLS fit to the stock&rsquo;s closing price over the next five days.</li>
+<li>Fit a very simple neural network classifier to predict the sign of the slope, using two features: the sentiment score and the source of the article.</li>
+<li>???</li>
+<li>Profit.</li>
+</ol>
+<p>Now, on the face of it, this is a bad strategy that isn&rsquo;t going to work for any number of reasons. That is, perhaps, why the book at no point contains any sort of evaluation of the model, backtest, or description of how the system could be used in practice. There is not even so much as an accuracy score for the classifier. We do get some insight into how the model might perform at the start of Chapter 7:</p>
+<blockquote>
+<p>We just finished creating our prediction system. However, you may quickly notice two things:</p>
+<ol>
+<li>It’s actually not predicting very well.</li>
+<li>The algorithm without our Deep Learning system works better.</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>This might be surprising – shouldn’t Deep Learning help our system?</p>
+</blockquote>
+<p>After this admission, Ethan goes on to construct some additional features based on historical values of the series, which he claims will improve performance.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> He then fits the model again but provides no evaluation or discussion of accuracy, which might lead us to again conclude that the model just doesn&rsquo;t work. So the book can&rsquo;t really teach us anything useful about ML or trading, but perhaps it redeems itself as an introduction to Python?</p>
+<h3 id="the-code">The Code</h3>
+<p>The code in the book is littered with errors and demonstrates a poor grasp of the language and of programming generally. I used to teach 10-year-olds introductory Python at an afterschool club, and this makes their code look like it was written by Guido van Rossum. I have included an illustrative snippet in a footnote.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> At one point, he seems to leave his private API keys in the code. Good to know he&rsquo;s got an eye for detail! Let&rsquo;s hope that&rsquo;s not your social security number! I cannot stress enough how bitterly disappointed you would be if you bought this book hoping to learn anything about coding in Python. Obviously, everyone has to start somewhere, but the fact he is still promoting this now is worrying.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>I&rsquo;ll leave you with a final thought I lifted straight from the chapter entitled &ldquo;Final Thoughts&rdquo;:</p>
+<blockquote>
+<p>Learning a completely new concept is hard.</p>
+</blockquote>
+<p>Very true, Ethan. Maybe this book does contain some insights after all. Let&rsquo;s hope you remember that when you are diving into a decades-old system at the heart of the global economy. Good luck with the COBOL!</p>
+<hr>
+<p>Thanks for reading, if you liked this post you can <a href="https://bsky.app/profile/magnusar.bsky.social">follow me on Bluesky</a> or <a href="https://magnusross.github.io/index.xml">subscribe to the RSS feed</a> to get posts in the future.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>For which he won cloud credits worth the princely sum of $5000. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>He has also contributed to a compendium of short stories about AI and the future of work. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Don&rsquo;t feel too bad, I was able to return it for a refund shortly after. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>He does this in such a way that leaks data from the future, but let&rsquo;s ignore that for now. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>This is an actual code snippet lifted verbatim from the book (I have added comments):</p>
+<pre><code class="language-python">def SourceInt(url):
+    url = url.lower()
+    if 'cnn' in url:
+        sourceint = 1
+    elif 'fool.com' in url:
+        sourceint = 2
+    elif 'finance.yahoo.com' in url:
+        sourceint = 3
+    elif 'investopedia.com' in url:
+        sourceint = 4
+    elif 'businessinsider.com' in url:
+        sourceint = 5
+    elif 'marketwatch.com' in url:
+        sourceint = 6
+    elif 'forbes.com' in url:
+        sourceint = 7
+    elif 'thestreet.com' in url:
+        sourceint = 8
+    elif 'fortune.com' in url:
+        sourceint = 9
+    elif 'cnbc.com' in url:
+        sourceint = 10
+    elif 'nasdaq.com' in url:
+        sourceint = 11
+    elif 'investorplace.com' in url:
+        sourceint = 12
+    elif 'seekingalpha.com' in url:
+        sourceint = 13
+    elif 'nytimes' in url:
+        sourceint = 14
+    elif 'cnbc' in url:
+        sourceint = 15
+    elif 'apple' in url:
+        sourceint = 16
+    elif 'techcrunch' in url:
+        sourceint = 17
+    elif 'huff' in url:
+        sourceint = 18
+    elif 'fox' in url:
+        sourceint = 19
+    elif 'usatoday' in url:
+        sourceint = 20
+    elif 'reuters' in url:
+        sourceint = 21
+    elif 'npr' in url:
+        sourceint = 22
+    elif 'nbc' in url:
+        sourceint = 23
+    elif 'fox' in url:  # Already assigned 19 above?
+        sourceint = 24
+    elif 'wsj' in url:
+        sourceint = 25
+    elif 'marketwatch' in url:  # Already assigned 6 above?
+        sourceint = 26
+    elif 'bloomberg' in url:
+        sourceint = 27
+    elif 'guardian' in url:
+        sourceint = 28
+    elif 'usnews' in url:
+        sourceint = 29
+    elif 'livetradingnews' in url:
+        sourceint = 30
+    elif 'streetinsider' in url:
+        sourceint = 31
+    elif 'stocknewsjournal' in url:
+        sourceint = 32
+    else:
+        sourceint = 0
+    return sourceint
+	
+	
+</code></pre>
+ <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
+</ol>
+</section>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://magnusross.github.io">Magnus Ross</a> &ndash; 2025
+  
+  </footer>
+  </body>
+</html>
+

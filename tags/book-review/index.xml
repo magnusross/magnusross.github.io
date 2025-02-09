@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book review on Magnus Ross</title>
+    <link>/tags/book-review/</link>
+    <description>Recent content in Book review on Magnus Ross</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Spartan&#39;s guide to trading</title>
+      <link>/posts/spartans_guide_to_trading/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spartans_guide_to_trading/</guid>
+      <description>Unless you&amp;rsquo;ve been under a rock the past few weeks, you&amp;rsquo;ve probably heard about Elon Musk&amp;rsquo;s gaggle of DOGE lads who have been let loose inside the US Treasury payments system. Since they have apparently been given read/write access to some highly sensitive databases and are likely pushing hastily conceived &amp;ldquo;efficiency improvements&amp;rdquo; to main as we speak, it’s in the public interest to understand how good these guys are as engineers.</description>
+    </item>
+    
+  </channel>
+</rss>
