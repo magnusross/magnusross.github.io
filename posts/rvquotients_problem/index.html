@@ -34,58 +34,56 @@
 <main>
 <p>This is a nice problem from the book &ldquo;Cut the knot&rdquo;, which is a compilation of probability riddles and brain teasers. I like the book because many of the problems are about intuitive reasoning, and don&rsquo;t really involve that much technical knowledge of probability theory, so they can be fun to do with people who don&rsquo;t have a formal maths background. Each problem can also generally be solved many different ways, so it&rsquo;s fun to compare solutions.</p>
 <p><strong>Problem</strong></p>
-<p>Two numbers \( X \) and \( Y \) are randomly chosen from the interval \( [0, 1] \). Let \( r \) denote the quotient of the larger of the two by the smaller: \( r = \frac{\max(X,Y)}{\min(X,Y)} \). Depending on the assumptions, there are three questions. For a given \( k > 0 \), what is the probability that \( r ≥ k \)</p>
+<p>Two numbers ( X ) and ( Y ) are randomly chosen from the interval ( [0, 1] ). Let ( r ) denote the quotient of the larger of the two by the smaller: ( r = \frac{\max(X,Y)}{\min(X,Y)} ). Depending on the assumptions, there are three questions. For a given ( k &gt; 0 ), what is the probability that ( r ≥ k )</p>
 <ol>
-<li>if \( X \) is uniformly distributed on \( [0, 1] \) and \( Y \) is uniformly distributed on \( [X, 1] \)?</li>
-<li>if \( X \), \( Y \) are jointly uniformly distributed on \( \\{(x, y) : 0 ≤ x ≤ y ≤ 1\\} \)?</li>
-<li>if \( X \) and \( Y \) are uniformly and independently distributed on [0, 1]?</li>
+<li>if ( X ) is uniformly distributed on ( [0, 1] ) and ( Y ) is uniformly distributed on ( [X, 1] )?</li>
+<li>if ( X ), ( Y ) are jointly uniformly distributed on ( \{(x, y) : 0 ≤ x ≤ y ≤ 1\} )?</li>
+<li>if ( X ) and ( Y ) are uniformly and independently distributed on [0, 1]?</li>
 </ol>
 <p>Source: Cut the knot by Bogomolny, Ex. 7.6</p>
 <p><strong>Solution</strong></p>
-<p>We&rsquo;re given that \( X\sim U(0, 1) \) and that \( Y|X\sim U(X, 1) \), this implies that the variables have the densities
+<p>We&rsquo;re given that ( X\sim U(0, 1) ) and that ( Y|X\sim U(X, 1) ), this implies that the variables have the densities
 \begin{align}
-p(x)&amp;=1 \quad \forall \quad x\in[0, 1] \\\
+p(x)&amp;=1 \quad \forall \quad x\in[0, 1] \\\<br>
 p(y|x)&amp;=\frac{1}{1-x}  \quad \forall \quad y\in[x, 1]
 \end{align}
 which implies that the variables have the joint density given by
-</p>
 $$
 p(x, y) = p(x)p(y|x)= \frac{1}{1-x}.
-$$<p>
-Now let&rsquo;s have a think about how to compute the require probability \( \mathbb{P}(r\geq k) \). First, it is clear that in this case \( Y\geq X \), so \( r\geq1 \) which implies \( \mathbb{P}(r\geq k)=1 \) when \( k<1 \). The fact that \( Y\geq X \) also implies that \( r = \frac{\max(X,Y)}{\min(X,Y)}=\frac{Y}{X} \). The key thing to realize here is that we can equivalently write \( \mathbb{P}(r\geq k) \) as \( \mathbb{P}(\frac{Y}{X}\geq k)=\mathbb{P}(Y\geq kX) \).</p>
-<p>We actually now have all the parts we need to solve the question, but realizing this is a little easier with a picture. The diagram below shows all the information we have. The variables \( x \) and \( y \) are shown on each axis, with the shaded region showing the probability density of different \( (x,y) \) pairs. Notice that the lower triangle is unshaded since we know \( y>x \). Also plotted on the diagram is the line \( y=kx \).</p>
-<figure><img src="/../../uniform_quotient_plot.png"
-    alt="All our information."><figcaption>
-      <p>All our information.</p>
-    </figcaption>
+$$
+Now let&rsquo;s have a think about how to compute the require probability ( \mathbb{P}(r\geq k) ). First, it is clear that in this case ( Y\geq X ), so ( r\geq1 ) which implies ( \mathbb{P}(r\geq k)=1 ) when ( k&lt;1 ). The fact that ( Y\geq X ) also implies that ( r = \frac{\max(X,Y)}{\min(X,Y)}=\frac{Y}{X} ). The key thing to realize here is that we can equivalently write ( \mathbb{P}(r\geq k) ) as ( \mathbb{P}(\frac{Y}{X}\geq k)=\mathbb{P}(Y\geq kX) ).</p>
+<p>We actually now have all the parts we need to solve the question, but realizing this is a little easier with a picture. The diagram below shows all the information we have. The variables ( x ) and ( y ) are shown on each axis, with the shaded region showing the probability density of different ( (x,y) ) pairs. Notice that the lower triangle is unshaded since we know ( y&gt;x ). Also plotted on the diagram is the line ( y=kx ).</p>
+<figure>
+    <img src="/../../uniform_quotient_plot.png"
+         alt="All our information."/> <figcaption>
+            <p>All our information.</p>
+        </figcaption>
 </figure>
 
-<p>What we want to know is the probability that \( (x,y) \) lies in the region \( A \), i.e the region bounded by \( 0\leq y \leq 1, y\geq kx \). To do this we need to integrate the joint density over this region. This probability is given by
+<p>What we want to know is the probability that ( (x,y) ) lies in the region ( A ), i.e the region bounded by ( 0\leq y \leq 1, y\geq kx ). To do this we need to integrate the joint density over this region. This probability is given by
 \begin{align}
-\mathbb{P}(r\geq k) &amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\
-&amp;= \int^{1/k}_{0} \int^{1}_{kx} \frac{1}{1-x}dydx \\\
-&amp;= \int^{1/k}_{0} \frac{1-kx}{1-x}dx \\\
+\mathbb{P}(r\geq k) &amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\<br>
+&amp;= \int^{1/k}_{0} \int^{1}_{kx} \frac{1}{1-x}dydx \\\<br>
+&amp;= \int^{1/k}_{0} \frac{1-kx}{1-x}dx \\\<br>
 &amp;= 1 + (k-1)\log\left(\frac{k-1}{k}\right)
 \end{align}
 Part 1 solved!</p>
-<p>Now we have this setup the answers for the next two parts are actually quite simple. For part 2, we have the exact same setup, only now we are given that the \( X,Y \) are jointly uniform over the region \( 0\leq x\leq y \leq 1 \). The diagram would look exactly the same, but with the shading being uniform over the region. The joint density is now \( p(x,y)=2 \) (since the area of the region is \( 1/2 \)), so
+<p>Now we have this setup the answers for the next two parts are actually quite simple. For part 2, we have the exact same setup, only now we are given that the ( X,Y ) are jointly uniform over the region ( 0\leq x\leq y \leq 1 ). The diagram would look exactly the same, but with the shading being uniform over the region. The joint density is now ( p(x,y)=2 ) (since the area of the region is ( 1/2 )), so
 \begin{align}
-\mathbb{P}(r\geq k) &amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\
-&amp;=  2\int^{1/k}_{0} \int^{1}_{kx} dydx \\\
+\mathbb{P}(r\geq k) &amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\<br>
+&amp;=  2\int^{1/k}_{0} \int^{1}_{kx} dydx \\\<br>
 &amp;= \frac{1}{k}
 \end{align}</p>
-<p>Now for the final part, we can use the symmetry of the problem to get the answer easily. When \( Y>X \) we have the same setup as above, and when \( X>Y \) we have the region \( 0\leq x\leq 1, y\leq\frac{x}{k} \), which is the mirror image of the region from part 2, reflected in \( y=x \). We sum these regions to get the answer. Not that the density is now \( p(x,y)=1 \), so we get that
-</p>
+<p>Now for the final part, we can use the symmetry of the problem to get the answer easily. When ( Y&gt;X ) we have the same setup as above, and when ( X&gt;Y ) we have the region ( 0\leq x\leq 1, y\leq\frac{x}{k} ), which is the mirror image of the region from part 2, reflected in ( y=x ). We sum these regions to get the answer. Not that the density is now ( p(x,y)=1 ), so we get that
 $$
 \mathbb{P}(r\geq k) = \frac{1}{2k} + \frac{1}{2k} = \frac{1}{k}
-$$
+$$</p>
+
 </main>
 
   <footer>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/render-katex.js" defer></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 

@@ -34,43 +34,38 @@
 <main>
 <p><strong>Problem</strong></p>
 <p>Note: I was brushing up on my SVD using the brilliant &ldquo;Mathematics for Machine Learning&rdquo; book, but the exercises listed in the book for SVD were a bit basic, so I decided to try use ChatGPT to generate a question. The problem below is what came out, quite impressive, although there were quite a few errors in the question that I had to fix (e.g the dimensionalities of the matrices).</p>
-<p>Let \( A \) be an \( m \times n \) with \( m\geq n \) matrix with rank \( r \), and let its singular value decomposition (SVD) be given by \( A = U \Sigma V^T \), where \( U \) is an \( m \times m \) orthonormal matrix, \( \Sigma \) is an \( m \times n \) diagonal matrix with non-negative entries \( \sigma_1 \geq \sigma_2 \geq \dots \geq \sigma_n > 0 \), and \( V \) is an \( n \times n \) orthonormal matrix. Show that the Frobenius norm of \( A \) is equal to the square root of the sum of the squares of the singular values.</p>
+<p>Let ( A ) be an ( m \times n ) with ( m\geq n ) matrix with rank ( r ), and let its singular value decomposition (SVD) be given by ( A = U \Sigma V^T ), where ( U ) is an ( m \times m ) orthonormal matrix, ( \Sigma ) is an ( m \times n ) diagonal matrix with non-negative entries ( \sigma_1 \geq \sigma_2 \geq \dots \geq \sigma_n &gt; 0 ), and ( V ) is an ( n \times n ) orthonormal matrix. Show that the Frobenius norm of ( A ) is equal to the square root of the sum of the squares of the singular values.</p>
 <p>Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong</p>
 <p><strong>Solution</strong></p>
 <p>The Frobenius norm is given by,</p>
-$$
+<p>$$
 ||A||^2_F = \sum_{i,j}A^2_{i,j}
-$$<p>
+$$
 which we can equivalently write (it is not so hard to show this) as
-</p>
 $$
 ||A||^2_F = \operatorname{tr}(A^\top A).
-$$<p>
-Subbing in the SVD representation of \( A \), we get
+$$
+Subbing in the SVD representation of ( A ), we get
 \begin{align}
-\operatorname{tr}(A^\top A) &amp;= \operatorname{tr}\left( (U\Sigma V^\top)^\top(U\Sigma V^\top)\right)\\\
-&amp;= \operatorname{tr}\left(V\Sigma^\top U^\top U\Sigma V^\top\right) \\\
+\operatorname{tr}(A^\top A) &amp;= \operatorname{tr}\left( (U\Sigma V^\top)^\top(U\Sigma V^\top)\right)\\\<br>
+&amp;= \operatorname{tr}\left(V\Sigma^\top U^\top U\Sigma V^\top\right) \\\<br>
 &amp;= \operatorname{tr}\left(V\Sigma^\top \Sigma V^\top\right).
 \end{align}
-We can see by inspection that \( \Sigma^\top\Sigma = \operatorname{diag}(\sigma^2_1,  \dots, \sigma^2_n)=\Lambda \). This implies that
-</p>
+We can see by inspection that ( \Sigma^\top\Sigma = \operatorname{diag}(\sigma^2_1,  \dots, \sigma^2_n)=\Lambda ). This implies that
 $$
 [V\Lambda V^\top]_{ii} = \sigma_i^2\mathbf{v}^\top_i\mathbf{v}_i = \sigma_i^2,
-$$<p>
-where \( \mathbf{v}_i \) is column \( i \) of \( V \) and the second equality follows from the othonormality of \( V \). Putting it all together we get that
-</p>
+$$
+where ( \mathbf{v}_i ) is column ( i ) of ( V ) and the second equality follows from the othonormality of ( V ). Putting it all together we get that
 $$
 ||A||^2_F = \operatorname{tr}(A^\top A) = \sum_i \sigma_i^2,
-$$<p>
+$$
 as required.</p>
 
 </main>
 
   <footer>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/render-katex.js" defer></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 

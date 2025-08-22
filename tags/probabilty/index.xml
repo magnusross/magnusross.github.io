@@ -4,30 +4,18 @@
     <title>Probabilty on Magnus Ross</title>
     <link>/tags/probabilty/</link>
     <description>Recent content in Probabilty on Magnus Ross</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/probabilty/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Distributions of quotients of uniform RVs</title>
-      <link>/posts/rvquotients_problem/</link>
-      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>/posts/rvquotients_problem/</guid>
-      <description>&lt;p&gt;This is a nice problem from the book &amp;ldquo;Cut the knot&amp;rdquo;, which is a compilation of probability riddles and brain teasers. I like the book because many of the problems are about intuitive reasoning, and don&amp;rsquo;t really involve that much technical knowledge of probability theory, so they can be fun to do with people who don&amp;rsquo;t have a formal maths background. Each problem can also generally be solved many different ways, so it&amp;rsquo;s fun to compare solutions.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/probabilty/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Winners curse in Bayesian optimisation</title>
       <link>/posts/winnerscurse_problem/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
       <guid>/posts/winnerscurse_problem/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take an objective function \( f(x) \) with GP prior and i.i.d. Gaussian noise with variance \( \sigma^2 \), so \( y_i = f(x_i) + \epsilon_i \) with \( \epsilon_i \sim \mathcal{N}(0, \sigma^2) \). Assume two locations \( x_1, x_2 \) are sufficiently separated that their function values \( f(x_1) \) and \( f(x_2) \) are independent. Compute the posterior \( p(\epsilon_1-\epsilon_2|y_1, y_2) \) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.&lt;/p&gt;</description>
+      <description>Problem
+Take an objective function ( f(x) ) with GP prior and i.i.d. Gaussian noise with variance ( \sigma^2 ), so ( y_i = f(x_i) + \epsilon_i ) with ( \epsilon_i \sim \mathcal{N}(0, \sigma^2) ). Assume two locations ( x_1, x_2 ) are sufficiently separated that their function values ( f(x_1) ) and ( f(x_2) ) are independent. Compute the posterior ( p(\epsilon_1-\epsilon_2|y_1, y_2) ) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective.</description>
     </item>
-    <item>
-      <title>Simulation is easy, probability is hard...</title>
-      <link>/posts/another-note/</link>
-      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/posts/another-note/</guid>
-      <description>&lt;p&gt;There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money,  attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are &lt;em&gt;The Education of a Speculator&lt;/em&gt; by Victor Niederhoffer and &lt;em&gt;Fooled by Randomness&lt;/em&gt; by Nassim Nicholas Taleb. The books are similar in many ways, both contain plenty of interesting insights into thinking probabilistically, as well as a number of cautionary tales of modelling gone wrong.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; In &lt;em&gt;Fooled by Randomness&lt;/em&gt;, Taleb talks a lot about the power of simulation for probabilistic models, and how modern computers, using what he calls his &amp;ldquo;Monte Carlo Engine&amp;rdquo;, allow us to get answers from complex models that previously would have been impossible, or at least very time consuming, to solve analytically. This was fresh in my mind when I read the following passage from chapter 8 of &lt;em&gt;The Education of a Speculator&lt;/em&gt; about the well known gambler&amp;rsquo;s ruin problem:&lt;/p&gt;</description>
-    </item>
+    
   </channel>
 </rss>

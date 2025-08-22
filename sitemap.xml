@@ -1,97 +1,189 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tags/health/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
   <url>
     <loc>/</loc>
-    <lastmod>2025-06-08T00:00:00+00:00</lastmod>
-  </url><url>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/moms-models-medicine/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/</loc>
-    <lastmod>2025-06-08T00:00:00+00:00</lastmod>
-  </url><url>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rant/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/mm_nav_guide/</loc>
     <lastmod>2025-06-08T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/running/</loc>
     <lastmod>2025-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-06-08T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/spartans_guide_to_trading/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/book-review/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/trading/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/time-series/</loc>
     <lastmod>2024-11-29T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/tsf_benchmarks/</loc>
     <lastmod>2024-11-29T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/exercise/</loc>
     <lastmod>2023-06-19T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/em_problem/</loc>
     <lastmod>2023-06-19T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>/tags/maths/</loc>
+    <lastmod>2023-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/rvquotients_problem/</loc>
     <lastmod>2023-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/probabilty/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/probability/</loc>
     <lastmod>2023-04-20T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/mercerrkhs_problem/</loc>
     <lastmod>2023-04-12T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/pn_solver_problem/</loc>
     <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/frobeniusnorm_problem/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/paper2/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/personal/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>/tags/probabilty/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/winnerscurse_problem/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/paper1/</loc>
     <lastmod>2021-07-15T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/categories/example/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/another-note/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/talk1/</loc>
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/media/</loc>
     <lastmod>2020-10-03T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/podcasts/</loc>
     <lastmod>2020-10-03T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/deep-learning/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/posts/l1/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/physics/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
   </url>
+  
 </urlset>

@@ -4,16 +4,18 @@
     <title>Running on Magnus Ross</title>
     <link>/tags/running/</link>
     <description>Recent content in Running on Magnus Ross</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/running/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/running/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Practicing mountain marathon navigation</title>
       <link>/posts/mm_nav_guide/</link>
       <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      
       <guid>/posts/mm_nav_guide/</guid>
-      <description>&lt;p&gt;This is a guide that details how to use the Routegadget website to practice route selection for a mountain marathon. While Routegadget&amp;rsquo;s interface is a little old-school, it is a useful and powerful tool for analysing past races. This guide will focus on past races from &lt;a href=&#34;https://slmm.org.uk&#34;&gt;the SLMM&lt;/a&gt;, but this practice is applicable to any mountain marathon.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-first-map&#34;&gt;A first map&lt;/h2&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s look at a past course on Routegadget. Follow &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&#34;&gt;this link&lt;/a&gt; to view the map and controls for day one of the &amp;ldquo;Harter Fell&amp;rdquo; course of the 2017 edition of the SLMM. You should see something like this:&#xA;&lt;figure&gt;&lt;img src=&#34;/../../harter_slmm2017_controls_only.png&#34;&#xA;    alt=&#34;A map of the Harter Fell 2017 SLMM course showing only the control points.&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Some important things to note:&lt;/p&gt;</description>
+      <description>This is a guide that details how to use the Routegadget website to practice route selection for a mountain marathon. While Routegadget&amp;rsquo;s interface is a little old-school, it is a useful and powerful tool for analysing past races. This guide will focus on past races from the SLMM, but this practice is applicable to any mountain marathon.
+A first map First, let&amp;rsquo;s look at a past course on Routegadget. Follow this link to view the map and controls for day one of the &amp;ldquo;Harter Fell&amp;rdquo; course of the 2017 edition of the SLMM.</description>
     </item>
+    
   </channel>
 </rss>

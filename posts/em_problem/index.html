@@ -37,64 +37,62 @@
 <p>Derive the EM equations for fitting a mixture of linear regression experts.</p>
 <p>Source: Probabilistic machine learning: an introduction by Kevin P. Murphy, Ex. 11.6</p>
 <p><strong>Solution</strong></p>
-<p>We can fine the specification of the mixture of linear experts model in section 13.6.2.1 of the book.  For input data \( \{(x_n, y_n)\}^{N}_{n=1} \) with \( x_n \in \mathbb{R}^D \) model consists of a set of \( K \) linear models (called the experts), with weights \( w_{k}\in\mathbb R^{D} \) with each linear model having a Gaussian likelihood, with noise variance \( \sigma^2_k\). Additionally, we have a \( K \)-class logistic regression model, with weights \( W\in\mathbb{R}^{K\times D} \), which outputs the probability that each expert is responsible for a particular data point. This model is written as,</p>
+<p>We can fine the specification of the mixture of linear experts model in section 13.6.2.1 of the book.  For input data ( {(x_n, y_n)}^{N}<em>{n=1} ) with ( x_n \in \mathbb{R}^D ) model consists of a set of ( K ) linear models (called the experts), with weights ( w</em>{k}\in\mathbb R^{D} ) with each linear model having a Gaussian likelihood, with noise variance ( \sigma^2_k). Additionally, we have a ( K )-class logistic regression model, with weights ( W\in\mathbb{R}^{K\times D} ), which outputs the probability that each expert is responsible for a particular data point. This model is written as,</p>
 <p>\begin{align}
-p(y|x_n,z=k,\theta)&amp;=\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\\\
+p(y|x_n,z=k,\theta)&amp;=\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\\\<br>
 p(z=k|x,\theta)&amp;={\mathrm{Cat}}(z|{\mathrm{softmax}}_{k}(\mathrm{V}x)
 \end{align}</p>
-<p>where \( \mathrm{Cat} \) is the categorical distribution and \( \theta=(W, V, \{\sigma_k\}^{K}_{k=1}) \) is our set of model parameters (in this case we assume \( K \) is known, or selected by some other method like cross validation). The aim is to use EM to fit this model by finding \( \theta \). Before getting into that, it&rsquo;s perhaps helpful to look at the type of problem this model might be useful for.</p>
-<figure><img src="/../../data-em-mole.png"
-    alt="Some training data."><figcaption>
-      <p>Some training data.</p>
-    </figcaption>
+<p>where ( \mathrm{Cat} ) is the categorical distribution and ( \theta=(W, V, {\sigma_k}^{K}_{k=1}) ) is our set of model parameters (in this case we assume ( K ) is known, or selected by some other method like cross validation). The aim is to use EM to fit this model by finding ( \theta ). Before getting into that, it&rsquo;s perhaps helpful to look at the type of problem this model might be useful for.</p>
+<figure>
+    <img src="/../../data-em-mole.png"
+         alt="Some training data."/> <figcaption>
+            <p>Some training data.</p>
+        </figcaption>
 </figure>
 
 <p>This is some data from a piecewise linear model, with 3 sections, with Gaussian noise added to it. We would hope that a mixture of linear experts model would be able to fit this data well, by assigning a different expert (i.e. linear model) to each of the distinct sections.</p>
 <p>Now for inference. Recall that the point of the EM algorithm is to compute the maximum likelihood estimate of the model parameters, whilst marginalising out any latent variables. In this case the latent variables are the expert assignments for each data point, i.e. which expert is responsible for each data point. To do this, we alternate between two steps the E-step and the M-step, until we reach some sort of convergence:</p>
 <ul>
-<li>In the E-step, we compute the distribution of the latent variables (expert assignments) given the data and parameters, \( p(z_n=k| y_n,x_n, \theta) \).  In our case this is is tractable, if it&rsquo;s not then you can use an approximating distribution, in which case the method becomes variational EM.</li>
-<li>In the M-step, we compute a quantity called the expected complete data log likelihood. This is the expected joint log probability of the data and latent variables, with respect to the distribution over the latent variables computed in the E-step, which we write as \( \ell(\theta)=\sum_{n}\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] \) with \( q(z_n)=p(z_n=k| y_n,x_n, \theta) \). We maximise this with respect to \( \theta \), i.e compute \( \theta^*=\mathrm{argmax}[l(\theta)] \). We then set \( \theta=\theta^* \) and repeat the E-step.</li>
+<li>In the E-step, we compute the distribution of the latent variables (expert assignments) given the data and parameters, ( p(z_n=k| y_n,x_n, \theta) ).  In our case this is is tractable, if it&rsquo;s not then you can use an approximating distribution, in which case the method becomes variational EM.</li>
+<li>In the M-step, we compute a quantity called the expected complete data log likelihood. This is the expected joint log probability of the data and latent variables, with respect to the distribution over the latent variables computed in the E-step, which we write as ( \ell(\theta)=\sum_{n}\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] ) with ( q(z_n)=p(z_n=k| y_n,x_n, \theta) ). We maximise this with respect to ( \theta ), i.e compute ( \theta^*=\mathrm{argmax}[l(\theta)] ). We then set ( \theta=\theta^* ) and repeat the E-step.</li>
 </ul>
 <p>We repeat this until the optimum of value in the M-step converges. For more info, see section 8.7 of the Murphy book. Now we can try to compute the required quantities for each step for the linear experts model.</p>
 <p>We can compute the distribution over the latent variables given the data in the E-step using Bayes rule,
-</p>
 $$
 p(z_n=k| y_n,x_n, \theta) = \frac{p(y_n | z_n=k, x_n, \theta)p(z_n=k| x_n, \theta)}{p(y_n|x_n, \theta)}
-$$<p>
-where \( p(y_n|x_n, \theta)=\sum^{K}_{k'=1} p(y_n | z_n=k', x_n, \theta)p(z_n=k'| x_n, \theta) \).  This is tractable, we just combine the terms given in the specification of the model. Easy! Now for the M-step, which is slightly more involved.</p>
-<p>For the M-step we need to compute \( \sum_n\mathbb{E}\_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] \) with \( q_(z_n)=p(z_n=k| y_n,x_n, \theta) \). The log joint is given by,
+$$
+where ( p(y_n|x_n, \theta)=\sum^{K}_{k'=1} p(y_n | z_n=k', x_n, \theta)p(z_n=k'| x_n, \theta) ).  This is tractable, we just combine the terms given in the specification of the model. Easy! Now for the M-step, which is slightly more involved.</p>
+<p>For the M-step we need to compute ( \sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] ) with ( q_(z_n)=p(z_n=k| y_n,x_n, \theta) ). The log joint is given by,
 \begin{align}
-\log p(y_{n},z_{n}|\theta) &amp;= \log p(y_{n}|z_{n},\theta)p(z_{n}|\theta) \\\
-&amp;= \log \prod_k\left[\mathcal{N}(y_n|w_{k}^{\mathsf{T}}x_n,\sigma_{k}^{2})\right]^{z_{nk}} + \log\prod_k\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&rsquo;}e^{v_{k&rsquo;}^\top x_n }}\right]^{z_{nk}} \\\
-&amp;=\sum_k {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} + \sum_k{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&rsquo;}e^{v_{k&rsquo;}^\top x_n }}\right]
+\log p(y_{n},z_{n}|\theta) &amp;= \log p(y_{n}|z_{n},\theta)p(z_{n}|\theta) \\\<br>
+&amp;= \log \prod_k\left[\mathcal{N}(y_n|w_{k}^{\mathsf{T}}x_n,\sigma_{k}^{2})\right]^{z_{nk}} + \log\prod_k\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k'}e^{v_{k'}^\top x_n }}\right]^{z_{nk}} \\\<br>
+&amp;=\sum_k {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} + \sum_k{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k'}e^{v_{k'}^\top x_n }}\right]
 \end{align}
-where \( z_{nk} \) is an indicator variable which is \( 1 \) when \( z_n=k \) and \( 0 \) otherwise. We can the compute the M-step obejective as,
-</p>
+where ( z_{nk} ) is an indicator variable which is ( 1 ) when ( z_n=k ) and ( 0 ) otherwise. We can the compute the M-step obejective as,
 $$
 \begin{align}
-\ell(\theta)&=\sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right]\\ 
-&= \mathbb{E}_{q_{n}(z_{n})}\left[\sum_{nk} {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k'}e^{v_{k'}^\top x_n }}\right]\right] \\
-&= \sum_{nk} {\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k'}e^{v_{k'}^\top x_n }}\right]
+\ell(\theta)&amp;=\sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right]\
+&amp;= \mathbb{E}_{q_{n}(z_{n})}\left[\sum_{nk} {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k'}e^{v_{k'}^\top x_n }}\right]\right] \<br>
+&amp;= \sum_{nk} {\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k'}e^{v_{k'}^\top x_n }}\right]
 \end{align}
-$$<p>
-where \( \mathbb{E}_{q_{n}(z_{n})}[z_{nk}]= p(z_n=k| y_n,x_n, \theta) \) are exactly the values computed in the E-step.
-We are now able to compute \( \ell(\theta) \), but we also need to optimise it. I think would be possible to compute the optimum with respect to the regression weights and variances exactly, using the formalism of <a href="https://en.wikipedia.org/wiki/Weighted_least_squares">weighted least squares</a>, but if you&rsquo;re lazy like me, you can just do simple gradient descent on the parameters. You&rsquo;d have do this for the logistic weights anyway, since they can&rsquo;t be computed in closed form, so it&rsquo;s easier to just do this for everything.</p>
+$$
+where ( \mathbb{E}_{q_{n}(z_{n})}[z_{nk}]= p(z_n=k| y_n,x_n, \theta) ) are exactly the values computed in the E-step.
+We are now able to compute ( \ell(\theta) ), but we also need to optimise it. I think would be possible to compute the optimum with respect to the regression weights and variances exactly, using the formalism of <a href="https://en.wikipedia.org/wiki/Weighted_least_squares">weighted least squares</a>, but if you&rsquo;re lazy like me, you can just do simple gradient descent on the parameters. You&rsquo;d have do this for the logistic weights anyway, since they can&rsquo;t be computed in closed form, so it&rsquo;s easier to just do this for everything.</p>
 <p>Now we have both steps we can do inference. I implemented this using jax, which made the the optimisation for the M-step very easy. You can find the very shoddily written code in <a href="https://gist.github.com/magnusross/06e29ccb42f054c765a74366104fcb24">this gist</a>.</p>
-<figure><img src="/../../post-train-em-mole.png"
-    alt="Results of inference."><figcaption>
-      <p>Results of inference.</p>
-    </figcaption>
+<figure>
+    <img src="/../../post-train-em-mole.png"
+         alt="Results of inference."/> <figcaption>
+            <p>Results of inference.</p>
+        </figcaption>
 </figure>
 
-<p>Above are the results after 20 EM iterations. The left panel shows the training data and true function, along with the predictions of each of the \( K=3 \) experts. Shown in red is the modal prediction, i.e. the prediction of the most likely expert for each point. The right panel shows the responsibilities of each expert for over the domain. We can see the transitions between experts nicely match the discontinuities in the piecewise function, and we are able to recover the true function well.</p>
+<p>Above are the results after 20 EM iterations. The left panel shows the training data and true function, along with the predictions of each of the ( K=3 ) experts. Shown in red is the modal prediction, i.e. the prediction of the most likely expert for each point. The right panel shows the responsibilities of each expert for over the domain. We can see the transitions between experts nicely match the discontinuities in the piecewise function, and we are able to recover the true function well.</p>
 
 </main>
 
   <footer>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/render-katex.js" defer></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 

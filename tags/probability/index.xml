@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Magnus Ross</title>
+    <link>/tags/probability/</link>
+    <description>Recent content in Probability on Magnus Ross</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distributions of quotients of uniform RVs</title>
+      <link>/posts/rvquotients_problem/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rvquotients_problem/</guid>
+      <description>This is a nice problem from the book &amp;ldquo;Cut the knot&amp;rdquo;, which is a compilation of probability riddles and brain teasers. I like the book because many of the problems are about intuitive reasoning, and don&amp;rsquo;t really involve that much technical knowledge of probability theory, so they can be fun to do with people who don&amp;rsquo;t have a formal maths background. Each problem can also generally be solved many different ways, so it&amp;rsquo;s fun to compare solutions.</description>
+    </item>
+    
+    <item>
+      <title>Simulation is easy, probability is hard...</title>
+      <link>/posts/another-note/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/another-note/</guid>
+      <description>There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money, attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are The Education of a Speculator by Victor Niederhoffer and Fooled by Randomness by Nassim Nicholas Taleb.</description>
+    </item>
+    
+  </channel>
+</rss>

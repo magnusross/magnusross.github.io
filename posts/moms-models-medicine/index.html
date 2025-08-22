@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moms, Models and Medicine | Magnus Ross</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/posts">Posts</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Moms, Models and Medicine</span></h1>
+
+<h2 class="date">2025/08/22</h2>
+</div>
+
+<main>
+<p>Machine learning for health (ML4H) has a problem with deployment in the clinic. Each year, thousands of papers are published describing ML systems for all kinds of medical problems, from antimicrobial resistance to radiology. Unfortunately, only a tiny proportion of these models—<a href="https://linkinghub.elsevier.com/retrieve/pii/S0933365719303951">estimates</a> put the number at around 1%—are ever prospectively evaluated, meaning deployed and tested in the real world. Systems with no prospective evaluation cannot be used by clinicians and therefore cannot impact patient outcomes. There are many factors that prevent models from being translated to the real world, including a lack of technical know-how, budgetary constraints, and ethics and compliance issues, all of which have been <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11520244/">discussed</a> <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2022.939292/full">before</a>. There is another problem that is, in my experience, discussed less: a misalignment between the system in question and the actual needs of clinicians. Before building a system, we need to understand if there is actually demand for it in the clinic.</p>
+<p>A good friend of mine is <a href="https://www.inaugural.ai">deep</a> in the world of startups and spends a lot of his time doing <em>idea validation</em>—that is, trying to understand if there is a market for a given idea or product. Despite the fact that in the startup world success is eventually judged by sales or profits, whereas in ML4H it is more likely to be adoption by clinicians and, hopefully, an associated improvement in clinical outcomes, both rely on designing something that people actually want and will use. Therefore, I think many of the tools that help entrepreneurs validate ideas can be repurposed to help researchers undertake projects with real impact.</p>
+<p>It is rare for researchers to think of themselves as creating products in the same way a founder might. This is because the incentives are different. In academia, research quality is primarily assessed via publications and their citations. These papers describe the system, but the system itself is not assessed. Unfortunately for patients, the acceptance of an ML system for publication (or even the number of citations) does not imply anything about its actual utility in a clinical setting. Most published papers describe systems that are never deployed in a hospital. Prospective evaluations looking at patient outcomes are rare; studies of long-term adoption, ease of use, etc., are even rarer. Ultimately, in many of these cases, it is very difficult to assess whether the system has, or could ever have, a real positive impact. These systems are therefore not useful.</p>
+<p>The problem of creating useless products is more insidious in academia than in the world of startups. In a startup, you usually have a fixed amount of capital to expend, and if when it&rsquo;s gone you haven&rsquo;t made a profit or, more likely, convinced someone to invest more money based on promising sales figures, you fail. Don&rsquo;t get me wrong, for many people, that is traumatic, and in some cases ruinous, but it is at least likely to happen quickly. In academia, however, you can spend a long time, potentially your whole career, building things that no one will ever use and not knowing about it.</p>
+<p>This raises the question of how we can design and deploy systems that are useful. To build useful systems, we must understand the needs of clinicians deeply. The first step in the process is to connect with clinicians and talk to them about their problems, which is, fortunately, reasonably common practice in ML4H projects. The next step is to make sure we are having the right conversations.</p>
+<p>My startup friend recommended a book called <a href="https://www.google.co.uk/books/edition/The_Mom_Test/Z5nYDwAAQBAJ?hl=en">The Mom Test</a>, which is all about how to gather information by talking to potential customers. The book is short and quite fun, so it is worth picking up, but the top-line takeaway is that if you ask someone, &ldquo;Hey, I have this cool idea for a product/CDSS,<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> what do you think?&rdquo; they will more often than not say that they like it because that is what we are socially conditioned to do. Often, people will even say they would pay for it. Unfortunately, this is not really useful because it&rsquo;s not concrete information or a commitment. Gathering information in this way can potentially lead to the pursuit of ideas that have no real customer base, thus ultimately resulting in failure. The solution to this problem is to ask people concrete questions about what they have done in the past, which products they use, what issues they have with them, and how much time or effort they have spent fixing the issues. People are far less likely to lie about these things, and their responses can be used to figure out if your product has legs. The key is to avoid mentioning your idea, and especially to avoid pitching it, as this will likely bias their response.</p>
+<p>I think The Mom Test could be a useful framework to help researchers in ML4H create systems that are better aligned with the needs of clinicians. Clinicians will rarely come to you with a well-defined machine learning problem to solve. Part of being a great applied ML researcher is learning how to craft the problem in such a way that a model can be applied fruitfully. However, there is the ever-present danger of solving the problem <em>you want to solve</em> as opposed to the problem that <em>actually needs solving</em>. In my experience, if you go back to the problem-poser and say, &ldquo;Hey, I&rsquo;ve interpreted your problem as X and fit this cool model which predicts Y, what do you think?&rdquo; they will say, &ldquo;Sounds great!&rdquo; In this way, it&rsquo;s very easy to create something that isn&rsquo;t useful because it doesn&rsquo;t fit in their workflow, doesn&rsquo;t actually solve the problem they are interested in, or for some other reason. As in the case of product validation, once you have revealed your solution, their response is likely to be biased towards positivity. Here&rsquo;s an example I have taken the liberty of imagining for you (I do not know any radiologists):</p>
+<blockquote>
+<p>Radiologist: &ldquo;We&rsquo;re really stretched for staff and have a big backlog of X-rays to process 😕&rdquo;</p>
+<p>Me (CNN Lover): &ldquo;Great, I&rsquo;ve built this CNN to detect fractures! It has an accuracy of 99%!&rdquo;</p>
+<p>Radiologist: &ldquo;Wow, sounds cool, I can&rsquo;t wait to use it!&rdquo;</p>
+</blockquote>
+<p>You then spend a looong time getting ethics approvals and writing an MLOps pipeline to deploy it and it doesn&rsquo;t end up saving any time, and you find your nice web-app hasn&rsquo;t been visited once. Oh no! Here&rsquo;s how it could have gone better:</p>
+<blockquote>
+<p>Radiologist: &ldquo;We&rsquo;re really stretched for staff and have a big backlog of X-rays to process 😕&rdquo;</p>
+<p>Me (Mom Test Devotee): &ldquo;Oh no, what&rsquo;s the most frustrating part of your day when processing X-rays?&rdquo;</p>
+<p>Radiologist: &ldquo;Reading the X-rays is pretty easy, but it takes me ages to write the reports each time.&rdquo;</p>
+</blockquote>
+<p>So maybe the solution is to help with report generation instead? Of course you should then ask a number of follow-up questions about what exactly is slow, and why, how much time they spend on it, and if there is anything they have tried already.</p>
+<p>By having the right conversations, we can better understand where ML is truly needed. Building something that gets published is one thing, but building something that gets <em>used</em> is another entirely. That second path is harder, but it’s the only one where our work will actually matter to patients.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Clinical Decision Support System for the non-healthcare crew. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://magnusross.github.io">Magnus Ross</a> &ndash; 2025
+  
+  </footer>
+  </body>
+</html>
+

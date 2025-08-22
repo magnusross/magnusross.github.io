@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Health on Magnus Ross</title>
+    <link>/tags/health/</link>
+    <description>Recent content in Health on Magnus Ross</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moms, Models and Medicine</title>
+      <link>/posts/moms-models-medicine/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/moms-models-medicine/</guid>
+      <description>Machine learning for health (ML4H) has a problem with deployment in the clinic. Each year, thousands of papers are published describing ML systems for all kinds of medical problems, from antimicrobial resistance to radiology. Unfortunately, only a tiny proportion of these models—estimates put the number at around 1%—are ever prospectively evaluated, meaning deployed and tested in the real world. Systems with no prospective evaluation cannot be used by clinicians and therefore cannot impact patient outcomes.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rant on Magnus Ross</title>
+    <link>/tags/rant/</link>
+    <description>Recent content in Rant on Magnus Ross</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moms, Models and Medicine</title>
+      <link>/posts/moms-models-medicine/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/moms-models-medicine/</guid>
+      <description>Machine learning for health (ML4H) has a problem with deployment in the clinic. Each year, thousands of papers are published describing ML systems for all kinds of medical problems, from antimicrobial resistance to radiology. Unfortunately, only a tiny proportion of these models—estimates put the number at around 1%—are ever prospectively evaluated, meaning deployed and tested in the real world. Systems with no prospective evaluation cannot be used by clinicians and therefore cannot impact patient outcomes.</description>
+    </item>
+    
+    <item>
+      <title>A Spartan&#39;s guide to trading</title>
+      <link>/posts/spartans_guide_to_trading/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spartans_guide_to_trading/</guid>
+      <description>Unless you&amp;rsquo;ve been under a rock the past few weeks, you&amp;rsquo;ve probably heard about Elon Musk&amp;rsquo;s gaggle of DOGE lads who have been let loose inside the US Treasury payments system. Since they have apparently been given read/write access to some highly sensitive databases and are likely pushing hastily coded &amp;ldquo;efficiency improvements&amp;rdquo; to main as we speak, it’s in the public interest to understand how good these guys are as engineers.</description>
+    </item>
+    
+    <item>
+      <title>Time series benchmarks are broken</title>
+      <link>/posts/tsf_benchmarks/</link>
+      <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tsf_benchmarks/</guid>
+      <description>Benchmark tasks are a cornerstone of ML research, and a large proportion new research in pretty much every subfield follows the following template:
+ Introduce new layer, architecture, optimiser, inference scheme&amp;hellip; Run the model on a set of benchmark tasks Make a big table with your model/method and a load of other similar ones1  Although this paradigm has some issues, it can be a useful way of doing things. It has arguably driven at least some of the progress we have seen in recent years by making it easy for researchers to quickly iterate without worrying too much about applications.</description>
+    </item>
+    
+  </channel>
+</rss>

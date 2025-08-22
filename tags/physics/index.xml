@@ -4,16 +4,18 @@
     <title>Physics on Magnus Ross</title>
     <link>/tags/physics/</link>
     <description>Recent content in Physics on Magnus Ross</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lagrangians with PyTorch Part #1</title>
       <link>/posts/l1/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
       <guid>/posts/l1/</guid>
-      <description>&lt;p&gt;&lt;em&gt;(Note: This series of posts is closely related to and inspired by &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;this paper&lt;/a&gt; from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant &lt;a href=&#34;https://greydanus.github.io/2020/03/10/lagrangian-nns/&#34;&gt;blog post&lt;/a&gt; about the work which I would encourage you to read)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree. We will get into the reasons for this shortly, but needless to say, when I heard that Lagrangians were being used with neural networks to learn physics I could not have clicked the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;arXiv link&lt;/a&gt; faster. In this series of posts I will give a brief introduction to what Lagrangian mechanics is all about, why the concepts are so important in physics, and how we can use them to solve a cool problem involving both a pendulum &lt;strong&gt;and&lt;/strong&gt; a spring at once (!). We&amp;rsquo;ll then see how we can use PyTorch to save ourselves the effort of calculating a load of derivatives by hand. Finally we&amp;rsquo;ll tie it all together to learn a Lagrangian from some data using a neural network, and see how we get superior performance by making the model aware of the physics of the situation. Lots to do, so let&amp;rsquo;s get started!&lt;/p&gt;</description>
+      <description>(Note: This series of posts is closely related to and inspired by this paper from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant blog post about the work which I would encourage you to read)
+I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree.</description>
     </item>
+    
   </channel>
 </rss>
