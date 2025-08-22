@@ -1,20 +1,1025 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Probabilty on Magnus Ross</title>
-    <link>/tags/probabilty/</link>
-    <description>Recent content in Probabilty on Magnus Ross</description>
+    <title>Magnus Ross</title>
+    <link>https://magnusross.github.io/tags/probabilty/</link>
+    <description>Recent content on Magnus Ross</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/probabilty/index.xml" rel="self" type="application/rss+xml" />
+    
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://magnusross.github.io/tags/probabilty/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Moms, Models and Medicine</title>
+      <link>https://magnusross.github.io/posts/moms-models-medicine/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/moms-models-medicine/</guid>
+      <description>&lt;p&gt;Machine learning for health (ML4H) has a problem with deployment in the clinic. Each year, thousands of papers are published describing ML systems for all kinds of medical problems, from antimicrobial resistance to radiology. Unfortunately, only a tiny proportion of these models—&lt;a href=&#34;https://linkinghub.elsevier.com/retrieve/pii/S0933365719303951&#34;&gt;estimates&lt;/a&gt; put the number at around 1%—are ever prospectively evaluated, meaning deployed and tested in the real world. Systems with no prospective evaluation cannot be used by clinicians and therefore cannot impact patient outcomes. There are many factors that prevent models from being translated to the real world, including a lack of technical know-how, budgetary constraints, and ethics and compliance issues, all of which have been &lt;a href=&#34;https://pmc.ncbi.nlm.nih.gov/articles/PMC11520244/&#34;&gt;discussed&lt;/a&gt; &lt;a href=&#34;https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2022.939292/full&#34;&gt;before&lt;/a&gt;. There is another problem that is, in my experience, discussed less: a misalignment between the system in question and the actual needs of clinicians. Before building a system, we need to understand if there is actually demand for it in the clinic.&lt;/p&gt;
+&lt;p&gt;A good friend of mine is &lt;a href=&#34;https://www.inaugural.ai&#34;&gt;deep&lt;/a&gt; in the world of startups and spends a lot of his time doing &lt;em&gt;idea validation&lt;/em&gt;—that is, trying to understand if there is a market for a given idea or product. Despite the fact that in the startup world success is eventually judged by sales or profits, whereas in ML4H it is more likely to be adoption by clinicians and, hopefully, an associated improvement in clinical outcomes, both rely on designing something that people actually want and will use. Therefore, I think many of the tools that help entrepreneurs validate ideas can be repurposed to help researchers undertake projects with real impact.&lt;/p&gt;
+&lt;p&gt;It is rare for researchers to think of themselves as creating products in the same way a founder might. This is because the incentives are different. In academia, research quality is primarily assessed via publications and their citations. These papers describe the system, but the system itself is not assessed. Unfortunately for patients, the acceptance of an ML system for publication (or even the number of citations) does not imply anything about its actual utility in a clinical setting. Most published papers describe systems that are never deployed in a hospital. Prospective evaluations looking at patient outcomes are rare; studies of long-term adoption, ease of use, etc., are even rarer. Ultimately, in many of these cases, it is very difficult to assess whether the system has, or could ever have, a real positive impact. These systems are therefore not useful.&lt;/p&gt;
+&lt;p&gt;The problem of creating useless products is more insidious in academia than in the world of startups. In a startup, you usually have a fixed amount of capital to expend, and if when it&amp;rsquo;s gone you haven&amp;rsquo;t made a profit or, more likely, convinced someone to invest more money based on promising sales figures, you fail. Don&amp;rsquo;t get me wrong, for many people, that is traumatic, and in some cases ruinous, but it is at least likely to happen quickly. In academia, however, you can spend a long time, potentially your whole career, building things that no one will ever use and not knowing about it.&lt;/p&gt;
+&lt;p&gt;This raises the question of how we can design and deploy systems that are useful. To build useful systems, we must understand the needs of clinicians deeply. The first step in the process is to connect with clinicians and talk to them about their problems, which is, fortunately, reasonably common practice in ML4H projects. The next step is to make sure we are having the right conversations.&lt;/p&gt;
+&lt;p&gt;My startup friend recommended a book called &lt;a href=&#34;https://www.google.co.uk/books/edition/The_Mom_Test/Z5nYDwAAQBAJ?hl=en&#34;&gt;The Mom Test&lt;/a&gt;, which is all about how to gather information by talking to potential customers. The book is short and quite fun, so it is worth picking up, but the top-line takeaway is that if you ask someone, &amp;ldquo;Hey, I have this cool idea for a product/CDSS,&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; what do you think?&amp;rdquo; they will more often than not say that they like it because that is what we are socially conditioned to do. Often, people will even say they would pay for it. Unfortunately, this is not really useful because it&amp;rsquo;s not concrete information or a commitment. Gathering information in this way can potentially lead to the pursuit of ideas that have no real customer base, thus ultimately resulting in failure. The solution to this problem is to ask people concrete questions about what they have done in the past, which products they use, what issues they have with them, and how much time or effort they have spent fixing the issues. People are far less likely to lie about these things, and their responses can be used to figure out if your product has legs. The key is to avoid mentioning your idea, and especially to avoid pitching it, as this will likely bias their response.&lt;/p&gt;
+&lt;p&gt;I think The Mom Test could be a useful framework to help researchers in ML4H create systems that are better aligned with the needs of clinicians. Clinicians will rarely come to you with a well-defined machine learning problem to solve. Part of being a great applied ML researcher is learning how to craft the problem in such a way that a model can be applied fruitfully. However, there is the ever-present danger of solving the problem &lt;em&gt;you want to solve&lt;/em&gt; as opposed to the problem that &lt;em&gt;actually needs solving&lt;/em&gt;. In my experience, if you go back to the problem-poser and say, &amp;ldquo;Hey, I&amp;rsquo;ve interpreted your problem as X and fit this cool model which predicts Y, what do you think?&amp;rdquo; they will say, &amp;ldquo;Sounds great!&amp;rdquo; In this way, it&amp;rsquo;s very easy to create something that isn&amp;rsquo;t useful because it doesn&amp;rsquo;t fit in their workflow, doesn&amp;rsquo;t actually solve the problem they are interested in, or for some other reason. As in the case of product validation, once you have revealed your solution, their response is likely to be biased towards positivity. Here&amp;rsquo;s an example I have taken the liberty of imagining for you (I do not know any radiologists):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Radiologist: &amp;ldquo;We&amp;rsquo;re really stretched for staff and have a big backlog of X-rays to process 😕&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Me (CNN Lover): &amp;ldquo;Great, I&amp;rsquo;ve built this CNN to detect fractures! It has an accuracy of 99%!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Radiologist: &amp;ldquo;Wow, sounds cool, I can&amp;rsquo;t wait to use it!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You then spend a looong time getting ethics approvals and writing an MLOps pipeline to deploy it and it doesn&amp;rsquo;t end up saving any time, and you find your nice web-app hasn&amp;rsquo;t been visited once. Oh no! Here&amp;rsquo;s how it could have gone better:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Radiologist: &amp;ldquo;We&amp;rsquo;re really stretched for staff and have a big backlog of X-rays to process 😕&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Me (Mom Test Devotee): &amp;ldquo;Oh no, what&amp;rsquo;s the most frustrating part of your day when processing X-rays?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Radiologist: &amp;ldquo;Reading the X-rays is pretty easy, but it takes me ages to write the reports each time.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So maybe the solution is to help with report generation instead? Of course you should then ask a number of follow-up questions about what exactly is slow, and why, how much time they spend on it, and if there is anything they have tried already.&lt;/p&gt;
+&lt;p&gt;By having the right conversations, we can better understand where ML is truly needed. Building something that gets published is one thing, but building something that gets &lt;em&gt;used&lt;/em&gt; is another entirely. That second path is harder, but it’s the only one where our work will actually matter to patients.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Clinical Decision Support System for the non-healthcare crew. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Practicing mountain marathon navigation</title>
+      <link>https://magnusross.github.io/posts/mm_nav_guide/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/mm_nav_guide/</guid>
+      <description>&lt;p&gt;This is a guide that details how to use the Routegadget website to practice route selection for a mountain marathon. While Routegadget&amp;rsquo;s interface is a little old-school, it is a useful and powerful tool for analysing past races. This guide will focus on past races from &lt;a href=&#34;https://slmm.org.uk&#34;&gt;the SLMM&lt;/a&gt;, but this practice is applicable to any mountain marathon.&lt;/p&gt;
+&lt;h2 id=&#34;a-first-map&#34;&gt;A first map&lt;/h2&gt;
+&lt;p&gt;First, let&amp;rsquo;s look at a past course on Routegadget. Follow &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&#34;&gt;this link&lt;/a&gt; to view the map and controls for day one of the &amp;ldquo;Harter Fell&amp;rdquo; course of the 2017 edition of the SLMM. You should see something like this:
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_controls_only.png&#34;
+         alt=&#34;A map of the Harter Fell 2017 SLMM course showing only the control points.&#34;/&gt; 
+&lt;/figure&gt;
+
+Some important things to note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The purple numbered circles are the controls (this is a fancy orienteering term for a checkpoint) for the Harter Fell course; they must be visited in numerical order to complete the course successfully.&lt;/li&gt;
+&lt;li&gt;The red circles are controls for other courses; these controls are not relevant for the Harter Fell course.&lt;/li&gt;
+&lt;li&gt;When the map is provided at the start of the event, the controls relevant to your course will not be marked on the map like this; you will be provided with a list of grid references, which you must use to mark the correct controls on your map.&lt;/li&gt;
+&lt;li&gt;The purple straight lines show the &amp;ldquo;as the crow flies&amp;rdquo; route between two controls. This is almost never the optimal route to take.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given the straight-line route is not optimal, what is the best route? That&amp;rsquo;s the key question in a mountain marathon! The optimal route can depend on many factors, including weather conditions, competitor fitness, and willingness to destroy your ankles contouring, but there are some general lessons we can learn by looking at the routes taken by past successful competitors.&lt;/p&gt;
+&lt;h2 id=&#34;a-first-route&#34;&gt;A first route&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s now look at the route the winning pair (Adrian &amp;amp; Matthew Hall) took. Follow &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&amp;amp;route=50168&#34;&gt;this link&lt;/a&gt; to view their GPS track overlaid on the map.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_winning_route.png&#34;
+         alt=&#34;A map of the Harter Fell 2017 SLMM course showing the winning route.&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;What should we be thinking about when trying to understand this route choice? Some of the following might be relevant:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Where do they stick to the paths, and when do they cut off corners?&lt;/li&gt;
+&lt;li&gt;When do they choose to contour around a mountain, saving elevation but adding distance, and when do they choose to go over?&lt;/li&gt;
+&lt;li&gt;How do they navigate uncrossable boundaries?&lt;/li&gt;
+&lt;li&gt;When they leave the path to hit a control, at what point do they do this?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Looking at places where the choices of competitors diverge can be an interesting way to understand decision-making. &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&amp;amp;route=50168,50184&#34;&gt;This link&lt;/a&gt; additionally shows the route taken by the 17th-place pair. While they are largely the same, there is an interesting divergence around controls 4-5.
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_comparison.png&#34;
+         alt=&#34;A map comparing the routes of two different pairs on the Harter Fell 2017 SLMM course.&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can see that the winning pair (in red) go off the path between the controls, saving elevation but contouring on very steep terrain, whereas the 17th-place pair (brown) went back on the path. This was likely a fast but physically challenging choice; whether it saved time would be contingent on the ability of the pair to cover that terrain quickly.&lt;/p&gt;
+&lt;p&gt;Unfortunately, there is no easy formula for choosing a route, and much of it comes with experience. We can, however, get a bit of virtual experience by going through some other courses and plotting our own routes.&lt;/p&gt;
+&lt;h2 id=&#34;the-measure-tool&#34;&gt;The measure tool&lt;/h2&gt;
+&lt;p&gt;Clicking on the ruler icon in the top left corner of the interface gives you access to the measure tool. This allows you to plot your own route on the map and compare it with the competitor routes. Clicking once the tool is activated adds points that are linked with lines. The screenshot below shows a route I have started building with the tool. The icon to activate the measure tool is circled in the top right.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_measure.jpg&#34;
+         alt=&#34;A screenshot of the Routegadget website showing the measure tool being used to draw a route on a map.&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;the-test&#34;&gt;The Test&lt;/h2&gt;
+&lt;p&gt;Now that you know how to create your own route, the best way to practice is to load up some maps, try to create a route, and then compare it with the routes the actual competitors took. Below are some links for base maps with controls that you should use to create your route, and then the &amp;ldquo;answer,&amp;rdquo; showing the routes some of the top pairs took for that course. After you have created your route, click the answer and compare. Keep in mind that there is no single correct answer, and different routes may make more or less sense for different people. Here are 5 to try for yourself:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Day 2 Harter Fell 2017
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#3&amp;amp;course=4&#34;&gt;Controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#3&amp;amp;course=4&amp;amp;route=50156&#34;&gt;Answer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Day 1 Carrock Fell 2018
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#5&amp;amp;course=3&#34;&gt;Controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#5&amp;amp;course=3&amp;amp;route=50060&#34;&gt;Answer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Day 1 Harter Fell 2018
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#5&amp;amp;course=4&#34;&gt;Controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#5&amp;amp;course=4&amp;amp;route=50128&#34;&gt;Answer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Day 1 Wansfell 2021
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#14&amp;amp;course=6&#34;&gt;Controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#14&amp;amp;course=6&amp;amp;route=50371&#34;&gt;Answer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Day 1 Scafell 2023
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#23&amp;amp;course=1&#34;&gt;Controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#23&amp;amp;course=1&amp;amp;route=50001&#34;&gt;Answer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you managed to do all those (including the last mega one!), then well done! You should be well prepared, at least in a virtual sense. One final thing to keep in mind: out on the fells conditions change in an instant!&lt;/p&gt;
+&lt;h1 id=&#34;more-resources&#34;&gt;More Resources&lt;/h1&gt;
+&lt;p&gt;The following resources are great for learning more about mountain navigation, route choice, and mountain marathons in general:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.runlikeahaggis.com/how-to-mountain-marathon/&#34;&gt;General guide to MMs.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slmm.org.uk/beginners-guide-mountain-marathons/&#34;&gt;SLMM guidance for beginner competitors.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://files.fellrunner.org.uk/documents/mountain_navigation.pdf&#34;&gt;Great technical mountain navigation guide.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The track is green on the image here but may be a different color for you, it seems to change randomly each time the page is loaded. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Spartan&#39;s guide to trading</title>
+      <link>https://magnusross.github.io/posts/spartans_guide_to_trading/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/spartans_guide_to_trading/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../not-many-spartans.png&#34;
+         alt=&#34;A screenshot of an Elon Musk tweet that says &amp;#39;Not many Spartans are needed to win battles.&amp;#39;.&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Unless you&amp;rsquo;ve been under a rock the past few weeks, you&amp;rsquo;ve probably heard about Elon Musk&amp;rsquo;s gaggle of DOGE lads who have been &lt;a href=&#34;https://www.wired.com/story/elon-musk-government-young-engineers/&#34;&gt;let loose inside the US Treasury payments system&lt;/a&gt;. Since they have apparently been given read/write access to some highly sensitive databases and are likely pushing hastily coded &amp;ldquo;efficiency improvements&amp;rdquo; to main as we speak, it’s in the public interest to understand how good these guys are as engineers.&lt;/p&gt;
+&lt;p&gt;Ethan Shaotran is a 22-year-old who got involved with Elon through the expedient of achieving second place in an xAI hackathon.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; He runs a startup called Energize AI, which looks like it makes a nice wrapper for the ChatGPT API. He is also a &lt;a href=&#34;https://www.businessinsider.com/harvard-senior-balances-college-ai-startup-productivity-enterprise-openai-coding-2024-8&#34;&gt;student at Harvard&lt;/a&gt;. This information is all now somewhat difficult to discover, as he has deleted or set to private his Twitter, GitHub, and Harvard profiles, as well as the startup website. So much for government transparency under the new regime! One of Ethan&amp;rsquo;s claimed achievements in his now-deleted Harvard bio is being &amp;ldquo;the author of several AI books.&amp;rdquo; As far as I can tell, however, he has only written a single book&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; called &lt;em&gt;Stock Prediction with Deep Learning&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In order to better understand the young minds now seemingly in charge of disbursing payments for the world&amp;rsquo;s largest economy, I have purchased Ethan&amp;rsquo;s magnum opus for the &lt;a href=&#34;https://www.amazon.co.uk/Stock-Prediction-Learning-Ethan-Shaotran/dp/1092671102&#34;&gt;not-insignificant price of £15.79&lt;/a&gt;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; and read all 109 pages.&lt;/p&gt;
+&lt;h2 id=&#34;ethans-tender-age&#34;&gt;Ethan&amp;rsquo;s tender age&lt;/h2&gt;
+&lt;p&gt;It must be noted, in the interest of fairness, that Ethan was 16 when he wrote this book. While for some, this might be a mitigating factor, I believe the book should be assessed as the work of a fully-fledged adult because:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Prior to recent scrubbing, the book featured prominently on his Harvard bio page, implying that it&amp;rsquo;s work he&amp;rsquo;s proud of.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s still for sale on Amazon, where the blurb claims that the book &amp;ldquo;tackles the common misconception that the stock market cannot be predicted, and builds a stock prediction algorithm to beat the stock market.&amp;rdquo; What if an unsuspecting layperson picks it up and trades away their life savings?&lt;/li&gt;
+&lt;li&gt;Given the unrestricted access he has been granted at DOGE and the responsibility that comes with that, we might surmise that he is academically mature for his age and thus was capable of producing a passable textbook in his mid-teens. Gauss was producing &lt;a href=&#34;https://crypto.stanford.edu/pbc/notes/numbertheory/17gon.html&#34;&gt;major breakthroughs in number theory&lt;/a&gt; at age 16, so why not our Ethan?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With all that being said, what&amp;rsquo;s this book actually like? Maybe it&amp;rsquo;s good? Maybe the Treasury is in safe hands?&lt;/p&gt;
+&lt;h2 id=&#34;the-book&#34;&gt;The Book&lt;/h2&gt;
+&lt;p&gt;The book is not good. In fact, I would say it is some of the worst technical writing I have ever read. The book really has very little to do with stock prediction or deep learning and is basically Ethan&amp;rsquo;s first-ever Python script, with some added nonsensical explanations about neural networks and financial markets. The proposed system trades based on a naive &amp;ldquo;sentiment analysis&amp;rdquo; of a few news articles and is never going to give useful outputs, which is likely why it isn&amp;rsquo;t evaluated at any point.&lt;/p&gt;
+&lt;h3 id=&#34;foreword-by-dr-j-mark-munoz&#34;&gt;Foreword by Dr. J. Mark Munoz&lt;/h3&gt;
+&lt;p&gt;We kick things off with a foreword from &lt;a href=&#34;https://millikin.edu/about/administration/faculty-staff-directory/mark-munoz&#34;&gt;Dr. J. Mark Munoz&lt;/a&gt;, a professor of Management and International Business at Millikin University, which is seemingly unconnected from the remainder of the text. The strange thing about this section is that it has a real AI slop vibe, despite the fact that the book was published five years before the release of ChatGPT. It includes a list of 12 ways that AI is going to &amp;ldquo;revolutionize companies,&amp;rdquo; including gems such as &amp;ldquo;Reframing of competitive parameters&amp;rdquo; and &amp;ldquo;Unprecedented levels of accountability and ethical pressures.&amp;rdquo; Great stuff! According to Prof. Munoz:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Utilizing the lessons from this book would be like stepping into the AI/DL fast train that is headed towards an amazing and forthcoming technological revolution.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Well, what are we waiting for? Let&amp;rsquo;s utilize some lessons!&lt;/p&gt;
+&lt;h3 id=&#34;the-system&#34;&gt;The System&lt;/h3&gt;
+&lt;p&gt;So what exactly is the revolutionary system that Ethan claims &amp;ldquo;beat the market&amp;rdquo; in 2017? The text isn&amp;rsquo;t exactly clear on the details, but as far as I can tell, it goes something like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose some stocks, e.g., Tesla, Apple.&lt;/li&gt;
+&lt;li&gt;Find some news articles that mention their ticker.&lt;/li&gt;
+&lt;li&gt;Take all the words in the article and keep track of the number of positive and negative words (according to a big list he&amp;rsquo;s got from somewhere); the difference between these counts is the &lt;em&gt;sentiment score&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Find the slope of the OLS fit to the stock&amp;rsquo;s closing price over the next five days.&lt;/li&gt;
+&lt;li&gt;Fit a very simple neural network classifier to predict the sign of the slope, using two features: the sentiment score and the source of the article.&lt;/li&gt;
+&lt;li&gt;???&lt;/li&gt;
+&lt;li&gt;Profit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, on the face of it, this is a bad strategy that isn&amp;rsquo;t going to work for any number of reasons. That is, perhaps, why the book at no point contains any sort of evaluation of the model, backtest, or description of how the system could be used in practice. There is not even so much as an accuracy score for the classifier. We do get some insight into how the model might perform at the start of Chapter 7:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We just finished creating our prediction system. However, you may quickly notice two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It’s actually not predicting very well.&lt;/li&gt;
+&lt;li&gt;The algorithm without our Deep Learning system works better.&lt;br&gt;
+This might be surprising – shouldn’t Deep Learning help our system?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After this admission, Ethan goes on to construct some additional features based on historical values of the series, which he claims will improve performance.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; He then fits the model again but provides no evaluation or discussion of accuracy, which might lead us to again conclude that the model just doesn&amp;rsquo;t work. So the book can&amp;rsquo;t really teach us anything useful about ML or trading, but perhaps it redeems itself as an introduction to Python?&lt;/p&gt;
+&lt;h3 id=&#34;the-code&#34;&gt;The Code&lt;/h3&gt;
+&lt;p&gt;The code in the book is littered with errors and demonstrates a poor grasp of the language and of programming generally. I used to teach 10-year-olds introductory Python at an afterschool club, and this makes their code look like it was written by Guido van Rossum. I have included an illustrative snippet in a footnote.&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; At one point, he seems to leave his private API keys in the code. Good to know he&amp;rsquo;s got an eye for detail! Let&amp;rsquo;s hope that&amp;rsquo;s not your social security number! I cannot stress enough how bitterly disappointed you would be if you bought this book hoping to learn anything about coding in Python. Obviously, everyone has to start somewhere, but the fact he is still promoting this now is worrying.&lt;/p&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll leave you with a final thought I lifted straight from the chapter entitled &amp;ldquo;Final Thoughts&amp;rdquo;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Learning a completely new concept is hard.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Very true, Ethan. Maybe this book does contain some insights after all. Let&amp;rsquo;s hope you remember that when you are diving into a decades-old system at the heart of the global economy. Good luck with the COBOL!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Thanks for reading, if you liked this post you can &lt;a href=&#34;https://bsky.app/profile/magnusar.bsky.social&#34;&gt;follow me on Bluesky&lt;/a&gt; or &lt;a href=&#34;https://magnusross.github.io/index.xml&#34;&gt;subscribe to the RSS feed&lt;/a&gt; to get posts in the future.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;For which he won cloud credits worth the princely sum of $5000. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;He has also contributed to a compendium of short stories about AI and the future of work. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Don&amp;rsquo;t feel too bad, I was able to return it for a refund shortly after. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;He does this in such a way that leaks data from the future, but let&amp;rsquo;s ignore that for now. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This is an actual code snippet lifted verbatim from the book (I have added comments):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def SourceInt(url):
+    url = url.lower()
+    if &#39;cnn&#39; in url:
+        sourceint = 1
+    elif &#39;fool.com&#39; in url:
+        sourceint = 2
+    elif &#39;finance.yahoo.com&#39; in url:
+        sourceint = 3
+    elif &#39;investopedia.com&#39; in url:
+        sourceint = 4
+    elif &#39;businessinsider.com&#39; in url:
+        sourceint = 5
+    elif &#39;marketwatch.com&#39; in url:
+        sourceint = 6
+    elif &#39;forbes.com&#39; in url:
+        sourceint = 7
+    elif &#39;thestreet.com&#39; in url:
+        sourceint = 8
+    elif &#39;fortune.com&#39; in url:
+        sourceint = 9
+    elif &#39;cnbc.com&#39; in url:
+        sourceint = 10
+    elif &#39;nasdaq.com&#39; in url:
+        sourceint = 11
+    elif &#39;investorplace.com&#39; in url:
+        sourceint = 12
+    elif &#39;seekingalpha.com&#39; in url:
+        sourceint = 13
+    elif &#39;nytimes&#39; in url:
+        sourceint = 14
+    elif &#39;cnbc&#39; in url:
+        sourceint = 15
+    elif &#39;apple&#39; in url:
+        sourceint = 16
+    elif &#39;techcrunch&#39; in url:
+        sourceint = 17
+    elif &#39;huff&#39; in url:
+        sourceint = 18
+    elif &#39;fox&#39; in url:
+        sourceint = 19
+    elif &#39;usatoday&#39; in url:
+        sourceint = 20
+    elif &#39;reuters&#39; in url:
+        sourceint = 21
+    elif &#39;npr&#39; in url:
+        sourceint = 22
+    elif &#39;nbc&#39; in url:
+        sourceint = 23
+    elif &#39;fox&#39; in url:  # Already assigned 19 above?
+        sourceint = 24
+    elif &#39;wsj&#39; in url:
+        sourceint = 25
+    elif &#39;marketwatch&#39; in url:  # Already assigned 6 above?
+        sourceint = 26
+    elif &#39;bloomberg&#39; in url:
+        sourceint = 27
+    elif &#39;guardian&#39; in url:
+        sourceint = 28
+    elif &#39;usnews&#39; in url:
+        sourceint = 29
+    elif &#39;livetradingnews&#39; in url:
+        sourceint = 30
+    elif &#39;streetinsider&#39; in url:
+        sourceint = 31
+    elif &#39;stocknewsjournal&#39; in url:
+        sourceint = 32
+    else:
+        sourceint = 0
+    return sourceint
+	
+	
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Time series benchmarks are broken</title>
+      <link>https://magnusross.github.io/posts/tsf_benchmarks/</link>
+      <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/tsf_benchmarks/</guid>
+      <description>&lt;p&gt;Benchmark tasks are a cornerstone of ML research, and a large proportion new research in pretty much every subfield follows the following template:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Introduce new layer, architecture, optimiser, inference scheme&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Run the model on a set of benchmark tasks&lt;/li&gt;
+&lt;li&gt;Make a big table with your model/method and a load of other similar ones&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Although this paradigm has some issues, it can be a useful way of doing things. It has arguably driven at least some of the progress we have seen in recent years by making it easy for researchers to quickly iterate without worrying too much about applications.&lt;/p&gt;
+&lt;p&gt;The success of this paradigm hinges on one crucial principle: the benchmark tasks must be a good proxy for things people actually care about in the real world. If they aren&amp;rsquo;t, what&amp;rsquo;s the point? ML’s only value is in its ability to solve real world problems.&lt;/p&gt;
+&lt;p&gt;While benchmarks in CV and NLP for the most part seem to be a reasonable proxy for real world tasks, time series forecasting (TSF) benchmarks have become increasingly disconnected. Models are often evaluated on tasks that either do not reflect realistic scenarios or fail to reveal meaningful distinctions between methods.&lt;/p&gt;
+&lt;h3 id=&#34;exchange-rates&#34;&gt;Exchange rates&lt;/h3&gt;
+&lt;p&gt;A prime example is the &lt;em&gt;exchange rates&lt;/em&gt; dataset, which consists of 10,000 daily rates from 8 currency pairs, which appears in many recent and historical papers.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; The task is to predict up to 2 years (~720 time steps) into the future, using only the past values of the series as inputs.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../exchange_rates.png&#34;
+         alt=&#34;A plot showing a red and a blue line, the lines look like they have similar properties.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Can you spot the random walk?&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The plot above shows one component of the exchange dataset, along with a random walk with the same mean and variance. They look extremely similar.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; This is because the path of exchange rates can be very well approximated with a random walk. This means that the optimum forecast is, in most cases, simply the last observed value (also known as persistence). The past values of the series are not predictive beyond the last observation. There is some evidence to suggest that if additional macroeconomic variables are included forecasts can beat persistence but, unfortunately, these are not included in the benchmark.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;This benchmark does not correspond in any way to any problem in the real world. People interested in modelling exchange rates would never do it this way, because it doesn&amp;rsquo;t really make any sense. You are just fitting noise. The fact this benchmark is so common in the literature is revealing, and shows a disconnect between forecasting research and forecasting practice. Many TSF papers neglect to include persistence as a baseline.&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; This makes it impossible to tell if the results for the proposed model on the exchange data are skilful. Nevertheless, the results are still often used as evidence that the model is performant relative to others. Unfortunately this is just one example of poor benchmarking practice in TSF research.&lt;/p&gt;
+&lt;h3 id=&#34;getting-the-setup-wrong&#34;&gt;Getting the setup wrong&lt;/h3&gt;
+&lt;p&gt;One task I know a little bit about, due to my former line of work, is electricity price forecasting (EPF). This has become a reasonably common benchmark in TSF papers over the past few years. On the whole, it is not a bad benchmark, although the predictability of prices beyond simple seasonality from past values alone (without exogenous variables) is perhaps debatable. EPF does however have quite a specific setup. In Europe, most power is traded on the day before delivery, at an auction. This auction typically occurs around 12:00. Market participants are interested in a forecast for the price of the next days power before this auction occurs, which they can use to inform their bids.&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; This means the forecast should be produced once a day with a window size of 24, and an offset of 12. Unfortunately, this is not how the benchmark is used (see e.g. &lt;a href=&#34;https://arxiv.org/abs/2402.19072&#34;&gt;TimeXer&lt;/a&gt;), where the window size is correctly set to 24, but offset is set to 0 and predictions are made on a rolling basis every hour. The diagram below shows the difference between these setups.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../forecast_horizons.png&#34;
+         alt=&#34;Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This may seem like a small difference, but it is revealing of the prevailing attitudes in the field, which is to not really consider the downstream use of models. Frustratingly, the correct setup is discussed in the paper the authors of TimeXer cite as the source of the dataset for the benchmark. I have only picked up on this particular discrepancy because it is a problem I just happen to know about. Other members of our group at UCL &lt;a href=&#34;https://arxiv.org/abs/2406.07438&#34;&gt;have discussed similar issues&lt;/a&gt; with the common flu rates benchmark. It is likely that these issues are present in other benchmarks as well.&lt;/p&gt;
+&lt;h3 id=&#34;reporting-of-metrics&#34;&gt;Reporting of metrics&lt;/h3&gt;
+&lt;p&gt;In the vast majority of recent papers, the reported metric is the average error over the forecast horizon. Say we have a forecast horizon of 100, then for each time point, our model outputs a vector of size 100, giving the prediction for each element of the horizon. The error is then computed relative to the target, and averaged over the 100 steps. Whilst this may be a useful metric in some contexts, it does not by any means give the full story of the performance of a model. Consider the two forecasts below.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../mean_horizon.png&#34;
+         alt=&#34;True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;These forecasts have the same error, but are very different. The top has moderate skill over the whole window, and the bottom is very skilful initially, and then not at all for the remainder. If we are interested in the error for prediction 100 steps into the future, the one model is useful and one is not. The way the error is reported however makes it impossible to know if forecasts are skilful a long horizons, or simply do well at the start of the horizon and are random after. This is compounded by the fact that as, mention above, the error of persistence is rarely reported making it hard to know what the error for a skilful forecast should be.&lt;/p&gt;
+&lt;h3 id=&#34;concluding-thoughts&#34;&gt;Concluding thoughts&lt;/h3&gt;
+&lt;p&gt;In TSF, unlike in other areas of ML which are dominated by Transformer architectures, there is not one model which has been shown to do best across tasks. It is not a guarantee that creating a fancier architecture with more parameters is going to give better performance. In fact linear models have been shown to &lt;a href=&#34;https://arxiv.org/abs/2403.20150&#34;&gt;rank best&lt;/a&gt; on average over a diverse set of datasets. That is not to say that sophisticated architectures can never be useful, because they can, but deploying them effectively in the real world requires understanding when they work and when they don&amp;rsquo;t. Using unrealistic benchmarks hinders this understanding and slows progress in the field. We should try to do better!&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If you want it to get accepted, you&amp;rsquo;ll need to make sure your model is all bold. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Random sample from my Zotero: &lt;a href=&#34;https://arxiv.org/abs/2310.07446&#34;&gt;ProbTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2403.07815&#34;&gt;Chronos&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2403.00131&#34;&gt;UniTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2310.06625&#34;&gt;iTransformer&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2205.13504&#34;&gt;(D/N)Linear&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2106.13008&#34;&gt;Autoformer&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Red (bottom) is random walk, blue (top) is Yen/USD. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This is not the entire story, you can actually do better than this sometimes if you use something called a purchasing power power parity model, which compares the price of a basket of goods in each county, then does some economics on it. &lt;a href=&#34;https://doi.org/10.1016/j.jimonfin.2024.103026&#34;&gt;This survey&lt;/a&gt; looks at 42 methods from the liturature. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;A few recent examples: &lt;a href=&#34;https://arxiv.org/abs/2403.00131&#34;&gt;UniTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2310.06625&#34;&gt;iTransformer&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2106.13008&#34;&gt;Autoformer&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;It is also possible to trade outside the auction, on the spot market. The spot market usually will only have liquidity for a few hours before the delivery of the contract. In that case the forecast horizon is 1 or 2 time steps, so it is really quite a different problem, albiet one that is also not discussed in any of the benchmarks. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Expectation maximization for mixture of linear experts</title>
+      <link>https://magnusross.github.io/posts/em_problem/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/em_problem/</guid>
+      <description>&lt;p&gt;The EM algorithm for me is one of those things that I feel I should know back to front, since it&amp;rsquo;s a pretty foundational algorithm in probabilistic ML. Unfortunately though I&amp;rsquo;ve never actually used it explicitly in a model I have built, despite reading about it in various textbooks, so I never properly got to grips with it. If you feel the same way, then hopefully this question will help. It&amp;rsquo;s from the new Murphy book, which is a fantastic reference. So much for sticking to a problem a week, hopefully it won&amp;rsquo;t be such a long gap to the next one!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Derive the EM equations for fitting a mixture of linear regression experts.&lt;/p&gt;
+&lt;p&gt;Source: Probabilistic machine learning: an introduction by Kevin P. Murphy, Ex. 11.6&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We can fine the specification of the mixture of linear experts model in section 13.6.2.1 of the book.  For input data ( {(x_n, y_n)}^{N}&lt;em&gt;{n=1} ) with ( x_n \in \mathbb{R}^D ) model consists of a set of ( K ) linear models (called the experts), with weights ( w&lt;/em&gt;{k}\in\mathbb R^{D} ) with each linear model having a Gaussian likelihood, with noise variance ( \sigma^2_k). Additionally, we have a ( K )-class logistic regression model, with weights ( W\in\mathbb{R}^{K\times D} ), which outputs the probability that each expert is responsible for a particular data point. This model is written as,&lt;/p&gt;
+&lt;p&gt;\begin{align}
+p(y|x_n,z=k,\theta)&amp;amp;=\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\\\&lt;br&gt;
+p(z=k|x,\theta)&amp;amp;={\mathrm{Cat}}(z|{\mathrm{softmax}}_{k}(\mathrm{V}x)
+\end{align}&lt;/p&gt;
+&lt;p&gt;where ( \mathrm{Cat} ) is the categorical distribution and ( \theta=(W, V, {\sigma_k}^{K}_{k=1}) ) is our set of model parameters (in this case we assume ( K ) is known, or selected by some other method like cross validation). The aim is to use EM to fit this model by finding ( \theta ). Before getting into that, it&amp;rsquo;s perhaps helpful to look at the type of problem this model might be useful for.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../data-em-mole.png&#34;
+         alt=&#34;Some training data.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Some training data.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is some data from a piecewise linear model, with 3 sections, with Gaussian noise added to it. We would hope that a mixture of linear experts model would be able to fit this data well, by assigning a different expert (i.e. linear model) to each of the distinct sections.&lt;/p&gt;
+&lt;p&gt;Now for inference. Recall that the point of the EM algorithm is to compute the maximum likelihood estimate of the model parameters, whilst marginalising out any latent variables. In this case the latent variables are the expert assignments for each data point, i.e. which expert is responsible for each data point. To do this, we alternate between two steps the E-step and the M-step, until we reach some sort of convergence:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the E-step, we compute the distribution of the latent variables (expert assignments) given the data and parameters, ( p(z_n=k| y_n,x_n, \theta) ).  In our case this is is tractable, if it&amp;rsquo;s not then you can use an approximating distribution, in which case the method becomes variational EM.&lt;/li&gt;
+&lt;li&gt;In the M-step, we compute a quantity called the expected complete data log likelihood. This is the expected joint log probability of the data and latent variables, with respect to the distribution over the latent variables computed in the E-step, which we write as ( \ell(\theta)=\sum_{n}\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] ) with ( q(z_n)=p(z_n=k| y_n,x_n, \theta) ). We maximise this with respect to ( \theta ), i.e compute ( \theta^*=\mathrm{argmax}[l(\theta)] ). We then set ( \theta=\theta^* ) and repeat the E-step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We repeat this until the optimum of value in the M-step converges. For more info, see section 8.7 of the Murphy book. Now we can try to compute the required quantities for each step for the linear experts model.&lt;/p&gt;
+&lt;p&gt;We can compute the distribution over the latent variables given the data in the E-step using Bayes rule,
+$$
+p(z_n=k| y_n,x_n, \theta) = \frac{p(y_n | z_n=k, x_n, \theta)p(z_n=k| x_n, \theta)}{p(y_n|x_n, \theta)}
+$$
+where ( p(y_n|x_n, \theta)=\sum^{K}_{k&#39;=1} p(y_n | z_n=k&#39;, x_n, \theta)p(z_n=k&#39;| x_n, \theta) ).  This is tractable, we just combine the terms given in the specification of the model. Easy! Now for the M-step, which is slightly more involved.&lt;/p&gt;
+&lt;p&gt;For the M-step we need to compute ( \sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] ) with ( q_(z_n)=p(z_n=k| y_n,x_n, \theta) ). The log joint is given by,
+\begin{align}
+\log p(y_{n},z_{n}|\theta) &amp;amp;= \log p(y_{n}|z_{n},\theta)p(z_{n}|\theta) \\\&lt;br&gt;
+&amp;amp;= \log \prod_k\left[\mathcal{N}(y_n|w_{k}^{\mathsf{T}}x_n,\sigma_{k}^{2})\right]^{z_{nk}} + \log\prod_k\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]^{z_{nk}} \\\&lt;br&gt;
+&amp;amp;=\sum_k {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} + \sum_k{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]
+\end{align}
+where ( z_{nk} ) is an indicator variable which is ( 1 ) when ( z_n=k ) and ( 0 ) otherwise. We can the compute the M-step obejective as,
+$$
+\begin{align}
+\ell(\theta)&amp;amp;=\sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right]\
+&amp;amp;= \mathbb{E}_{q_{n}(z_{n})}\left[\sum_{nk} {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]\right] \&lt;br&gt;
+&amp;amp;= \sum_{nk} {\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]
+\end{align}
+$$
+where ( \mathbb{E}_{q_{n}(z_{n})}[z_{nk}]= p(z_n=k| y_n,x_n, \theta) ) are exactly the values computed in the E-step.
+We are now able to compute ( \ell(\theta) ), but we also need to optimise it. I think would be possible to compute the optimum with respect to the regression weights and variances exactly, using the formalism of &lt;a href=&#34;https://en.wikipedia.org/wiki/Weighted_least_squares&#34;&gt;weighted least squares&lt;/a&gt;, but if you&amp;rsquo;re lazy like me, you can just do simple gradient descent on the parameters. You&amp;rsquo;d have do this for the logistic weights anyway, since they can&amp;rsquo;t be computed in closed form, so it&amp;rsquo;s easier to just do this for everything.&lt;/p&gt;
+&lt;p&gt;Now we have both steps we can do inference. I implemented this using jax, which made the the optimisation for the M-step very easy. You can find the very shoddily written code in &lt;a href=&#34;https://gist.github.com/magnusross/06e29ccb42f054c765a74366104fcb24&#34;&gt;this gist&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../post-train-em-mole.png&#34;
+         alt=&#34;Results of inference.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Results of inference.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Above are the results after 20 EM iterations. The left panel shows the training data and true function, along with the predictions of each of the ( K=3 ) experts. Shown in red is the modal prediction, i.e. the prediction of the most likely expert for each point. The right panel shows the responsibilities of each expert for over the domain. We can see the transitions between experts nicely match the discontinuities in the piecewise function, and we are able to recover the true function well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distributions of quotients of uniform RVs</title>
+      <link>https://magnusross.github.io/posts/rvquotients_problem/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/rvquotients_problem/</guid>
+      <description>&lt;p&gt;This is a nice problem from the book &amp;ldquo;Cut the knot&amp;rdquo;, which is a compilation of probability riddles and brain teasers. I like the book because many of the problems are about intuitive reasoning, and don&amp;rsquo;t really involve that much technical knowledge of probability theory, so they can be fun to do with people who don&amp;rsquo;t have a formal maths background. Each problem can also generally be solved many different ways, so it&amp;rsquo;s fun to compare solutions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Two numbers ( X ) and ( Y ) are randomly chosen from the interval ( [0, 1] ). Let ( r ) denote the quotient of the larger of the two by the smaller: ( r = \frac{\max(X,Y)}{\min(X,Y)} ). Depending on the assumptions, there are three questions. For a given ( k &amp;gt; 0 ), what is the probability that ( r ≥ k )&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;if ( X ) is uniformly distributed on ( [0, 1] ) and ( Y ) is uniformly distributed on ( [X, 1] )?&lt;/li&gt;
+&lt;li&gt;if ( X ), ( Y ) are jointly uniformly distributed on ( \{(x, y) : 0 ≤ x ≤ y ≤ 1\} )?&lt;/li&gt;
+&lt;li&gt;if ( X ) and ( Y ) are uniformly and independently distributed on [0, 1]?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Source: Cut the knot by Bogomolny, Ex. 7.6&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re given that ( X\sim U(0, 1) ) and that ( Y|X\sim U(X, 1) ), this implies that the variables have the densities
+\begin{align}
+p(x)&amp;amp;=1 \quad \forall \quad x\in[0, 1] \\\&lt;br&gt;
+p(y|x)&amp;amp;=\frac{1}{1-x}  \quad \forall \quad y\in[x, 1]
+\end{align}
+which implies that the variables have the joint density given by
+$$
+p(x, y) = p(x)p(y|x)= \frac{1}{1-x}.
+$$
+Now let&amp;rsquo;s have a think about how to compute the require probability ( \mathbb{P}(r\geq k) ). First, it is clear that in this case ( Y\geq X ), so ( r\geq1 ) which implies ( \mathbb{P}(r\geq k)=1 ) when ( k&amp;lt;1 ). The fact that ( Y\geq X ) also implies that ( r = \frac{\max(X,Y)}{\min(X,Y)}=\frac{Y}{X} ). The key thing to realize here is that we can equivalently write ( \mathbb{P}(r\geq k) ) as ( \mathbb{P}(\frac{Y}{X}\geq k)=\mathbb{P}(Y\geq kX) ).&lt;/p&gt;
+&lt;p&gt;We actually now have all the parts we need to solve the question, but realizing this is a little easier with a picture. The diagram below shows all the information we have. The variables ( x ) and ( y ) are shown on each axis, with the shaded region showing the probability density of different ( (x,y) ) pairs. Notice that the lower triangle is unshaded since we know ( y&amp;gt;x ). Also plotted on the diagram is the line ( y=kx ).&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../uniform_quotient_plot.png&#34;
+         alt=&#34;All our information.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;All our information.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;What we want to know is the probability that ( (x,y) ) lies in the region ( A ), i.e the region bounded by ( 0\leq y \leq 1, y\geq kx ). To do this we need to integrate the joint density over this region. This probability is given by
+\begin{align}
+\mathbb{P}(r\geq k) &amp;amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\&lt;br&gt;
+&amp;amp;= \int^{1/k}_{0} \int^{1}_{kx} \frac{1}{1-x}dydx \\\&lt;br&gt;
+&amp;amp;= \int^{1/k}_{0} \frac{1-kx}{1-x}dx \\\&lt;br&gt;
+&amp;amp;= 1 + (k-1)\log\left(\frac{k-1}{k}\right)
+\end{align}
+Part 1 solved!&lt;/p&gt;
+&lt;p&gt;Now we have this setup the answers for the next two parts are actually quite simple. For part 2, we have the exact same setup, only now we are given that the ( X,Y ) are jointly uniform over the region ( 0\leq x\leq y \leq 1 ). The diagram would look exactly the same, but with the shading being uniform over the region. The joint density is now ( p(x,y)=2 ) (since the area of the region is ( 1/2 )), so
+\begin{align}
+\mathbb{P}(r\geq k) &amp;amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\&lt;br&gt;
+&amp;amp;=  2\int^{1/k}_{0} \int^{1}_{kx} dydx \\\&lt;br&gt;
+&amp;amp;= \frac{1}{k}
+\end{align}&lt;/p&gt;
+&lt;p&gt;Now for the final part, we can use the symmetry of the problem to get the answer easily. When ( Y&amp;gt;X ) we have the same setup as above, and when ( X&amp;gt;Y ) we have the region ( 0\leq x\leq 1, y\leq\frac{x}{k} ), which is the mirror image of the region from part 2, reflected in ( y=x ). We sum these regions to get the answer. Not that the density is now ( p(x,y)=1 ), so we get that
+$$
+\mathbb{P}(r\geq k) = \frac{1}{2k} + \frac{1}{2k} = \frac{1}{k}
+$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mercer theorem measure and RKHS norm</title>
+      <link>https://magnusross.github.io/posts/mercerrkhs_problem/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/mercerrkhs_problem/</guid>
+      <description>&lt;p&gt;This problem from the GPML book relates to the effect of the choice of measure when using Mercer&amp;rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel. In the problem we show that in the finite dimensional case (this also applies in the ( \infty ) dimensions case but it is then harder to show), the RKHS norm is independent of the measure chosen. This is interesting to me because when first learning about Mercer&amp;rsquo;s theorem, I was confused by how the measure the eigenfunctions are computed w.r.t is chosen when using the theorem in practice. This question shows that in for some important applications, the measure doesn&amp;rsquo;t matter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We motivate the fact that the RKHS norm does not depend on the density ( p(x) ) using a finite-dimensional analogue. Consider the n-dimensional vector ( \mathbf f ), and let the ( n \times n ) matrix ( \Phi ) be comprised of non-colinear columns ( \phi_1,\dots, \phi_n ). Then ( \mathbf f ) can be expressed as a linear combination of these basis vectors ( \mathbf f = \sum^n_{i=1} c_i\phi_i = \Phi \mathbf c ) for some coefficients ( \{c_i\} ). Let the ( \phi )s be eigenvectors of the covariance matrix ( K ) w.r.t. a diagonal matrix ( P ) with non-negative entries, so that ( KP \Phi = \Phi\Lambda ), where ( \Lambda ) is a diagonal matrix containing the eigenvalues. Note that ( \Phi^\top P\Phi = I ). Show that ( \sum^n_{i=1}c^2_i/\lambda_i=\mathbf c^\top\Lambda^{-1}\mathbf c=\mathbf f^\top K^{-1} \mathbf f ), and thus observe that ( \mathbf f^\top K^{-1} \mathbf f ) can be expressed as  (  \mathbf c^\top\Lambda\mathbf c ) for any valid ( P ) and corresponding ( \Phi ). (Note the matrix ( P ) here represents the measure.)&lt;/p&gt;
+&lt;p&gt;Source: Gaussian Processes for Machine Learning by Rasmussen and Williams, Ex. 6.7.1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This solution is a bit strange as I got stuck and this is the only way I could think to do it, I am sure there is a better way. First using that ( \Phi^\top P\Phi = I ) we can see that,
+$$
+KP\Phi=\Phi\Lambda \implies \Phi^\top PKP\Phi=\Lambda.
+$$
+We can then write
+\begin{align}
+\mathbf c^\top \Lambda^{-1} \mathbf c &amp;amp;= \mathbf c^\top (\Phi^\top PKP\Phi)^{-1} \mathbf c \\\&lt;br&gt;
+&amp;amp;= \mathbf c^\top \Phi^{-1}P^{-1}K^{-1}P^{-1}\Phi^{-\top} \mathbf c \\\&lt;br&gt;
+&amp;amp;= \mathbf c^\top \Phi^\top P P^{-1}K^{-1}P^{-1} P \Phi \mathbf c \\\&lt;br&gt;
+&amp;amp;=\mathbf f^{\top} K^{-1} \mathbf f
+\end{align}
+as required, where on the second to last line we have twice used the fact that ( \Phi^{-1}=\Phi^\top P ).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Converting state misalignment in probabilistic numeric ODE solver to SDE.</title>
+      <link>https://magnusross.github.io/posts/pn_solver_problem/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/pn_solver_problem/</guid>
+      <description>&lt;p&gt;It is only the third week and I have already failed to manage my goal of posting one solution per week, not a good sign for the future&amp;hellip; In my defense, I was busy last week attending the &lt;a href=&#34;https://www.probnumschool.org/pages/home.html&#34;&gt;Probabilistic Numerics Spring School&lt;/a&gt;, at which I learned lots about probabilistic ODE solvers, on which this weeks late question is based.&lt;/p&gt;
+&lt;p&gt;Probabilistic ODE solvers work by placing a Markovian GP prior (usually the ( q )-times integrated Wiener process) over the solution, given this prior, we then condition on the fact samples of this GP must solve the ODE at a given set of time steps, that is to say the derivatives of the GP prior must match the derivative function of the ODE. We can infer the solution to the ODE by using filtering and smoothing techniques from signal processing. In this question, the task is to form an SDE for the state misalignment, i.e the difference between the derivatives of the prior and the ODE derivative function. It is interesting to note that we can also condition on other properties of the system, for example, conditioning on energy conservation in a Hamiltonian system leads to a symplectic solver, see &lt;a href=&#34;https://proceedings.mlr.press/v151/bosch22a.html&#34;&gt;here&lt;/a&gt; for details. The whole idea is fascinating and deserves a look if you have never come across it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We take our prior to be the SDE
+$$
+dX(t)=FX(t)dt + Ld\omega,
+$$
+with ( X \in\mathbb{R}^{D} ), ( F,L\in\mathbb{R}^{D \times D} ) and ( d\omega \in\mathbb{R}^{D} ) being an increment of the Wiener process with diffusion ( Q\in\mathbb{R}^{D \times D} ). We also have two projection matrices which allow us to obtain the parts of the SDE prior that represent ODE state, and ODE state derivative,
+$$
+\mathbf x(t) = H_0X(t), \qquad \mathbf x&#39;(t) = HX(t).
+$$
+with ( H,H_0\in\mathbb{R}^{d \times D} ) where ( d ) is our ODE dimension. The state misalignment is given by
+$$
+Z(t) = \phi(X(t))=HX(t) - f(H_0X(t)).
+$$
+where ( f: \mathbb{R}^D \mapsto \mathbb{R}^D ) is our ODE derivative function and ( Z(t)\in\mathbb{R}^d ) is called the observation process, and is given by another SDE. Our task is to find an expression for this SDE and state under which conditions it is Gaussian process.&lt;/p&gt;
+&lt;p&gt;Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Itô formula for transformations of SDEs by scalar funtion ( g(X(t)) ) is given by
+$$
+dg = (\nabla g) dX + \frac{1}{2}\operatorname{tr}[(\nabla^\top \nabla g) dXdX^\top].
+$$&lt;/p&gt;
+&lt;p&gt;(Note: here I have used the gradient as row vector) We need to use this to compute the the transformation represented by the state misalignment, which is a vector function. Fortunately, the Itô formula applies to each componnt, so
+$$
+d\phi_i = (\nabla \phi_i) dX + \frac{1}{2}\operatorname{tr}[(\nabla^\top \nabla \phi_i) dXdX^\top].
+$$
+with
+$$
+\phi_i = \sum_j H_{i,j} X_j + f_i(H_0 X).
+$$
+We now need to compute the Jacobian and the Hessian given in the formula. This took me a long time as my vector calculus is a little rusty, and I am not 100% sure I have the correct answer but I got them to be,
+$$
+\nabla \phi_i = H_{i,-} + \nabla f_i(H_0 X)H_0^\top
+$$
+where ( \nabla f_i ) is the Jacobian of ( f ) for output ( i ) and ( H_{i,-}\in \mathbb{R}^D ) is the ( i )-th column of ( H ), and for the Hessain,&lt;/p&gt;
+&lt;p&gt;$$
+\nabla^\top\nabla \phi_i = H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top
+$$
+where ( \nabla^\top\nabla f_i ) is the Hessian of ( f ) for output ( i ). We also need that
+\begin{align}
+dXdX^\top &amp;amp;= (FX(t)dt + Ld\omega)(FX(t)dt + Ld\omega)^\top \\\&lt;br&gt;
+&amp;amp;=LQL^\top dt
+\end{align}
+where we use the combination rules for mixed differentials given in the &lt;a href=&#34;https://en.wikipedia.org/wiki/It%C3%B4%27s_lemma&#34;&gt;Itô formula&lt;/a&gt;. Subbing all this into the formula and collecting terms, we obtain the SDEs,
+\begin{align}
+d\phi_i = &amp;amp;\left(H_{i,-}FX(t) + \nabla f_i(H_0 X)H_0^\top X(t) + \frac{1}{2}\operatorname{tr}(H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top LQL^\top)\right)dt \\\&lt;br&gt;
+&amp;amp;+ (H_{i,-}+ \nabla f_i(H_0 X)H_0^\top)Ld\omega
+\end{align}
+which can then be simulated to give the observation process. This SDE will be a GP when ( f ) is linear, since GP representations of SDEs do not have multiplicative noise (see &lt;a href=&#34;https://users.aalto.fi/~asolin/sde-book/sde-book.pdf&#34;&gt;Särkkä and Solin book&lt;/a&gt;, 6.1), so we require that the gradient of ( f ) be independent of ( X ) which is only true when we have a linear derivative function.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Relationship between the Frobenius norm and singular values in SVD</title>
+      <link>https://magnusross.github.io/posts/frobeniusnorm_problem/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/frobeniusnorm_problem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Note: I was brushing up on my SVD using the brilliant &amp;ldquo;Mathematics for Machine Learning&amp;rdquo; book, but the exercises listed in the book for SVD were a bit basic, so I decided to try use ChatGPT to generate a question. The problem below is what came out, quite impressive, although there were quite a few errors in the question that I had to fix (e.g the dimensionalities of the matrices).&lt;/p&gt;
+&lt;p&gt;Let ( A ) be an ( m \times n ) with ( m\geq n ) matrix with rank ( r ), and let its singular value decomposition (SVD) be given by ( A = U \Sigma V^T ), where ( U ) is an ( m \times m ) orthonormal matrix, ( \Sigma ) is an ( m \times n ) diagonal matrix with non-negative entries ( \sigma_1 \geq \sigma_2 \geq \dots \geq \sigma_n &amp;gt; 0 ), and ( V ) is an ( n \times n ) orthonormal matrix. Show that the Frobenius norm of ( A ) is equal to the square root of the sum of the squares of the singular values.&lt;/p&gt;
+&lt;p&gt;Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Frobenius norm is given by,&lt;/p&gt;
+&lt;p&gt;$$
+||A||^2_F = \sum_{i,j}A^2_{i,j}
+$$
+which we can equivalently write (it is not so hard to show this) as
+$$
+||A||^2_F = \operatorname{tr}(A^\top A).
+$$
+Subbing in the SVD representation of ( A ), we get
+\begin{align}
+\operatorname{tr}(A^\top A) &amp;amp;= \operatorname{tr}\left( (U\Sigma V^\top)^\top(U\Sigma V^\top)\right)\\\&lt;br&gt;
+&amp;amp;= \operatorname{tr}\left(V\Sigma^\top U^\top U\Sigma V^\top\right) \\\&lt;br&gt;
+&amp;amp;= \operatorname{tr}\left(V\Sigma^\top \Sigma V^\top\right).
+\end{align}
+We can see by inspection that ( \Sigma^\top\Sigma = \operatorname{diag}(\sigma^2_1,  \dots, \sigma^2_n)=\Lambda ). This implies that
+$$
+[V\Lambda V^\top]_{ii} = \sigma_i^2\mathbf{v}^\top_i\mathbf{v}_i = \sigma_i^2,
+$$
+where ( \mathbf{v}_i ) is column ( i ) of ( V ) and the second equality follows from the othonormality of ( V ). Putting it all together we get that
+$$
+||A||^2_F = \operatorname{tr}(A^\top A) = \sum_i \sigma_i^2,
+$$
+as required.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New paper: Learning Energy Conserving Dynamics Efficiently with Hamiltonian Gaussian Processess</title>
+      <link>https://magnusross.github.io/posts/paper2/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/paper2/</guid>
+      <description>&lt;p&gt;I spent the summer of 2022 visiting &lt;a href=&#34;https://users.aalto.fi/~heinom10/&#34;&gt;Markus Heinonen&lt;/a&gt; at Aalto University in Finland. Together we worked on energy conserving GP models, and I am happy to say our paper on the work was recently accepted to TMLR. Check out &lt;a href=&#34;https://openreview.net/pdf?id=DHEZuKStzH&#34;&gt;the paper&lt;/a&gt;, &lt;a href=&#34;https://github.com/magnusross/hgp&#34;&gt;the code&lt;/a&gt;, or some &lt;a href=&#34;https://magnusross.github.io/HamiltonianGPs/&#34;&gt;visualizations&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../fig1.png&#34;
+         alt=&#34;Figure 1 from the paper.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;We place a GP prior over the Hamiltonian and, using a set of inducing points, map function samples through Hamilton&amp;rsquo;s equations to obtain system derivative samples, to which we apply ODE solver to obtain sample trajectories. Shading represents model uncertainty.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Winners curse in Bayesian optimisation</title>
-      <link>/posts/winnerscurse_problem/</link>
+      <link>https://magnusross.github.io/posts/winnerscurse_problem/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/winnerscurse_problem/</guid>
-      <description>Problem
-Take an objective function ( f(x) ) with GP prior and i.i.d. Gaussian noise with variance ( \sigma^2 ), so ( y_i = f(x_i) + \epsilon_i ) with ( \epsilon_i \sim \mathcal{N}(0, \sigma^2) ). Assume two locations ( x_1, x_2 ) are sufficiently separated that their function values ( f(x_1) ) and ( f(x_2) ) are independent. Compute the posterior ( p(\epsilon_1-\epsilon_2|y_1, y_2) ) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective.</description>
+      <guid>https://magnusross.github.io/posts/winnerscurse_problem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Take an objective function ( f(x) ) with GP prior and i.i.d. Gaussian noise with variance ( \sigma^2 ), so ( y_i = f(x_i) + \epsilon_i ) with ( \epsilon_i \sim \mathcal{N}(0, \sigma^2) ). Assume two locations ( x_1, x_2 ) are sufficiently separated that their function values ( f(x_1) ) and ( f(x_2) ) are independent. Compute the posterior ( p(\epsilon_1-\epsilon_2|y_1, y_2) ) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.&lt;/p&gt;
+&lt;p&gt;Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 32.2&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First we need to compute ( p(\epsilon_i| y_i) ), which we can do using Bayes rule,
+$$
+p(\epsilon_i| y_i) = \frac{p(y_i| \epsilon_i)p(\epsilon_i)}{p(y_i)}
+$$
+we have that ( p(\epsilon_i) = \mathcal{N}(\epsilon_i; 0, \sigma^2) ), and that ( p(y_i| \epsilon_i) =  \mathcal{N}(y_i; \epsilon_i, \sigma_f^2) ) where we have assumed that the prior over ( f ) has 0 mean, and variance ( \sigma_f^2 ). So we have,
+$$
+p(\epsilon_i| y_i) \propto \mathcal{N}(y_i; \epsilon_i, \sigma_f^2)\mathcal{N}(\epsilon_i; 0, \sigma^2)
+$$
+which we can identify as a product of Gaussian PDFs. This results in another Gaussian PDF, see e.g &lt;a href=&#34;http://www.lucamartino.altervista.org/2003-003.pdf&#34;&gt;these notes&lt;/a&gt;,
+$$
+p(\epsilon_i| y_i) = \mathcal{N}(\epsilon_i; \mu_{\epsilon_i}, \sigma^2_{\epsilon_i}),
+$$
+where
+\begin{align}
+\mu_{\epsilon_i} &amp;amp;= \frac{y_i\sigma^2}{\sigma^2 + \sigma_f^2}, \\\&lt;br&gt;
+\sigma^2_{\epsilon_i} &amp;amp;= \frac{\sigma_f^2\sigma^2}{\sigma^2 + \sigma_f^2}.
+\end{align}
+We can see here that the variance is independent of data. Now we have computed the posterior of the noise given the data, we can compute the posterior of the difference between the noises given the data. Since the function values at the input points are independent then the posterior over the difference is just the difference of independent Gaussian random variables, in which case we simply subtract the means and sum the variances, to give
+$$
+p(\epsilon_1 - \epsilon_2=\Delta| y_1, y_2) = \mathcal{N}\left(\Delta; \frac{\sigma^2}{\sigma^2 + \sigma_f^2}(y_1-y_2), 2\sigma^2_{\epsilon}\right).
+$$
+The key point here is that the mean of this distribution depends on the difference between the data values. So
+$$
+y_1&amp;gt;y_2 \implies \mathbb{E}[\epsilon_1 - \epsilon_2]&amp;gt; 0 \implies \mathbb{E}[\epsilon_1] &amp;gt; \mathbb{E}[\epsilon_2].
+$$
+If we assume that the values are lower that the prior mean (i.e. 0), which is to be expected, then we expect the noise for the lower point to be a larger (absolute) value. This is the winners curse described in the book.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New paper: Learning Nonparametric Volterra Kernels with Gaussian Processes</title>
+      <link>https://magnusross.github.io/posts/paper1/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/paper1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Update: This paper was published at NeurIPS 2021 check &lt;a href=&#34;https://proceedings.neurips.cc/paper/2021/file/ca5fbbbddd0c0ff6c01f782c60c9d1b5-Paper.pdf&#34;&gt;out the final version&lt;/a&gt; or my &lt;a href=&#34;https://neurips.cc/virtual/2021/poster/26977&#34;&gt;presentation&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This work, with Mauricio Alvarez and Mike Smith, has been the main focus of the first year of my PhD, check it out &lt;a href=&#34;https://arxiv.org/abs/2106.05582&#34;&gt;on arXiv&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../daig_new.svg&#34;
+         alt=&#34;Cool diagram!&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;The sampling process for the model described in the paper, which is a non-parametric, and can represent data generated by non-linear operators.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There will be a blog post explaining the key ideas coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation is easy, probability is hard...</title>
+      <link>https://magnusross.github.io/posts/another-note/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/another-note/</guid>
+      <description>&lt;p&gt;There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money,  attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are &lt;em&gt;The Education of a Speculator&lt;/em&gt; by Victor Niederhoffer and &lt;em&gt;Fooled by Randomness&lt;/em&gt; by Nassim Nicholas Taleb. The books are similar in many ways, both contain plenty of interesting insights into thinking probabilistically, as well as a number of cautionary tales of modelling gone wrong.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; In &lt;em&gt;Fooled by Randomness&lt;/em&gt;, Taleb talks a lot about the power of simulation for probabilistic models, and how modern computers, using what he calls his &amp;ldquo;Monte Carlo Engine&amp;rdquo;, allow us to get answers from complex models that previously would have been impossible, or at least very time consuming, to solve analytically. This was fresh in my mind when I read the following passage from chapter 8 of &lt;em&gt;The Education of a Speculator&lt;/em&gt; about the well known gambler&amp;rsquo;s ruin problem:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A speculator with initial capital ( C ) plays a game with a casino: he wins ( £1 ) each play with probability ( P ) or loses (  £1 ) with probability ( Q=1-P ), the speculator stays in the game until his capital reaches ( A ) or depreciates to ( 0 ). It can be shown that in such a game, the speculators probability of ruin is, $$ \frac{(Q/P)^A-(Q/P)^C}{(Q/P)^A-1}$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a very good example a problem which can be solved easily with the &amp;ldquo;Monte Carlo Engine&amp;rdquo;, or simulation in plainer language, but is actually quite difficult to solve analytically. In this post we&amp;rsquo;re going to derive the formula for the probability of ruin above analytically, and calculate the probability using simulation and hopefully along the way we&amp;rsquo;ll get a feel for the advantages and disadvantages of both methods.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;simulation&#34;&gt;Simulation&lt;/h2&gt;
+&lt;p&gt;The idea behind simulation is really simple, to work out the probability that our gambler will be ruined, all we need to do is run a bunch of games in our imaginary casino, and work out the proportion of games in which the gambler loses, this then becomes our answer for the probability of ruin. We can think of each of these games as a sort of parallel universe, each is possible and distinct from the next, and taken as a whole they represent every possible situation our gambler could go through. Now you might be thinking, hang on, are there not an extremely large number (an infinite number even) of possible games? Could the gambler not keep on playing indefinitely if the correct combination of wins and losses arise such that the balance never goes higher than ( A ), or lower than ( 0 )? How are we going to simulate all of the games? The answer is that we aren&amp;rsquo;t, because this would take an infinitely long time, and so unfortunately we will never get the answer for the probability exactly correct, but we will be able to get pretty close in quite a short time. When we simulate things randomly, games that are more probable, and so contribute more to our final answer, are likely to occur even in a small number of simulations. Improbable games, such as very long games, are unlikely to occur in our simulation, this isn&amp;rsquo;t a problem though  because they naturally don&amp;rsquo;t contribute much to the final answer, so the error associated with not including them in our proportion will be small.&lt;/p&gt;
+&lt;p&gt;So how do we actually do the simulating? We just need to have some code that can produce randomly 1 (representing the gambler winning a play) with probability ( P ) or 0 (representing the gambler losing a play) with
+probability ( Q ). Then we add or subtract ( £1 ) from the gamblers balance accordingly, we keep doing this until the balance reaches ( A ), in which case we note down a win for the gambler, or ( 0 ), where we note down a loss. All we have to do then to calculate the probability is tally up all the games the gambler lost, and then divide by the total number of games we simulated to get our estimate. The following Python code will do this for us:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from scipy.stats import bernoulli
+
+def simulate_game(P, C, A):    
+    
+    balance = C # set balance to initial capital
+    while 0. &amp;lt; balance &amp;lt; A:
+        # 1 is win, 0 is loss
+        outcome = bernoulli.rvs(P) 
+        # transform to £ won or lost 
+        balance += 2.*outcome - 1. 
+
+    if balance &amp;lt;= 0.:
+        # bankrupt, note down a loss
+        return 0
+    else:
+        # balance greater than A, note down a win
+        return 1
+    
+def simulated_probability(P, C, A, N=500):
+    wins = 0
+    # run N games
+    for i in range(N):
+        # tally up the wins
+        wins += simulate_game(P, C, A) 
+    
+    # p(loss) = 1 - p(win)
+    return 1 - wins/N 
+
+print(f&amp;quot;Probabilty of ruin: {simulated_probability(0.6, 5, 10)}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note the Bernoulli function here just produces a 1 with probability ( P ), and a zero with probability ( Q=1-P ) like we needed. It really is that simple! Before we look at the properties of the answers our code gives, let&amp;rsquo;s solve the problem analytically as well.&lt;/p&gt;
+&lt;h2 id=&#34;analytical-solution&#34;&gt;Analytical Solution&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(This section is going to be a bit more maths heavy, so if that&amp;rsquo;s not your thing then feel free to skim/skip.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Like a lot of problems in probability, at first glance it doesn&amp;rsquo;t look too bad. Unfortunately it&amp;rsquo;s kind of hard to know where to start because of the limitless number of different games that are possible. To get going we need to use a bit of a trick.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Let&amp;rsquo;s say the probability of winning the game when we start with capital ( i ) is ( P_i ) (taking ( i ) to be an integer). The two possibilities for the first play of the game are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The gambler wins the first play with probability ( p ) and ends up with capital ( i+1 ), the probability of going on to win the game from this position is then ( P_{i+1} ).&lt;/li&gt;
+&lt;li&gt;The gambler loses the first play with probability ( q=1-p ), and ends up with capital ( i-1 ), the probability of going on to win the game from this position is then ( P_{i-1} ).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We can then write ( P_i ) in terms of these possible outcomes for the first play, as&lt;/p&gt;
+&lt;p&gt;$$ P_i = p \times P_{i+1} + q \times P_{i-1}. \tag{1}$$&lt;/p&gt;
+&lt;p&gt;We also know that ( P_0=0 ), if we have no money we have certainly lost, and ( P_A=1 ), if we reach capital ( A ) we have certainly won. Equation 1 is called a difference equation, and it is like a discrete version of a differential equation. To solve it, we use use ( p + q = 1 ) to rewrite as follows,
+$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$
+$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$
+$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$&lt;/p&gt;
+&lt;p&gt;Next write equation 2 as,&lt;br&gt;
+$$ P_{j+1}-P_j = \frac{q}{p}(P_{j}-P_{j-1}) = \Big(\frac{q}{p}\Big)^2(P_{j-1}-P_{j-2}) = \dots= \Big(\frac{q}{p}\Big)^{j-1}(P_{1}-P_{0})=\Big(\frac{q}{p}\Big)^{j-1}P_{1}$$&lt;/p&gt;
+&lt;p&gt;for ( j=1, \dots, A ), using ( P_0=0 ) for the final step. Next we want to use this to find a general formula for ( P_i ), we are allowed to write
+$$ P_i = P_i - P_0 = (P_i - P_{i-1}) + (P_{i-1} - P_{i-2}) + \dots + (P_{1} - P_{0}) $$&lt;/p&gt;
+&lt;p&gt;because for example the ( +P_{i-1} ) cancels with the ( -P_{i-1} ) and so contributes nothing overall. Subbing in equation 2 to each of the terms in brackets we get,
+$$ P_i = P_1 \sum^{i-1}_{j=0}\Big(\frac{q}{p}\Big)^{j-1}$$&lt;/p&gt;
+&lt;p&gt;using the standard result for a finite sum of a geometric series, we get&lt;/p&gt;
+&lt;p&gt;$$P_i = P_1 \frac{(q/p)^i -1}{(q/p) -1}$$&lt;/p&gt;
+&lt;p&gt;as long as ( p\neq q ). If ( p=q=1/2 ) then we simply get  ( P_i=P_1\sum^{i-1}_{j=0}(1)=iP_1 ). Now we need to get rid of the ( P_1 ) which we can do by using ( P_A=1 ). In the case ( p\neq q ) we have,&lt;/p&gt;
+&lt;p&gt;$$ P_A = 1 = P_1 \frac{(q/p)^A -1}{(q/p) -1}$$&lt;/p&gt;
+&lt;p&gt;so,
+$$ P_1 =  \frac{(q/p) -1}{(q/p)^A -1}$$&lt;/p&gt;
+&lt;p&gt;which means
+$$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i -1}{(q/p)^A -1}.$$&lt;/p&gt;
+&lt;p&gt;In the case ( p=q=1/2 ) we have ( P_A=1=A P_1 \implies P_1 = 1/A ) so ( P_i = i/A ). We now have an expression for the probability of a win so to covert our answer into the probability of ruin we just subtract it from 1 to get,&lt;/p&gt;
+&lt;p&gt;$$ P_i = 1 - \frac{(q/p)^i -1}{(q/p)^A -1} = \frac{(q/p)^A - (q/p)^i}{(q/p)^A -1} \text{ and } P_i = 1 - \frac{i}{A} = \frac{A-i}{A} \tag{4}$$&lt;/p&gt;
+&lt;p&gt;in cases ( p\neq q ) and ( p=q=1/2 ) respectively. We&amp;rsquo;ve finally made it, equation 4 is the same as the answer from &lt;em&gt;Education of a Speculator&lt;/em&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;comparison&#34;&gt;Comparison&lt;/h2&gt;
+&lt;p&gt;OK so now we have methods to calculate the probability of ruin both using simulation and analytically, let&amp;rsquo;s see how they compare. Below are plots of the probability of winning the game against the probability of winning a play ( P ), for starting capital ( C=£8 ) and ( C=£1 ), using 500 simulated games. We can see that there is very good agreement between the two methods.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../ruin_main.png&#34;
+         alt=&#34;How likely is ruin?&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Plot of probability of ruin against probability of winning single play, for different ( C )&amp;rsquo;s&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We can get a better idea about the error introduced by using the simulated method from the following plot of error against number of simulated games, with error bars computed from 5 repeats. The gradient of the graph is about 0.5 and since the axis are log scale this corresponds to the relationship ( E\propto\frac{1}{\sqrt N} ), where ( E ) is error and ( N ) is number of games. This is consistent with the standard result for the error of a Monte Carlo estimator.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../ruin_errs.png&#34;
+         alt=&#34;Error from simulation.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Plot of error introduced by simulation methods against  number of simulated games.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;I think the most important thing to consider when comparing the two solutions before we even think about errors, computation time etc, is simplicity. The code for the simulations took me less than 5 minutes to write. I spent about an hour trying to come up with an analytical solution with no luck, I then looked up the solution, and it took me quite a while longer to get my head round it. Even simple problems in probability can end up being analytically intractable, meaning no closed form solution can ever be found, let alone by me. For this reason Taleb is right to emphasize the power of the Monte Carlo engine, I hope this post has gone some way to illustrates it practical application.&lt;/p&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Both also contain a variety of strongly held opinions about how life should be lived, which I probably could have done without, maybe this is common in trading books? &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This trade-off arises all the time in ML when we are deciding how we want to do inference for a particular model, should we use stochastic sampling methods like MCMC, or something like variational inference, which requires more analytical calculations. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;We can approach the problem in a more rigorous way using Markov chains, see for example &lt;a href=&#34;http://people.math.gatech.edu/~ecroot/3225/markov2_notes.pdf&#34;&gt;these handy lecture notes&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Talk at 3rd Sheffield Workshop on Structural Dynamics</title>
+      <link>https://magnusross.github.io/posts/talk1/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/talk1/</guid>
+      <description>&lt;p&gt;Near the end of last year I had the privilege of being invited at the &lt;a href=&#34;https://acoustics.ac.uk/events/3rd-sheffield-workshop-on-structural-dynamics/&#34;&gt;3rd Sheffield Workshop on Structural Dynamics&lt;/a&gt;. I spoke for 15 minutes about some work I have been doing on the application of Gaussian processes to the non-parametric learning of Volterra kernel functions. The event as a whole was super interesting, and I would fully recommend &lt;a href=&#34;https://lvv.ac.uk/lvv-events/Recordings-3rd-sheffield-workshop-on-structural-dynamics&#34;&gt;the other talks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find my talk &lt;a href=&#34;https://drive.google.com/file/d/13qkJsKXFxvXuFLYLNP8qRzVQMuun-kuL/view&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Podcasts about ML</title>
+      <link>https://magnusross.github.io/posts/podcasts/</link>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/podcasts/</guid>
+      <description>&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of podcasts out there, and this includes loads that are related to machine learning in some way. Over the summer I&amp;rsquo;ve worked my way through a fair few of them, so I thought I&amp;rsquo;d compile a list of my favorites. There are a couple of lists like this out there already, but most of them are out of date, either they include podcasts that are now inactive, or leave out ones that have started recently. I&amp;rsquo;m going to roughly work from the ones that I have listened to more, to the ones that I started recently. They&amp;rsquo;re not all strictly about ML but are in the general ML/AI/data science/statistics area. Happy listening!&lt;/p&gt;
+&lt;h2 id=&#34;talking-machines&#34;&gt;Talking Machines&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.thetalkingmachines.com/home&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/gb/podcast/talking-machines/id955198749&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The gold standard for ML podcasting! It&amp;rsquo;s hosted by Kathrine Gorman and Neil Lawrence, and is a really nice blend of ML theory and interviews with researchers in the field. Generally the first half of the podcast is just the hosts discussing an idea or concept in depth, anything from Hamiltonian Monte Carlo to Data Trusts, and the second half is an interview. They get a really nice mix of guests on, from lots of different areas, both industry and academia. Each guest is always asked how they got to where they are today, it&amp;rsquo;s super interesting to hear the answers, never the same route twice. There&amp;rsquo;s always lots to learn and a bit of a laugh also, can personally endorse every episode (well worth digging into the back catalogue also, Ryan Adams previously hosted instead of Neil)!&lt;/p&gt;
+&lt;h2 id=&#34;not-so-standard-deviations&#34;&gt;Not So Standard Deviations&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://nssdeviations.com&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/us/podcast/not-so-standard-deviations/id1040614570&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is definitely more on the data science/stats side of things, and is hosted by Hilary Parker and Roger Peng. They mostly discuss non-technical topics, related to life as data scientists, and there are a lot of interesting tangents into random topics. I&amp;rsquo;ve particularly enjoy their discussion of ethics in statistics, as well as their general distain for hype. Most of the technical/practical discussion is R related, so if that&amp;rsquo;s what you&amp;rsquo;re into look no further &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;underrated-ml&#34;&gt;Underrated ML&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.underratedml.com&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/gb/podcast/underrated-ml/id1502278793&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A relatively new podcast hosted by brother and sister, Shaun and Sara Hooker, the concept is as follows, each week a guest is invited to discuss a paper that they think is underrated by the ML community, either Sara or Sean then presents a paper of their own, and the listeners decide which paper is the most underrated. It&amp;rsquo;s great fun to listen to, plenty of laughs, but also has deep technical discussions. The guests are great as well, it&amp;rsquo;s quickly become one of my favorite podcasts.&lt;/p&gt;
+&lt;h2 id=&#34;twiml&#34;&gt;TWIML&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://twimlai.com&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/us/podcast/twiml-ai-podcast-formerly-this-week-in-machine-learning/id1116303051&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A weekly podcast with Sam Charrington, in which he interviews a huge variety of people with some connection to ML. The are loads of episode of this, so I mostly pick and choose the ones with people I&amp;rsquo;m interested in. Sam is a good interviewer, and gets the most out of the guests. I particularly enjoyed a recent episode with Micheal I. Jordan.&lt;/p&gt;
+&lt;h2 id=&#34;radical-ai&#34;&gt;Radical AI&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.radicalai.org&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/gb/podcast/the-radical-ai-podcast/id1505229145&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another weekly interview based podcast, but specifically focused on ethics in AI. I&amp;rsquo;ve only listened to a couple, but the quality of discussion is very high. I&amp;rsquo;d recommend the episode with Anima Anandkumar as a starter.&lt;/p&gt;
+&lt;h2 id=&#34;learning-bayesian-statistics&#34;&gt;Learning Bayesian Statistics&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://learnbayesstats.anvil.app&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/us/podcast/learning-bayesian-statistics/id1483485062&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A podcast just about Bayesian statistics. Again only listened to a few of these so I can&amp;rsquo;t make any big claims, but the episodes I did listen to were quite technical, which I liked a lot.&lt;/p&gt;
+&lt;h2 id=&#34;gradient-dissent&#34;&gt;Gradient Dissent&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.wandb.com/podcast&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/us/podcast/gradient-dissent-a-machine-learning-podcast-by-w-b/id1504567418&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This one is all about applying ML/AI in practice, and all the challenges that come with that. Only recently started it, but can recommend the episode with Zack Lipton, really interesting stuff!&lt;/p&gt;
+&lt;h2 id=&#34;data-skeptic&#34;&gt;Data Skeptic&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://dataskeptic.com&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/us/podcast/data-skeptic/id890348705&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I listened to one episode about ML Ops, it was pretty good. Haven&amp;rsquo;t got round to any others yet, but the titles look interesting, so I&amp;rsquo;m including it here for good measure.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;They are such great hosts that I am happy to listen to hours of R content, despite the fact I have never written a line of it in my life and don&amp;rsquo;t intend to. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lagrangians with PyTorch Part #1</title>
+      <link>https://magnusross.github.io/posts/l1/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/l1/</guid>
+      <description>&lt;p&gt;&lt;em&gt;(Note: This series of posts is closely related to and inspired by &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;this paper&lt;/a&gt; from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant &lt;a href=&#34;https://greydanus.github.io/2020/03/10/lagrangian-nns/&#34;&gt;blog post&lt;/a&gt; about the work which I would encourage you to read)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree. We will get into the reasons for this shortly, but needless to say, when I heard that Lagrangians were being used with neural networks to learn physics I could not have clicked the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;arXiv link&lt;/a&gt; faster. In this series of posts I will give a brief introduction to what Lagrangian mechanics is all about, why the concepts are so important in physics, and how we can use them to solve a cool problem involving both a pendulum &lt;strong&gt;and&lt;/strong&gt; a spring at once (!). We&amp;rsquo;ll then see how we can use PyTorch to save ourselves the effort of calculating a load of derivatives by hand. Finally we&amp;rsquo;ll tie it all together to learn a Lagrangian from some data using a neural network, and see how we get superior performance by making the model aware of the physics of the situation. Lots to do, so let&amp;rsquo;s get started!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-lagrangian&#34;&gt;What is a Lagrangian?&lt;/h2&gt;
+&lt;p&gt;To solve a problem in classical mechanics you generally need to find the equations of motion of the system in question. These equations, when solved, completely determine the trajectories of the constituent parts of the system. One extremely simple example is a particle in free fall which has the equation of motion ( \ddot x = \frac{d^2 x}{dt^2} = -g ). The Lagrangian (almost always written as ( \mathcal{L} )) is a special function that contains all the dynamics of the system, which can be used to find the equations of motion in a relatively simple way. ( \mathcal{L} ) is a function of the generalised coordinates describing our system, denoted ( {q_i} ) and their corresponding time derivatives ( {\dot q_i} ) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. One really useful aspect of Lagrangian mechanics is that as long as the ( q_i )&amp;rsquo;s totally specify our system, they can be pretty much anything we want (e.g. positions, angles, lengths) this is very powerful and is not true in Newtonian mechanics.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Problems with Newtonian Mechanics&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You may be wondering why we need to do all this complicated stuff with Lagrangians when Newton&amp;rsquo;s laws, which most people learn in school, can in theory solve every problem possible in classical mechanics. There are a number of interesting reasons for this which are discussed extensively elsewhere, the most relevant here is the fact that it is often very difficult to actually write down Newton&amp;rsquo;s laws for a given system. In Newtonian mechanics we consider the action of force vectors on particles. Because all the forces in a problem must be written explicitly, systems that have complex constraints, e.g. double pendulum, can be very hard to deal with. For rotational systems, it can be difficult to exploit symmetry of because sets of angles aren&amp;rsquo;t really vectors.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finding the equations of motion from ( \mathcal{L} ) involves using Hamilton&amp;rsquo;s principle of least action, which is stated in loose terms below:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;The trajectory followed by a system is the one with the smallest action&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The action, ( \mathcal{S} ), of a trajectory is the time averaged value of the Lagrangian along it. More formally it is the functional,&lt;/p&gt;
+&lt;p&gt;$$
+\mathcal{S} = \int \mathcal{L}(q_i, \dot q_i) dt
+$$&lt;/p&gt;
+&lt;p&gt;Using two classic physicists tricks, reverse integration by parts and a first order Taylor expansion, you can figure out that systems obeying Hamilton&amp;rsquo;s principle must have,&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \mathcal{L}}{\partial q_i} - \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot q_i}=0,  $$&lt;/p&gt;
+&lt;p&gt;for each ( q_i ). These are known as the Euler-Lagrange equations. Without a concrete example, this all seems very abstract and confusing, but the upshot is if we know ( \mathcal{L} ) then we can work out the equations of motion. Just one final piece of the puzzle before we can actually work stuff out, how do we find ( \mathcal{L} )? It turns out that in classical, non relativistic mechanics it is given by the simple expression,&lt;/p&gt;
+&lt;p&gt;$$ \mathcal{L} = T - V,$$&lt;/p&gt;
+&lt;p&gt;where ( T ) is the kinetic energy of the system, and ( V ) is the potential energy.  It is almost always easier to think of the different energies in a system than it is to resolve forces, which is why Lagrangian mechanics is so powerful.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;The Real Power of Lagrangians&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Although Lagrangians are an important tool in classical mechanics, they actually play a much more pivotal role in the fundamental physics of the Universe. The Standard Model, which describes all fundamental particles (e.g photons, electrons, quarks) is specified as a Lagrangian. Lagrangians can be constructed in such a way that their value does not change when changing reference frames, which means they can be made consistent with Einstein&amp;rsquo;s theory of special relativity. Also Noether&amp;rsquo;s theorem means that conservation laws (e.g. for momentum, charge), can be incorporated into the Lagrangian formalism in a very natural way.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;a-fun-example&#34;&gt;A Fun Example!&lt;/h2&gt;
+&lt;p&gt;Ok so now we have the theory bit out the way let&amp;rsquo;s have a go at actually using a Lagrangian in practice. The problem we are going to consider is a spring pendulum, this is really what it says on the tin, a spring with a mass attached that can freely swing about some fixed point. The setup is shown in the handy diagram below.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../image.png&#34;
+         alt=&#34;Spring pendulum&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;A handy diagram.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It is clear that there are 4 generalised coordinates which fully describe the system: ( \theta ), the angle the spring makes with the vertical, ( r ), the length of the pendulum, and their corresponding time derivatives, ( \dot \theta ) and ( \dot r ). Having identified these it&amp;rsquo;s pretty easy to think of all the kinetic and potential in the energies in the system, try to think of them and then have a look at the list below to see if you got it correct:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Linear kinetic energy, ( T_l ), from by the movement of the mass in the direction of the spring.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rotational kinetic energy, ( T_r ), from the rotation of the mass about the fixed point the spring is attached to.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mechanical potential energy, ( V_m ), from the compression and extension of the spring.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gravitational potential energy, ( V_g ), from the changing height of the mass.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1-3 are given by standard formulas, for example Hooke&amp;rsquo;s law for 3, and can be written down straight away. 4 just involves using a bit of trigonometry to work out the vertical height of the spring in terms of ( r ), then applying the standard formula for a uniform gravitational field. Each formula is shown in the table below, where m is the mass, ( r_0 ) is the length of the unextended spring and ( g ) is the gravitational constant:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Energy&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Formula&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( T_l )&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( \frac{1}{2}m\dot{r}^2  )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( T_r )&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;(  \frac{1}{2}m r^2\dot{\theta}^2 )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( V_m )&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( k(r -r_0)^2  )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( V_g )&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;( mgh= mg(r-r\cos\theta) )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Taking ( m=r_0=1 ) , we can now finally write down the full Lagrangian as,&lt;/p&gt;
+&lt;p&gt;\begin{align} \mathcal{L} &amp;amp;= (T_l + T_r) - (V_m + V_g) \\\
+&amp;amp;= \frac{1}{2}\dot{r}^2 + \frac{1}{2} r^2\dot{\theta}^2 - gr(1-\cos\theta) - k(r -1)^2.\end{align}&lt;/p&gt;
+&lt;p&gt;So to find the equations of motion from here we need to apply the Euler-Lagrange equations, which involves calculating the partial derivatives with respect to each independent variable, this is a bit tedious but not too bad,&lt;/p&gt;
+&lt;p&gt;\begin{align} \frac{\partial \mathcal{L}}{\partial \theta} &amp;amp;= -gr\sin\theta \\\
+\frac{\partial \mathcal{L}}{\partial r} &amp;amp;= r \dot \theta^2-g(1-\cos\theta) -2k(r-1)  \\\&lt;br&gt;
+\frac{\partial \mathcal{L}}{\partial \dot \theta} &amp;amp;= r^2 \dot \theta \\\&lt;br&gt;
+\frac{\partial \mathcal{L}}{\partial \dot r} &amp;amp;= \dot r \end{align}&lt;/p&gt;
+&lt;p&gt;The final step is to plug these into the Euler-Lagrange equations, and apply the total time derivative, then rearrange to get the following 2 equations of motion:&lt;/p&gt;
+&lt;p&gt;\begin{align} \ddot r &amp;amp;= r\dot{\theta}^2 + g(1-\cos\theta) - 2k(r-r_0) \\\
+\ddot \theta &amp;amp;= -\frac{1}{r}(g\sin\theta + 2\dot{r}\dot{\theta}).  \end{align}&lt;/p&gt;
+&lt;p&gt;Mission complete! Unfortunately because these are coupled non-linear differential equations, they can&amp;rsquo;t be solved analytically (by me at least), so we need to use a numerical solver. Solving differential equations numerically is obviously a huge subject, so I won&amp;rsquo;t go into any detail here, but it is currently quite a hot topic in ML research, see for example &lt;a href=&#34;https://arxiv.org/abs/1806.07366&#34;&gt;this paper&lt;/a&gt;. To solve our equations of motion we can use the handy &lt;code&gt;odeint&lt;/code&gt; function from scipy.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../swing.gif&#34;
+         alt=&#34;Swinging&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Spring pendulums in motion.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Above is a gif of 3 pendulums with different initial conditions &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The motion is pretty much what we would expect, so everything seems to be working! Everything we have done so far is taught in a standard undergraduate physics course, so now we have the basics down let&amp;rsquo;s see how we can involve the ML.&lt;/p&gt;
+&lt;h2 id=&#34;bringing-in-pytorch&#34;&gt;Bringing in PyTorch&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer: Before this project I had never used PyTorch, in fact part of the reason for doing the project was to get familiar with using it. For this reason it is likely that some of my code is bad practice/wrong. If you spot any mistakes, please let me know, thanks!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this section we&amp;rsquo;re going to see how we can use the &lt;code&gt;autograd&lt;/code&gt; functionality in PyTorch to automatically determine the equations of motion from our Lagrangian. To do this we need to think a bit about what the equations of motion actually are. First let&amp;rsquo;s put all our independent generalised coordinates into a vector, ( \mathbf{x} = (r, \theta, \dot r, \dot \theta)^T ). The value of ( \mathbf{x} ) completely specifies the state of our system. The equations of motion tell us the dynamics of our system, i.e. how the state evolves forward in time. They can be written concisely as,&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d \mathbf{x}}{dt} = \begin{pmatrix} \dot r \ \dot \theta \ \ddot r \ \ddot \theta  \end{pmatrix}= f(\mathbf{x})
+$$&lt;/p&gt;
+&lt;p&gt;if we know ( f ) we know the dynamics of the system. We already have the top 2 components of ( f ), since they are both generalised coordinates, so all we need to do is find the bottom 2. For clarity lets write the ( \mathbf{y} =( r, \theta)^T ) and the bottom 2 as ( \mathbf{\dot y} =(\dot r, \dot \theta)^T ). The challenge then is to find ( \mathbf{\ddot  y} ). Using this notation we can write the Euler-Lagrange equations as,&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$ \nabla_\mathbf{y}\mathcal{L} - \frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} = 0. $$&lt;/p&gt;
+&lt;p&gt;We can then explicitly apply the the total time derivative to get,&lt;/p&gt;
+&lt;p&gt;$$(\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L}) \mathbf{\ddot y} + (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y} = \nabla_\mathbf{y} \mathcal{L}.$$&lt;/p&gt;
+&lt;p&gt;This derivative confused me a bit when I first read the original paper, so may it be worth showing a few more steps. Feel free to skip this mini section if you&amp;rsquo;re already happy with it!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Derivatve Derivation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When computing the total derivative, ( \frac{d}{dt} ) we need to remember to take all the time dependence into account, this means using the chain rule on everything the Lagrangian depends on. We are trying to compute,
+$$\frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} =\frac{d}{dt} \begin{pmatrix} \frac{\partial \mathcal{L}}{\partial \dot r} \\frac{\partial \mathcal{L}}{\partial \dot \theta} \end{pmatrix}.$$
+For simplicity let&amp;rsquo;s just work out the top component of this, applying the chain rule to incorporate all the time dependence,
+$$\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot r} = \frac{d r}{dt} \frac{\partial }{\partial r} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \theta}{dt}  \frac{\partial }{\partial \theta} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot r}{dt} \frac{\partial }{\partial \dot r}  \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot \theta}{dt} \frac{\partial }{\partial \dot \theta}  \frac{\partial \mathcal{L}}{\partial \dot r}.$$
+Hopefully it is clear that if we replace, ( \frac{d r}{dt} = \dot r ) and so on, this would be the top component of the vector derivative, having multiplied everything out correctly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The final step then is to do a bit of matrix algebra to get ( \mathbf{\ddot  y} ) alone, we end up with,&lt;/p&gt;
+&lt;p&gt;$$\mathbf{\ddot y}  = (\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L})^{-1} [\nabla_\mathbf{y} \mathcal{L} - (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y}].$$&lt;/p&gt;
+&lt;p&gt;Now we have ( \mathbf{\ddot  y} ) alone we have a clear recipe for solving the system given an arbitrary differentiable Lagrangian. We just have to plug it into the equation above, work it through, then we have ( f ) which we can use in a numerical differential equation solver to make some nice gifs. This expression is also helpful because it works for any number of generalised coordinates. This expression is really important when it comes to actually incorporating the neural network effectively, but we will get to that later.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s write some code so that given a Lagrangian, we can automatically determine the equations of motion without having to go through all the derivatives by hand. Since PyTorch now has functions to calculate the Hessian and Jacobian, this is actually reasonably easy. The following function, returns ( \mathbf{\dot x} ) for a given ( \mathcal{L} ) and state ( \mathbf{x} ):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import torch 
+from torch.autograd.functional import jacobian, hessian
+
+def get_xt(L, x):
+    
+    n = x.shape[0]//2 # Get number of generalised coords 
+    xv = torch.autograd.Variable(x, requires_grad=True)
+    y, yt = torch.split(xv, 2, dim=0)
+
+    # The hessian/jacobian are calculated w.r.t all variables in xv 
+    # so select only relevant parts using slices
+    A = torch.inverse(hessian(L, xv, create_graph=True)[n:, n:])
+    B = jacobian(L, xv, create_graph=True)[:n]
+    C = hessian(L, xv, create_graph=True)[n:, :n]
+
+    ytt = A @ (B - C @ yt)
+
+    xt = torch.cat([yt, torch.squeeze(ytt)])
+
+    return xt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To check it&amp;rsquo;s working correctly let&amp;rsquo;s test it on the spring pendulum, and use the same initial conditions in the equations we calculated by hand, then we can compare the trajectories and see if they are the same.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../mse.png&#34;
+         alt=&#34;Swinging&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Mean square difference between ( \mathbf{x} ) components of each method, with increasing time.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;At first glance this looks pretty bad, but the axis is y axis is at a scale ( 10^{-13} ), so the PyTorch method is giving almost exactly the same trajectory. Cool!&lt;/p&gt;
+&lt;h2 id=&#34;so-wheres-the-ml&#34;&gt;So where&amp;rsquo;s the ML?&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve done lots of physics so far, but where does the ML come in? Well the good news is that we now have all the ground work out of the way, and we are ready to dive into Lagrangian Neural Networks. In post #2 we will get straight into implementing LNNs in PyTorch, given the knowledge we now have, this should be a relatively simple task.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s just recap a bit and think why we are doing all this in the first place. Here I have used an example of a mechanical system with a known Lagrangian, what if we want to determine the dynamics of a system which is known to obey the laws of classical mechanics, but the Lagrangian is not known? One option is to learn from data. As we discussed earlier all we need to determine the dynamics is the function ( f ). So why did we even need to bother with all this Lagrangian stuff? Why not just replace ( f ) with a neural network, and learn it straight from the data? We could do this, and it is possible that with a large enough model we might get good results, but we can do much better by making the model aware of the physics of the situation. If instead we parameterise ( \mathcal{L} ) with a neural network, and then use our equation for (  \mathbf{\ddot y} ) to determine ( f ), then the Euler-Lagrange equations are included as constraints in the model. This means we have a neural network that is aware of Hamilton&amp;rsquo;s least action principle! Because the model is physics aware, we should get significantly better results from a model with fewer parameters. LNNs are a cool example of using physics knowledge to introduce inductive bias into an ML model. Another nice example of this from a totally different area of ML, Bayesian non-parametrics, are &lt;a href=&#34;http://proceedings.mlr.press/v5/alvarez09a/alvarez09a.pdf&#34;&gt;Latent Force Models&lt;/a&gt;, which may be the subject of a future post.&lt;/p&gt;
+&lt;p&gt;If you got this far thanks for reading, and hopefully you can join me for part #2 shortly!&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;We treat ( q_i ) and ( \dot q_i ) as independent variables, this can be really confusing at first. You can get an intuitive feel for why this might true if you think about the fact you need to know both the position and velocity of a particle to fully determine it&amp;rsquo;s future trajectory. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;( \mathcal{L} ) can also depend explicitly on time, which results in energy not being conserved, but we will not consider that case here. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;To create the gif I made plots with matplotlib, and then used this &lt;a href=&#34;https://github.com/maxhumber/gif&#34;&gt;brilliant package&lt;/a&gt; to animate. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;As I mentioned before this derivation closely follows that in the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;Lagrangian Neural Networks&lt;/a&gt; paper, so all credit to the authors for it. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
     </item>
     
   </channel>
