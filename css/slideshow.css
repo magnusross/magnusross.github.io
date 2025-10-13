@@ -1,0 +1,159 @@
+/* Simple CSS-only Slideshow */
+.slideshow {
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.slideshow input[type="radio"] {
+  display: none;
+}
+
+.slideshow-images {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slideshow-images img {
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+  object-fit: contain;
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+}
+
+.slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slide-nav label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  pointer-events: auto;
+  font-size: 18px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.slide-nav .nav-prev {
+  border-radius: 0 4px 4px 0;
+  margin-left: 0;
+}
+
+.slide-nav .nav-next {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+}
+
+.slide-nav label:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-nav .nav-prev:before {
+  content: "‹";
+}
+
+.slide-nav .nav-next:before {
+  content: "›";
+}
+
+/* Show navigation for active slide */
+.slideshow input:nth-of-type(1):checked ~ .slide-nav-0,
+.slideshow input:nth-of-type(2):checked ~ .slide-nav-1,
+.slideshow input:nth-of-type(3):checked ~ .slide-nav-2,
+.slideshow input:nth-of-type(4):checked ~ .slide-nav-3,
+.slideshow input:nth-of-type(5):checked ~ .slide-nav-4,
+.slideshow input:nth-of-type(6):checked ~ .slide-nav-5,
+.slideshow input:nth-of-type(7):checked ~ .slide-nav-6,
+.slideshow input:nth-of-type(8):checked ~ .slide-nav-7 {
+  display: flex;
+}
+
+/* Show navigation buttons on hover */
+.slideshow:hover .slide-nav {
+  opacity: 1;
+}
+
+/* Show slides based on selected radio button - works for any number of slides */
+.slideshow input:nth-of-type(1):checked ~ .slideshow-images {
+  transform: translateX(0%);
+}
+
+.slideshow input:nth-of-type(2):checked ~ .slideshow-images {
+  transform: translateX(-100%);
+}
+
+.slideshow input:nth-of-type(3):checked ~ .slideshow-images {
+  transform: translateX(-200%);
+}
+
+.slideshow input:nth-of-type(4):checked ~ .slideshow-images {
+  transform: translateX(-300%);
+}
+
+.slideshow input:nth-of-type(5):checked ~ .slideshow-images {
+  transform: translateX(-400%);
+}
+
+.slideshow input:nth-of-type(6):checked ~ .slideshow-images {
+  transform: translateX(-500%);
+}
+
+.slideshow input:nth-of-type(7):checked ~ .slideshow-images {
+  transform: translateX(-600%);
+}
+
+.slideshow input:nth-of-type(8):checked ~ .slideshow-images {
+  transform: translateX(-700%);
+}
+
+/* Navigation button styling - no active state needed for arrows */
+
+/* Auto-cycle animation (optional) */
+.slideshow.auto input:nth-child(1) {
+  animation: slide1 15s infinite;
+}
+
+@keyframes slide1 {
+  0%, 20% { opacity: 1; }
+  25%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .slideshow {
+    max-width: 400px;
+  }
+  
+  .slideshow-images img {
+    max-height: 40vh;
+  }
+  
+  .slide-nav label {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
