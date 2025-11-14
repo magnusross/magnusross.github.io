@@ -10,6 +10,47 @@
     <atom:link href="https://magnusross.github.io/categories/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Zero alpha</title>
+      <link>https://magnusross.github.io/posts/nof1-analysis/</link>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/nof1-analysis/</guid>
+      <description>&lt;p&gt;Evaluating LLMs is hard. Many popular benchmarks have become saturated, leading to artificial inflation of the ability of models to solve complex problems. These issues are exacerbated by the incentive that exists for AI people to constantly hype the field. A &lt;a href=&#34;https://www.argmin.net/p/lore-laundering-machines&#34;&gt;recent example&lt;/a&gt; of an OpenAI exec claiming that ChatGPT had solved ten open Erdős problems when it had in fact just found existing papers discussing their solutions springs to mind.  &lt;/p&gt;
+&lt;p&gt;The problem with many current benchmarks is that as soon as they are used once, they become stale. Because frontier models are closed, test problems must be revealed to the companies that own them for a benchmark to be evaluated. After the problems have been revealed the companies can train the models to perform well on them, in order to make their model look better.  Unfortunately for us in the general public, this makes it difficult to assess the quality of models in an unbiased way. Leaderboards like &lt;a href=&#34;https://lmarena.ai&#34;&gt;LM arena&lt;/a&gt;, which directly measure human preferences, go some way to addressing these issues, but for complex problems finding sufficiently qualified raters is challenging. These leaderboards also have their &lt;a href=&#34;https://arxiv.org/abs/2504.20879&#34;&gt;own issues with bias&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What, then, is to be done? If only there was an ever-changing environment that could be easily represented numerically, where there was no possibility of cheating, the outcome was clearly measurable and success hinged on pure intellect! Enter &lt;a href=&#34;https://nof1.ai&#34;&gt;Alpha Arena&lt;/a&gt;. The idea behind this newly introduced benchmark is that we just let LLMs loose in the market and see which one makes the most profit.  In order to make things tractable, the model is only allowed to trade from a set of 6 crypto assets on a specific exchange at intervals of 3 minutes. Information about the state of the market, the model&amp;rsquo;s current position, and the overall goal is put into a prompt at each time step, and the model is asked to produce a decision to buy, sell, or hold. The exact details of how this works can be found &lt;a href=&#34;https://nof1.ai/blog/TechPost1&#34;&gt;this blog post&lt;/a&gt;, which is worth a read.&lt;/p&gt;
+&lt;p&gt;On its face, this seems to be a bit crazy, especially for anyone with experience developing trading algorithms. I want to say before I get into the weeds, that I actually don&amp;rsquo;t think this is the worst idea ever, at least for benchmarking.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; There have been a &lt;a href=&#34;https://arxiv.org/abs/2402.04379&#34;&gt;surprising&lt;/a&gt; &lt;a href=&#34;https://arxiv.org/abs/2310.07820&#34;&gt;number&lt;/a&gt; of tasks that can be solved pretty OK-ish by just whacking it in the prompt, and it would be cool to see if that might work here. Five years ago people would have laughed you out of town for suggesting doing machine learning in this way. If an LLM could trade well, and importantly this could be shown in a statistically reliable way, that would be an important finding, and would have interesting implications for markets. It might also measure a different aspect of &amp;ldquo;intelligence&amp;rdquo; that current benchmarks fail to capture. &lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../nof1_final_pnl.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;That being said, I am skeptical that there is any evidence from this iteration of the benchmark that any of these LLMs can trade skilfully. The final PnL charts are are shown above. All of the LLMs but Deepseek and Qwen ended with negative PnL, with ChatGPT and Gemini in particular losing a large proportion of the initial $10,000 capital. Deepseek and Qwen only made small gains, relative to the high volatility over the testing period.  You don&amp;rsquo;t really need Sharpe ratios to say that the models are failing. &lt;/p&gt;
+&lt;p&gt;Originally I started drafting this post midway through the competition when a couple of the models had made decent money (around 2025-10-27 both Deepseek and Qwen had more than doubled the initial capital). I was planning to very wisely and smugly point out that it would not be unlikely to get this kind of result from trading randomly, with no skill whatsoever. I wrote a &lt;a href=&#34;https://github.com/magnusross/nof1-investigation&#34;&gt;simple backtester&lt;/a&gt; for a random trading strategy on the same set of assets, with similar leverage and trading frequency. The results showed that, as suspected, a PnL as good as the best model was expected to happen in about 10% of cases, below the level generally considered to be significant (if you believe in the concept of p-values). Unfortunately for me, all of that was basically pointless because pretty soon after I had written my nice backtest, the markets turned and all the models started losing money. By looking at the final PnL charts it is pretty clear that you wouldn&amp;rsquo;t trust any of the models with your savings, or even a much more fleeting sum, no analysis required. I still want to show off the nice chart I made, the left shows sample paths from my random strategy, and the right shows the distribution of final random PnLs along with the PnLs of each of the models. It&amp;rsquo;s clear that none of the models are doing anything better than random; the sample paths of the simulation look pretty similar to the LLMs.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../nof1_backtest.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;If the initial hypothesis of the Alpha Arena benchmark was that LLMs could trade skilfully, there is very little supporting evidence for that here. In fairness, the organisers themselves are quite open about this, and aren&amp;rsquo;t making as many outlandish claims as is standard in AI land. They have done some analysis that shows that each of the models seems to have distinct trading patterns, but it feels like this might just be a result of the different &lt;a href=&#34;https://arxiv.org/pdf/2406.11050&#34;&gt;token bias&lt;/a&gt; in each model, not something deeper. It&amp;rsquo;s difficult to say if this problem is just much too hard to be solved by any model of this kind (I suspect this is true), or the models just aren&amp;rsquo;t good enough yet, or there is something about the setup that is holding the models back. One thing I think would be interesting to look at is the inclusion of qualitative information, like Twitter feeds, news etc. The way the information is presented to the models in the current setup feels like putting a square peg in a round hole, and there is potential to extract richer information in a more natural way than just putting lagged indicators in the prompt. It would also be cool to look at doing RL post-training based on feedback from the market. Despite my skepticism of this ever working, I find myself somewhat interested to see what happens in round 2! &lt;/p&gt;
+&lt;h3 id=&#34;polymarket-bonus-ball&#34;&gt;Polymarket Bonus Ball&lt;/h3&gt;
+&lt;p&gt;In the sick, broken world that we live in, it was actually possible to trade the outcomes of this experiment &lt;a href=&#34;https://polymarket.com/event/nof1ai-trading-competition-biggest-loser&#34;&gt;on Polymarket&lt;/a&gt;, who provided markets on &amp;ldquo;Biggest winner&amp;rdquo;, &amp;ldquo;Biggest loser&amp;rdquo; and &amp;ldquo;Will anyone hit 50k?&amp;rdquo;.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Whilst the competition was ongoing I used a simple exponential smoothing model to predict paths for the PnLs up until the end of the competition, and determine the probability of each model losing. On the 2025-10-31, the chance of Grok losing was priced at 1 cent (implying 1% chance), whereas my model said there was about a 9% chance. I ploughed the princely sum of 1 USDC into Grok &amp;ldquo;Yes&amp;rdquo; tokens, with a potential payout of $100. Unfortunately it didn&amp;rsquo;t go my way and I lost the cash, making this blog post much less good, and smug, in the process. The forecasts are below. You can make up your own mind as to whether this was a good bet or not.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../nof1_forecast_pnl.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If you want to make money, then it&amp;rsquo;s another story.  &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The last of these was pretty optimistic, I must say. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
       <title>&#34;Lucky you!&#34;</title>
       <link>https://magnusross.github.io/posts/cape-wrath-podcast/</link>
       <pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate>
@@ -22,8 +63,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Lucky me indeed! There were ups and downs, but the former far outweighed the latter. I talked about my experience with Rob from the fantastic &amp;ldquo;&lt;a href=&#34;https://bigtrailadventures.com/pages/about&#34;&gt;Notes from Big Trails&lt;/a&gt;&amp;rdquo; podcast, covering planning, online hype, top tips, wildlife sightings, and much more. It was great fun to record, and hopefully contains some useful information for anyone curious as to what the trail is actually like.&lt;/p&gt;
 &lt;iframe data-testid=&#34;embed-iframe&#34; style=&#34;border-radius:12px; border: none;&#34; src=&#34;https://open.spotify.com/embed/episode/6je77njUdLQFUjW7f72C0A?utm_source=generator&amp;theme=0&#34; width=&#34;100%&#34; height=&#34;152&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
-&lt;p&gt;Since the above is a non-visual medium, here are a few of my favorite views. Apologies for the portrait formatting.&lt;/p&gt;
-
+&lt;p&gt;Since the above is a non-visual medium, here are is one my favorite views. Apologies for the portrait formatting.&lt;/p&gt;
+&lt;!-- 
 
 
 
@@ -124,96 +165,16 @@
       &lt;label class=&#34;nav-next&#34; for=&#34;slideshow-view1-jpg-0&#34;&gt;&lt;/label&gt;
     &lt;/div&gt;
   
-&lt;/div&gt;
-&lt;p&gt;There is a lot of chat about bogs in the podcast, mirroring the online discourse about the trail, and walking in the Highlands more generally. A representative sample follows. Note that these are all directly on the trail; I didn&amp;rsquo;t cheat.&lt;/p&gt;
+&lt;/div&gt; --&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../view4.jpg&#34;/&gt; 
+&lt;/figure&gt;
 
+&lt;p&gt;There is a lot of chat about bogs in the podcast, mirroring the online discourse about the trail, and walking in the Highlands more generally. Below is a representative example.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://magnusross.github.io/../../bog1.jpg&#34;/&gt; 
+&lt;/figure&gt;
 
-
-
-
-
-&lt;div class=&#34;slideshow&#34;&gt;
-  
-  
-  &lt;input type=&#34;radio&#34; name=&#34;slideshow-bog1-jpeg&#34; id=&#34;slideshow-bog1-jpeg-0&#34; checked&gt;
-  
-  &lt;input type=&#34;radio&#34; name=&#34;slideshow-bog1-jpeg&#34; id=&#34;slideshow-bog1-jpeg-1&#34; &gt;
-  
-  &lt;input type=&#34;radio&#34; name=&#34;slideshow-bog1-jpeg&#34; id=&#34;slideshow-bog1-jpeg-2&#34; &gt;
-  
-  &lt;input type=&#34;radio&#34; name=&#34;slideshow-bog1-jpeg&#34; id=&#34;slideshow-bog1-jpeg-3&#34; &gt;
-  
-  &lt;input type=&#34;radio&#34; name=&#34;slideshow-bog1-jpeg&#34; id=&#34;slideshow-bog1-jpeg-4&#34; &gt;
-  
-  
-  
-  &lt;div class=&#34;slideshow-images&#34;&gt;
-    
-    &lt;img src=&#34;https://magnusross.github.io/bog1.jpeg&#34; alt=&#34;Slide 1&#34; loading=&#34;lazy&#34;&gt;
-    
-    &lt;img src=&#34;https://magnusross.github.io/bog2.jpeg&#34; alt=&#34;Slide 2&#34; loading=&#34;lazy&#34;&gt;
-    
-    &lt;img src=&#34;https://magnusross.github.io/bog3.jpeg&#34; alt=&#34;Slide 3&#34; loading=&#34;lazy&#34;&gt;
-    
-    &lt;img src=&#34;https://magnusross.github.io/bog4.jpeg&#34; alt=&#34;Slide 4&#34; loading=&#34;lazy&#34;&gt;
-    
-    &lt;img src=&#34;https://magnusross.github.io/bog5.jpeg&#34; alt=&#34;Slide 5&#34; loading=&#34;lazy&#34;&gt;
-    
-  &lt;/div&gt;
-  
-  
-  
-    
-    
-    
-    
-    
-    &lt;div class=&#34;slide-nav slide-nav-0&#34;&gt;
-      &lt;label class=&#34;nav-prev&#34; for=&#34;slideshow-bog1-jpeg-4&#34;&gt;&lt;/label&gt;
-      &lt;label class=&#34;nav-next&#34; for=&#34;slideshow-bog1-jpeg-1&#34;&gt;&lt;/label&gt;
-    &lt;/div&gt;
-  
-    
-    
-    
-    
-    
-    &lt;div class=&#34;slide-nav slide-nav-1&#34;&gt;
-      &lt;label class=&#34;nav-prev&#34; for=&#34;slideshow-bog1-jpeg-0&#34;&gt;&lt;/label&gt;
-      &lt;label class=&#34;nav-next&#34; for=&#34;slideshow-bog1-jpeg-2&#34;&gt;&lt;/label&gt;
-    &lt;/div&gt;
-  
-    
-    
-    
-    
-    
-    &lt;div class=&#34;slide-nav slide-nav-2&#34;&gt;
-      &lt;label class=&#34;nav-prev&#34; for=&#34;slideshow-bog1-jpeg-1&#34;&gt;&lt;/label&gt;
-      &lt;label class=&#34;nav-next&#34; for=&#34;slideshow-bog1-jpeg-3&#34;&gt;&lt;/label&gt;
-    &lt;/div&gt;
-  
-    
-    
-    
-    
-    
-    &lt;div class=&#34;slide-nav slide-nav-3&#34;&gt;
-      &lt;label class=&#34;nav-prev&#34; for=&#34;slideshow-bog1-jpeg-2&#34;&gt;&lt;/label&gt;
-      &lt;label class=&#34;nav-next&#34; for=&#34;slideshow-bog1-jpeg-4&#34;&gt;&lt;/label&gt;
-    &lt;/div&gt;
-  
-    
-    
-    
-    
-    
-    &lt;div class=&#34;slide-nav slide-nav-4&#34;&gt;
-      &lt;label class=&#34;nav-prev&#34; for=&#34;slideshow-bog1-jpeg-3&#34;&gt;&lt;/label&gt;
-      &lt;label class=&#34;nav-next&#34; for=&#34;slideshow-bog1-jpeg-0&#34;&gt;&lt;/label&gt;
-    &lt;/div&gt;
-  
-&lt;/div&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
