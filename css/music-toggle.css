@@ -1,0 +1,69 @@
+/* Music toggle - positioned to the right of the header */
+.music-toggle-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 29px; /* Match the height of menu items */
+}
+
+.music-toggle {
+  background: #eee; /* Match menu item background */
+  border: none;
+  cursor: pointer;
+  padding: 5px; /* Match menu item padding */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 29px; /* Match menu item height */
+  border-radius: 5px; /* Match menu item border-radius */
+  box-sizing: border-box;
+}
+
+.music-toggle:hover .toggle-switch {
+  background: #bbb;
+}
+
+.music-icon {
+  color: inherit; /* Use default text color */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Toggle switch - rounded rectangle to match navigation style */
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px; /* Rounded rectangle instead of pill */
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 3px; /* Slightly rounded to match */
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Playing state - slider moves right and turns blue */
+.music-toggle.playing .toggle-switch {
+  background: #0000ee;
+}
+
+.music-toggle.playing .toggle-slider {
+  transform: translateX(24px);
+}
+
+.music-toggle.playing .music-icon {
+  color: #0000ee;
+}

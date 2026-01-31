@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/slideshow.css" />
+<link rel="stylesheet" href="/css/music-toggle.css" />
   </head>
 
   <body>
-    <nav>
+    <nav style="position: relative;">
     <ul class="menu">
       
       <li><a href="/">Home</a></li>
@@ -21,6 +22,14 @@
       
       <li><a href="/index.xml">RSS Feed</a></li>
       
+      <li class="music-toggle-container">
+        <button id="music-toggle" class="music-toggle" title="Click to toggle music • Right-click for info">
+          <span class="music-icon">♪</span>
+          <div class="toggle-switch">
+            <div class="toggle-slider"></div>
+          </div>
+        </button>
+      </li>
     </ul>
     <hr/>
     </nav>
@@ -110,6 +119,37 @@ $$
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 
+
+<audio id="music-player" loop>
+  <source src="/REC-2026-01-31.wav" type="audio/wav">
+</audio>
+
+<script>
+  (function() {
+    const musicToggle = document.getElementById('music-toggle');
+    const musicPlayer = document.getElementById('music-player');
+    
+    if (!musicToggle || !musicPlayer) return;
+    
+    
+    musicToggle.addEventListener('click', function(e) {
+      if (musicPlayer.paused) {
+        musicPlayer.play();
+        musicToggle.classList.add('playing');
+      } else {
+        musicPlayer.pause();
+        musicPlayer.currentTime = 0;
+        musicToggle.classList.remove('playing');
+      }
+    });
+    
+    
+    musicToggle.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      window.location.href = '\/music\/';
+    });
+  })();
+</script>
 
   
   <hr/>
