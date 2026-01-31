@@ -19,16 +19,15 @@
 &lt;p&gt;Without further ado, here are a few selected highlights, organised into totally arbitrary categories that I just came up with. Warning: my literary analysis is probably about the level of a middling GCSE English student, so don&amp;rsquo;t get too excited.&lt;/p&gt;
 &lt;h2 id=&#34;top-rated&#34;&gt;Top rated&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;The Bee Sting by Paul Murray&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is a fantastic book. It follows the fall of an Irish family in the Great Financial Crisis, rotating through different family members&#39; perspectives. It shows mastery of many different aspects of a good novel. It has beautifully crafted sentences; ones that pop. The characters are rich and well observed. It is both touching and funny. On top of all this, the story is excellent and is paced perfectly, reaching a shocking crescendo. As the book progresses, the switching between characters happens quicker and quicker, which adds a real chaotic vibe. One character&amp;rsquo;s parts are written as a stream of consciousness with no punctuation, which is very effective.&lt;/p&gt;
+&lt;p&gt;This is a fantastic book. It follows the fall of an Irish family in the Great Financial Crisis, rotating through different family members&amp;rsquo; perspectives. It shows mastery of many different aspects of a good novel. It has beautifully crafted sentences; ones that pop. The characters are rich and well observed. It is both touching and funny. On top of all this, the story is excellent and is paced perfectly, reaching a shocking crescendo. As the book progresses, the switching between characters happens quicker and quicker, which adds a real chaotic vibe. One character&amp;rsquo;s parts are written as a stream of consciousness with no punctuation, which is very effective.&lt;/p&gt;
 &lt;p&gt;Runner up: &lt;em&gt;White Teeth by Zadie Smith&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;best-classic&#34;&gt;Best classic&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;The Count of Monte Cristo by Alexandre Dumas&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This is a long, long book, but well worth sticking with. The first half is more fun adventure—daring prison escape, encounters with bandits—whereas the second half is all political intrigue in Paris. The basic plot is that the Count (prev. Edmond Dantès) is wronged by jealous men and jailed. He befriends a man in prison who bequeaths him a fortune, which he uses to seek revenge by integrating into the wealthy Parisian society, where his enemies reside and destroying them from the inside.&lt;/p&gt;
-&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:CountOfMonteCristoRelations.svg#/media/File:CountOfMonteCristoRelations.svg&#34;&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../1920px-CountOfMonteCristoRelations.svg.png&#34;
-         alt=&#34;The character relationships in _The Count of Monte Cristo_.&#34;/&gt; &lt;/a&gt;&lt;figcaption&gt;
-            &lt;p&gt;The character relationships in &lt;em&gt;The Count of Monte Cristo&lt;/em&gt;.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://commons.wikimedia.org/wiki/File:CountOfMonteCristoRelations.svg#/media/File:CountOfMonteCristoRelations.svg&#34;&gt;&lt;img src=&#34;https://magnusross.github.io/../../1920px-CountOfMonteCristoRelations.svg.png&#34;
+    alt=&#34;The character relationships in _The Count of Monte Cristo_.&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;
+      &lt;p&gt;The character relationships in &lt;em&gt;The Count of Monte Cristo&lt;/em&gt;.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The book is complex, with a lot of plot lines to remember, so it can get a little confusing (see the crazy diagram above of all the relationships). However, I found it gripping; there&amp;rsquo;s something very pleasing about his extremely complex schemes coming to fruition. It also has a lot of interesting history woven in, and the pacing is great because it was originally serialised.&lt;/p&gt;
@@ -46,242 +45,242 @@
 &lt;p&gt;Runner up: &lt;em&gt;Lying for Money by Dan Davies&lt;/em&gt; (it&amp;rsquo;s about accounting!)&lt;/p&gt;
 &lt;h2 id=&#34;the-books&#34;&gt;The Books&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;title&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;authors&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;rating&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;is_fiction&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;abandoned&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;finish_date&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Hogfather&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Terry Pratchett&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-12-27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Will of The Many&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;James Islington&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-12-14&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Fraud&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Zadie Smith&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-11-21&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Science of Running&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Steve Magness&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;2025-11-01&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Dead Lions&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Mick Herron&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-10-22&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Slow Horses&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Mick Herron&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-10-10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Going Postal&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Terry Pratchett&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-10-04&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;A Half-built Garden&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Ruthanna Emrys&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;2025-09-26&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Conclave&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Robert Harris&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-09-23&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Bezzle&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Cory Doctorow&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-09-18&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Count of Monte Cristo&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Alexandre Dumas&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-09-10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Sirens of Titan&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Kurt Vonnegut&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-08-28&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Alas, Babylon&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Pat Frank&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-08-21&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Radicalized&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Cory Doctorow&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-08-13&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Buried Giant&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Kazuo Ishiguro&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-07-30&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;On Beauty&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Zadie Smith&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-06-30&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;So People Know It&amp;rsquo;s Me&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Francesca Benvenuto&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-06-23&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;City of Stairs&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Robert Jackson Bennett&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;2025-06-05&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Master and Margarita&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Mikhail Bulgakov&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-05-22&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;A Drop of Corruption&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Robert Jackson Bennett&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-05-06&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Tainted Cup&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Robert Jackson Bennett&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-04-27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;White Teeth&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Zadie Smith&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-04-17&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Orbital&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Samantha Harvey&lt;/td&gt;
-&lt;td&gt;3.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-03-29&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Parable of the Sower&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Octavia E. Butler&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-03-13&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Picks and Shovels&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Cory Doctorow&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-02-26&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Sea of Tranquility&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Emily St. John Mandel&lt;/td&gt;
-&lt;td&gt;2.5&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-02-17&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;The Bee Sting&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Paul Murray&lt;/td&gt;
-&lt;td&gt;4.75&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-02-12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Lying for money&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Dan Davies&lt;/td&gt;
-&lt;td&gt;4.5&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;2025-01-12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;title&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;authors&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;rating&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;is_fiction&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;abandoned&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;finish_date&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Hogfather&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Terry Pratchett&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-12-27&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Will of The Many&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;James Islington&lt;/td&gt;
+          &lt;td&gt;3.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-12-14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Fraud&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Zadie Smith&lt;/td&gt;
+          &lt;td&gt;3.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-11-21&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Science of Running&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Steve Magness&lt;/td&gt;
+          &lt;td&gt;2.5&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;2025-11-01&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Dead Lions&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Mick Herron&lt;/td&gt;
+          &lt;td&gt;3.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-10-22&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Slow Horses&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Mick Herron&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-10-10&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Going Postal&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Terry Pratchett&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-10-04&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;A Half-built Garden&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Ruthanna Emrys&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;2025-09-26&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Conclave&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Robert Harris&lt;/td&gt;
+          &lt;td&gt;3.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-09-23&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Bezzle&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Cory Doctorow&lt;/td&gt;
+          &lt;td&gt;3.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-09-18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Count of Monte Cristo&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Alexandre Dumas&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-09-10&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Sirens of Titan&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Kurt Vonnegut&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-08-28&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Alas, Babylon&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Pat Frank&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-08-21&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Radicalized&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Cory Doctorow&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-08-13&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Buried Giant&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Kazuo Ishiguro&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-07-30&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;On Beauty&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Zadie Smith&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-06-30&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;So People Know It&amp;rsquo;s Me&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Francesca Benvenuto&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-06-23&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;City of Stairs&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Robert Jackson Bennett&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;2025-06-05&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Master and Margarita&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Mikhail Bulgakov&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-05-22&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;A Drop of Corruption&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Robert Jackson Bennett&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-05-06&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Tainted Cup&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Robert Jackson Bennett&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-04-27&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;White Teeth&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Zadie Smith&lt;/td&gt;
+          &lt;td&gt;4.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-04-17&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Orbital&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Samantha Harvey&lt;/td&gt;
+          &lt;td&gt;3.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-03-29&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Parable of the Sower&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Octavia E. Butler&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-03-13&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Picks and Shovels&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Cory Doctorow&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-02-26&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sea of Tranquility&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Emily St. John Mandel&lt;/td&gt;
+          &lt;td&gt;2.5&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-02-17&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;The Bee Sting&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Paul Murray&lt;/td&gt;
+          &lt;td&gt;4.75&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-02-12&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Lying for money&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Dan Davies&lt;/td&gt;
+          &lt;td&gt;4.5&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2025-01-12&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 </description>
     </item>
@@ -295,37 +294,34 @@
 &lt;p&gt;The problem with many current benchmarks is that as soon as they are used once, they become stale. Because frontier models are closed, test problems must be revealed to the companies that own them for a benchmark to be evaluated. After the problems have been revealed the companies can train the models to perform well on them, in order to make their model look better.  Unfortunately for us in the general public, this makes it difficult to assess the quality of models in an unbiased way. Leaderboards like &lt;a href=&#34;https://lmarena.ai&#34;&gt;LM arena&lt;/a&gt;, which directly measure human preferences, go some way to addressing these issues, but for complex problems finding sufficiently qualified raters is challenging. These leaderboards also have their &lt;a href=&#34;https://arxiv.org/abs/2504.20879&#34;&gt;own issues with bias&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What, then, is to be done? If only there was an ever-changing environment that could be easily represented numerically, where there was no possibility of cheating, the outcome was clearly measurable and success hinged on pure intellect! Enter &lt;a href=&#34;https://nof1.ai&#34;&gt;Alpha Arena&lt;/a&gt;. The idea behind this newly introduced benchmark is that we just let LLMs loose in the market and see which one makes the most profit.  In order to make things tractable, the model is only allowed to trade from a set of 6 crypto assets on a specific exchange at intervals of 3 minutes. Information about the state of the market, the model&amp;rsquo;s current position, and the overall goal is put into a prompt at each time step, and the model is asked to produce a decision to buy, sell, or hold. The exact details of how this works can be found &lt;a href=&#34;https://nof1.ai/blog/TechPost1&#34;&gt;this blog post&lt;/a&gt;, which is worth a read.&lt;/p&gt;
 &lt;p&gt;On its face, this seems to be a bit crazy, especially for anyone with experience developing trading algorithms. I want to say before I get into the weeds, that I actually don&amp;rsquo;t think this is the worst idea ever, at least for benchmarking.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; There have been a &lt;a href=&#34;https://arxiv.org/abs/2402.04379&#34;&gt;surprising&lt;/a&gt; &lt;a href=&#34;https://arxiv.org/abs/2310.07820&#34;&gt;number&lt;/a&gt; of tasks that can be solved pretty OK-ish by just whacking it in the prompt, and it would be cool to see if that might work here. Five years ago people would have laughed you out of town for suggesting doing machine learning in this way. If an LLM could trade well, and importantly this could be shown in a statistically reliable way, that would be an important finding, and would have interesting implications for markets. It might also measure a different aspect of &amp;ldquo;intelligence&amp;rdquo; that current benchmarks fail to capture. &lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../nof1_final_pnl.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../nof1_final_pnl.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;That being said, I am skeptical that there is any evidence from this iteration of the benchmark that any of these LLMs can trade skilfully. The final PnL charts are are shown above. All of the LLMs but Deepseek and Qwen ended with negative PnL, with ChatGPT and Gemini in particular losing a large proportion of the initial $10,000 capital. Deepseek and Qwen only made small gains, relative to the high volatility over the testing period.  You don&amp;rsquo;t really need Sharpe ratios to say that the models are failing. &lt;/p&gt;
 &lt;p&gt;Originally I started drafting this post midway through the competition when a couple of the models had made decent money (around 2025-10-27 both Deepseek and Qwen had more than doubled the initial capital). I was planning to very wisely and smugly point out that it would not be unlikely to get this kind of result from trading randomly, with no skill whatsoever. I wrote a &lt;a href=&#34;https://github.com/magnusross/nof1-investigation&#34;&gt;simple backtester&lt;/a&gt; for a random trading strategy on the same set of assets, with similar leverage and trading frequency. The results showed that, as suspected, a PnL as good as the best model was expected to happen in about 10% of cases, below the level generally considered to be significant (if you believe in the concept of p-values).&lt;/p&gt;
 &lt;p&gt;Unfortunately for me, all of that was basically pointless because pretty soon after I had written my nice backtest, the markets turned and all the models started losing money. By looking at the final PnL charts it is pretty clear that you wouldn&amp;rsquo;t trust any of the models with your savings, or even a much more fleeting sum, no analysis required. I still want to show off the nice chart I made, the left shows sample paths from my random strategy, and the right shows the distribution of final random PnLs along with the PnLs of each of the models. It&amp;rsquo;s clear that none of the models are doing anything better than random; the sample paths of the simulation look pretty similar to the LLMs.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../nof1_backtest.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../nof1_backtest.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;If the initial hypothesis of the Alpha Arena benchmark was that LLMs could trade skilfully, there is very little supporting evidence for that here. In fairness, the organisers themselves are quite open about this, and aren&amp;rsquo;t making as many outlandish claims as is standard in AI land. They have done some analysis that shows that each of the models seems to have distinct trading patterns, but it feels like this might just be a result of the different &lt;a href=&#34;https://arxiv.org/pdf/2406.11050&#34;&gt;token bias&lt;/a&gt; in each model, not something deeper.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s difficult to say if this problem is just much too hard to be solved by any model of this kind (I suspect this is true), or the models just aren&amp;rsquo;t good enough yet, or there is something about the setup that is holding the models back. One thing I think would be interesting to look at is the inclusion of qualitative information, like Twitter feeds, news etc. The way the information is presented to the models in the current setup feels like putting a square peg in a round hole, and there is potential to extract richer information in a more natural way than just putting lagged indicators in the prompt. It would also be cool to look at doing RL post-training based on feedback from the market. Despite my skepticism of this ever working, I find myself somewhat interested to see what happens in round 2! &lt;/p&gt;
 &lt;h3 id=&#34;polymarket-bonus-ball&#34;&gt;Polymarket Bonus Ball&lt;/h3&gt;
 &lt;p&gt;In the sick, broken world that we live in, it was actually possible to trade the outcomes of this experiment &lt;a href=&#34;https://polymarket.com/event/nof1ai-trading-competition-biggest-loser&#34;&gt;on Polymarket&lt;/a&gt;, who provided markets on &amp;ldquo;Biggest winner&amp;rdquo;, &amp;ldquo;Biggest loser&amp;rdquo; and &amp;ldquo;Will anyone hit 50k?&amp;rdquo;.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; Whilst the competition was ongoing I used a simple exponential smoothing model to predict paths for the PnLs up until the end of the competition, and determine the probability of each model losing. On the 2025-10-31, the chance of Grok losing was priced at 1 cent (implying 1% chance), whereas my model said there was about a 9% chance. I ploughed the princely sum of 1 USDC into Grok &amp;ldquo;Yes&amp;rdquo; tokens, with a potential payout of $100. Unfortunately it didn&amp;rsquo;t go my way and I lost the cash, making this blog post much less good, and smug, in the process. The forecasts are below. You can make up your own mind as to whether this was a good bet or not.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../nof1_forecast_pnl.png&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../nof1_forecast_pnl.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt; &lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;If you want to make money, then it&amp;rsquo;s another story.  &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;If you want to make money, then it&amp;rsquo;s another story. &amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The last of these was pretty optimistic, I must say. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;The last of these was pretty optimistic, I must say.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -445,23 +441,21 @@
     &lt;/div&gt;
   
 &lt;/div&gt; --&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../view4.jpg&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../view4.jpg&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;There is a lot of chat about bogs in the podcast, mirroring the online discourse about the trail, and walking in the Highlands more generally. Below is a representative example.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../bog1.jpg&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../bog1.jpg&#34;&gt;
 &lt;/figure&gt;
 
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Or at least 97.5% of it. &lt;a href=&#34;https://www.gov.uk/government/publications/scotland-firing-times&#34;&gt;Thanks, MoD&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Or at least 97.5% of it. &lt;a href=&#34;https://www.gov.uk/government/publications/scotland-firing-times&#34;&gt;Thanks, MoD&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -490,14 +484,14 @@
 &lt;/blockquote&gt;
 &lt;p&gt;So maybe the solution is to help with report generation instead? Of course you should then ask a number of follow-up questions about what exactly is slow, and why, how much time they spend on it, and if there is anything they have tried already.&lt;/p&gt;
 &lt;p&gt;By having the right conversations, we can better understand where ML is truly needed. Building something that gets published is one thing, but building something that gets &lt;em&gt;used&lt;/em&gt; is another entirely. That second path is harder, but it’s the only one where our work will actually matter to patients.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Clinical Decision Support System for the non-healthcare crew. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Clinical Decision Support System for the non-healthcare crew.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -509,9 +503,8 @@
       <description>&lt;p&gt;This is a guide that details how to use the Routegadget website to practice route selection for a mountain marathon. While Routegadget&amp;rsquo;s interface is a little old-school, it is a useful and powerful tool for analysing past races. This guide will focus on past races from &lt;a href=&#34;https://slmm.org.uk&#34;&gt;the SLMM&lt;/a&gt;, but this practice is applicable to any mountain marathon.&lt;/p&gt;
 &lt;h2 id=&#34;a-first-map&#34;&gt;A first map&lt;/h2&gt;
 &lt;p&gt;First, let&amp;rsquo;s look at a past course on Routegadget. Follow &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&#34;&gt;this link&lt;/a&gt; to view the map and controls for day one of the &amp;ldquo;Harter Fell&amp;rdquo; course of the 2017 edition of the SLMM. You should see something like this:
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_controls_only.png&#34;
-         alt=&#34;A map of the Harter Fell 2017 SLMM course showing only the control points.&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_controls_only.png&#34;
+    alt=&#34;A map of the Harter Fell 2017 SLMM course showing only the control points.&#34;&gt;
 &lt;/figure&gt;
 
 Some important things to note:&lt;/p&gt;
@@ -524,9 +517,8 @@ Some important things to note:&lt;/p&gt;
 &lt;p&gt;Given the straight-line route is not optimal, what is the best route? That&amp;rsquo;s the key question in a mountain marathon! The optimal route can depend on many factors, including weather conditions, competitor fitness, and willingness to destroy your ankles contouring, but there are some general lessons we can learn by looking at the routes taken by past successful competitors.&lt;/p&gt;
 &lt;h2 id=&#34;a-first-route&#34;&gt;A first route&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s now look at the route the winning pair (Adrian &amp;amp; Matthew Hall) took. Follow &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&amp;amp;route=50168&#34;&gt;this link&lt;/a&gt; to view their GPS track overlaid on the map.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_winning_route.png&#34;
-         alt=&#34;A map of the Harter Fell 2017 SLMM course showing the winning route.&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_winning_route.png&#34;
+    alt=&#34;A map of the Harter Fell 2017 SLMM course showing the winning route.&#34;&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;What should we be thinking about when trying to understand this route choice? Some of the following might be relevant:&lt;/p&gt;
@@ -537,18 +529,16 @@ Some important things to note:&lt;/p&gt;
 &lt;li&gt;When they leave the path to hit a control, at what point do they do this?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Looking at places where the choices of competitors diverge can be an interesting way to understand decision-making. &lt;a href=&#34;https://www.slmm.routegadget.co.uk/rg2/#1&amp;amp;course=4&amp;amp;route=50168,50184&#34;&gt;This link&lt;/a&gt; additionally shows the route taken by the 17th-place pair. While they are largely the same, there is an interesting divergence around controls 4-5.
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_comparison.png&#34;
-         alt=&#34;A map comparing the routes of two different pairs on the Harter Fell 2017 SLMM course.&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_comparison.png&#34;
+    alt=&#34;A map comparing the routes of two different pairs on the Harter Fell 2017 SLMM course.&#34;&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;We can see that the winning pair (in red) go off the path between the controls, saving elevation but contouring on very steep terrain, whereas the 17th-place pair (brown) went back on the path. This was likely a fast but physically challenging choice; whether it saved time would be contingent on the ability of the pair to cover that terrain quickly.&lt;/p&gt;
 &lt;p&gt;Unfortunately, there is no easy formula for choosing a route, and much of it comes with experience. We can, however, get a bit of virtual experience by going through some other courses and plotting our own routes.&lt;/p&gt;
 &lt;h2 id=&#34;the-measure-tool&#34;&gt;The measure tool&lt;/h2&gt;
 &lt;p&gt;Clicking on the ruler icon in the top left corner of the interface gives you access to the measure tool. This allows you to plot your own route on the map and compare it with the competitor routes. Clicking once the tool is activated adds points that are linked with lines. The screenshot below shows a route I have started building with the tool. The icon to activate the measure tool is circled in the top right.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_measure.jpg&#34;
-         alt=&#34;A screenshot of the Routegadget website showing the measure tool being used to draw a route on a map.&#34;/&gt; 
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../harter_slmm2017_measure.jpg&#34;
+    alt=&#34;A screenshot of the Routegadget website showing the measure tool being used to draw a route on a map.&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;the-test&#34;&gt;The Test&lt;/h2&gt;
@@ -593,14 +583,14 @@ Some important things to note:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://slmm.org.uk/beginners-guide-mountain-marathons/&#34;&gt;SLMM guidance for beginner competitors.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://files.fellrunner.org.uk/documents/mountain_navigation.pdf&#34;&gt;Great technical mountain navigation guide.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The track is green on the image here but may be a different color for you, it seems to change randomly each time the page is loaded. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The track is green on the image here but may be a different color for you, it seems to change randomly each time the page is loaded.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -609,9 +599,8 @@ Some important things to note:&lt;/p&gt;
       <link>https://magnusross.github.io/posts/spartans_guide_to_trading/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://magnusross.github.io/posts/spartans_guide_to_trading/</guid>
-      <description>&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../not-many-spartans.png&#34;
-         alt=&#34;A screenshot of an Elon Musk tweet that says &amp;#39;Not many Spartans are needed to win battles.&amp;#39;.&#34;/&gt; 
+      <description>&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../not-many-spartans.png&#34;
+    alt=&#34;A screenshot of an Elon Musk tweet that says &amp;#39;Not many Spartans are needed to win battles.&amp;#39;.&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Unless you&amp;rsquo;ve been under a rock the past few weeks, you&amp;rsquo;ve probably heard about Elon Musk&amp;rsquo;s gaggle of DOGE lads who have been &lt;a href=&#34;https://www.wired.com/story/elon-musk-government-young-engineers/&#34;&gt;let loose inside the US Treasury payments system&lt;/a&gt;. Since they have apparently been given read/write access to some highly sensitive databases and are likely pushing hastily coded &amp;ldquo;efficiency improvements&amp;rdquo; to main as we speak, it’s in the public interest to understand how good these guys are as engineers.&lt;/p&gt;
@@ -664,22 +653,22 @@ This might be surprising – shouldn’t Deep Learning help our system?&lt;/li&g
 &lt;p&gt;Very true, Ethan. Maybe this book does contain some insights after all. Let&amp;rsquo;s hope you remember that when you are diving into a decades-old system at the heart of the global economy. Good luck with the COBOL!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Thanks for reading, if you liked this post you can &lt;a href=&#34;https://bsky.app/profile/magnusar.bsky.social&#34;&gt;follow me on Bluesky&lt;/a&gt; or &lt;a href=&#34;https://magnusross.github.io/index.xml&#34;&gt;subscribe to the RSS feed&lt;/a&gt; to get posts in the future.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;For which he won cloud credits worth the princely sum of $5000. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;For which he won cloud credits worth the princely sum of $5000.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;He has also contributed to a compendium of short stories about AI and the future of work. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;He has also contributed to a compendium of short stories about AI and the future of work.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Don&amp;rsquo;t feel too bad, I was able to return it for a refund shortly after. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Don&amp;rsquo;t feel too bad, I was able to return it for a refund shortly after.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;He does this in such a way that leaks data from the future, but let&amp;rsquo;s ignore that for now. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;He does this in such a way that leaks data from the future, but let&amp;rsquo;s ignore that for now.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
 &lt;p&gt;This is an actual code snippet lifted verbatim from the book (I have added comments):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def SourceInt(url):
     url = url.lower()
@@ -753,9 +742,9 @@ This might be surprising – shouldn’t Deep Learning help our system?&lt;/li&g
 	
 	
 &lt;/code&gt;&lt;/pre&gt;
- &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/li&gt;
+&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -775,60 +764,57 @@ This might be surprising – shouldn’t Deep Learning help our system?&lt;/li&g
 &lt;p&gt;While benchmarks in CV and NLP for the most part seem to be a reasonable proxy for real world tasks, time series forecasting (TSF) benchmarks have become increasingly disconnected. Models are often evaluated on tasks that either do not reflect realistic scenarios or fail to reveal meaningful distinctions between methods.&lt;/p&gt;
 &lt;h3 id=&#34;exchange-rates&#34;&gt;Exchange rates&lt;/h3&gt;
 &lt;p&gt;A prime example is the &lt;em&gt;exchange rates&lt;/em&gt; dataset, which consists of 10,000 daily rates from 8 currency pairs, which appears in many recent and historical papers.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; The task is to predict up to 2 years (~720 time steps) into the future, using only the past values of the series as inputs.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../exchange_rates.png&#34;
-         alt=&#34;A plot showing a red and a blue line, the lines look like they have similar properties.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Can you spot the random walk?&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../exchange_rates.png&#34;
+    alt=&#34;A plot showing a red and a blue line, the lines look like they have similar properties.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Can you spot the random walk?&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The plot above shows one component of the exchange dataset, along with a random walk with the same mean and variance. They look extremely similar.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; This is because the path of exchange rates can be very well approximated with a random walk. This means that the optimum forecast is, in most cases, simply the last observed value (also known as persistence). The past values of the series are not predictive beyond the last observation. There is some evidence to suggest that if additional macroeconomic variables are included forecasts can beat persistence but, unfortunately, these are not included in the benchmark.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;This benchmark does not correspond in any way to any problem in the real world. People interested in modelling exchange rates would never do it this way, because it doesn&amp;rsquo;t really make any sense. You are just fitting noise. The fact this benchmark is so common in the literature is revealing, and shows a disconnect between forecasting research and forecasting practice. Many TSF papers neglect to include persistence as a baseline.&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; This makes it impossible to tell if the results for the proposed model on the exchange data are skilful. Nevertheless, the results are still often used as evidence that the model is performant relative to others. Unfortunately this is just one example of poor benchmarking practice in TSF research.&lt;/p&gt;
 &lt;h3 id=&#34;getting-the-setup-wrong&#34;&gt;Getting the setup wrong&lt;/h3&gt;
 &lt;p&gt;One task I know a little bit about, due to my former line of work, is electricity price forecasting (EPF). This has become a reasonably common benchmark in TSF papers over the past few years. On the whole, it is not a bad benchmark, although the predictability of prices beyond simple seasonality from past values alone (without exogenous variables) is perhaps debatable. EPF does however have quite a specific setup. In Europe, most power is traded on the day before delivery, at an auction. This auction typically occurs around 12:00. Market participants are interested in a forecast for the price of the next days power before this auction occurs, which they can use to inform their bids.&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; This means the forecast should be produced once a day with a window size of 24, and an offset of 12. Unfortunately, this is not how the benchmark is used (see e.g. &lt;a href=&#34;https://arxiv.org/abs/2402.19072&#34;&gt;TimeXer&lt;/a&gt;), where the window size is correctly set to 24, but offset is set to 0 and predictions are made on a rolling basis every hour. The diagram below shows the difference between these setups.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../forecast_horizons.png&#34;
-         alt=&#34;Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../forecast_horizons.png&#34;
+    alt=&#34;Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This may seem like a small difference, but it is revealing of the prevailing attitudes in the field, which is to not really consider the downstream use of models. Frustratingly, the correct setup is discussed in the paper the authors of TimeXer cite as the source of the dataset for the benchmark. I have only picked up on this particular discrepancy because it is a problem I just happen to know about. Other members of our group at UCL &lt;a href=&#34;https://arxiv.org/abs/2406.07438&#34;&gt;have discussed similar issues&lt;/a&gt; with the common flu rates benchmark. It is likely that these issues are present in other benchmarks as well.&lt;/p&gt;
 &lt;h3 id=&#34;reporting-of-metrics&#34;&gt;Reporting of metrics&lt;/h3&gt;
 &lt;p&gt;In the vast majority of recent papers, the reported metric is the average error over the forecast horizon. Say we have a forecast horizon of 100, then for each time point, our model outputs a vector of size 100, giving the prediction for each element of the horizon. The error is then computed relative to the target, and averaged over the 100 steps. Whilst this may be a useful metric in some contexts, it does not by any means give the full story of the performance of a model. Consider the two forecasts below.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../mean_horizon.png&#34;
-         alt=&#34;True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../mean_horizon.png&#34;
+    alt=&#34;True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;These forecasts have the same error, but are very different. The top has moderate skill over the whole window, and the bottom is very skilful initially, and then not at all for the remainder. If we are interested in the error for prediction 100 steps into the future, the one model is useful and one is not. The way the error is reported however makes it impossible to know if forecasts are skilful a long horizons, or simply do well at the start of the horizon and are random after. This is compounded by the fact that as, mention above, the error of persistence is rarely reported making it hard to know what the error for a skilful forecast should be.&lt;/p&gt;
 &lt;h3 id=&#34;concluding-thoughts&#34;&gt;Concluding thoughts&lt;/h3&gt;
 &lt;p&gt;In TSF, unlike in other areas of ML which are dominated by Transformer architectures, there is not one model which has been shown to do best across tasks. It is not a guarantee that creating a fancier architecture with more parameters is going to give better performance. In fact linear models have been shown to &lt;a href=&#34;https://arxiv.org/abs/2403.20150&#34;&gt;rank best&lt;/a&gt; on average over a diverse set of datasets. That is not to say that sophisticated architectures can never be useful, because they can, but deploying them effectively in the real world requires understanding when they work and when they don&amp;rsquo;t. Using unrealistic benchmarks hinders this understanding and slows progress in the field. We should try to do better!&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;If you want it to get accepted, you&amp;rsquo;ll need to make sure your model is all bold. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;If you want it to get accepted, you&amp;rsquo;ll need to make sure your model is all bold.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Random sample from my Zotero: &lt;a href=&#34;https://arxiv.org/abs/2310.07446&#34;&gt;ProbTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2403.07815&#34;&gt;Chronos&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2403.00131&#34;&gt;UniTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2310.06625&#34;&gt;iTransformer&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2205.13504&#34;&gt;(D/N)Linear&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2106.13008&#34;&gt;Autoformer&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Random sample from my Zotero: &lt;a href=&#34;https://arxiv.org/abs/2310.07446&#34;&gt;ProbTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2403.07815&#34;&gt;Chronos&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2403.00131&#34;&gt;UniTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2310.06625&#34;&gt;iTransformer&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2205.13504&#34;&gt;(D/N)Linear&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2106.13008&#34;&gt;Autoformer&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Red (bottom) is random walk, blue (top) is Yen/USD. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Red (bottom) is random walk, blue (top) is Yen/USD.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;This is not the entire story, you can actually do better than this sometimes if you use something called a purchasing power power parity model, which compares the price of a basket of goods in each county, then does some economics on it. &lt;a href=&#34;https://doi.org/10.1016/j.jimonfin.2024.103026&#34;&gt;This survey&lt;/a&gt; looks at 42 methods from the liturature. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;This is not the entire story, you can actually do better than this sometimes if you use something called a purchasing power power parity model, which compares the price of a basket of goods in each county, then does some economics on it. &lt;a href=&#34;https://doi.org/10.1016/j.jimonfin.2024.103026&#34;&gt;This survey&lt;/a&gt; looks at 42 methods from the liturature.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;A few recent examples: &lt;a href=&#34;https://arxiv.org/abs/2403.00131&#34;&gt;UniTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2310.06625&#34;&gt;iTransformer&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2106.13008&#34;&gt;Autoformer&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;A few recent examples: &lt;a href=&#34;https://arxiv.org/abs/2403.00131&#34;&gt;UniTS&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2310.06625&#34;&gt;iTransformer&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2106.13008&#34;&gt;Autoformer&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;It is also possible to trade outside the auction, on the spot market. The spot market usually will only have liquidity for a few hours before the delivery of the contract. In that case the forecast horizon is 1 or 2 time steps, so it is really quite a different problem, albiet one that is also not discussed in any of the benchmarks. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
+&lt;p&gt;It is also possible to trade outside the auction, on the spot market. The spot market usually will only have liquidity for a few hours before the delivery of the contract. In that case the forecast horizon is 1 or 2 time steps, so it is really quite a different problem, albiet one that is also not discussed in any of the benchmarks.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -842,56 +828,56 @@ This might be surprising – shouldn’t Deep Learning help our system?&lt;/li&g
 &lt;p&gt;Derive the EM equations for fitting a mixture of linear regression experts.&lt;/p&gt;
 &lt;p&gt;Source: Probabilistic machine learning: an introduction by Kevin P. Murphy, Ex. 11.6&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We can fine the specification of the mixture of linear experts model in section 13.6.2.1 of the book.  For input data ( {(x_n, y_n)}^{N}&lt;em&gt;{n=1} ) with ( x_n \in \mathbb{R}^D ) model consists of a set of ( K ) linear models (called the experts), with weights ( w&lt;/em&gt;{k}\in\mathbb R^{D} ) with each linear model having a Gaussian likelihood, with noise variance ( \sigma^2_k). Additionally, we have a ( K )-class logistic regression model, with weights ( W\in\mathbb{R}^{K\times D} ), which outputs the probability that each expert is responsible for a particular data point. This model is written as,&lt;/p&gt;
+&lt;p&gt;We can fine the specification of the mixture of linear experts model in section 13.6.2.1 of the book.  For input data \( \{(x_n, y_n)\}^{N}_{n=1} \) with \( x_n \in \mathbb{R}^D \) model consists of a set of \( K \) linear models (called the experts), with weights \( w_{k}\in\mathbb R^{D} \) with each linear model having a Gaussian likelihood, with noise variance \( \sigma^2_k\). Additionally, we have a \( K \)-class logistic regression model, with weights \( W\in\mathbb{R}^{K\times D} \), which outputs the probability that each expert is responsible for a particular data point. This model is written as,&lt;/p&gt;
 &lt;p&gt;\begin{align}
-p(y|x_n,z=k,\theta)&amp;amp;=\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\\\&lt;br&gt;
+p(y|x_n,z=k,\theta)&amp;amp;=\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\\\
 p(z=k|x,\theta)&amp;amp;={\mathrm{Cat}}(z|{\mathrm{softmax}}_{k}(\mathrm{V}x)
 \end{align}&lt;/p&gt;
-&lt;p&gt;where ( \mathrm{Cat} ) is the categorical distribution and ( \theta=(W, V, {\sigma_k}^{K}_{k=1}) ) is our set of model parameters (in this case we assume ( K ) is known, or selected by some other method like cross validation). The aim is to use EM to fit this model by finding ( \theta ). Before getting into that, it&amp;rsquo;s perhaps helpful to look at the type of problem this model might be useful for.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../data-em-mole.png&#34;
-         alt=&#34;Some training data.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Some training data.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;p&gt;where \( \mathrm{Cat} \) is the categorical distribution and \( \theta=(W, V, \{\sigma_k\}^{K}_{k=1}) \) is our set of model parameters (in this case we assume \( K \) is known, or selected by some other method like cross validation). The aim is to use EM to fit this model by finding \( \theta \). Before getting into that, it&amp;rsquo;s perhaps helpful to look at the type of problem this model might be useful for.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../data-em-mole.png&#34;
+    alt=&#34;Some training data.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Some training data.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This is some data from a piecewise linear model, with 3 sections, with Gaussian noise added to it. We would hope that a mixture of linear experts model would be able to fit this data well, by assigning a different expert (i.e. linear model) to each of the distinct sections.&lt;/p&gt;
 &lt;p&gt;Now for inference. Recall that the point of the EM algorithm is to compute the maximum likelihood estimate of the model parameters, whilst marginalising out any latent variables. In this case the latent variables are the expert assignments for each data point, i.e. which expert is responsible for each data point. To do this, we alternate between two steps the E-step and the M-step, until we reach some sort of convergence:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In the E-step, we compute the distribution of the latent variables (expert assignments) given the data and parameters, ( p(z_n=k| y_n,x_n, \theta) ).  In our case this is is tractable, if it&amp;rsquo;s not then you can use an approximating distribution, in which case the method becomes variational EM.&lt;/li&gt;
-&lt;li&gt;In the M-step, we compute a quantity called the expected complete data log likelihood. This is the expected joint log probability of the data and latent variables, with respect to the distribution over the latent variables computed in the E-step, which we write as ( \ell(\theta)=\sum_{n}\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] ) with ( q(z_n)=p(z_n=k| y_n,x_n, \theta) ). We maximise this with respect to ( \theta ), i.e compute ( \theta^*=\mathrm{argmax}[l(\theta)] ). We then set ( \theta=\theta^* ) and repeat the E-step.&lt;/li&gt;
+&lt;li&gt;In the E-step, we compute the distribution of the latent variables (expert assignments) given the data and parameters, \( p(z_n=k| y_n,x_n, \theta) \).  In our case this is is tractable, if it&amp;rsquo;s not then you can use an approximating distribution, in which case the method becomes variational EM.&lt;/li&gt;
+&lt;li&gt;In the M-step, we compute a quantity called the expected complete data log likelihood. This is the expected joint log probability of the data and latent variables, with respect to the distribution over the latent variables computed in the E-step, which we write as \( \ell(\theta)=\sum_{n}\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] \) with \( q(z_n)=p(z_n=k| y_n,x_n, \theta) \). We maximise this with respect to \( \theta \), i.e compute \( \theta^*=\mathrm{argmax}[l(\theta)] \). We then set \( \theta=\theta^* \) and repeat the E-step.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We repeat this until the optimum of value in the M-step converges. For more info, see section 8.7 of the Murphy book. Now we can try to compute the required quantities for each step for the linear experts model.&lt;/p&gt;
 &lt;p&gt;We can compute the distribution over the latent variables given the data in the E-step using Bayes rule,
+&lt;/p&gt;
 $$
 p(z_n=k| y_n,x_n, \theta) = \frac{p(y_n | z_n=k, x_n, \theta)p(z_n=k| x_n, \theta)}{p(y_n|x_n, \theta)}
-$$
-where ( p(y_n|x_n, \theta)=\sum^{K}_{k&#39;=1} p(y_n | z_n=k&#39;, x_n, \theta)p(z_n=k&#39;| x_n, \theta) ).  This is tractable, we just combine the terms given in the specification of the model. Easy! Now for the M-step, which is slightly more involved.&lt;/p&gt;
-&lt;p&gt;For the M-step we need to compute ( \sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] ) with ( q_(z_n)=p(z_n=k| y_n,x_n, \theta) ). The log joint is given by,
+$$&lt;p&gt;
+where \( p(y_n|x_n, \theta)=\sum^{K}_{k&#39;=1} p(y_n | z_n=k&#39;, x_n, \theta)p(z_n=k&#39;| x_n, \theta) \).  This is tractable, we just combine the terms given in the specification of the model. Easy! Now for the M-step, which is slightly more involved.&lt;/p&gt;
+&lt;p&gt;For the M-step we need to compute \( \sum_n\mathbb{E}\_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right] \) with \( q_(z_n)=p(z_n=k| y_n,x_n, \theta) \). The log joint is given by,
 \begin{align}
-\log p(y_{n},z_{n}|\theta) &amp;amp;= \log p(y_{n}|z_{n},\theta)p(z_{n}|\theta) \\\&lt;br&gt;
-&amp;amp;= \log \prod_k\left[\mathcal{N}(y_n|w_{k}^{\mathsf{T}}x_n,\sigma_{k}^{2})\right]^{z_{nk}} + \log\prod_k\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]^{z_{nk}} \\\&lt;br&gt;
-&amp;amp;=\sum_k {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} + \sum_k{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]
+\log p(y_{n},z_{n}|\theta) &amp;amp;= \log p(y_{n}|z_{n},\theta)p(z_{n}|\theta) \\\
+&amp;amp;= \log \prod_k\left[\mathcal{N}(y_n|w_{k}^{\mathsf{T}}x_n,\sigma_{k}^{2})\right]^{z_{nk}} + \log\prod_k\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&amp;rsquo;}e^{v_{k&amp;rsquo;}^\top x_n }}\right]^{z_{nk}} \\\
+&amp;amp;=\sum_k {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} + \sum_k{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&amp;rsquo;}e^{v_{k&amp;rsquo;}^\top x_n }}\right]
 \end{align}
-where ( z_{nk} ) is an indicator variable which is ( 1 ) when ( z_n=k ) and ( 0 ) otherwise. We can the compute the M-step obejective as,
+where \( z_{nk} \) is an indicator variable which is \( 1 \) when \( z_n=k \) and \( 0 \) otherwise. We can the compute the M-step obejective as,
+&lt;/p&gt;
 $$
 \begin{align}
-\ell(\theta)&amp;amp;=\sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right]\
-&amp;amp;= \mathbb{E}_{q_{n}(z_{n})}\left[\sum_{nk} {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]\right] \&lt;br&gt;
-&amp;amp;= \sum_{nk} {\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]
+\ell(\theta)&amp;=\sum_n\mathbb{E}_{q_{n}(z_{n})}\left[\log p(y_{n},z_{n}|\theta)\right]\\ 
+&amp;= \mathbb{E}_{q_{n}(z_{n})}\left[\sum_{nk} {z_{nk}\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{z_{nk}}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]\right] \\
+&amp;= \sum_{nk} {\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]\log \left[\mathcal{N}(y|w_{k}^{\mathsf{T}}x,\sigma_{k}^{2})\right]} +  \sum_{nk}{\mathbb{E}_{q_{n}(z_{n})}[z_{nk}]}\log\left[\frac{e^{v_{k}^\top x_n}}{\sum_{k&#39;}e^{v_{k&#39;}^\top x_n }}\right]
 \end{align}
-$$
-where ( \mathbb{E}_{q_{n}(z_{n})}[z_{nk}]= p(z_n=k| y_n,x_n, \theta) ) are exactly the values computed in the E-step.
-We are now able to compute ( \ell(\theta) ), but we also need to optimise it. I think would be possible to compute the optimum with respect to the regression weights and variances exactly, using the formalism of &lt;a href=&#34;https://en.wikipedia.org/wiki/Weighted_least_squares&#34;&gt;weighted least squares&lt;/a&gt;, but if you&amp;rsquo;re lazy like me, you can just do simple gradient descent on the parameters. You&amp;rsquo;d have do this for the logistic weights anyway, since they can&amp;rsquo;t be computed in closed form, so it&amp;rsquo;s easier to just do this for everything.&lt;/p&gt;
+$$&lt;p&gt;
+where \( \mathbb{E}_{q_{n}(z_{n})}[z_{nk}]= p(z_n=k| y_n,x_n, \theta) \) are exactly the values computed in the E-step.
+We are now able to compute \( \ell(\theta) \), but we also need to optimise it. I think would be possible to compute the optimum with respect to the regression weights and variances exactly, using the formalism of &lt;a href=&#34;https://en.wikipedia.org/wiki/Weighted_least_squares&#34;&gt;weighted least squares&lt;/a&gt;, but if you&amp;rsquo;re lazy like me, you can just do simple gradient descent on the parameters. You&amp;rsquo;d have do this for the logistic weights anyway, since they can&amp;rsquo;t be computed in closed form, so it&amp;rsquo;s easier to just do this for everything.&lt;/p&gt;
 &lt;p&gt;Now we have both steps we can do inference. I implemented this using jax, which made the the optimisation for the M-step very easy. You can find the very shoddily written code in &lt;a href=&#34;https://gist.github.com/magnusross/06e29ccb42f054c765a74366104fcb24&#34;&gt;this gist&lt;/a&gt;.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../post-train-em-mole.png&#34;
-         alt=&#34;Results of inference.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Results of inference.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../post-train-em-mole.png&#34;
+    alt=&#34;Results of inference.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Results of inference.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Above are the results after 20 EM iterations. The left panel shows the training data and true function, along with the predictions of each of the ( K=3 ) experts. Shown in red is the modal prediction, i.e. the prediction of the most likely expert for each point. The right panel shows the responsibilities of each expert for over the domain. We can see the transitions between experts nicely match the discontinuities in the piecewise function, and we are able to recover the true function well.&lt;/p&gt;
+&lt;p&gt;Above are the results after 20 EM iterations. The left panel shows the training data and true function, along with the predictions of each of the \( K=3 \) experts. Shown in red is the modal prediction, i.e. the prediction of the most likely expert for each point. The right panel shows the responsibilities of each expert for over the domain. We can see the transitions between experts nicely match the discontinuities in the piecewise function, and we are able to recover the true function well.&lt;/p&gt;
 </description>
     </item>
     
@@ -902,51 +888,51 @@ We are now able to compute ( \ell(\theta) ), but we also need to optimise it. I 
       <guid>https://magnusross.github.io/posts/rvquotients_problem/</guid>
       <description>&lt;p&gt;This is a nice problem from the book &amp;ldquo;Cut the knot&amp;rdquo;, which is a compilation of probability riddles and brain teasers. I like the book because many of the problems are about intuitive reasoning, and don&amp;rsquo;t really involve that much technical knowledge of probability theory, so they can be fun to do with people who don&amp;rsquo;t have a formal maths background. Each problem can also generally be solved many different ways, so it&amp;rsquo;s fun to compare solutions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Two numbers ( X ) and ( Y ) are randomly chosen from the interval ( [0, 1] ). Let ( r ) denote the quotient of the larger of the two by the smaller: ( r = \frac{\max(X,Y)}{\min(X,Y)} ). Depending on the assumptions, there are three questions. For a given ( k &amp;gt; 0 ), what is the probability that ( r ≥ k )&lt;/p&gt;
+&lt;p&gt;Two numbers \( X \) and \( Y \) are randomly chosen from the interval \( [0, 1] \). Let \( r \) denote the quotient of the larger of the two by the smaller: \( r = \frac{\max(X,Y)}{\min(X,Y)} \). Depending on the assumptions, there are three questions. For a given \( k &gt; 0 \), what is the probability that \( r ≥ k \)&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;if ( X ) is uniformly distributed on ( [0, 1] ) and ( Y ) is uniformly distributed on ( [X, 1] )?&lt;/li&gt;
-&lt;li&gt;if ( X ), ( Y ) are jointly uniformly distributed on ( \{(x, y) : 0 ≤ x ≤ y ≤ 1\} )?&lt;/li&gt;
-&lt;li&gt;if ( X ) and ( Y ) are uniformly and independently distributed on [0, 1]?&lt;/li&gt;
+&lt;li&gt;if \( X \) is uniformly distributed on \( [0, 1] \) and \( Y \) is uniformly distributed on \( [X, 1] \)?&lt;/li&gt;
+&lt;li&gt;if \( X \), \( Y \) are jointly uniformly distributed on \( \\{(x, y) : 0 ≤ x ≤ y ≤ 1\\} \)?&lt;/li&gt;
+&lt;li&gt;if \( X \) and \( Y \) are uniformly and independently distributed on [0, 1]?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Source: Cut the knot by Bogomolny, Ex. 7.6&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re given that ( X\sim U(0, 1) ) and that ( Y|X\sim U(X, 1) ), this implies that the variables have the densities
+&lt;p&gt;We&amp;rsquo;re given that \( X\sim U(0, 1) \) and that \( Y|X\sim U(X, 1) \), this implies that the variables have the densities
 \begin{align}
-p(x)&amp;amp;=1 \quad \forall \quad x\in[0, 1] \\\&lt;br&gt;
+p(x)&amp;amp;=1 \quad \forall \quad x\in[0, 1] \\\
 p(y|x)&amp;amp;=\frac{1}{1-x}  \quad \forall \quad y\in[x, 1]
 \end{align}
 which implies that the variables have the joint density given by
+&lt;/p&gt;
 $$
 p(x, y) = p(x)p(y|x)= \frac{1}{1-x}.
-$$
-Now let&amp;rsquo;s have a think about how to compute the require probability ( \mathbb{P}(r\geq k) ). First, it is clear that in this case ( Y\geq X ), so ( r\geq1 ) which implies ( \mathbb{P}(r\geq k)=1 ) when ( k&amp;lt;1 ). The fact that ( Y\geq X ) also implies that ( r = \frac{\max(X,Y)}{\min(X,Y)}=\frac{Y}{X} ). The key thing to realize here is that we can equivalently write ( \mathbb{P}(r\geq k) ) as ( \mathbb{P}(\frac{Y}{X}\geq k)=\mathbb{P}(Y\geq kX) ).&lt;/p&gt;
-&lt;p&gt;We actually now have all the parts we need to solve the question, but realizing this is a little easier with a picture. The diagram below shows all the information we have. The variables ( x ) and ( y ) are shown on each axis, with the shaded region showing the probability density of different ( (x,y) ) pairs. Notice that the lower triangle is unshaded since we know ( y&amp;gt;x ). Also plotted on the diagram is the line ( y=kx ).&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../uniform_quotient_plot.png&#34;
-         alt=&#34;All our information.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;All our information.&lt;/p&gt;
-        &lt;/figcaption&gt;
+$$&lt;p&gt;
+Now let&amp;rsquo;s have a think about how to compute the require probability \( \mathbb{P}(r\geq k) \). First, it is clear that in this case \( Y\geq X \), so \( r\geq1 \) which implies \( \mathbb{P}(r\geq k)=1 \) when \( k&lt;1 \). The fact that \( Y\geq X \) also implies that \( r = \frac{\max(X,Y)}{\min(X,Y)}=\frac{Y}{X} \). The key thing to realize here is that we can equivalently write \( \mathbb{P}(r\geq k) \) as \( \mathbb{P}(\frac{Y}{X}\geq k)=\mathbb{P}(Y\geq kX) \).&lt;/p&gt;
+&lt;p&gt;We actually now have all the parts we need to solve the question, but realizing this is a little easier with a picture. The diagram below shows all the information we have. The variables \( x \) and \( y \) are shown on each axis, with the shaded region showing the probability density of different \( (x,y) \) pairs. Notice that the lower triangle is unshaded since we know \( y&gt;x \). Also plotted on the diagram is the line \( y=kx \).&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../uniform_quotient_plot.png&#34;
+    alt=&#34;All our information.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;All our information.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;What we want to know is the probability that ( (x,y) ) lies in the region ( A ), i.e the region bounded by ( 0\leq y \leq 1, y\geq kx ). To do this we need to integrate the joint density over this region. This probability is given by
+&lt;p&gt;What we want to know is the probability that \( (x,y) \) lies in the region \( A \), i.e the region bounded by \( 0\leq y \leq 1, y\geq kx \). To do this we need to integrate the joint density over this region. This probability is given by
 \begin{align}
-\mathbb{P}(r\geq k) &amp;amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\&lt;br&gt;
-&amp;amp;= \int^{1/k}_{0} \int^{1}_{kx} \frac{1}{1-x}dydx \\\&lt;br&gt;
-&amp;amp;= \int^{1/k}_{0} \frac{1-kx}{1-x}dx \\\&lt;br&gt;
+\mathbb{P}(r\geq k) &amp;amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\
+&amp;amp;= \int^{1/k}_{0} \int^{1}_{kx} \frac{1}{1-x}dydx \\\
+&amp;amp;= \int^{1/k}_{0} \frac{1-kx}{1-x}dx \\\
 &amp;amp;= 1 + (k-1)\log\left(\frac{k-1}{k}\right)
 \end{align}
 Part 1 solved!&lt;/p&gt;
-&lt;p&gt;Now we have this setup the answers for the next two parts are actually quite simple. For part 2, we have the exact same setup, only now we are given that the ( X,Y ) are jointly uniform over the region ( 0\leq x\leq y \leq 1 ). The diagram would look exactly the same, but with the shading being uniform over the region. The joint density is now ( p(x,y)=2 ) (since the area of the region is ( 1/2 )), so
+&lt;p&gt;Now we have this setup the answers for the next two parts are actually quite simple. For part 2, we have the exact same setup, only now we are given that the \( X,Y \) are jointly uniform over the region \( 0\leq x\leq y \leq 1 \). The diagram would look exactly the same, but with the shading being uniform over the region. The joint density is now \( p(x,y)=2 \) (since the area of the region is \( 1/2 \)), so
 \begin{align}
-\mathbb{P}(r\geq k) &amp;amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\&lt;br&gt;
-&amp;amp;=  2\int^{1/k}_{0} \int^{1}_{kx} dydx \\\&lt;br&gt;
+\mathbb{P}(r\geq k) &amp;amp;= \int^{1/k}_{0} \int^{1}_{kx}p(x,y)dydx\\\
+&amp;amp;=  2\int^{1/k}_{0} \int^{1}_{kx} dydx \\\
 &amp;amp;= \frac{1}{k}
 \end{align}&lt;/p&gt;
-&lt;p&gt;Now for the final part, we can use the symmetry of the problem to get the answer easily. When ( Y&amp;gt;X ) we have the same setup as above, and when ( X&amp;gt;Y ) we have the region ( 0\leq x\leq 1, y\leq\frac{x}{k} ), which is the mirror image of the region from part 2, reflected in ( y=x ). We sum these regions to get the answer. Not that the density is now ( p(x,y)=1 ), so we get that
+&lt;p&gt;Now for the final part, we can use the symmetry of the problem to get the answer easily. When \( Y&gt;X \) we have the same setup as above, and when \( X&gt;Y \) we have the region \( 0\leq x\leq 1, y\leq\frac{x}{k} \), which is the mirror image of the region from part 2, reflected in \( y=x \). We sum these regions to get the answer. Not that the density is now \( p(x,y)=1 \), so we get that
+&lt;/p&gt;
 $$
 \mathbb{P}(r\geq k) = \frac{1}{2k} + \frac{1}{2k} = \frac{1}{k}
-$$&lt;/p&gt;
-</description>
+$$</description>
     </item>
     
     <item>
@@ -954,23 +940,24 @@ $$&lt;/p&gt;
       <link>https://magnusross.github.io/posts/mercerrkhs_problem/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://magnusross.github.io/posts/mercerrkhs_problem/</guid>
-      <description>&lt;p&gt;This problem from the GPML book relates to the effect of the choice of measure when using Mercer&amp;rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel. In the problem we show that in the finite dimensional case (this also applies in the ( \infty ) dimensions case but it is then harder to show), the RKHS norm is independent of the measure chosen. This is interesting to me because when first learning about Mercer&amp;rsquo;s theorem, I was confused by how the measure the eigenfunctions are computed w.r.t is chosen when using the theorem in practice. This question shows that in for some important applications, the measure doesn&amp;rsquo;t matter.&lt;/p&gt;
+      <description>&lt;p&gt;This problem from the GPML book relates to the effect of the choice of measure when using Mercer&amp;rsquo;s theorem to compute kernel eigenfunctions on the resulting norm in the RKHS induced by that kernel. In the problem we show that in the finite dimensional case (this also applies in the \( \infty \) dimensions case but it is then harder to show), the RKHS norm is independent of the measure chosen. This is interesting to me because when first learning about Mercer&amp;rsquo;s theorem, I was confused by how the measure the eigenfunctions are computed w.r.t is chosen when using the theorem in practice. This question shows that in for some important applications, the measure doesn&amp;rsquo;t matter.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We motivate the fact that the RKHS norm does not depend on the density ( p(x) ) using a finite-dimensional analogue. Consider the n-dimensional vector ( \mathbf f ), and let the ( n \times n ) matrix ( \Phi ) be comprised of non-colinear columns ( \phi_1,\dots, \phi_n ). Then ( \mathbf f ) can be expressed as a linear combination of these basis vectors ( \mathbf f = \sum^n_{i=1} c_i\phi_i = \Phi \mathbf c ) for some coefficients ( \{c_i\} ). Let the ( \phi )s be eigenvectors of the covariance matrix ( K ) w.r.t. a diagonal matrix ( P ) with non-negative entries, so that ( KP \Phi = \Phi\Lambda ), where ( \Lambda ) is a diagonal matrix containing the eigenvalues. Note that ( \Phi^\top P\Phi = I ). Show that ( \sum^n_{i=1}c^2_i/\lambda_i=\mathbf c^\top\Lambda^{-1}\mathbf c=\mathbf f^\top K^{-1} \mathbf f ), and thus observe that ( \mathbf f^\top K^{-1} \mathbf f ) can be expressed as  (  \mathbf c^\top\Lambda\mathbf c ) for any valid ( P ) and corresponding ( \Phi ). (Note the matrix ( P ) here represents the measure.)&lt;/p&gt;
+&lt;p&gt;We motivate the fact that the RKHS norm does not depend on the density \( p(x) \) using a finite-dimensional analogue. Consider the n-dimensional vector \( \mathbf f \), and let the \( n \times n \) matrix \( \Phi \) be comprised of non-colinear columns \( \phi_1,\dots, \phi_n \). Then \( \mathbf f \) can be expressed as a linear combination of these basis vectors \( \mathbf f = \sum^n_{i=1} c_i\phi_i = \Phi \mathbf c \) for some coefficients \( \\{c_i\\} \). Let the \( \phi \)s be eigenvectors of the covariance matrix \( K \) w.r.t. a diagonal matrix \( P \) with non-negative entries, so that \( KP \Phi = \Phi\Lambda \), where \( \Lambda \) is a diagonal matrix containing the eigenvalues. Note that \( \Phi^\top P\Phi = I \). Show that \( \sum^n_{i=1}c^2_i/\lambda_i=\mathbf c^\top\Lambda^{-1}\mathbf c=\mathbf f^\top K^{-1} \mathbf f \), and thus observe that \( \mathbf f^\top K^{-1} \mathbf f \) can be expressed as  \(  \mathbf c^\top\Lambda\mathbf c \) for any valid \( P \) and corresponding \( \Phi \). (Note the matrix \( P \) here represents the measure.)&lt;/p&gt;
 &lt;p&gt;Source: Gaussian Processes for Machine Learning by Rasmussen and Williams, Ex. 6.7.1&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This solution is a bit strange as I got stuck and this is the only way I could think to do it, I am sure there is a better way. First using that ( \Phi^\top P\Phi = I ) we can see that,
+&lt;p&gt;This solution is a bit strange as I got stuck and this is the only way I could think to do it, I am sure there is a better way. First using that \( \Phi^\top P\Phi = I \) we can see that,
+&lt;/p&gt;
 $$
 KP\Phi=\Phi\Lambda \implies \Phi^\top PKP\Phi=\Lambda.
-$$
+$$&lt;p&gt;
 We can then write
 \begin{align}
-\mathbf c^\top \Lambda^{-1} \mathbf c &amp;amp;= \mathbf c^\top (\Phi^\top PKP\Phi)^{-1} \mathbf c \\\&lt;br&gt;
-&amp;amp;= \mathbf c^\top \Phi^{-1}P^{-1}K^{-1}P^{-1}\Phi^{-\top} \mathbf c \\\&lt;br&gt;
-&amp;amp;= \mathbf c^\top \Phi^\top P P^{-1}K^{-1}P^{-1} P \Phi \mathbf c \\\&lt;br&gt;
+\mathbf c^\top \Lambda^{-1} \mathbf c &amp;amp;= \mathbf c^\top (\Phi^\top PKP\Phi)^{-1} \mathbf c \\\
+&amp;amp;= \mathbf c^\top \Phi^{-1}P^{-1}K^{-1}P^{-1}\Phi^{-\top} \mathbf c \\\
+&amp;amp;= \mathbf c^\top \Phi^\top P P^{-1}K^{-1}P^{-1} P \Phi \mathbf c \\\
 &amp;amp;=\mathbf f^{\top} K^{-1} \mathbf f
 \end{align}
-as required, where on the second to last line we have twice used the fact that ( \Phi^{-1}=\Phi^\top P ).&lt;/p&gt;
+as required, where on the second to last line we have twice used the fact that \( \Phi^{-1}=\Phi^\top P \).&lt;/p&gt;
 </description>
     </item>
     
@@ -980,54 +967,60 @@ as required, where on the second to last line we have twice used the fact that (
       <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://magnusross.github.io/posts/pn_solver_problem/</guid>
       <description>&lt;p&gt;It is only the third week and I have already failed to manage my goal of posting one solution per week, not a good sign for the future&amp;hellip; In my defense, I was busy last week attending the &lt;a href=&#34;https://www.probnumschool.org/pages/home.html&#34;&gt;Probabilistic Numerics Spring School&lt;/a&gt;, at which I learned lots about probabilistic ODE solvers, on which this weeks late question is based.&lt;/p&gt;
-&lt;p&gt;Probabilistic ODE solvers work by placing a Markovian GP prior (usually the ( q )-times integrated Wiener process) over the solution, given this prior, we then condition on the fact samples of this GP must solve the ODE at a given set of time steps, that is to say the derivatives of the GP prior must match the derivative function of the ODE. We can infer the solution to the ODE by using filtering and smoothing techniques from signal processing. In this question, the task is to form an SDE for the state misalignment, i.e the difference between the derivatives of the prior and the ODE derivative function. It is interesting to note that we can also condition on other properties of the system, for example, conditioning on energy conservation in a Hamiltonian system leads to a symplectic solver, see &lt;a href=&#34;https://proceedings.mlr.press/v151/bosch22a.html&#34;&gt;here&lt;/a&gt; for details. The whole idea is fascinating and deserves a look if you have never come across it.&lt;/p&gt;
+&lt;p&gt;Probabilistic ODE solvers work by placing a Markovian GP prior (usually the \( q \)-times integrated Wiener process) over the solution, given this prior, we then condition on the fact samples of this GP must solve the ODE at a given set of time steps, that is to say the derivatives of the GP prior must match the derivative function of the ODE. We can infer the solution to the ODE by using filtering and smoothing techniques from signal processing. In this question, the task is to form an SDE for the state misalignment, i.e the difference between the derivatives of the prior and the ODE derivative function. It is interesting to note that we can also condition on other properties of the system, for example, conditioning on energy conservation in a Hamiltonian system leads to a symplectic solver, see &lt;a href=&#34;https://proceedings.mlr.press/v151/bosch22a.html&#34;&gt;here&lt;/a&gt; for details. The whole idea is fascinating and deserves a look if you have never come across it.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We take our prior to be the SDE
+&lt;/p&gt;
 $$
 dX(t)=FX(t)dt + Ld\omega,
-$$
-with ( X \in\mathbb{R}^{D} ), ( F,L\in\mathbb{R}^{D \times D} ) and ( d\omega \in\mathbb{R}^{D} ) being an increment of the Wiener process with diffusion ( Q\in\mathbb{R}^{D \times D} ). We also have two projection matrices which allow us to obtain the parts of the SDE prior that represent ODE state, and ODE state derivative,
+$$&lt;p&gt;
+with \( X \in\mathbb{R}^{D} \), \( F,L\in\mathbb{R}^{D \times D} \) and \( d\omega \in\mathbb{R}^{D} \) being an increment of the Wiener process with diffusion \( Q\in\mathbb{R}^{D \times D} \). We also have two projection matrices which allow us to obtain the parts of the SDE prior that represent ODE state, and ODE state derivative,
+&lt;/p&gt;
 $$
 \mathbf x(t) = H_0X(t), \qquad \mathbf x&#39;(t) = HX(t).
-$$
-with ( H,H_0\in\mathbb{R}^{d \times D} ) where ( d ) is our ODE dimension. The state misalignment is given by
+$$&lt;p&gt;
+with \( H,H_0\in\mathbb{R}^{d \times D} \) where \( d \) is our ODE dimension. The state misalignment is given by
+&lt;/p&gt;
 $$
 Z(t) = \phi(X(t))=HX(t) - f(H_0X(t)).
-$$
-where ( f: \mathbb{R}^D \mapsto \mathbb{R}^D ) is our ODE derivative function and ( Z(t)\in\mathbb{R}^d ) is called the observation process, and is given by another SDE. Our task is to find an expression for this SDE and state under which conditions it is Gaussian process.&lt;/p&gt;
+$$&lt;p&gt;
+where \( f: \mathbb{R}^D \mapsto \mathbb{R}^D \) is our ODE derivative function and \( Z(t)\in\mathbb{R}^d \) is called the observation process, and is given by another SDE. Our task is to find an expression for this SDE and state under which conditions it is Gaussian process.&lt;/p&gt;
 &lt;p&gt;Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 38.1&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The Itô formula for transformations of SDEs by scalar funtion ( g(X(t)) ) is given by
+&lt;p&gt;The Itô formula for transformations of SDEs by scalar funtion \( g(X(t)) \) is given by
+&lt;/p&gt;
 $$
 dg = (\nabla g) dX + \frac{1}{2}\operatorname{tr}[(\nabla^\top \nabla g) dXdX^\top].
-$$&lt;/p&gt;
-&lt;p&gt;(Note: here I have used the gradient as row vector) We need to use this to compute the the transformation represented by the state misalignment, which is a vector function. Fortunately, the Itô formula applies to each componnt, so
+$$&lt;p&gt;(Note: here I have used the gradient as row vector) We need to use this to compute the the transformation represented by the state misalignment, which is a vector function. Fortunately, the Itô formula applies to each componnt, so
+&lt;/p&gt;
 $$
 d\phi_i = (\nabla \phi_i) dX + \frac{1}{2}\operatorname{tr}[(\nabla^\top \nabla \phi_i) dXdX^\top].
-$$
+$$&lt;p&gt;
 with
+&lt;/p&gt;
 $$
 \phi_i = \sum_j H_{i,j} X_j + f_i(H_0 X).
-$$
+$$&lt;p&gt;
 We now need to compute the Jacobian and the Hessian given in the formula. This took me a long time as my vector calculus is a little rusty, and I am not 100% sure I have the correct answer but I got them to be,
+&lt;/p&gt;
 $$
 \nabla \phi_i = H_{i,-} + \nabla f_i(H_0 X)H_0^\top
+$$&lt;p&gt;
+where \( \nabla f_i \) is the Jacobian of \( f \) for output \( i \) and \( H_{i,-}\in \mathbb{R}^D \) is the \( i \)-th column of \( H \), and for the Hessain,&lt;/p&gt;
 $$
-where ( \nabla f_i ) is the Jacobian of ( f ) for output ( i ) and ( H_{i,-}\in \mathbb{R}^D ) is the ( i )-th column of ( H ), and for the Hessain,&lt;/p&gt;
-&lt;p&gt;$$
 \nabla^\top\nabla \phi_i = H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top
-$$
-where ( \nabla^\top\nabla f_i ) is the Hessian of ( f ) for output ( i ). We also need that
+$$&lt;p&gt;
+where \( \nabla^\top\nabla f_i \) is the Hessian of \( f \) for output \( i \). We also need that
 \begin{align}
-dXdX^\top &amp;amp;= (FX(t)dt + Ld\omega)(FX(t)dt + Ld\omega)^\top \\\&lt;br&gt;
+dXdX^\top &amp;amp;= (FX(t)dt + Ld\omega)(FX(t)dt + Ld\omega)^\top \\\
 &amp;amp;=LQL^\top dt
 \end{align}
 where we use the combination rules for mixed differentials given in the &lt;a href=&#34;https://en.wikipedia.org/wiki/It%C3%B4%27s_lemma&#34;&gt;Itô formula&lt;/a&gt;. Subbing all this into the formula and collecting terms, we obtain the SDEs,
 \begin{align}
-d\phi_i = &amp;amp;\left(H_{i,-}FX(t) + \nabla f_i(H_0 X)H_0^\top X(t) + \frac{1}{2}\operatorname{tr}(H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top LQL^\top)\right)dt \\\&lt;br&gt;
+d\phi_i = &amp;amp;\left(H_{i,-}FX(t) + \nabla f_i(H_0 X)H_0^\top X(t) + \frac{1}{2}\operatorname{tr}(H_0[\nabla^\top\nabla f_i(H_0 X)]H_0^\top LQL^\top)\right)dt \\\
 &amp;amp;+ (H_{i,-}+ \nabla f_i(H_0 X)H_0^\top)Ld\omega
 \end{align}
-which can then be simulated to give the observation process. This SDE will be a GP when ( f ) is linear, since GP representations of SDEs do not have multiplicative noise (see &lt;a href=&#34;https://users.aalto.fi/~asolin/sde-book/sde-book.pdf&#34;&gt;Särkkä and Solin book&lt;/a&gt;, 6.1), so we require that the gradient of ( f ) be independent of ( X ) which is only true when we have a linear derivative function.&lt;/p&gt;
+which can then be simulated to give the observation process. This SDE will be a GP when \( f \) is linear, since GP representations of SDEs do not have multiplicative noise (see &lt;a href=&#34;https://users.aalto.fi/~asolin/sde-book/sde-book.pdf&#34;&gt;Särkkä and Solin book&lt;/a&gt;, 6.1), so we require that the gradient of \( f \) be independent of \( X \) which is only true when we have a linear derivative function.&lt;/p&gt;
 </description>
     </item>
     
@@ -1038,31 +1031,34 @@ which can then be simulated to give the observation process. This SDE will be a 
       <guid>https://magnusross.github.io/posts/frobeniusnorm_problem/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Note: I was brushing up on my SVD using the brilliant &amp;ldquo;Mathematics for Machine Learning&amp;rdquo; book, but the exercises listed in the book for SVD were a bit basic, so I decided to try use ChatGPT to generate a question. The problem below is what came out, quite impressive, although there were quite a few errors in the question that I had to fix (e.g the dimensionalities of the matrices).&lt;/p&gt;
-&lt;p&gt;Let ( A ) be an ( m \times n ) with ( m\geq n ) matrix with rank ( r ), and let its singular value decomposition (SVD) be given by ( A = U \Sigma V^T ), where ( U ) is an ( m \times m ) orthonormal matrix, ( \Sigma ) is an ( m \times n ) diagonal matrix with non-negative entries ( \sigma_1 \geq \sigma_2 \geq \dots \geq \sigma_n &amp;gt; 0 ), and ( V ) is an ( n \times n ) orthonormal matrix. Show that the Frobenius norm of ( A ) is equal to the square root of the sum of the squares of the singular values.&lt;/p&gt;
+&lt;p&gt;Let \( A \) be an \( m \times n \) with \( m\geq n \) matrix with rank \( r \), and let its singular value decomposition (SVD) be given by \( A = U \Sigma V^T \), where \( U \) is an \( m \times m \) orthonormal matrix, \( \Sigma \) is an \( m \times n \) diagonal matrix with non-negative entries \( \sigma_1 \geq \sigma_2 \geq \dots \geq \sigma_n &gt; 0 \), and \( V \) is an \( n \times n \) orthonormal matrix. Show that the Frobenius norm of \( A \) is equal to the square root of the sum of the squares of the singular values.&lt;/p&gt;
 &lt;p&gt;Source: ChatGPT, Mathematics for Machine Learning by Deisenroth, Faisal and Ong&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The Frobenius norm is given by,&lt;/p&gt;
-&lt;p&gt;$$
-||A||^2_F = \sum_{i,j}A^2_{i,j}
 $$
+||A||^2_F = \sum_{i,j}A^2_{i,j}
+$$&lt;p&gt;
 which we can equivalently write (it is not so hard to show this) as
+&lt;/p&gt;
 $$
 ||A||^2_F = \operatorname{tr}(A^\top A).
-$$
-Subbing in the SVD representation of ( A ), we get
+$$&lt;p&gt;
+Subbing in the SVD representation of \( A \), we get
 \begin{align}
-\operatorname{tr}(A^\top A) &amp;amp;= \operatorname{tr}\left( (U\Sigma V^\top)^\top(U\Sigma V^\top)\right)\\\&lt;br&gt;
-&amp;amp;= \operatorname{tr}\left(V\Sigma^\top U^\top U\Sigma V^\top\right) \\\&lt;br&gt;
+\operatorname{tr}(A^\top A) &amp;amp;= \operatorname{tr}\left( (U\Sigma V^\top)^\top(U\Sigma V^\top)\right)\\\
+&amp;amp;= \operatorname{tr}\left(V\Sigma^\top U^\top U\Sigma V^\top\right) \\\
 &amp;amp;= \operatorname{tr}\left(V\Sigma^\top \Sigma V^\top\right).
 \end{align}
-We can see by inspection that ( \Sigma^\top\Sigma = \operatorname{diag}(\sigma^2_1,  \dots, \sigma^2_n)=\Lambda ). This implies that
+We can see by inspection that \( \Sigma^\top\Sigma = \operatorname{diag}(\sigma^2_1,  \dots, \sigma^2_n)=\Lambda \). This implies that
+&lt;/p&gt;
 $$
 [V\Lambda V^\top]_{ii} = \sigma_i^2\mathbf{v}^\top_i\mathbf{v}_i = \sigma_i^2,
-$$
-where ( \mathbf{v}_i ) is column ( i ) of ( V ) and the second equality follows from the othonormality of ( V ). Putting it all together we get that
+$$&lt;p&gt;
+where \( \mathbf{v}_i \) is column \( i \) of \( V \) and the second equality follows from the othonormality of \( V \). Putting it all together we get that
+&lt;/p&gt;
 $$
 ||A||^2_F = \operatorname{tr}(A^\top A) = \sum_i \sigma_i^2,
-$$
+$$&lt;p&gt;
 as required.&lt;/p&gt;
 </description>
     </item>
@@ -1073,11 +1069,10 @@ as required.&lt;/p&gt;
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://magnusross.github.io/posts/paper2/</guid>
       <description>&lt;p&gt;I spent the summer of 2022 visiting &lt;a href=&#34;https://users.aalto.fi/~heinom10/&#34;&gt;Markus Heinonen&lt;/a&gt; at Aalto University in Finland. Together we worked on energy conserving GP models, and I am happy to say our paper on the work was recently accepted to TMLR. Check out &lt;a href=&#34;https://openreview.net/pdf?id=DHEZuKStzH&#34;&gt;the paper&lt;/a&gt;, &lt;a href=&#34;https://github.com/magnusross/hgp&#34;&gt;the code&lt;/a&gt;, or some &lt;a href=&#34;https://magnusross.github.io/HamiltonianGPs/&#34;&gt;visualizations&lt;/a&gt;.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../fig1.png&#34;
-         alt=&#34;Figure 1 from the paper.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;We place a GP prior over the Hamiltonian and, using a set of inducing points, map function samples through Hamilton&amp;rsquo;s equations to obtain system derivative samples, to which we apply ODE solver to obtain sample trajectories. Shading represents model uncertainty.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../fig1.png&#34;
+    alt=&#34;Figure 1 from the paper.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;We place a GP prior over the Hamiltonian and, using a set of inducing points, map function samples through Hamilton&amp;rsquo;s equations to obtain system derivative samples, to which we apply ODE solver to obtain sample trajectories. Shading represents model uncertainty.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 </description>
@@ -1089,34 +1084,39 @@ as required.&lt;/p&gt;
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://magnusross.github.io/posts/winnerscurse_problem/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Take an objective function ( f(x) ) with GP prior and i.i.d. Gaussian noise with variance ( \sigma^2 ), so ( y_i = f(x_i) + \epsilon_i ) with ( \epsilon_i \sim \mathcal{N}(0, \sigma^2) ). Assume two locations ( x_1, x_2 ) are sufficiently separated that their function values ( f(x_1) ) and ( f(x_2) ) are independent. Compute the posterior ( p(\epsilon_1-\epsilon_2|y_1, y_2) ) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.&lt;/p&gt;
+&lt;p&gt;Take an objective function \( f(x) \) with GP prior and i.i.d. Gaussian noise with variance \( \sigma^2 \), so \( y_i = f(x_i) + \epsilon_i \) with \( \epsilon_i \sim \mathcal{N}(0, \sigma^2) \). Assume two locations \( x_1, x_2 \) are sufficiently separated that their function values \( f(x_1) \) and \( f(x_2) \) are independent. Compute the posterior \( p(\epsilon_1-\epsilon_2|y_1, y_2) \) and use it to justify that the expected improvement in Bayesian optimisation suffers winners curse for a noisy objective. The winners curse says that for noisy optimisation problems, the lowest value is also likely the most noisy.&lt;/p&gt;
 &lt;p&gt;Source: Probabilistic Numerics by Henning, Osborne and Kersting, Ex. 32.2&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;First we need to compute ( p(\epsilon_i| y_i) ), which we can do using Bayes rule,
+&lt;p&gt;First we need to compute \( p(\epsilon_i| y_i) \), which we can do using Bayes rule,
+&lt;/p&gt;
 $$
 p(\epsilon_i| y_i) = \frac{p(y_i| \epsilon_i)p(\epsilon_i)}{p(y_i)}
-$$
-we have that ( p(\epsilon_i) = \mathcal{N}(\epsilon_i; 0, \sigma^2) ), and that ( p(y_i| \epsilon_i) =  \mathcal{N}(y_i; \epsilon_i, \sigma_f^2) ) where we have assumed that the prior over ( f ) has 0 mean, and variance ( \sigma_f^2 ). So we have,
+$$&lt;p&gt;
+we have that \( p(\epsilon_i) = \mathcal{N}(\epsilon_i; 0, \sigma^2) \), and that \( p(y_i| \epsilon_i) =  \mathcal{N}(y_i; \epsilon_i, \sigma_f^2) \) where we have assumed that the prior over \( f \) has 0 mean, and variance \( \sigma_f^2 \). So we have,
+&lt;/p&gt;
 $$
 p(\epsilon_i| y_i) \propto \mathcal{N}(y_i; \epsilon_i, \sigma_f^2)\mathcal{N}(\epsilon_i; 0, \sigma^2)
-$$
+$$&lt;p&gt;
 which we can identify as a product of Gaussian PDFs. This results in another Gaussian PDF, see e.g &lt;a href=&#34;http://www.lucamartino.altervista.org/2003-003.pdf&#34;&gt;these notes&lt;/a&gt;,
+&lt;/p&gt;
 $$
 p(\epsilon_i| y_i) = \mathcal{N}(\epsilon_i; \mu_{\epsilon_i}, \sigma^2_{\epsilon_i}),
-$$
+$$&lt;p&gt;
 where
 \begin{align}
-\mu_{\epsilon_i} &amp;amp;= \frac{y_i\sigma^2}{\sigma^2 + \sigma_f^2}, \\\&lt;br&gt;
+\mu_{\epsilon_i} &amp;amp;= \frac{y_i\sigma^2}{\sigma^2 + \sigma_f^2}, \\\
 \sigma^2_{\epsilon_i} &amp;amp;= \frac{\sigma_f^2\sigma^2}{\sigma^2 + \sigma_f^2}.
 \end{align}
 We can see here that the variance is independent of data. Now we have computed the posterior of the noise given the data, we can compute the posterior of the difference between the noises given the data. Since the function values at the input points are independent then the posterior over the difference is just the difference of independent Gaussian random variables, in which case we simply subtract the means and sum the variances, to give
+&lt;/p&gt;
 $$
 p(\epsilon_1 - \epsilon_2=\Delta| y_1, y_2) = \mathcal{N}\left(\Delta; \frac{\sigma^2}{\sigma^2 + \sigma_f^2}(y_1-y_2), 2\sigma^2_{\epsilon}\right).
-$$
+$$&lt;p&gt;
 The key point here is that the mean of this distribution depends on the difference between the data values. So
+&lt;/p&gt;
 $$
-y_1&amp;gt;y_2 \implies \mathbb{E}[\epsilon_1 - \epsilon_2]&amp;gt; 0 \implies \mathbb{E}[\epsilon_1] &amp;gt; \mathbb{E}[\epsilon_2].
-$$
+y_1&gt;y_2 \implies \mathbb{E}[\epsilon_1 - \epsilon_2]&gt; 0 \implies \mathbb{E}[\epsilon_1] &gt; \mathbb{E}[\epsilon_2].
+$$&lt;p&gt;
 If we assume that the values are lower that the prior mean (i.e. 0), which is to be expected, then we expect the noise for the lower point to be a larger (absolute) value. This is the winners curse described in the book.&lt;/p&gt;
 </description>
     </item>
@@ -1128,11 +1128,10 @@ If we assume that the values are lower that the prior mean (i.e. 0), which is to
       <guid>https://magnusross.github.io/posts/paper1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Update: This paper was published at NeurIPS 2021 check &lt;a href=&#34;https://proceedings.neurips.cc/paper/2021/file/ca5fbbbddd0c0ff6c01f782c60c9d1b5-Paper.pdf&#34;&gt;out the final version&lt;/a&gt; or my &lt;a href=&#34;https://neurips.cc/virtual/2021/poster/26977&#34;&gt;presentation&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This work, with Mauricio Alvarez and Mike Smith, has been the main focus of the first year of my PhD, check it out &lt;a href=&#34;https://arxiv.org/abs/2106.05582&#34;&gt;on arXiv&lt;/a&gt;.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../daig_new.svg&#34;
-         alt=&#34;Cool diagram!&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;The sampling process for the model described in the paper, which is a non-parametric, and can represent data generated by non-linear operators.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../daig_new.svg&#34;
+    alt=&#34;Cool diagram!&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;The sampling process for the model described in the paper, which is a non-parametric, and can represent data generated by non-linear operators.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;There will be a blog post explaining the key ideas coming soon!&lt;/p&gt;
@@ -1146,13 +1145,13 @@ If we assume that the values are lower that the prior mean (i.e. 0), which is to
       <guid>https://magnusross.github.io/posts/another-note/</guid>
       <description>&lt;p&gt;There are many interesting things that can be learned about probabilistic modelling from the world of trading and finance, where, perhaps due to the direct connection to very large sums of money,  attitudes to problems are generally very different to those of the typical statistician or ML practitioner. Two books I have enjoyed recently in the area are &lt;em&gt;The Education of a Speculator&lt;/em&gt; by Victor Niederhoffer and &lt;em&gt;Fooled by Randomness&lt;/em&gt; by Nassim Nicholas Taleb. The books are similar in many ways, both contain plenty of interesting insights into thinking probabilistically, as well as a number of cautionary tales of modelling gone wrong.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; In &lt;em&gt;Fooled by Randomness&lt;/em&gt;, Taleb talks a lot about the power of simulation for probabilistic models, and how modern computers, using what he calls his &amp;ldquo;Monte Carlo Engine&amp;rdquo;, allow us to get answers from complex models that previously would have been impossible, or at least very time consuming, to solve analytically. This was fresh in my mind when I read the following passage from chapter 8 of &lt;em&gt;The Education of a Speculator&lt;/em&gt; about the well known gambler&amp;rsquo;s ruin problem:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A speculator with initial capital ( C ) plays a game with a casino: he wins ( £1 ) each play with probability ( P ) or loses (  £1 ) with probability ( Q=1-P ), the speculator stays in the game until his capital reaches ( A ) or depreciates to ( 0 ). It can be shown that in such a game, the speculators probability of ruin is, $$ \frac{(Q/P)^A-(Q/P)^C}{(Q/P)^A-1}$$&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A speculator with initial capital \( C \) plays a game with a casino: he wins \( £1 \) each play with probability \( P \) or loses \(  £1 \) with probability \( Q=1-P \), the speculator stays in the game until his capital reaches \( A \) or depreciates to \( 0 \). It can be shown that in such a game, the speculators probability of ruin is, &lt;/p&gt;
+$$ \frac{(Q/P)^A-(Q/P)^C}{(Q/P)^A-1}$$&lt;/blockquote&gt;
 &lt;p&gt;This is a very good example a problem which can be solved easily with the &amp;ldquo;Monte Carlo Engine&amp;rdquo;, or simulation in plainer language, but is actually quite difficult to solve analytically. In this post we&amp;rsquo;re going to derive the formula for the probability of ruin above analytically, and calculate the probability using simulation and hopefully along the way we&amp;rsquo;ll get a feel for the advantages and disadvantages of both methods.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;h2 id=&#34;simulation&#34;&gt;Simulation&lt;/h2&gt;
-&lt;p&gt;The idea behind simulation is really simple, to work out the probability that our gambler will be ruined, all we need to do is run a bunch of games in our imaginary casino, and work out the proportion of games in which the gambler loses, this then becomes our answer for the probability of ruin. We can think of each of these games as a sort of parallel universe, each is possible and distinct from the next, and taken as a whole they represent every possible situation our gambler could go through. Now you might be thinking, hang on, are there not an extremely large number (an infinite number even) of possible games? Could the gambler not keep on playing indefinitely if the correct combination of wins and losses arise such that the balance never goes higher than ( A ), or lower than ( 0 )? How are we going to simulate all of the games? The answer is that we aren&amp;rsquo;t, because this would take an infinitely long time, and so unfortunately we will never get the answer for the probability exactly correct, but we will be able to get pretty close in quite a short time. When we simulate things randomly, games that are more probable, and so contribute more to our final answer, are likely to occur even in a small number of simulations. Improbable games, such as very long games, are unlikely to occur in our simulation, this isn&amp;rsquo;t a problem though  because they naturally don&amp;rsquo;t contribute much to the final answer, so the error associated with not including them in our proportion will be small.&lt;/p&gt;
-&lt;p&gt;So how do we actually do the simulating? We just need to have some code that can produce randomly 1 (representing the gambler winning a play) with probability ( P ) or 0 (representing the gambler losing a play) with
-probability ( Q ). Then we add or subtract ( £1 ) from the gamblers balance accordingly, we keep doing this until the balance reaches ( A ), in which case we note down a win for the gambler, or ( 0 ), where we note down a loss. All we have to do then to calculate the probability is tally up all the games the gambler lost, and then divide by the total number of games we simulated to get our estimate. The following Python code will do this for us:&lt;/p&gt;
+&lt;p&gt;The idea behind simulation is really simple, to work out the probability that our gambler will be ruined, all we need to do is run a bunch of games in our imaginary casino, and work out the proportion of games in which the gambler loses, this then becomes our answer for the probability of ruin. We can think of each of these games as a sort of parallel universe, each is possible and distinct from the next, and taken as a whole they represent every possible situation our gambler could go through. Now you might be thinking, hang on, are there not an extremely large number (an infinite number even) of possible games? Could the gambler not keep on playing indefinitely if the correct combination of wins and losses arise such that the balance never goes higher than \( A \), or lower than \( 0 \)? How are we going to simulate all of the games? The answer is that we aren&amp;rsquo;t, because this would take an infinitely long time, and so unfortunately we will never get the answer for the probability exactly correct, but we will be able to get pretty close in quite a short time. When we simulate things randomly, games that are more probable, and so contribute more to our final answer, are likely to occur even in a small number of simulations. Improbable games, such as very long games, are unlikely to occur in our simulation, this isn&amp;rsquo;t a problem though  because they naturally don&amp;rsquo;t contribute much to the final answer, so the error associated with not including them in our proportion will be small.&lt;/p&gt;
+&lt;p&gt;So how do we actually do the simulating? We just need to have some code that can produce randomly 1 (representing the gambler winning a play) with probability \( P \) or 0 (representing the gambler losing a play) with
+probability \( Q \). Then we add or subtract \( £1 \) from the gamblers balance accordingly, we keep doing this until the balance reaches \( A \), in which case we note down a win for the gambler, or \( 0 \), where we note down a loss. All we have to do then to calculate the probability is tally up all the games the gambler lost, and then divide by the total number of games we simulated to get our estimate. The following Python code will do this for us:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from scipy.stats import bernoulli
 
 def simulate_game(P, C, A):    
@@ -1183,71 +1182,67 @@ def simulated_probability(P, C, A, N=500):
 
 print(f&amp;quot;Probabilty of ruin: {simulated_probability(0.6, 5, 10)}&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note the Bernoulli function here just produces a 1 with probability ( P ), and a zero with probability ( Q=1-P ) like we needed. It really is that simple! Before we look at the properties of the answers our code gives, let&amp;rsquo;s solve the problem analytically as well.&lt;/p&gt;
+&lt;p&gt;Note the Bernoulli function here just produces a 1 with probability \( P \), and a zero with probability \( Q=1-P \) like we needed. It really is that simple! Before we look at the properties of the answers our code gives, let&amp;rsquo;s solve the problem analytically as well.&lt;/p&gt;
 &lt;h2 id=&#34;analytical-solution&#34;&gt;Analytical Solution&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;(This section is going to be a bit more maths heavy, so if that&amp;rsquo;s not your thing then feel free to skim/skip.)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Like a lot of problems in probability, at first glance it doesn&amp;rsquo;t look too bad. Unfortunately it&amp;rsquo;s kind of hard to know where to start because of the limitless number of different games that are possible. To get going we need to use a bit of a trick.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Let&amp;rsquo;s say the probability of winning the game when we start with capital ( i ) is ( P_i ) (taking ( i ) to be an integer). The two possibilities for the first play of the game are:&lt;/p&gt;
+&lt;p&gt;Like a lot of problems in probability, at first glance it doesn&amp;rsquo;t look too bad. Unfortunately it&amp;rsquo;s kind of hard to know where to start because of the limitless number of different games that are possible. To get going we need to use a bit of a trick.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Let&amp;rsquo;s say the probability of winning the game when we start with capital \( i \) is \( P_i \) (taking \( i \) to be an integer). The two possibilities for the first play of the game are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The gambler wins the first play with probability ( p ) and ends up with capital ( i+1 ), the probability of going on to win the game from this position is then ( P_{i+1} ).&lt;/li&gt;
-&lt;li&gt;The gambler loses the first play with probability ( q=1-p ), and ends up with capital ( i-1 ), the probability of going on to win the game from this position is then ( P_{i-1} ).&lt;/li&gt;
+&lt;li&gt;The gambler wins the first play with probability \( p \) and ends up with capital \( i+1 \), the probability of going on to win the game from this position is then \( P_{i+1} \).&lt;/li&gt;
+&lt;li&gt;The gambler loses the first play with probability \( q=1-p \), and ends up with capital \( i-1 \), the probability of going on to win the game from this position is then \( P_{i-1} \).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;We can then write ( P_i ) in terms of these possible outcomes for the first play, as&lt;/p&gt;
-&lt;p&gt;$$ P_i = p \times P_{i+1} + q \times P_{i-1}. \tag{1}$$&lt;/p&gt;
-&lt;p&gt;We also know that ( P_0=0 ), if we have no money we have certainly lost, and ( P_A=1 ), if we reach capital ( A ) we have certainly won. Equation 1 is called a difference equation, and it is like a discrete version of a differential equation. To solve it, we use use ( p + q = 1 ) to rewrite as follows,
-$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$
-$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$
-$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$&lt;/p&gt;
-&lt;p&gt;Next write equation 2 as,&lt;br&gt;
-$$ P_{j+1}-P_j = \frac{q}{p}(P_{j}-P_{j-1}) = \Big(\frac{q}{p}\Big)^2(P_{j-1}-P_{j-2}) = \dots= \Big(\frac{q}{p}\Big)^{j-1}(P_{1}-P_{0})=\Big(\frac{q}{p}\Big)^{j-1}P_{1}$$&lt;/p&gt;
-&lt;p&gt;for ( j=1, \dots, A ), using ( P_0=0 ) for the final step. Next we want to use this to find a general formula for ( P_i ), we are allowed to write
-$$ P_i = P_i - P_0 = (P_i - P_{i-1}) + (P_{i-1} - P_{i-2}) + \dots + (P_{1} - P_{0}) $$&lt;/p&gt;
-&lt;p&gt;because for example the ( +P_{i-1} ) cancels with the ( -P_{i-1} ) and so contributes nothing overall. Subbing in equation 2 to each of the terms in brackets we get,
-$$ P_i = P_1 \sum^{i-1}_{j=0}\Big(\frac{q}{p}\Big)^{j-1}$$&lt;/p&gt;
-&lt;p&gt;using the standard result for a finite sum of a geometric series, we get&lt;/p&gt;
-&lt;p&gt;$$P_i = P_1 \frac{(q/p)^i -1}{(q/p) -1}$$&lt;/p&gt;
-&lt;p&gt;as long as ( p\neq q ). If ( p=q=1/2 ) then we simply get  ( P_i=P_1\sum^{i-1}_{j=0}(1)=iP_1 ). Now we need to get rid of the ( P_1 ) which we can do by using ( P_A=1 ). In the case ( p\neq q ) we have,&lt;/p&gt;
-&lt;p&gt;$$ P_A = 1 = P_1 \frac{(q/p)^A -1}{(q/p) -1}$$&lt;/p&gt;
-&lt;p&gt;so,
-$$ P_1 =  \frac{(q/p) -1}{(q/p)^A -1}$$&lt;/p&gt;
-&lt;p&gt;which means
-$$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i -1}{(q/p)^A -1}.$$&lt;/p&gt;
-&lt;p&gt;In the case ( p=q=1/2 ) we have ( P_A=1=A P_1 \implies P_1 = 1/A ) so ( P_i = i/A ). We now have an expression for the probability of a win so to covert our answer into the probability of ruin we just subtract it from 1 to get,&lt;/p&gt;
-&lt;p&gt;$$ P_i = 1 - \frac{(q/p)^i -1}{(q/p)^A -1} = \frac{(q/p)^A - (q/p)^i}{(q/p)^A -1} \text{ and } P_i = 1 - \frac{i}{A} = \frac{A-i}{A} \tag{4}$$&lt;/p&gt;
-&lt;p&gt;in cases ( p\neq q ) and ( p=q=1/2 ) respectively. We&amp;rsquo;ve finally made it, equation 4 is the same as the answer from &lt;em&gt;Education of a Speculator&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;We can then write \( P_i \) in terms of these possible outcomes for the first play, as&lt;/p&gt;
+$$ P_i = p \times P_{i+1} + q \times P_{i-1}. \tag{1}$$&lt;p&gt;We also know that \( P_0=0 \), if we have no money we have certainly lost, and \( P_A=1 \), if we reach capital \( A \) we have certainly won. Equation 1 is called a difference equation, and it is like a discrete version of a differential equation. To solve it, we use use \( p + q = 1 \) to rewrite as follows,
+&lt;/p&gt;
+$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$&lt;p&gt;
+&lt;/p&gt;
+$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$&lt;p&gt;
+&lt;/p&gt;
+$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$&lt;p&gt;Next write equation 2 as,&lt;br&gt;
+&lt;/p&gt;
+$$ P_{j+1}-P_j = \frac{q}{p}(P_{j}-P_{j-1}) = \Big(\frac{q}{p}\Big)^2(P_{j-1}-P_{j-2}) = \dots= \Big(\frac{q}{p}\Big)^{j-1}(P_{1}-P_{0})=\Big(\frac{q}{p}\Big)^{j-1}P_{1}$$&lt;p&gt;for \( j=1, \dots, A \), using \( P_0=0 \) for the final step. Next we want to use this to find a general formula for \( P_i \), we are allowed to write
+&lt;/p&gt;
+$$ P_i = P_i - P_0 = (P_i - P_{i-1}) + (P_{i-1} - P_{i-2}) + \dots + (P_{1} - P_{0}) $$&lt;p&gt;because for example the \( +P_{i-1} \) cancels with the \( -P_{i-1} \) and so contributes nothing overall. Subbing in equation 2 to each of the terms in brackets we get,
+&lt;/p&gt;
+$$ P_i = P_1 \sum^{i-1}_{j=0}\Big(\frac{q}{p}\Big)^{j-1}$$&lt;p&gt;using the standard result for a finite sum of a geometric series, we get&lt;/p&gt;
+$$P_i = P_1 \frac{(q/p)^i -1}{(q/p) -1}$$&lt;p&gt;as long as \( p\neq q \). If \( p=q=1/2 \) then we simply get  \( P_i=P_1\sum^{i-1}_{j=0}(1)=iP_1 \). Now we need to get rid of the \( P_1 \) which we can do by using \( P_A=1 \). In the case \( p\neq q \) we have,&lt;/p&gt;
+$$ P_A = 1 = P_1 \frac{(q/p)^A -1}{(q/p) -1}$$&lt;p&gt;so,
+&lt;/p&gt;
+$$ P_1 =  \frac{(q/p) -1}{(q/p)^A -1}$$&lt;p&gt;which means
+&lt;/p&gt;
+$$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i -1}{(q/p)^A -1}.$$&lt;p&gt;In the case \( p=q=1/2 \) we have \( P_A=1=A P_1 \implies P_1 = 1/A \) so \( P_i = i/A \). We now have an expression for the probability of a win so to covert our answer into the probability of ruin we just subtract it from 1 to get,&lt;/p&gt;
+$$ P_i = 1 - \frac{(q/p)^i -1}{(q/p)^A -1} = \frac{(q/p)^A - (q/p)^i}{(q/p)^A -1} \text{ and } P_i = 1 - \frac{i}{A} = \frac{A-i}{A} \tag{4}$$&lt;p&gt;in cases \( p\neq q \) and \( p=q=1/2 \) respectively. We&amp;rsquo;ve finally made it, equation 4 is the same as the answer from &lt;em&gt;Education of a Speculator&lt;/em&gt;!&lt;/p&gt;
 &lt;h2 id=&#34;comparison&#34;&gt;Comparison&lt;/h2&gt;
-&lt;p&gt;OK so now we have methods to calculate the probability of ruin both using simulation and analytically, let&amp;rsquo;s see how they compare. Below are plots of the probability of winning the game against the probability of winning a play ( P ), for starting capital ( C=£8 ) and ( C=£1 ), using 500 simulated games. We can see that there is very good agreement between the two methods.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../ruin_main.png&#34;
-         alt=&#34;How likely is ruin?&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Plot of probability of ruin against probability of winning single play, for different ( C )&amp;rsquo;s&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;p&gt;OK so now we have methods to calculate the probability of ruin both using simulation and analytically, let&amp;rsquo;s see how they compare. Below are plots of the probability of winning the game against the probability of winning a play \( P \), for starting capital \( C=£8 \) and \( C=£1 \), using 500 simulated games. We can see that there is very good agreement between the two methods.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../ruin_main.png&#34;
+    alt=&#34;How likely is ruin?&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Plot of probability of ruin against probability of winning single play, for different \( C \)&amp;rsquo;s&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;We can get a better idea about the error introduced by using the simulated method from the following plot of error against number of simulated games, with error bars computed from 5 repeats. The gradient of the graph is about 0.5 and since the axis are log scale this corresponds to the relationship ( E\propto\frac{1}{\sqrt N} ), where ( E ) is error and ( N ) is number of games. This is consistent with the standard result for the error of a Monte Carlo estimator.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../ruin_errs.png&#34;
-         alt=&#34;Error from simulation.&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Plot of error introduced by simulation methods against  number of simulated games.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;p&gt;We can get a better idea about the error introduced by using the simulated method from the following plot of error against number of simulated games, with error bars computed from 5 repeats. The gradient of the graph is about 0.5 and since the axis are log scale this corresponds to the relationship \( E\propto\frac{1}{\sqrt N} \), where \( E \) is error and \( N \) is number of games. This is consistent with the standard result for the error of a Monte Carlo estimator.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../ruin_errs.png&#34;
+    alt=&#34;Error from simulation.&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Plot of error introduced by simulation methods against  number of simulated games.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
 &lt;p&gt;I think the most important thing to consider when comparing the two solutions before we even think about errors, computation time etc, is simplicity. The code for the simulations took me less than 5 minutes to write. I spent about an hour trying to come up with an analytical solution with no luck, I then looked up the solution, and it took me quite a while longer to get my head round it. Even simple problems in probability can end up being analytically intractable, meaning no closed form solution can ever be found, let alone by me. For this reason Taleb is right to emphasize the power of the Monte Carlo engine, I hope this post has gone some way to illustrates it practical application.&lt;/p&gt;
 &lt;p&gt;Thanks for reading!&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Both also contain a variety of strongly held opinions about how life should be lived, which I probably could have done without, maybe this is common in trading books? &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Both also contain a variety of strongly held opinions about how life should be lived, which I probably could have done without, maybe this is common in trading books?&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;This trade-off arises all the time in ML when we are deciding how we want to do inference for a particular model, should we use stochastic sampling methods like MCMC, or something like variational inference, which requires more analytical calculations. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;This trade-off arises all the time in ML when we are deciding how we want to do inference for a particular model, should we use stochastic sampling methods like MCMC, or something like variational inference, which requires more analytical calculations.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;We can approach the problem in a more rigorous way using Markov chains, see for example &lt;a href=&#34;http://people.math.gatech.edu/~ecroot/3225/markov2_notes.pdf&#34;&gt;these handy lecture notes&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;We can approach the problem in a more rigorous way using Markov chains, see for example &lt;a href=&#34;http://people.math.gatech.edu/~ecroot/3225/markov2_notes.pdf&#34;&gt;these handy lecture notes&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1291,14 +1286,14 @@ $$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i 
 &lt;h2 id=&#34;data-skeptic&#34;&gt;Data Skeptic&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://dataskeptic.com&#34;&gt;Website&lt;/a&gt;, &lt;a href=&#34;https://podcasts.apple.com/us/podcast/data-skeptic/id890348705&#34;&gt;Apple Podcasts&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I listened to one episode about ML Ops, it was pretty good. Haven&amp;rsquo;t got round to any others yet, but the titles look interesting, so I&amp;rsquo;m including it here for good measure.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;They are such great hosts that I am happy to listen to hours of R content, despite the fact I have never written a line of it in my life and don&amp;rsquo;t intend to. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;They are such great hosts that I am happy to listen to hours of R content, despite the fact I have never written a line of it in my life and don&amp;rsquo;t intend to.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1310,120 +1305,113 @@ $$ P_i =  \frac{(q/p) -1}{(q/p)^A -1}\frac{(q/p)^i -1}{(q/p) -1} =\frac{(q/p)^i 
       <description>&lt;p&gt;&lt;em&gt;(Note: This series of posts is closely related to and inspired by &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;this paper&lt;/a&gt; from Miles Cranmer, Sam Greydanus, Stephan Hoyer and others. To accompany the paper they also wrote a brilliant &lt;a href=&#34;https://greydanus.github.io/2020/03/10/lagrangian-nns/&#34;&gt;blog post&lt;/a&gt; about the work which I would encourage you to read)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I really enjoy Lagrangian mechanics, in fact, I would go so far as to say that studying it was one of the best parts of my physics degree. We will get into the reasons for this shortly, but needless to say, when I heard that Lagrangians were being used with neural networks to learn physics I could not have clicked the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;arXiv link&lt;/a&gt; faster. In this series of posts I will give a brief introduction to what Lagrangian mechanics is all about, why the concepts are so important in physics, and how we can use them to solve a cool problem involving both a pendulum &lt;strong&gt;and&lt;/strong&gt; a spring at once (!). We&amp;rsquo;ll then see how we can use PyTorch to save ourselves the effort of calculating a load of derivatives by hand. Finally we&amp;rsquo;ll tie it all together to learn a Lagrangian from some data using a neural network, and see how we get superior performance by making the model aware of the physics of the situation. Lots to do, so let&amp;rsquo;s get started!&lt;/p&gt;
 &lt;h2 id=&#34;what-is-a-lagrangian&#34;&gt;What is a Lagrangian?&lt;/h2&gt;
-&lt;p&gt;To solve a problem in classical mechanics you generally need to find the equations of motion of the system in question. These equations, when solved, completely determine the trajectories of the constituent parts of the system. One extremely simple example is a particle in free fall which has the equation of motion ( \ddot x = \frac{d^2 x}{dt^2} = -g ). The Lagrangian (almost always written as ( \mathcal{L} )) is a special function that contains all the dynamics of the system, which can be used to find the equations of motion in a relatively simple way. ( \mathcal{L} ) is a function of the generalised coordinates describing our system, denoted ( {q_i} ) and their corresponding time derivatives ( {\dot q_i} ) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. One really useful aspect of Lagrangian mechanics is that as long as the ( q_i )&amp;rsquo;s totally specify our system, they can be pretty much anything we want (e.g. positions, angles, lengths) this is very powerful and is not true in Newtonian mechanics.&lt;/p&gt;
+&lt;p&gt;To solve a problem in classical mechanics you generally need to find the equations of motion of the system in question. These equations, when solved, completely determine the trajectories of the constituent parts of the system. One extremely simple example is a particle in free fall which has the equation of motion \( \ddot x = \frac{d^2 x}{dt^2} = -g \). The Lagrangian (almost always written as \( \mathcal{L} \)) is a special function that contains all the dynamics of the system, which can be used to find the equations of motion in a relatively simple way. \( \mathcal{L} \) is a function of the generalised coordinates describing our system, denoted \( {q_i} \) and their corresponding time derivatives \( {\dot q_i} \) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. One really useful aspect of Lagrangian mechanics is that as long as the \( q_i \)&amp;rsquo;s totally specify our system, they can be pretty much anything we want (e.g. positions, angles, lengths) this is very powerful and is not true in Newtonian mechanics.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Problems with Newtonian Mechanics&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;You may be wondering why we need to do all this complicated stuff with Lagrangians when Newton&amp;rsquo;s laws, which most people learn in school, can in theory solve every problem possible in classical mechanics. There are a number of interesting reasons for this which are discussed extensively elsewhere, the most relevant here is the fact that it is often very difficult to actually write down Newton&amp;rsquo;s laws for a given system. In Newtonian mechanics we consider the action of force vectors on particles. Because all the forces in a problem must be written explicitly, systems that have complex constraints, e.g. double pendulum, can be very hard to deal with. For rotational systems, it can be difficult to exploit symmetry of because sets of angles aren&amp;rsquo;t really vectors.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Finding the equations of motion from ( \mathcal{L} ) involves using Hamilton&amp;rsquo;s principle of least action, which is stated in loose terms below:&lt;/p&gt;
+&lt;p&gt;Finding the equations of motion from \( \mathcal{L} \) involves using Hamilton&amp;rsquo;s principle of least action, which is stated in loose terms below:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&amp;ldquo;The trajectory followed by a system is the one with the smallest action&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The action, ( \mathcal{S} ), of a trajectory is the time averaged value of the Lagrangian along it. More formally it is the functional,&lt;/p&gt;
-&lt;p&gt;$$
-\mathcal{S} = \int \mathcal{L}(q_i, \dot q_i) dt
-$$&lt;/p&gt;
-&lt;p&gt;Using two classic physicists tricks, reverse integration by parts and a first order Taylor expansion, you can figure out that systems obeying Hamilton&amp;rsquo;s principle must have,&lt;/p&gt;
-&lt;p&gt;$$\frac{\partial \mathcal{L}}{\partial q_i} - \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot q_i}=0,  $$&lt;/p&gt;
-&lt;p&gt;for each ( q_i ). These are known as the Euler-Lagrange equations. Without a concrete example, this all seems very abstract and confusing, but the upshot is if we know ( \mathcal{L} ) then we can work out the equations of motion. Just one final piece of the puzzle before we can actually work stuff out, how do we find ( \mathcal{L} )? It turns out that in classical, non relativistic mechanics it is given by the simple expression,&lt;/p&gt;
-&lt;p&gt;$$ \mathcal{L} = T - V,$$&lt;/p&gt;
-&lt;p&gt;where ( T ) is the kinetic energy of the system, and ( V ) is the potential energy.  It is almost always easier to think of the different energies in a system than it is to resolve forces, which is why Lagrangian mechanics is so powerful.&lt;/p&gt;
+&lt;p&gt;The action, \( \mathcal{S} \), of a trajectory is the time averaged value of the Lagrangian along it. More formally it is the functional,&lt;/p&gt;
+$$
+\mathcal{S} = \int \mathcal{L}(q_i, \dot q_i) dt 
+$$&lt;p&gt;Using two classic physicists tricks, reverse integration by parts and a first order Taylor expansion, you can figure out that systems obeying Hamilton&amp;rsquo;s principle must have,&lt;/p&gt;
+$$\frac{\partial \mathcal{L}}{\partial q_i} - \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot q_i}=0,  $$&lt;p&gt;for each \( q_i \). These are known as the Euler-Lagrange equations. Without a concrete example, this all seems very abstract and confusing, but the upshot is if we know \( \mathcal{L} \) then we can work out the equations of motion. Just one final piece of the puzzle before we can actually work stuff out, how do we find \( \mathcal{L} \)? It turns out that in classical, non relativistic mechanics it is given by the simple expression,&lt;/p&gt;
+$$ \mathcal{L} = T - V,$$&lt;p&gt;where \( T \) is the kinetic energy of the system, and \( V \) is the potential energy.  It is almost always easier to think of the different energies in a system than it is to resolve forces, which is why Lagrangian mechanics is so powerful.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;The Real Power of Lagrangians&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Although Lagrangians are an important tool in classical mechanics, they actually play a much more pivotal role in the fundamental physics of the Universe. The Standard Model, which describes all fundamental particles (e.g photons, electrons, quarks) is specified as a Lagrangian. Lagrangians can be constructed in such a way that their value does not change when changing reference frames, which means they can be made consistent with Einstein&amp;rsquo;s theory of special relativity. Also Noether&amp;rsquo;s theorem means that conservation laws (e.g. for momentum, charge), can be incorporated into the Lagrangian formalism in a very natural way.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;a-fun-example&#34;&gt;A Fun Example!&lt;/h2&gt;
 &lt;p&gt;Ok so now we have the theory bit out the way let&amp;rsquo;s have a go at actually using a Lagrangian in practice. The problem we are going to consider is a spring pendulum, this is really what it says on the tin, a spring with a mass attached that can freely swing about some fixed point. The setup is shown in the handy diagram below.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../image.png&#34;
-         alt=&#34;Spring pendulum&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;A handy diagram.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../image.png&#34;
+    alt=&#34;Spring pendulum&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;A handy diagram.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;It is clear that there are 4 generalised coordinates which fully describe the system: ( \theta ), the angle the spring makes with the vertical, ( r ), the length of the pendulum, and their corresponding time derivatives, ( \dot \theta ) and ( \dot r ). Having identified these it&amp;rsquo;s pretty easy to think of all the kinetic and potential in the energies in the system, try to think of them and then have a look at the list below to see if you got it correct:&lt;/p&gt;
+&lt;p&gt;It is clear that there are 4 generalised coordinates which fully describe the system: \( \theta \), the angle the spring makes with the vertical, \( r \), the length of the pendulum, and their corresponding time derivatives, \( \dot \theta \) and \( \dot r \). Having identified these it&amp;rsquo;s pretty easy to think of all the kinetic and potential in the energies in the system, try to think of them and then have a look at the list below to see if you got it correct:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Linear kinetic energy, ( T_l ), from by the movement of the mass in the direction of the spring.&lt;/p&gt;
+&lt;p&gt;Linear kinetic energy, \( T_l \), from by the movement of the mass in the direction of the spring.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Rotational kinetic energy, ( T_r ), from the rotation of the mass about the fixed point the spring is attached to.&lt;/p&gt;
+&lt;p&gt;Rotational kinetic energy, \( T_r \), from the rotation of the mass about the fixed point the spring is attached to.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Mechanical potential energy, ( V_m ), from the compression and extension of the spring.&lt;/p&gt;
+&lt;p&gt;Mechanical potential energy, \( V_m \), from the compression and extension of the spring.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Gravitational potential energy, ( V_g ), from the changing height of the mass.&lt;/p&gt;
+&lt;p&gt;Gravitational potential energy, \( V_g \), from the changing height of the mass.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;1-3 are given by standard formulas, for example Hooke&amp;rsquo;s law for 3, and can be written down straight away. 4 just involves using a bit of trigonometry to work out the vertical height of the spring in terms of ( r ), then applying the standard formula for a uniform gravitational field. Each formula is shown in the table below, where m is the mass, ( r_0 ) is the length of the unextended spring and ( g ) is the gravitational constant:&lt;/p&gt;
+&lt;p&gt;1-3 are given by standard formulas, for example Hooke&amp;rsquo;s law for 3, and can be written down straight away. 4 just involves using a bit of trigonometry to work out the vertical height of the spring in terms of \( r \), then applying the standard formula for a uniform gravitational field. Each formula is shown in the table below, where m is the mass, \( r_0 \) is the length of the unextended spring and \( g \) is the gravitational constant:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Energy&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Formula&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( T_l )&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( \frac{1}{2}m\dot{r}^2  )&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( T_r )&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;(  \frac{1}{2}m r^2\dot{\theta}^2 )&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( V_m )&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( k(r -r_0)^2  )&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( V_g )&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;( mgh= mg(r-r\cos\theta) )&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Energy&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Formula&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( T_l \)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( \frac{1}{2}m\dot{r}^2  \)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( T_r \)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\(  \frac{1}{2}m r^2\dot{\theta}^2 \)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( V_m \)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( k(r -r_0)^2  \)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( V_g \)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\( mgh= mg(r-r\cos\theta) \)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Taking ( m=r_0=1 ) , we can now finally write down the full Lagrangian as,&lt;/p&gt;
+&lt;p&gt;Taking \( m=r_0=1 \) , we can now finally write down the full Lagrangian as,&lt;/p&gt;
 &lt;p&gt;\begin{align} \mathcal{L} &amp;amp;= (T_l + T_r) - (V_m + V_g) \\\
 &amp;amp;= \frac{1}{2}\dot{r}^2 + \frac{1}{2} r^2\dot{\theta}^2 - gr(1-\cos\theta) - k(r -1)^2.\end{align}&lt;/p&gt;
 &lt;p&gt;So to find the equations of motion from here we need to apply the Euler-Lagrange equations, which involves calculating the partial derivatives with respect to each independent variable, this is a bit tedious but not too bad,&lt;/p&gt;
 &lt;p&gt;\begin{align} \frac{\partial \mathcal{L}}{\partial \theta} &amp;amp;= -gr\sin\theta \\\
-\frac{\partial \mathcal{L}}{\partial r} &amp;amp;= r \dot \theta^2-g(1-\cos\theta) -2k(r-1)  \\\&lt;br&gt;
-\frac{\partial \mathcal{L}}{\partial \dot \theta} &amp;amp;= r^2 \dot \theta \\\&lt;br&gt;
+\frac{\partial \mathcal{L}}{\partial r} &amp;amp;= r \dot \theta^2-g(1-\cos\theta) -2k(r-1)  \\\
+\frac{\partial \mathcal{L}}{\partial \dot \theta} &amp;amp;= r^2 \dot \theta \\\
 \frac{\partial \mathcal{L}}{\partial \dot r} &amp;amp;= \dot r \end{align}&lt;/p&gt;
 &lt;p&gt;The final step is to plug these into the Euler-Lagrange equations, and apply the total time derivative, then rearrange to get the following 2 equations of motion:&lt;/p&gt;
 &lt;p&gt;\begin{align} \ddot r &amp;amp;= r\dot{\theta}^2 + g(1-\cos\theta) - 2k(r-r_0) \\\
 \ddot \theta &amp;amp;= -\frac{1}{r}(g\sin\theta + 2\dot{r}\dot{\theta}).  \end{align}&lt;/p&gt;
 &lt;p&gt;Mission complete! Unfortunately because these are coupled non-linear differential equations, they can&amp;rsquo;t be solved analytically (by me at least), so we need to use a numerical solver. Solving differential equations numerically is obviously a huge subject, so I won&amp;rsquo;t go into any detail here, but it is currently quite a hot topic in ML research, see for example &lt;a href=&#34;https://arxiv.org/abs/1806.07366&#34;&gt;this paper&lt;/a&gt;. To solve our equations of motion we can use the handy &lt;code&gt;odeint&lt;/code&gt; function from scipy.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../swing.gif&#34;
-         alt=&#34;Swinging&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Spring pendulums in motion.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../swing.gif&#34;
+    alt=&#34;Swinging&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Spring pendulums in motion.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Above is a gif of 3 pendulums with different initial conditions &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The motion is pretty much what we would expect, so everything seems to be working! Everything we have done so far is taught in a standard undergraduate physics course, so now we have the basics down let&amp;rsquo;s see how we can involve the ML.&lt;/p&gt;
 &lt;h2 id=&#34;bringing-in-pytorch&#34;&gt;Bringing in PyTorch&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Disclaimer: Before this project I had never used PyTorch, in fact part of the reason for doing the project was to get familiar with using it. For this reason it is likely that some of my code is bad practice/wrong. If you spot any mistakes, please let me know, thanks!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;In this section we&amp;rsquo;re going to see how we can use the &lt;code&gt;autograd&lt;/code&gt; functionality in PyTorch to automatically determine the equations of motion from our Lagrangian. To do this we need to think a bit about what the equations of motion actually are. First let&amp;rsquo;s put all our independent generalised coordinates into a vector, ( \mathbf{x} = (r, \theta, \dot r, \dot \theta)^T ). The value of ( \mathbf{x} ) completely specifies the state of our system. The equations of motion tell us the dynamics of our system, i.e. how the state evolves forward in time. They can be written concisely as,&lt;/p&gt;
-&lt;p&gt;$$
-\frac{d \mathbf{x}}{dt} = \begin{pmatrix} \dot r \ \dot \theta \ \ddot r \ \ddot \theta  \end{pmatrix}= f(\mathbf{x})
-$$&lt;/p&gt;
-&lt;p&gt;if we know ( f ) we know the dynamics of the system. We already have the top 2 components of ( f ), since they are both generalised coordinates, so all we need to do is find the bottom 2. For clarity lets write the ( \mathbf{y} =( r, \theta)^T ) and the bottom 2 as ( \mathbf{\dot y} =(\dot r, \dot \theta)^T ). The challenge then is to find ( \mathbf{\ddot  y} ). Using this notation we can write the Euler-Lagrange equations as,&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;$$ \nabla_\mathbf{y}\mathcal{L} - \frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} = 0. $$&lt;/p&gt;
-&lt;p&gt;We can then explicitly apply the the total time derivative to get,&lt;/p&gt;
-&lt;p&gt;$$(\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L}) \mathbf{\ddot y} + (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y} = \nabla_\mathbf{y} \mathcal{L}.$$&lt;/p&gt;
-&lt;p&gt;This derivative confused me a bit when I first read the original paper, so may it be worth showing a few more steps. Feel free to skip this mini section if you&amp;rsquo;re already happy with it!&lt;/p&gt;
+&lt;p&gt;In this section we&amp;rsquo;re going to see how we can use the &lt;code&gt;autograd&lt;/code&gt; functionality in PyTorch to automatically determine the equations of motion from our Lagrangian. To do this we need to think a bit about what the equations of motion actually are. First let&amp;rsquo;s put all our independent generalised coordinates into a vector, \( \mathbf{x} = (r, \theta, \dot r, \dot \theta)^T \). The value of \( \mathbf{x} \) completely specifies the state of our system. The equations of motion tell us the dynamics of our system, i.e. how the state evolves forward in time. They can be written concisely as,&lt;/p&gt;
+$$
+\frac{d \mathbf{x}}{dt} = \begin{pmatrix} \dot r \\ \dot \theta \\ \ddot r \\ \ddot \theta  \end{pmatrix}= f(\mathbf{x})
+$$&lt;p&gt;if we know \( f \) we know the dynamics of the system. We already have the top 2 components of \( f \), since they are both generalised coordinates, so all we need to do is find the bottom 2. For clarity lets write the \( \mathbf{y} =( r, \theta)^T \) and the bottom 2 as \( \mathbf{\dot y} =(\dot r, \dot \theta)^T \). The challenge then is to find \( \mathbf{\ddot  y} \). Using this notation we can write the Euler-Lagrange equations as,&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+$$ \nabla_\mathbf{y}\mathcal{L} - \frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} = 0. $$&lt;p&gt;We can then explicitly apply the the total time derivative to get,&lt;/p&gt;
+$$(\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L}) \mathbf{\ddot y} + (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y} = \nabla_\mathbf{y} \mathcal{L}.$$&lt;p&gt;This derivative confused me a bit when I first read the original paper, so may it be worth showing a few more steps. Feel free to skip this mini section if you&amp;rsquo;re already happy with it!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Derivatve Derivation&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When computing the total derivative, ( \frac{d}{dt} ) we need to remember to take all the time dependence into account, this means using the chain rule on everything the Lagrangian depends on. We are trying to compute,
-$$\frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} =\frac{d}{dt} \begin{pmatrix} \frac{\partial \mathcal{L}}{\partial \dot r} \\frac{\partial \mathcal{L}}{\partial \dot \theta} \end{pmatrix}.$$
+&lt;p&gt;When computing the total derivative, \( \frac{d}{dt} \) we need to remember to take all the time dependence into account, this means using the chain rule on everything the Lagrangian depends on. We are trying to compute,
+&lt;/p&gt;
+$$\frac{d}{dt}\nabla_\mathbf{\dot y}\mathcal{L} =\frac{d}{dt} \begin{pmatrix} \frac{\partial \mathcal{L}}{\partial \dot r} \\\frac{\partial \mathcal{L}}{\partial \dot \theta} \end{pmatrix}.$$&lt;p&gt;
 For simplicity let&amp;rsquo;s just work out the top component of this, applying the chain rule to incorporate all the time dependence,
-$$\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot r} = \frac{d r}{dt} \frac{\partial }{\partial r} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \theta}{dt}  \frac{\partial }{\partial \theta} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot r}{dt} \frac{\partial }{\partial \dot r}  \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot \theta}{dt} \frac{\partial }{\partial \dot \theta}  \frac{\partial \mathcal{L}}{\partial \dot r}.$$
-Hopefully it is clear that if we replace, ( \frac{d r}{dt} = \dot r ) and so on, this would be the top component of the vector derivative, having multiplied everything out correctly.&lt;/p&gt;
+&lt;/p&gt;
+$$\frac{d}{dt} \frac{\partial \mathcal{L}}{\partial \dot r} = \frac{d r}{dt} \frac{\partial }{\partial r} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \theta}{dt}  \frac{\partial }{\partial \theta} \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot r}{dt} \frac{\partial }{\partial \dot r}  \frac{\partial \mathcal{L}}{\partial \dot r} + \frac{d \dot \theta}{dt} \frac{\partial }{\partial \dot \theta}  \frac{\partial \mathcal{L}}{\partial \dot r}.$$&lt;p&gt;
+Hopefully it is clear that if we replace, \( \frac{d r}{dt} = \dot r \) and so on, this would be the top component of the vector derivative, having multiplied everything out correctly.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The final step then is to do a bit of matrix algebra to get ( \mathbf{\ddot  y} ) alone, we end up with,&lt;/p&gt;
-&lt;p&gt;$$\mathbf{\ddot y}  = (\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L})^{-1} [\nabla_\mathbf{y} \mathcal{L} - (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y}].$$&lt;/p&gt;
-&lt;p&gt;Now we have ( \mathbf{\ddot  y} ) alone we have a clear recipe for solving the system given an arbitrary differentiable Lagrangian. We just have to plug it into the equation above, work it through, then we have ( f ) which we can use in a numerical differential equation solver to make some nice gifs. This expression is also helpful because it works for any number of generalised coordinates. This expression is really important when it comes to actually incorporating the neural network effectively, but we will get to that later.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s write some code so that given a Lagrangian, we can automatically determine the equations of motion without having to go through all the derivatives by hand. Since PyTorch now has functions to calculate the Hessian and Jacobian, this is actually reasonably easy. The following function, returns ( \mathbf{\dot x} ) for a given ( \mathcal{L} ) and state ( \mathbf{x} ):&lt;/p&gt;
+&lt;p&gt;The final step then is to do a bit of matrix algebra to get \( \mathbf{\ddot  y} \) alone, we end up with,&lt;/p&gt;
+$$\mathbf{\ddot y}  = (\nabla_{\mathbf{\dot  y}}\nabla_{ \mathbf{\dot y}}^{T}\mathcal{L})^{-1} [\nabla_\mathbf{y} \mathcal{L} - (\nabla_{\mathbf{y}}\nabla_{\mathbf{\dot y}}^{T}\mathcal{L})\mathbf{ \dot y}].$$&lt;p&gt;Now we have \( \mathbf{\ddot  y} \) alone we have a clear recipe for solving the system given an arbitrary differentiable Lagrangian. We just have to plug it into the equation above, work it through, then we have \( f \) which we can use in a numerical differential equation solver to make some nice gifs. This expression is also helpful because it works for any number of generalised coordinates. This expression is really important when it comes to actually incorporating the neural network effectively, but we will get to that later.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s write some code so that given a Lagrangian, we can automatically determine the equations of motion without having to go through all the derivatives by hand. Since PyTorch now has functions to calculate the Hessian and Jacobian, this is actually reasonably easy. The following function, returns \( \mathbf{\dot x} \) for a given \( \mathcal{L} \) and state \( \mathbf{x} \):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import torch 
 from torch.autograd.functional import jacobian, hessian
 
@@ -1446,35 +1434,34 @@ def get_xt(L, x):
     return xt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To check it&amp;rsquo;s working correctly let&amp;rsquo;s test it on the spring pendulum, and use the same initial conditions in the equations we calculated by hand, then we can compare the trajectories and see if they are the same.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://magnusross.github.io/../../mse.png&#34;
-         alt=&#34;Swinging&#34;/&gt; &lt;figcaption&gt;
-            &lt;p&gt;Mean square difference between ( \mathbf{x} ) components of each method, with increasing time.&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../mse.png&#34;
+    alt=&#34;Swinging&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Mean square difference between \( \mathbf{x} \) components of each method, with increasing time.&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;At first glance this looks pretty bad, but the axis is y axis is at a scale ( 10^{-13} ), so the PyTorch method is giving almost exactly the same trajectory. Cool!&lt;/p&gt;
+&lt;p&gt;At first glance this looks pretty bad, but the axis is y axis is at a scale \( 10^{-13} \), so the PyTorch method is giving almost exactly the same trajectory. Cool!&lt;/p&gt;
 &lt;h2 id=&#34;so-wheres-the-ml&#34;&gt;So where&amp;rsquo;s the ML?&lt;/h2&gt;
 &lt;p&gt;We&amp;rsquo;ve done lots of physics so far, but where does the ML come in? Well the good news is that we now have all the ground work out of the way, and we are ready to dive into Lagrangian Neural Networks. In post #2 we will get straight into implementing LNNs in PyTorch, given the knowledge we now have, this should be a relatively simple task.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s just recap a bit and think why we are doing all this in the first place. Here I have used an example of a mechanical system with a known Lagrangian, what if we want to determine the dynamics of a system which is known to obey the laws of classical mechanics, but the Lagrangian is not known? One option is to learn from data. As we discussed earlier all we need to determine the dynamics is the function ( f ). So why did we even need to bother with all this Lagrangian stuff? Why not just replace ( f ) with a neural network, and learn it straight from the data? We could do this, and it is possible that with a large enough model we might get good results, but we can do much better by making the model aware of the physics of the situation. If instead we parameterise ( \mathcal{L} ) with a neural network, and then use our equation for (  \mathbf{\ddot y} ) to determine ( f ), then the Euler-Lagrange equations are included as constraints in the model. This means we have a neural network that is aware of Hamilton&amp;rsquo;s least action principle! Because the model is physics aware, we should get significantly better results from a model with fewer parameters. LNNs are a cool example of using physics knowledge to introduce inductive bias into an ML model. Another nice example of this from a totally different area of ML, Bayesian non-parametrics, are &lt;a href=&#34;http://proceedings.mlr.press/v5/alvarez09a/alvarez09a.pdf&#34;&gt;Latent Force Models&lt;/a&gt;, which may be the subject of a future post.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s just recap a bit and think why we are doing all this in the first place. Here I have used an example of a mechanical system with a known Lagrangian, what if we want to determine the dynamics of a system which is known to obey the laws of classical mechanics, but the Lagrangian is not known? One option is to learn from data. As we discussed earlier all we need to determine the dynamics is the function \( f \). So why did we even need to bother with all this Lagrangian stuff? Why not just replace \( f \) with a neural network, and learn it straight from the data? We could do this, and it is possible that with a large enough model we might get good results, but we can do much better by making the model aware of the physics of the situation. If instead we parameterise \( \mathcal{L} \) with a neural network, and then use our equation for \(  \mathbf{\ddot y} \) to determine \( f \), then the Euler-Lagrange equations are included as constraints in the model. This means we have a neural network that is aware of Hamilton&amp;rsquo;s least action principle! Because the model is physics aware, we should get significantly better results from a model with fewer parameters. LNNs are a cool example of using physics knowledge to introduce inductive bias into an ML model. Another nice example of this from a totally different area of ML, Bayesian non-parametrics, are &lt;a href=&#34;http://proceedings.mlr.press/v5/alvarez09a/alvarez09a.pdf&#34;&gt;Latent Force Models&lt;/a&gt;, which may be the subject of a future post.&lt;/p&gt;
 &lt;p&gt;If you got this far thanks for reading, and hopefully you can join me for part #2 shortly!&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;We treat ( q_i ) and ( \dot q_i ) as independent variables, this can be really confusing at first. You can get an intuitive feel for why this might true if you think about the fact you need to know both the position and velocity of a particle to fully determine it&amp;rsquo;s future trajectory. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;We treat \( q_i \) and \( \dot q_i \) as independent variables, this can be really confusing at first. You can get an intuitive feel for why this might true if you think about the fact you need to know both the position and velocity of a particle to fully determine it&amp;rsquo;s future trajectory.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;( \mathcal{L} ) can also depend explicitly on time, which results in energy not being conserved, but we will not consider that case here. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;\( \mathcal{L} \) can also depend explicitly on time, which results in energy not being conserved, but we will not consider that case here.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;To create the gif I made plots with matplotlib, and then used this &lt;a href=&#34;https://github.com/maxhumber/gif&#34;&gt;brilliant package&lt;/a&gt; to animate. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;To create the gif I made plots with matplotlib, and then used this &lt;a href=&#34;https://github.com/maxhumber/gif&#34;&gt;brilliant package&lt;/a&gt; to animate.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;As I mentioned before this derivation closely follows that in the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;Lagrangian Neural Networks&lt;/a&gt; paper, so all credit to the authors for it. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;As I mentioned before this derivation closely follows that in the &lt;a href=&#34;https://arxiv.org/abs/2003.04630&#34;&gt;Lagrangian Neural Networks&lt;/a&gt; paper, so all credit to the authors for it.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

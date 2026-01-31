@@ -143,31 +143,53 @@
     </div>
   
 </div> -->
-<figure>
-    <img src="/../../view4.jpg"/> 
+<figure><img src="/../../view4.jpg">
 </figure>
 
 <p>There is a lot of chat about bogs in the podcast, mirroring the online discourse about the trail, and walking in the Highlands more generally. Below is a representative example.</p>
-<figure>
-    <img src="/../../bog1.jpg"/> 
+<figure><img src="/../../bog1.jpg">
 </figure>
 
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>Or at least 97.5% of it. <a href="https://www.gov.uk/government/publications/scotland-firing-times">Thanks, MoD</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>Or at least 97.5% of it. <a href="https://www.gov.uk/government/publications/scotland-firing-times">Thanks, MoD</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 </main>
 
   <footer>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\(', right: '\\)', display: false},
+        
+        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
+        {left: '\\begin{align}', right: '\\end{align}', display: true},
+        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
+        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
+        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false,
+      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
+      strict: false
+    });
+  });
+</script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
 
   
   <hr/>

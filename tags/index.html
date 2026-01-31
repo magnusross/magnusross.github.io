@@ -31,11 +31,11 @@
 <ul class="terms">
   
   <li>
-    <a href="/tags/book-review/">Book review</a> (1)
+    <a href="/tags/book-review/">Book Review</a> (1)
   </li>
   
   <li>
-    <a href="/tags/deep-learning/">Deep learning</a> (1)
+    <a href="/tags/deep-learning/">Deep Learning</a> (1)
   </li>
   
   <li>
@@ -47,7 +47,7 @@
   </li>
   
   <li>
-    <a href="/tags/machine-learning/">Machine learning</a> (3)
+    <a href="/tags/machine-learning/">Machine Learning</a> (3)
   </li>
   
   <li>
@@ -87,7 +87,7 @@
   </li>
   
   <li>
-    <a href="/tags/time-series/">Time series</a> (1)
+    <a href="/tags/time-series/">Time Series</a> (1)
   </li>
   
   <li>
@@ -98,9 +98,33 @@
 
   <footer>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\(', right: '\\)', display: false},
+        
+        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
+        {left: '\\begin{align}', right: '\\end{align}', display: true},
+        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
+        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
+        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false,
+      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
+      strict: false
+    });
+  });
+</script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
 
   
   <hr/>

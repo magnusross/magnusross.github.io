@@ -52,22 +52,46 @@
 </blockquote>
 <p>So maybe the solution is to help with report generation instead? Of course you should then ask a number of follow-up questions about what exactly is slow, and why, how much time they spend on it, and if there is anything they have tried already.</p>
 <p>By having the right conversations, we can better understand where ML is truly needed. Building something that gets published is one thing, but building something that gets <em>used</em> is another entirely. That second path is harder, but it’s the only one where our work will actually matter to patients.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>Clinical Decision Support System for the non-healthcare crew. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>Clinical Decision Support System for the non-healthcare crew.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 </main>
 
   <footer>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\(', right: '\\)', display: false},
+        
+        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
+        {left: '\\begin{align}', right: '\\end{align}', display: true},
+        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
+        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
+        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false,
+      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
+      strict: false
+    });
+  });
+</script>
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
 
   
   <hr/>
