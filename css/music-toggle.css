@@ -1,7 +1,11 @@
 /* Music toggle - positioned to the right of the header */
 .music-toggle-container {
-  float: right;
-  vertical-align: baseline;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 29px; /* Match the height of menu items */
 }
 
 .music-toggle {
@@ -12,8 +16,10 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  height: 29px; /* Match menu item height */
   border-radius: 5px; /* Match menu item border-radius */
-  vertical-align: baseline;
+  box-sizing: border-box;
+
 }
 
 .music-toggle:hover .toggle-switch {
