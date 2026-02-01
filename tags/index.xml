@@ -6,8 +6,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://magnusross.github.io/tags/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Do you mind?</title>
+      <link>https://magnusross.github.io/posts/mind-game-analysis/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://magnusross.github.io/posts/mind-game-analysis/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Mind_(card_game)&#34;&gt;The Mind&lt;/a&gt; is a collaborative card game that is designed to be fun to play with your friends. I had fun playing it with my friends a couple of weekends ago. The basic rules of the game are pretty simple:&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are 100 cards in the deck, numbered 1 to 100.&lt;/li&gt;
+&lt;li&gt;In round \( R \) each player is dealt \( R \) cards.&lt;/li&gt;
+&lt;li&gt;The object of the game is to play&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; the cards in order, such that a player never plays a card when a lower card exists in another player&amp;rsquo;s hand.&lt;/li&gt;
+&lt;li&gt;The players are not allowed to communicate in any way, aside from maybe making the odd facial expression.&lt;/li&gt;
+&lt;li&gt;If all the cards are played in the correct order then the players win that round and move onto the next round.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The game is fun because you need to try and work out how hesitant or confident each other player is and learn how long it is likely to take them to put a certain card down. Slowly, the group gets better at doing this and there is a nice sense of progression. Assuming everyone can count reliably (a big assumption), there is one strategy that &amp;ldquo;solves&amp;rdquo; the game: each player waits \( X \) seconds before playing their lowest card, where \( X \) is the difference between the value on their lowest card, and the current visible card. I think playing this way is a bit boring and against the spirit, however.&lt;/p&gt;
+&lt;p&gt;One question caught in my mind when I was playing: what is the probability, given my cards and the current state of the game, that I have the lowest card of all players, and therefore should play next? In the rest of this post, in order to polish up my fast-rusting probability skills, I&amp;rsquo;m going to try to work that out.&lt;/p&gt;
+&lt;p&gt;For the sake of generality, let&amp;rsquo;s say the deck has size \( L \) (\( L=100 \) for the standard game). The current face-up card is \( F \), and the value of the lowest card in my hand is \( C \). Let \( M_0 \) denote the number of cards I hold, and \( M_i \) the number of cards that player \( i \) holds. We can condense the state of the game into three key quantities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of remaining cards lower than my lowest: \( n_l = C - F - 1 \)&lt;/li&gt;
+&lt;li&gt;The total number of other remaining cards aside from my own: \( n_r = L - F - M_0 \)&lt;/li&gt;
+&lt;li&gt;The number of cards other players hold: \( n_c = \sum^N_{i=1}M_i \)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To give a concrete example, consider the following case, where \( L=12 \), and the current face-up card is 3, so \( F=3 \). Let&amp;rsquo;s say there are 2 other players, each with 2 cards (\( n_c=4 \)). In this example we are holding 7 and 9. I have illustrated this on the handy number line below.&lt;/p&gt;
+$$
+\color{red}{1\quad2 \quad 3} \color{black} \quad 4 \quad 5 \quad 6 \color{green} \quad 7 \color{black} \quad 8 \color{green} \quad  9 \color{black} \quad 10 \quad 11 \quad 12
+$$&lt;p&gt;We have that \( n_l = 3 \) (cards 4, 5, 6 are lower than our 7), and \( n_r = 7 \) (the remaining unknown cards are 4, 5, 6, 8, 10, 11 and 12). The easiest way&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; to solve this is using a combinatorial approach. We want to work out the total number of different ways the cards could have been dealt to the two other players, and then find the number of ways, of these, in which we have a lower card than them.&lt;/p&gt;
+&lt;p&gt;The total number of possible deals is given by \( \binom{n_r}{n_c} \), the number of ways we can choose the \( n_c \) cards held by others from the set of \( n_r \) remaining unknown cards.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;To find the number of winning scenarios (where we have the lowest card), we must count the deals where &lt;strong&gt;none&lt;/strong&gt; of the other players hold a card from the &amp;ldquo;lower&amp;rdquo; set (\( n_l \)). This implies that all \( n_c \) cards held by the other players must be chosen strictly from the cards &lt;em&gt;higher&lt;/em&gt; than ours. The number of such high cards available is \( n_r - n_l \). Therefore, the number of winning deals is \( \binom{n_r - n_l}{n_c} \).&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Dividing the winning deals by the total deals gives us the probability:&lt;/p&gt;
+$$
+P(\text{I am lowest}) = \frac{\binom{n_r - n_l}{n_c}}{\binom{n_r}{n_c}}
+$$&lt;p&gt;Using our example numbers (\( L=12 \)):
+&lt;/p&gt;
+$$
+P = \frac{\binom{7 - 3}{4}}{\binom{7}{4}} = \frac{\binom{4}{4}}{35} = \frac{1}{35} \approx 2.9\%
+$$&lt;p&gt;
+In this case, there are exactly 4 cards higher than our 7 available (8, 10, 11, 12). Since the other players need exactly 4 cards, there is only 1 specific deal where they don&amp;rsquo;t have a low card. Any other combination would force them to hold at least one card lower than ours.&lt;sup id=&#34;fnref1:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Ok, I have a formula to work out the probability I should play next (i.e. I have the lowest card), can we glean some sort of helpful insight from this?&lt;/p&gt;
+&lt;p&gt;Here are some nice looking plots. One thing is immediately obvious on both of these plots (and probably would have been without any analysis): the more cards other players hold, the lower the probability that you should play next. What is perhaps slightly less obvious is how this interacts with the other variables. We can see that as the difference between your lowest and the face up card grows, the influence of the number of cards other players hold becomes stronger. As the number of remaining cards grows (i.e. earlier on in the round), the probability you should play next becomes larger.  Feel free to take your own insights from the plots, or just enjoy the tasteful shades of blue.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../mindgame_probability.png&#34;
+    alt=&#34;Probability plots&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Probability of having the lowest card as a function of various game parameters.&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Generally, people aren&amp;rsquo;t very good at computing binomial coefficients in their head. This means that the analysis we have done so far is perhaps of limited utility in the tense, in-game environment. Fortunately, we can substitute the combinatorics for a simple heuristic. First, estimate the fraction of the unknown cards that are currently held by your opponents (\( n_c/n_r \)). Then, treat every number in the gap between the face-up card and your hand as an independent risk. The probability you are the lowest is roughly &lt;/p&gt;
+$$P(\text{I am lowest}) \approx(1 - \frac{n_c}{n_r})^{n_l}.$$&lt;p&gt;For example, if the other players hold half the remaining deck, surviving a gap of 2 cards is like winning two coin flips in a row (\( 0.5^2 = 25\% \)). Because this approximation assumes independent events (sampling &lt;em&gt;with&lt;/em&gt; replacement), it yields an optimistic upper bound. This difference arises because the real game involves sampling without replacement: successfully &amp;ldquo;surviving&amp;rdquo; one number shrinks the pool of safe cards, making it progressively more likely that an opponent holds the next number in the sequence. This is maybe feasible to do in your head if you are quite smart/fast. The plot below shows the error of this approximation. Basically, it&amp;rsquo;s less accurate when the number of lower cards is higher, and the fraction of cards others hold is small (unless this fraction is really small).&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://magnusross.github.io/../../mindgame_approx_acc.png&#34;
+    alt=&#34;Approximation accuracy&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;Error of the approximation method.&lt;/p&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+That is about as much analysis of this fairly simple game that I can justify, even on a rainy Sunday where I have very little else on! I&amp;rsquo;ve put the code I used to generate these plots, and to verify I had the correct answer &lt;a href=&#34;https://magnusross.github.io/posts/another-note/&#34;&gt;using simulation&lt;/a&gt;, in &lt;a href=&#34;https://gist.github.com/magnusross/72a81575517f4d3620de5e138b0af87b&#34;&gt;this gist&lt;/a&gt; in case you are interested.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;There are some extra gimmicks like extra lives and power-ups, but let&amp;rsquo;s forget them for now.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;To play a card, remove it from your hand and place it face up on the table.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;i.e. the only way I can currently think of.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;Here \( \binom{n}{k} \) is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Binomial_coefficient&#34;&gt;binomial coefficient&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;It is worth noting the boundary condition here. By definition, the binomial coefficient \( \binom{n}{k} \) is zero if \( k &gt; n \). In our game, this happens if the number of cards the opponents hold (\( n_c \)) is greater than the number of &amp;ldquo;safe&amp;rdquo; high cards available (\( n_r - n_l \)). This implies the probability is exactly 0.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Books I read for fun in 2025</title>
