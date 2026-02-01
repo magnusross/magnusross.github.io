@@ -76,26 +76,61 @@
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 
 
-<audio id="music-player" loop>
-  <source src="/REC-2026-01-31.wav" type="audio/wav">
-</audio>
-
 <script>
   (function() {
     const musicToggle = document.getElementById('music-toggle');
-    const musicPlayer = document.getElementById('music-player');
     
-    if (!musicToggle || !musicPlayer) return;
+    if (!musicToggle) return;
+    
+    
+    let audioContext;
+    let audioBuffer;
+    let source;
+    let isPlaying = false;
+    
+    
+    async function loadAudio() {
+      try {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const response = await fetch('\/REC-2026-01-31.wav');
+        const arrayBuffer = await response.arrayBuffer();
+        audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+      } catch (error) {
+        console.error('Error loading audio:', error);
+      }
+    }
+    
+    function playAudio() {
+      if (!audioBuffer || isPlaying) return;
+      
+      source = audioContext.createBufferSource();
+      source.buffer = audioBuffer;
+      source.loop = true;
+      source.connect(audioContext.destination);
+      source.start(0);
+      isPlaying = true;
+      musicToggle.classList.add('playing');
+    }
+    
+    function stopAudio() {
+      if (!source || !isPlaying) return;
+      
+      source.stop();
+      source.disconnect();
+      source = null;
+      isPlaying = false;
+      musicToggle.classList.remove('playing');
+    }
+    
+    
+    loadAudio();
     
     
     musicToggle.addEventListener('click', function(e) {
-      if (musicPlayer.paused) {
-        musicPlayer.play();
-        musicToggle.classList.add('playing');
+      if (isPlaying) {
+        stopAudio();
       } else {
-        musicPlayer.pause();
-        musicPlayer.currentTime = 0;
-        musicToggle.classList.remove('playing');
+        playAudio();
       }
     });
     
