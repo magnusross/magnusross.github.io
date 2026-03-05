@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>On foundation models for time series | Magnus Ross</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/slideshow.css" />
+<link rel="stylesheet" href="/css/music-toggle.css" />
+  </head>
+
+  <body>
+    <nav style="position: relative;">
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/posts">Posts</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">RSS Feed</a></li>
+      
+      <li class="music-toggle-container">
+        <button id="music-toggle" class="music-toggle" title="Click to toggle music • Right-click for info">
+          <span class="music-icon">♪</span>
+          <div class="toggle-switch">
+            <div class="toggle-slider"></div>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">On foundation models for time series</span></h1>
+
+<h2 class="date">2026/03/05</h2>
+</div>
+
+<main>
+<p>Recently I&rsquo;ve been thinking a bit about foundation models for time series, and I can&rsquo;t work out how to feel about them. Are they the right approach? Has everyone just got foundation model fever? This post provides a semi-structured set of these thoughts, and unfortunately raises more questions than it provides answers.</p>
+<p>Time series foundation models (FMs) are trained on large corpus of time series from diverse domains. The commonly used <a href="https://huggingface.co/datasets/Salesforce/GiftEvalPretrain">GIFT-Eval pretrain</a> set, for example, is almost 1TB of series, everything from bitcoin prices to climate sims to server logs. The assumption implicit in the foundation modelling paradigm is that there should be positive transfer across these domains, that is to say, that training the model on the data from all the domains at once should provide better performance on a given domain than training a model with the same compute budget on data from the domain alone. Negative transfer occurs when the performance on a single domain is lower when training on the whole corpus vs just that domain&rsquo;s data.</p>
+<p>It&rsquo;s first important to establish exactly what problem we are trying to solve by using a foundation model as opposed to any other model. I will assume that we are operating in domain X, and our goal is to get the best possible forecasts for our set of series from domain X. I believe this is the goal of most practitioners who will be practically using these models. Note that it&rsquo;s possible your goal is to get many forecasts for many domains quickly, or wish to have a single model that is easy to deploy and serve. In this case it may be that you are willing to accept some hit in performance for the convenience of using a universal model. This convenience point will not be addressed but is a valid reason for the paradigm existing.</p>
+<p>Conceptually, it does seem somewhat strange to group together <em>time series</em> as a modality, when they can come from such diverse sources. This issue is discussed by <a href="http://arxiv.org/abs/2602.05287">Dai et al. (2026)</a> who call it a <em>category error</em> to consider time series as a modality, instead of a data type. They argue that there is no semantic relationship between a spike in an ECG and a spike in a stock price, and so training on one shouldn&rsquo;t help us with the other, unlike in e.g. language modelling where the structure of language transfers across different tasks. Unfortunately the authors don&rsquo;t offer any evidence in the form of experiments to substantiate their argument. This type of argument has also been made <a href="https://ideas.repec.org//a/for/ijafaa/y2024i73p33-38.html">by others</a> in the past.</p>
+<p>The most relevant empirical evidence appears in a nice paper from <a href="https://openreview.net/forum?id=PbhGeGBN7X">Zhang et al. (2025)</a>. In their paper they take a small FM architecture and choose a number of domains, most of which have multiple datasets. They first fit the model on all the datasets and run the evaluation. They then take all the ordered pairwise combinations of datasets, and fit a model on both datasets combined, and then evaluate on the first dataset. You can see the results in the table below, which shows the percentage change in test loss when training on both datasets and evaluating on the row datasets when compared with simply training in the row dataset alone. The first columns shows the result of training on all the datasets.</p>
+<figure class="ma0 w-75"><img src="/../../cross-domain-table.png"
+    alt="Cross domain training results from Zhang et al. (2025)."><figcaption>
+      <p>Cross domain training results from <a href="https://openreview.net/forum?id=PbhGeGBN7X">Zhang et al. (2025)</a>.</p>
+    </figcaption>
+</figure>
+
+<p>There is lot of interesting stuff going on here, and it&rsquo;s worth taking a look at the paper for a full analysis, but I want to highlight a few things. Firstly, we can see that the full pre-training, with all the datasets only actually helps for half the datasets, for the others it either does nothing, or hurts a lot (CloudOps and Sales). This is strong evidence for the negative transfer hypothesis, at least for some datasets. Secondly, the results are not symmetric, meaning the fact that training on datasets A + B helps performance on dataset A does not also imply that it helps on dataset B (see Sub and Sales). The authors make the point this might be caused by the difference in sampling frequencies between the datasets. Finally, we should also note that the effects are not consistent within a domain; none of the additional datasets has a significant positive effect on the BBench scores, but all of them do for the ProEnFo, even though both of these datasets are related to energy usage.</p>
+<p>Some caveats to these results: they are using a smaller model variant (10M parameters) so this may affect the ability of the model to adequately cover all the domains at once. Also, it is not exactly clear to me how we should adjust for datasets size in these experiments, for example the BBench dataset has 10x the number of points as ProEnFo, even though they are both sampled at the same frequency.</p>
+<p>We can also get some evidence from re-analysing the results of the models on <a href="https://github.com/autogluon/fev/tree/main/benchmarks/fev_bench/results">FEV bench</a>, a diverse benchmark of time series problems that&rsquo;s popular with the community. Despite the fact that, for some reason, task specific deep learning models are not included, the traditional non-foundation model baselines<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> provide equivalent or better performance for 17/100 tasks. For me this is a significant number, and is cause for at least some concern. The aggregated statistics that are often centred in these papers kind of ignore this. Can a model be truly foundational if it fails to beat simple baselines on such a high proportion of tasks? Maybe? This is something I can&rsquo;t make my mind up about, but it is definitely different from other domains like language. No one is using n-gram models for real tasks these days!</p>
+<p>All that being said, the number one argument for using FMs for time series is that they do seem to give very strong empirical performance on certain domains relative to other available models. In particular when there is complex periodicity or non-stationarities which cause simpler models to fail. There does truly seem to be something going on here that is useful.</p>
+<p>The no-free lunch theorem is something people in ML love to bring up at every possible opportunity, even when it isn&rsquo;t really relevant (see also The Bitter Lesson™️). In a sense this is sort of the argument that <a href="http://arxiv.org/abs/2602.05287">Dai et al. (2026)</a> are making: we can&rsquo;t have one model that works well for all tasks at once. There was a <a href="https://arxiv.org/abs/2304.05366">really nice paper</a> from Andrew Gordon Wilson&rsquo;s group a few years ago that pushed back on the applicability of the no free lunch theorem to LLMs by pointing out that it might not actually be the case that foundation models are trying to achieve good performance on all tasks. Perhaps the set of tasks we care about is actually a small subset of the distribution of all possible tasks, and it is possible to have a model that works well on that subset?</p>
+<p>If that&rsquo;s the case, then it matters a lot <em>which</em> subset we choose. Practically, it is also true that there are common features that span different time series domains that are on the surface unrelated. For example both energy and transport are both heavily influenced by the weather, which (obviously!) exhibits regular seasonality. Perhaps it&rsquo;s enough to just fit the model on these related domains, and drop the others. It looks like things might be going this way. The pre-training dataset used for <a href="https://arxiv.org/abs/2510.15821">Chronos 2</a>, one of the currently hot models, does away with the huge pre-train corpus and uses a much more curated subset, augmented with synthetic data. This subset notably contains mostly climate, transport, and energy series, and doesn&rsquo;t contain large amounts of e.g. financial or health data of dubious predictability.</p>
+<p>The trend in training these models does seem to be to use increasing amounts of synthetic data, with certain models providing strong performance on <a href="https://arxiv.org/abs/2511.19272">synthetic data alone</a>. The question then shifts to how the simulator is constructed, is it best to fit one model on data from one setting of the simulator, or can we get better results by using different simulators for different domains or sets of domains. This is something that hasn&rsquo;t been addressed in the literature.</p>
+<p>So where does all that leave us? I think the honest answer is that it&rsquo;s still not clear whether the foundation model paradigm is the right one for time series. The evidence for negative transfer is real and shouldn&rsquo;t be hand-waved away, but these models are genuinely useful in a lot of settings. Perhaps we can get the best of both worlds by using curated, domain-aware pretraining sets and synthetic data? Whether that still counts as &ldquo;foundational&rdquo; is another question entirely.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>These include stats models like ETS and linear AR, as well as running gradient boosting models on lagged series.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\(', right: '\\)', display: false},
+        
+        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
+        {left: '\\begin{align}', right: '\\end{align}', display: true},
+        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
+        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
+        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
+      throwOnError: false,
+      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
+      strict: false
+    });
+  });
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+
+<script>
+  (function() {
+    const musicToggle = document.getElementById('music-toggle');
+    
+    if (!musicToggle) return;
+    
+    
+    let audioContext;
+    let audioBuffer;
+    let source;
+    let isPlaying = false;
+    
+    
+    async function loadAudio() {
+      try {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const response = await fetch('\/REC-2026-01-31.wav');
+        const arrayBuffer = await response.arrayBuffer();
+        audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+      } catch (error) {
+        console.error('Error loading audio:', error);
+      }
+    }
+    
+    function playAudio() {
+      if (!audioBuffer || isPlaying) return;
+      
+      source = audioContext.createBufferSource();
+      source.buffer = audioBuffer;
+      source.loop = true;
+      source.connect(audioContext.destination);
+      source.start(0);
+      isPlaying = true;
+      musicToggle.classList.add('playing');
+    }
+    
+    function stopAudio() {
+      if (!source || !isPlaying) return;
+      
+      source.stop();
+      source.disconnect();
+      source = null;
+      isPlaying = false;
+      musicToggle.classList.remove('playing');
+    }
+    
+    
+    loadAudio();
+    
+    
+    musicToggle.addEventListener('click', function(e) {
+      if (isPlaying) {
+        stopAudio();
+      } else {
+        playAudio();
+      }
+    });
+    
+    
+    musicToggle.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      window.location.href = '\/music\/';
+    });
+  })();
+</script>
+
+  
+  <hr/>
+  © <a href="https://magnusross.github.io">Magnus Ross</a> &ndash; 2026
+  
+  </footer>
+  </body>
+</html>
+
