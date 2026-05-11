@@ -90,7 +90,7 @@ M K T A Y G L S D R N ...          0.71       53.2
 &lt;h2 id=&#34;wrapping-up-for-now&#34;&gt;Wrapping up (for now)&lt;/h2&gt;
 &lt;p&gt;OK, so after all that, what are we left with? We now have two key models that will allow us to stride forth and generate some proteins: the logiter and the predictor. In generation, we&amp;rsquo;ll use the former to make suggestions, and the latter to rate them. There is one quite important thing we&amp;rsquo;ve skirted around up to now. The logiter gives us a prediction for which amino acid is likely to work well at a given position, but it assumes that we already know which position we are interested in modifying. Determining which positions to modify is by no means trivial, and is the responsibility of the &amp;ldquo;Masking model&amp;rdquo;, which we&amp;rsquo;ll get to next time.&lt;/p&gt;
 &lt;p&gt;Thanks for bearing with me, and I look forward to seeing you in part 2 for more protein fun!&lt;/p&gt;
-&lt;p&gt;*And thanks very much to &lt;a href=&#34;https://dmmiller597.github.io&#34;&gt;David Miller&lt;/a&gt; for reviewing this post and highlighting a number of oversights. *&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And thanks very much to &lt;a href=&#34;https://dmmiller597.github.io&#34;&gt;David Miller&lt;/a&gt; for reviewing this post and highlighting a number of oversights.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
