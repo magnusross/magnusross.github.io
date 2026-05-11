@@ -91,11 +91,7 @@ print(f&quot;Probabilty of ruin: {simulated_probability(0.6, 5, 10)}&quot;)
 <p>We can then write \( P_i \) in terms of these possible outcomes for the first play, as</p>
 $$ P_i = p \times P_{i+1} + q \times P_{i-1}. \tag{1}$$<p>We also know that \( P_0=0 \), if we have no money we have certainly lost, and \( P_A=1 \), if we reach capital \( A \) we have certainly won. Equation 1 is called a difference equation, and it is like a discrete version of a differential equation. To solve it, we use use \( p + q = 1 \) to rewrite as follows,
 </p>
-$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$<p>
-</p>
-$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$<p>
-</p>
-$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$<p>Next write equation 2 as,<br>
+$$(p+q)P_i =pP_{i+1} + q P_{i-1}$$$$ \implies pP_{i+1}-pP_i=qP_{i}-qP_{i-1}$$$$ \implies P_{i+1}-P_i=\frac{q}{p}(P_{i}-P_{i-1}) \tag{2}$$<p>Next write equation 2 as,<br>
 </p>
 $$ P_{j+1}-P_j = \frac{q}{p}(P_{j}-P_{j-1}) = \Big(\frac{q}{p}\Big)^2(P_{j-1}-P_{j-2}) = \dots= \Big(\frac{q}{p}\Big)^{j-1}(P_{1}-P_{0})=\Big(\frac{q}{p}\Big)^{j-1}P_{1}$$<p>for \( j=1, \dots, A \), using \( P_0=0 \) for the final step. Next we want to use this to find a general formula for \( P_i \), we are allowed to write
 </p>
@@ -239,6 +235,9 @@ $$ P_i = 1 - \frac{(q/p)^i -1}{(q/p)^A -1} = \frac{(q/p)^A - (q/p)^i}{(q/p)^A -1
     });
   })();
 </script>
+
+<script data-goatcounter="https://magnusross.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
   
   <hr/>
