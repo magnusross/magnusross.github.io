@@ -1,0 +1,14 @@
+/* Tone down KaTeX so math sits comfortably next to the body text.
+   KaTeX defaults to 1.21em, which looks oversized and heavy beside the
+   light sans-serif body font (Optima). */
+
+/* Inline math: match the body text size closely. */
+.katex {
+  font-size: 1.05em;
+}
+
+/* Keep display/aligned blocks a touch larger so they still read as
+   standalone equations, but well short of the 1.21em default. */
+.katex-display > .katex {
+  font-size: 1.1em;
+}

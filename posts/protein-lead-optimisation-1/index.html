@@ -49,9 +49,9 @@
 <p>For certain combinations of amino acids, this chain folds up into a fixed shape, which allows that protein to perform a function. Predicting the shape of the fold from its sequence is, to put it mildly, highly non-trivial, and is the problem the AlphaFold-2 model &ldquo;solved&rdquo; to some extent to win the Nobel Prize in Chemistry. It is important to understand that there are many possible combinations of amino acids, and most of them will not fold into a regular, predictable shape, and do not do anything useful.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> The folded myoglobin looks something like this:</p>
 <div style="text-align: center;">
 <figure><img src="/../../Myoglobin.png"
-    alt="The structure of myoglobin. Public domain, via Wikimedia Commons." width="50%"><figcaption>
-      <p>The structure of myoglobin. Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Myoglobin.png">Wikimedia Commons</a>.</p>
-    </figcaption>
+			alt="The structure of myoglobin. Public domain, via Wikimedia Commons." width="50%"><figcaption>
+			<p>The structure of myoglobin. Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Myoglobin.png">Wikimedia Commons</a>.</p>
+		</figcaption>
 </figure>
 
 </div>
@@ -61,9 +61,9 @@
 <p>Cradle is a bio-tech startup that sells a system for ML-based protein lead optimisation. They&rsquo;re somewhat unusual for a bio-ML company in operating their own wet lab, which they claim gives them a unique ability to keep the loop between model suggestions and experimental feedback tight. Their system seems to be a market leader, and they are working with a number of the world&rsquo;s largest pharmaceutical companies (e.g. Novo Nordisk, Bayer, J&amp;J). They have demonstrated impressive results across a number of <a href="https://www.cradle.bio/blog/adaptyv2">different contexts</a>. Cradle recently published a <a href="https://www.biorxiv.org/content/10.64898/2026.03.06.710001v2">white-paper</a>, describing how their system works at a high level. Here it is:</p>
 <div style="text-align: center;">
 <figure><img src="/../../cradle_diagram.png"
-    alt="Lifted from the Cradle whitepaper."><figcaption>
-      <p>Lifted from <a href="https://www.biorxiv.org/content/10.64898/2026.03.06.710001v2">the Cradle whitepaper</a>.</p>
-    </figcaption>
+			alt="Lifted from the Cradle whitepaper."><figcaption>
+			<p>Lifted from <a href="https://www.biorxiv.org/content/10.64898/2026.03.06.710001v2">the Cradle whitepaper</a>.</p>
+		</figcaption>
 </figure>
 
 </div>
@@ -145,31 +145,11 @@ M K T A Y G L S D R N ...          0.71       53.2
 </main>
 
   <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
-<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      
-      delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '\\(', right: '\\)', display: false},
-        
-        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
-        {left: '\\begin{align}', right: '\\end{align}', display: true},
-        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
-        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
-        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
-        {left: '\\[', right: '\\]', display: true}
-      ],
-      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
-      throwOnError: false,
-      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
-      strict: false
-    });
-  });
-</script>
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/katex-overrides.css">
+
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 

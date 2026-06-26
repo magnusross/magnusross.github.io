@@ -47,9 +47,9 @@
 <p>Conceptually, it does seem somewhat strange to group together time series as a modality, when they can come from such diverse sources. This issue is discussed by <a href="http://arxiv.org/abs/2602.05287">Dai et al. (2026)</a> who call it a <em>category error</em> to consider time series as a modality, instead of a data type. They argue that there is no semantic relationship between a spike in an ECG and a spike in a stock price, and so training on one shouldn&rsquo;t help us with the other, unlike in e.g. language modelling where the structure of language transfers across different tasks. Unfortunately the authors don&rsquo;t offer any evidence in the form of experiments to substantiate their argument. This type of argument has also been made <a href="https://ideas.repec.org//a/for/ijafaa/y2024i73p33-38.html">by others</a> in the past.</p>
 <p>The most relevant empirical evidence for negative transfer appears in a nice paper from <a href="https://openreview.net/forum?id=PbhGeGBN7X">Zhang et al. (2025)</a>. In their paper they take a small FM architecture and choose a number of domains, most of which have multiple datasets. They first fit the model on all the datasets and run the evaluation. They then take all the ordered pairwise combinations of datasets, and fit a model on both datasets combined, and then evaluate on the first dataset. You can see the results in the table below, which shows the percentage change in test loss when training on both datasets and evaluating on the row datasets when compared with simply training in the row dataset alone. The &ldquo;all&rdquo; column shows the result of training on all the datasets.</p>
 <figure class="ma0 w-75"><img src="/../../cross-domain-table.png"
-    alt="Cross domain training results from Zhang et al. (2025)."><figcaption>
-      <p>Cross domain training results from <a href="https://openreview.net/forum?id=PbhGeGBN7X">Zhang et al. (2025)</a>.</p>
-    </figcaption>
+			alt="Cross domain training results from Zhang et al. (2025)."><figcaption>
+			<p>Cross domain training results from <a href="https://openreview.net/forum?id=PbhGeGBN7X">Zhang et al. (2025)</a>.</p>
+		</figcaption>
 </figure>
 
 <p>There is lot of interesting stuff going on here, and it&rsquo;s worth taking a look at the paper for a full analysis, but I want to highlight a few things. Firstly, we can see that the full pre-training, with all the datasets only actually helps for half the datasets, for the others it either does nothing, or hurts a lot (CloudOps and Sales). This is strong evidence for the negative transfer hypothesis, at least for some datasets. Secondly, the results are not symmetric, meaning the fact that training on datasets A + B helps performance on dataset A does not also imply that it helps on dataset B (see Sub and Sales). The authors make the point this might be caused by the difference in sampling frequencies between the datasets. Finally, we should also note that the effects are not consistent within a domain; none of the additional datasets has a significant positive effect on the BBench scores, but all of them do for the ProEnFo, even though both of these datasets are related to energy usage.</p>
@@ -72,31 +72,11 @@
 </main>
 
   <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
-<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      
-      delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '\\(', right: '\\)', display: false},
-        
-        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
-        {left: '\\begin{align}', right: '\\end{align}', display: true},
-        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
-        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
-        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
-        {left: '\\[', right: '\\]', display: true}
-      ],
-      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
-      throwOnError: false,
-      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
-      strict: false
-    });
-  });
-</script>
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/katex-overrides.css">
+
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 

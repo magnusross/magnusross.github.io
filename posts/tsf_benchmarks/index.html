@@ -53,9 +53,9 @@
 <h3 id="exchange-rates">Exchange rates</h3>
 <p>A prime example is the <em>exchange rates</em> dataset, which consists of 10,000 daily rates from 8 currency pairs, which appears in many recent and historical papers.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The task is to predict up to 2 years (~720 time steps) into the future, using only the past values of the series as inputs.</p>
 <figure><img src="/../../exchange_rates.png"
-    alt="A plot showing a red and a blue line, the lines look like they have similar properties."><figcaption>
-      <p>Can you spot the random walk?</p>
-    </figcaption>
+			alt="A plot showing a red and a blue line, the lines look like they have similar properties."><figcaption>
+			<p>Can you spot the random walk?</p>
+		</figcaption>
 </figure>
 
 <p>The plot above shows one component of the exchange dataset, along with a random walk with the same mean and variance. They look extremely similar.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> This is because the path of exchange rates can be very well approximated with a random walk. This means that the optimum forecast is, in most cases, simply the last observed value (also known as persistence). The past values of the series are not predictive beyond the last observation. There is some evidence to suggest that if additional macroeconomic variables are included forecasts can beat persistence but, unfortunately, these are not included in the benchmark.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
@@ -63,18 +63,18 @@
 <h3 id="getting-the-setup-wrong">Getting the setup wrong</h3>
 <p>One task I know a little bit about, due to my former line of work, is electricity price forecasting (EPF). This has become a reasonably common benchmark in TSF papers over the past few years. On the whole, it is not a bad benchmark, although the predictability of prices beyond simple seasonality from past values alone (without exogenous variables) is perhaps debatable. EPF does however have quite a specific setup. In Europe, most power is traded on the day before delivery, at an auction. This auction typically occurs around 12:00. Market participants are interested in a forecast for the price of the next days power before this auction occurs, which they can use to inform their bids.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> This means the forecast should be produced once a day with a window size of 24, and an offset of 12. Unfortunately, this is not how the benchmark is used (see e.g. <a href="https://arxiv.org/abs/2402.19072">TimeXer</a>), where the window size is correctly set to 24, but offset is set to 0 and predictions are made on a rolling basis every hour. The diagram below shows the difference between these setups.</p>
 <figure><img src="/../../forecast_horizons.png"
-    alt="Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup."><figcaption>
-      <p>Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.</p>
-    </figcaption>
+			alt="Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup."><figcaption>
+			<p>Prediction point (green dot), and forecast window (orange lines) for electricity price forecasting task. Top shows benchmark setup, bottom shows realistic setup.</p>
+		</figcaption>
 </figure>
 
 <p>This may seem like a small difference, but it is revealing of the prevailing attitudes in the field, which is to not really consider the downstream use of models. Frustratingly, the correct setup is discussed in the paper the authors of TimeXer cite as the source of the dataset for the benchmark. I have only picked up on this particular discrepancy because it is a problem I just happen to know about. Other members of our group at UCL <a href="https://arxiv.org/abs/2406.07438">have discussed similar issues</a> with the common flu rates benchmark. It is likely that these issues are present in other benchmarks as well.</p>
 <h3 id="reporting-of-metrics">Reporting of metrics</h3>
 <p>In the vast majority of recent papers, the reported metric is the average error over the forecast horizon. Say we have a forecast horizon of 100, then for each time point, our model outputs a vector of size 100, giving the prediction for each element of the horizon. The error is then computed relative to the target, and averaged over the 100 steps. Whilst this may be a useful metric in some contexts, it does not by any means give the full story of the performance of a model. Consider the two forecasts below.</p>
 <figure><img src="/../../mean_horizon.png"
-    alt="True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example."><figcaption>
-      <p>True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.</p>
-    </figcaption>
+			alt="True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example."><figcaption>
+			<p>True series (black) and forecast (orange) for single example for two different models. These models will have the same error for this example.</p>
+		</figcaption>
 </figure>
 
 <p>These forecasts have the same error, but are very different. The top has moderate skill over the whole window, and the bottom is very skilful initially, and then not at all for the remainder. If we are interested in the error for prediction 100 steps into the future, the one model is useful and one is not. The way the error is reported however makes it impossible to know if forecasts are skilful a long horizons, or simply do well at the start of the horizon and are random after. This is compounded by the fact that as, mention above, the error of persistence is rarely reported making it hard to know what the error for a skilful forecast should be.</p>
@@ -107,31 +107,11 @@
 </main>
 
   <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script defer src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
-<script defer src="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      
-      delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '\\(', right: '\\)', display: false},
-        
-        {left: '\\begin{equation}', right: '\\end{equation}', display: true},
-        {left: '\\begin{align}', right: '\\end{align}', display: true},
-        {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
-        {left: '\\begin{gather}', right: '\\end{gather}', display: true},
-        {left: '\\begin{CD}', right: '\\end{CD}', display: true},
-        {left: '\\[', right: '\\]', display: true}
-      ],
-      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option'],
-      throwOnError: false,
-      trust: (context) => ['\\href', '\\url', '\\includegraphics'].includes(context.command),
-      strict: false
-    });
-  });
-</script>
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/katex-overrides.css">
+
 
 <script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
 
